@@ -1,0 +1,361 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    font: 14px/1 Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, WenQuanYi Micro Hei, sans-serif;
+}
+
+.top-right-items {
+    position: relative;
+    top: 25px;
+    font-size: 12px;
+    color: #8a7676;
+}
+
+.items ol{
+    margin-left: -18px;
+}
+
+.items i{
+    position: relative;
+    top:-6px;
+    left:8px;
+    margin-left:10px;
+}
+
+.items a {
+    color: #8a7676;
+    text-decoration: none;
+}
+
+.items img{
+    position: relative;
+    right:-8%;
+}
+
+.taobao{
+    width:25px;
+}
+
+.logo {
+    position: relative;
+    background-image: url("./images/Roundabout-logo.png");
+    background-repeat: no-repeat;
+    height: 70px;
+    left: 4%;
+}
+
+.middle-image {
+    position: relative;
+    display: inline-block;
+    background-image: url("./images/middle-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+}
+
+select {
+    position: relative;
+    -webkit-appearance: none;
+    border: 0;
+    outline: none;
+    height: 22px;
+    width: 14%;
+    left: -35px;
+    direction: rtl;
+    background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+    font-size: 23px;
+    color: #736f6e;
+    margin: 12px 10px 12px -26px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+select.item {
+    position: relative;
+    left: -1%;
+}
+
+.search {
+    position: relative;
+    right: 18px;
+    float: right;
+    width: 15%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 12px 0;
+    display: inline;
+}
+
+.search input {
+    outline: none;
+    border: 0;
+    padding: 3px;
+    margin-bottom: 6px;
+    border-radius: 30px;
+    background-color: #ede3e1;
+    width: 80%
+}
+
+.search-icon {
+    position: relative;
+    left: -22px;
+}
+
+.middle-text {
+    text-align: center;
+}
+
+.middle-text p {
+    position: relative;
+    color: #ed4cb5;
+    font-weight: lighter;
+    font-size: 42px;
+    top: 34px;
+}
+
+.middle-text span {
+    position: relative;
+    top: 60PX;
+    font-size: 20px;
+}
+
+.show-video {
+    position: relative;
+    text-align: center;
+    top: 120px;
+    width: 100%;
+    background-size: cover;
+    background: #e8e8e8;
+}
+
+.introduction {
+    position: relative;
+    top: 130px;
+}
+
+.jods-icons {
+    position: relative;
+    margin-top: 20%;
+}
+
+.jods-icons a {
+    position: relative;
+    left: 4%;
+    display: block;
+    text-align: center;
+    margin: 3%;
+    text-decoration: none;
+    color:#979797;
+}
+
+#disater-rescue-text{
+    position: relative;
+    left:3%;
+    margin-right:20px;
+}
+
+#community-rescue-text{
+    position: relative;
+    left:25%;
+}
+
+.jods-icons a:hover, :active {
+    text-decoration: none;
+}
+
+.jods-icons a > span {
+    position: relative;
+    top: 30px;
+    font-size: 20px;
+    white-space: nowrap;
+    margin: 20px;
+    left: -10px;
+}
+
+#isater-rescue-text {
+    position: relative;
+    left: 20px;
+    right: -20px;
+}
+
+.konw-more {
+    position: relative;
+    margin-top: 20%;
+    text-align: center;
+
+}
+
+.konw-more-text {
+    font-size: 22px;
+    color: #ed4cb5;
+}
+
+.know-more-icon {
+    font-size: 20px;
+    font-weight: lighter;
+    color: #ed4cb5;
+}
+
+.apply-monthly-report {
+    position: relative;
+    margin-top: 8%;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background: #e8e8e8;
+    text-align: center;
+}
+
+.apply-monthly-report img {
+    position: relative;
+    top: 18.5px;
+}
+
+.apply-monthly-report-text {
+    font-size: 25px;
+    color: #6b6868;
+    padding: 24px 0;
+}
+
+.input-email {
+    border: 1px solid #c9c1c1;
+    outline: none;
+    border-radius: 20px;
+    width: 400px;
+    height: 33px;
+    padding-left: 19px;
+    margin-bottom: 151px;
+    font-size: 19px;
+}
+
+.submit {
+    width: 108px;
+    height: 33px;
+    -webkit-appearance: none;
+    border: 2px solid #eb67a7;
+    border-radius: 20px;
+    background: transparent;
+    color: #eb67a7;
+    font-size: 19px;
+    margin-left: 14px;
+}
+
+.footer {
+    width: 100%;
+    height: 280px;
+    background: #3a383f;
+}
+
+.information-tips-left {
+    position: relative;
+    float: left;
+    width:34%;
+    left:6%;
+}
+
+.information-tips-left div{
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 2px;
+    top:20px;
+}
+
+
+.footer-theme span {
+    position: relative;
+    top: 8px;
+    left: -5px;
+}
+
+.information-theme {
+    font-size: 22px;
+    color: #d1d1d3;
+    margin-left: 13px;
+}
+
+.introduction-text {
+    border: 0;
+    font-size: 12px;
+    background: #3a383f;
+    color: #d1d1d3;
+}
+
+.introduction-text span {
+    position: relative;
+    left:-11%;
+    font-size: 12px;
+    letter-spacing: -0.8px;
+    word-spacing: -3.8px;
+}
+
+.introduction-text i {
+    position: relative;
+    left: -20%;
+    font-size: 13px;
+    word-spacing: 2px;
+}
+
+.email-text {
+    color: #bc4580;
+    font-size: 14px;
+}
+
+pre{
+    border:0;
+    background: #3a383f;
+    color: #d1d1d3;
+}
+
+.information-tips-center pre{
+    position: relative;
+    width:42%;
+    letter-spacing:-2px;
+}
+
+.information-tips-center span{
+    position: relative;
+    font-size: 25px;
+}
+
+.information-tips-center a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#bc4580;
+}
+
+.information-tips-right{
+    position: relative;
+    float:right;
+}
+
+a.news-text{
+    color:#d1d1d3;
+    padding-bottom: 2px;
+}
+
+.information-tips-right{
+    position: relative;
+    float: right;
+    width:24%;
+    top:-65%;
+}
+
+
+.information-tips-right img{
+    display: inline;
+    margin-right:3%;
+}
+
+.QRcode-text{
+    position: relative;
+    font-size: 14px;
+    color:#d1d1d3;
+    top:8px;
+    left:10%;
+}
+
+span.WeChat-text{
+    margin: 0  23%;
+}
