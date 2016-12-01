@@ -20,7 +20,7 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: 'style!css!'
-    },{
+    }, {
       test: /\.(woff|woff2)$/,
       loader: 'url-loader?limit=10000&mimetype=application/font-woff'
     }, {
@@ -32,6 +32,9 @@ module.exports = {
     }, {
       test: /\.svg$/,
       loader: 'file-loader'
+    }, {
+      test: /\.(png|jpg)$/,
+      loader: 'url?limit=25000'
     }, {
       test: require.resolve('jquery'),
       loader: 'expose?$!expose?jQuery'

@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 import Home from './public/components/Home';
+// import MainMenu from './public/components/MainMenu';
+
+
 import App from './public/containers/App';
 
 const router = <Router history={hashHistory}>

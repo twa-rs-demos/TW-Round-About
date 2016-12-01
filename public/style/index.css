@@ -39,7 +39,7 @@ body {
 
 .logo {
     position: relative;
-    background-image: url("./images/Roundabout-logo.png");
+    background-image: url("./public/images/Roundabout-logo.png");
     background-repeat: no-repeat;
     height: 70px;
     left: 4%;
@@ -48,7 +48,7 @@ body {
 .middle-image {
     position: relative;
     display: inline-block;
-    background-image: url("./images/middle-image.png");
+    background-image: url("./public/images/middle-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
