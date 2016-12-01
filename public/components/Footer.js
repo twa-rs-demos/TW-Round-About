@@ -10,29 +10,35 @@ export default class Footer extends Component {
             <img src="./public/images/small-logo.png"/>
             <span className="information-theme">Roundabout</span>
           </div>
-          <pre className="introduction-text">
+          <div className="introduction-text">
             <span>
                 Roundabout is a social enterprise headed by volunteers. We
                 provide a free service connecting those who wish to give,be
                 that monetary or otherwise, to those in need.
             </span>
-            <i className="fa fa-home">  Address:Yuyang Road West, Off An Hua Road (Behind<br/>     Yosemite Villa Compound), Shunyi District.</i>
-            <i className="fa fa-clock-o" aria-hidden="true">  Open Time: Mon-Sat 9.30am-5.30pm</i>
-            <i className="fa fa-phone" aria-hidden="true">  Mobile Phone:137 1877 7761 (English), 137 1805 3814<br/>      (Chinese only)</i>
-            <i className="fa fa-envelope-square" aria-hidden="true">  Email:     <span className="email-text">roundaboutvolunteer@yahoo.co.uk</span></i>
-          </pre>
+            <i className="fa fa-home"> Address:Yuyang Road West, Off An Hua Road (Behind<br/> Yosemite Villa Compound),
+              Shunyi District.</i>
+            <i className="fa fa-clock-o" aria-hidden="true"> Open Time: Mon-Sat 9.30am-5.30pm</i>
+            <i className="fa fa-phone" aria-hidden="true"> Mobile Phone:137 1877 7761 (English), 137 1805 3814<br/>
+              (Chinese only)</i>
+            <i className="fa fa-envelope-square" aria-hidden="true"> Email: <span className="email-text">roundaboutvolunteer@yahoo.co.uk</span></i>
+          </div>
         </div>
 
         <div className="information-tips-center">
-        <pre>
-           <span>Want to join us? </span>
-           <a href="#" className="news-text">Newsletter Center</a>
-           <a href="#">  Apply To Volunteer Today ></a>
-           <a href="#" className="news-text">News & Events</a>
+          <div>
+            <span>Want to join us? </span>
+            <a href="#" className="news-text">Newsletter Center</a>
+          </div>
+          <div>
+            <a href="#"> Apply To Volunteer Today ></a>
+            <a href="#" className="news-text">News & Events</a>
+          </div>
+
+          <div className="enquiry">
             <span>Have an enquiry?</span>
-            <a href="#">Contact Us Now >
-            </a>
-        </pre>
+            <a href="#" className="break-line">Contact Us Now ></a>
+          </div>
         </div>
 
         <div className="information-tips-right">
@@ -46,9 +52,10 @@ export default class Footer extends Component {
           </div>
         </div>
 
-        <div><img src="./public/images/footer.png" alt=""/></div>
+        <div><img src="./public/images/footer.png" className="foot-annotation" alt=""/></div>
 
       </div>
-    )
+    );
+
   }
 }
