@@ -2,15 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, hashHistory} from 'react-router';
 import Home from './public/components/Home';
-// import MainMenu from './public/components/MainMenu';
-
-
+import Donate from './public/components/Donate';
 import App from './public/containers/App';
+
+import DonatingProjects from "./public/components/DonatingProjects";
 
 const router = <Router history={hashHistory}>
   <Route path="/" component={App}>
     <IndexRoute component={Home}/>
     <Route path="home" component={Home}/>
+    <Route path="donate" component={Donate}/>
   </Route>
 </Router>;
 
