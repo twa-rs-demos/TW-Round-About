@@ -4,7 +4,7 @@
 }
 
 body {
-    width:1440px;
+    /*width:1440px;*/
     margin: 0;
     padding: 0;
     color: #444;
@@ -318,6 +318,14 @@ body {
     font-size: 22px;
     line-height: 35px;
     color: #ec4c9a;
+}
+
+
+.donate-guide-collect-item span img{
+    width:12px;
+    height:12px;
+    background: none;
+    margin-top:4px;
 }
 
 

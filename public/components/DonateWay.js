@@ -24,12 +24,12 @@ export default class DonateWay extends Component{
             <div className="col-md-4  donate-way-donation">
               <h3>捐款</h3>
               <div className="row row-1">
-                <div className="col-md-6 donate-way-flag-1"><img src="#" /><h4>Wechat</h4></div>
-                <div className="col-md-6 donate-way-flag-2"><img src="#" /><h4>CCAFC</h4></div>
+                <div className="col-md-6 donate-way-flag-1"><img src="./public/images/donate/wechat01.png" /><h4>Wechat</h4></div>
+                <div className="col-md-6 donate-way-flag-2"><img src="./public/images/donate/logo_ccafc.png" /><h4>CCAFC</h4></div>
               </div>
               <div className="row">
-                <div className="col-md-6 donate-way-flag-1"><img src="#" /><h4>Alipay</h4></div>
-                <div className="col-md-6 donate-way-flag-2"><img src="#" /><h4>Paypal</h4></div>
+                <div className="col-md-6 donate-way-flag-1"><img src="./public/images/donate/logo_alipay.png" /><h4>Alipay</h4></div>
+                <div className="col-md-6 donate-way-flag-2"><img src="./public/images/donate/logo_paypal.png" /><h4>Paypal</h4></div>
               </div>
             </div>
 
@@ -37,7 +37,7 @@ export default class DonateWay extends Component{
               <h3>募捐项目</h3>
               <p>直接通过乐捐捐款</p>
               <div>
-                <img src="#" />
+                <img src="./public/images/donate/wechat01.png" />
                   <h4>腾讯</h4>
               </div>
             </div>
