@@ -328,4 +328,15 @@ body {
     margin-top:4px;
 }
 
+.donate-img{
+    background: url("../images/donate/hero_donate.png");
+    position: relative;
+}
+.donate-img-text{
+    position: absolute;
+    color:#fff;
+    right:60px;
+    bottom:60px;
+    padding:0 10px;
+}
 
