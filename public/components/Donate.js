@@ -11,6 +11,12 @@ export default class Donate extends Component {
       <div>
         <RightTopinfo/>
         <MenuList/>
+        <div className="donate-img middle-image">
+          <div className="donate-img-text">
+            <h2>“施比受更为有福。”</h2>
+            <h3>—— St Francis of Assisi</h3>
+          </div>
+        </div>
         <div className="donate-page-index">
           <DonateWay/>
           <ItemDonate/>
