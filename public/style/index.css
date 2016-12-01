@@ -39,7 +39,7 @@ body {
 
 .logo {
     position: relative;
-    background-image: url("./public/images/Roundabout-logo.png");
+    background-image: url("../images/Roundabout-logo.png");
     background-repeat: no-repeat;
     height: 70px;
     left: 4%;
@@ -48,7 +48,7 @@ body {
 .middle-image {
     position: relative;
     display: inline-block;
-    background-image: url("./public/images/middle-image.png");
+    background-image: url("../images/middle-image.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -62,7 +62,7 @@ select {
     outline: none;
     height: 22px;
     width: 14%;
-    left: -35px;
+    left:-2%;
     direction: rtl;
     background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
     font-size: 23px;
@@ -70,11 +70,6 @@ select {
     margin: 12px 10px 12px -26px;
     padding-right: 20px;
     cursor: pointer;
-}
-
-select.item {
-    position: relative;
-    left: -1%;
 }
 
 .search {
@@ -253,6 +248,7 @@ select.item {
     float: left;
     width:34%;
     left:6%;
+    text-align: left;
 }
 
 .information-tips-left div{
@@ -284,15 +280,19 @@ select.item {
 
 .introduction-text span {
     position: relative;
-    left:-11%;
-    font-size: 12px;
-    letter-spacing: -0.8px;
-    word-spacing: -3.8px;
+    margin:5px;
+    display: inline-block;
+    width: 430px;
+    height:50px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    word-spacing: -1px;
+    text-align: left;
 }
 
 .introduction-text i {
     position: relative;
-    left: -20%;
     font-size: 13px;
     word-spacing: 2px;
 }
@@ -308,15 +308,22 @@ pre{
     color: #d1d1d3;
 }
 
-.information-tips-center pre{
+.information-tips-center{
     position: relative;
-    width:42%;
+    top:10%;
+    width:60%;
+    height:50%;
     letter-spacing:-2px;
+    left: 7%;
 }
 
 .information-tips-center span{
     position: relative;
     font-size: 25px;
+    color: #d1d1d3;
+    margin-top:10px;
+    text-align: left;
+
 }
 
 .information-tips-center a{
@@ -325,38 +332,53 @@ pre{
     color:#bc4580;
 }
 
-.information-tips-right{
+div.enquiry {
     position: relative;
-    float:right;
+    margin-top: 30px;
+}
+
+a.break-line{
+    display: block;;
 }
 
 a.news-text{
+    position: relative;
+    left: 10%;
+    width:10%;
+    text-align: left;
     color:#d1d1d3;
     padding-bottom: 2px;
+    border-bottom:1px solid #d1d1d3 ;
 }
+
 
 .information-tips-right{
     position: relative;
     float: right;
     width:24%;
-    top:-65%;
+    top:-35%;
 }
 
 
 .information-tips-right img{
     display: inline;
-    margin-right:3%;
+    margin-right:5%;
 }
 
-.QRcode-text{
+.QRcode-text {
     position: relative;
     font-size: 14px;
     color:#d1d1d3;
     top:8px;
-    left:10%;
+    left:8%;
 }
 
 span.WeChat-text{
-    margin: 0  23%;
+    margin: 0  25%;
+}
+
+.foot-annotation {
+    position: relative;
+    top:100px;
 }
 

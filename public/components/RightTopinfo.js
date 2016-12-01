@@ -17,17 +17,15 @@ export default  class MainMenu extends Component {
               <i className="fa fa-weibo fa-2x col-sm-1" aria-hidden="true"></i>
             </a>
             <a href="#">
-              {/*<img src="../images/taobao-top.png" alt="" className="taobao">*/}
+              <img src="./public/images/taobao-top.png" alt="" className="taobao"/>
             </a>
           </div>
         </div>
 
-        <div class="row">
-          <a href="#" class="logo col-md-2"></a>
+        <div className="row">
+          <a href="#" className="logo col-md-2"></a>
         </div>
-
       </div>
-
     )
   }
 

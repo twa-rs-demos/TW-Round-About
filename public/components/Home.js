@@ -3,14 +3,19 @@ import MenuList   from "./MenuList";
 import RightTopinfo from "./RightTopinfo";
 import ApplyMonthly from "./ApplyMonthly";
 import Footer from "./Footer";
+import OurWorkItems from "./OurWorkItems";
+import CenterMedia from './CenterMeida';
+
 class Home extends Component {
   render() {
-    return <div >
+    return (<div >
       <RightTopinfo/>
       <MenuList/>
+      <CenterMedia />
+      <OurWorkItems/>
       <ApplyMonthly/>
       <Footer/>
-    </div>
+    </div>)
   }
 }
 export default Home;
