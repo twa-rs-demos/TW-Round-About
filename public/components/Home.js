@@ -1,10 +1,10 @@
 import React, {Component} from "react";
-import MenuList   from "./MenuList";
 import RightTopinfo from "./RightTopinfo";
+import MenuList   from "./MenuList";
+import CenterMedia from './CenterMeida';
+import OurWorkItems from "./OurWorkItems";
 import ApplyMonthly from "./ApplyMonthly";
 import Footer from "./Footer";
-import OurWorkItems from "./OurWorkItems";
-import CenterMedia from './CenterMeida';
 
 class Home extends Component {
   render() {
