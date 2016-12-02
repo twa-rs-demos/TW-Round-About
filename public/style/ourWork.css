@@ -21,10 +21,16 @@ ul li {
 }
 
 .breadcrumb > li {
-    margin: 3px;
+    margin:0 3px;
 }
 
 .Leukemia-rescue-image {
+    position: relative;
+    padding:0;
+
+    border: 1px solid red;
+    top:-16px;
+    margin:0px;
     height: 420px;
     background-image:url("../images/ourWork/IMG_0285.jpg");
     width: 100%;
@@ -49,7 +55,6 @@ ul li {
 .patient-profile p {
     word-spacing: -7px;
     line-height: 30px;
-    /*font-size: 40px;*/
 }
 
 .child-story-btn {
