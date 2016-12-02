@@ -5,6 +5,7 @@ import ApplyMothly from "./ApplyMonthly";
 import DonateWay from "./DonateWay";
 import ItemDonate from "./ItemDonate";
 import DonatingProjects from "./DonatingProjects";
+import Footer from './Footer';
 export default class Donate extends Component {
   render() {
     return (
@@ -24,6 +25,7 @@ export default class Donate extends Component {
           <p>这里还需要一个翻页器组件</p>
         </div>
         <ApplyMothly/>
+        <Footer/>
       </div>
     )
   }

@@ -13,7 +13,7 @@ export default class DonatingProjects extends Component {
       {img: './public/images/donate/current appeals01.png', name: '程程', age: '8', disease: '白血病', money: '20,000'},
     ];
     return (
-      <div className="donating-projects">
+      <div className="donating-projects donate-page-index">
         <h2 className="donate-way-title">正在捐款的项目</h2>
         <div className="container">
           {this._getDonatingProjectsRow(donatingProjectList)}
