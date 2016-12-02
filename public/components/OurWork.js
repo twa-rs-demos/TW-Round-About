@@ -16,7 +16,7 @@ export default class OurWork extends Component {
           <h1>众爱是希望的桥梁</h1>
           <p>我们为全国各地需要帮助的孩子募集善款，并把他们推荐给能帮助他们的团体或者个人。</p>
         </div>
-        <Video/>
+
 
         <div className="what-do">
           <h1>我们都做什么</h1>

@@ -4,7 +4,6 @@
 }
 
 body {
-    /*width:1440px;*/
     margin: 0;
     padding: 0;
     color: #444;
@@ -343,6 +342,9 @@ body {
 .bread-crumb{
     background-color: #f5f5f5;
     padding-left: 50px;
+}
+.breadcrumb{
+    margin:0;
 }
 .breadcrumb > li + li:before {
     position: relative;
