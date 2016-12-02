@@ -4,7 +4,7 @@ import RightTopinfo from "./RightTopinfo";
 import ApplyMonthly from "./ApplyMonthly";
 import Footer from "./Footer";
 import OurWorkItems from "./OurWorkItems";
-import CenterMedia from './CenterMeida';
+import CenterMedia from './CenterStaticContent';
 
 class Home extends Component {
   render() {

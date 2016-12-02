@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-const my = 0;
 
 export default class munu extends Component{
   getMenuItemList(item){
