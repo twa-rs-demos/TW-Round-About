@@ -339,21 +339,23 @@ body {
     bottom:60px;
     padding:0 10px;
 }
-/*------------------面包屑-----------------------------*/
-.bread-crumbs{
-    width:100%;
-    height:38px;
-    padding:0 70px;
-    background-color:#f0f0f0;
-    color:#262626;
+/*!*------------------面包屑-----------------------------*!*/
+.bread-crumb{
+    background-color: #f5f5f5;
+    padding-left: 50px;
+}
+.breadcrumb > li + li:before {
+    position: relative;
+    font-family: FontAwesome;
     font-size: 14px;
-    line-height:38px;
+    content: "\f105";
+    color: #B2B6BF;
+    padding: 0;
+    margin: 0 8px 0 0;
+    top: 1px;
 }
-.bread-crumbs ul{
-    list-style: none;
-    overflow: hidden;
+
+.breadcrumb > li {
+    margin: 3px;
 }
-.bread-crumbs li{
-    float: left;
-    overflow: hidden;
-}
+

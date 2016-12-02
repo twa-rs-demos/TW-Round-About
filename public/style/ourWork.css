@@ -1,0 +1,151 @@
+body {
+    overflow-x: hidden;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline;
+    color: #626262;
+
+}
+
+/*.breadcrumb > li + li:before {*/
+    /*position: relative;*/
+    /*font-family: FontAwesome;*/
+    /*font-size: 14px;*/
+    /*content: "\f105";*/
+    /*color: #B2B6BF;*/
+    /*padding: 0;*/
+    /*margin: 0 8px 0 0;*/
+    /*top: 1px;*/
+/*}*/
+
+/*.breadcrumb > li {*/
+    /*margin: 3px;*/
+/*}*/
+
+.Leukemia-rescue-image {
+    height: 420px;
+    background-image:url("../images/ourWork/IMG_0285.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.patient-profile {
+    position: relative;
+    float: right;
+    right: 10%;
+    top: 50%;
+    font-weight: lighter;
+    line-height: inherit;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+
+
+.patient-profile p {
+    word-spacing: -7px;
+    line-height: 30px;
+    /*font-size: 40px;*/
+}
+
+.child-story-btn {
+    position: relative;
+    float: right;
+    top: 85%;
+    left: 11%;
+    width: 276px;
+    height: 42px;
+    color: #ffffff;
+    background: #ec4c9a;
+    border: 0;
+    border-radius: 5px;
+    font-size: 22px;
+    line-height: 42px;
+}
+
+.more-story {
+    position: relative;
+    float: right;
+    outline: none;
+    border: 0;
+    background: none;
+    margin: 40px 50px;
+
+}
+
+.save-life-situation {
+    margin: 100px 0;
+    height: 560px;
+    width: 100%;
+    background-size: cover;
+    background: #f6f6f6;
+    text-align: center;
+}
+
+.save-life-situation h1 {
+    color: #ed6cab;
+    font-size: 22px;
+    padding: 3%;
+}
+
+.Rescue-situation-img {
+    text-align: center;
+
+}
+
+.Rescue-situation-img img {
+    margin: 40px;
+}
+
+.participate-rescue, .want-donate {
+    width: 226px;
+    height: 52px;
+    color: #ffffff;
+    background: #ec4c9a;
+    border: 0;
+    border-radius: 4px;
+    font-size: 22px;
+    line-height: 52px;
+}
+
+.fact-situation {
+    position: relative;
+    text-align: center;
+    top:-60px;
+
+}
+
+.fact-situation h1 {
+    font-size: 40px;
+    color: #ec4c9a;
+    font-weight: normal;
+}
+
+.fact-situation p , .fact-situation span {
+    font-size: 18px;
+    line-height: 5%;
+}
+
+.fact-situation p{
+    line-height:60%;
+}
+
+.fact-situation img{
+    position: relative;
+    top:40px;
+}
+
+.fact-situation span {
+    color: #ec4c9a;
+}
+
+.fact-situation-graph button{
+    position: relative;
+    top:150px;
+    left:-20%;
+    text-align: center;
+}

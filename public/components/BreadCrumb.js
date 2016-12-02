@@ -2,11 +2,16 @@ import React, {Component} from 'react';
 
 export default class BreadCrumb extends Component{
   render(){
+    const liList= ["第一级","第二级"];
+    const lis = liList.map((item)=>{
+      return (
+        <li>{item}</li>
+      )
+    });
     return (
-      <div className="bread-crumbs">
-        <ul>
-          <li>捐赠</li>
-          <li>正在捐款的项目</li>
+      <div className="bread-crumb">
+        <ul className="breadcrumb">
+          {lis}
         </ul>
       </div>
     )
