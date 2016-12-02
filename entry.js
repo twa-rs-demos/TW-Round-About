@@ -6,8 +6,9 @@ import Donate from './public/components/Donate';
 import App from './public/containers/App';
 import DonateCurrentAppeal from './public/components/DonateCurrentAppeal';
 import OurWork from "./public/components/OurWork";
-import OurWorkPage from "./public/components/OurWorkPage";
+import OurWorkAssistance from "./public/components/OurWorkAssistance";
 import GetInvolvedVolunteer from "./public/components/GetInvolvedVolunteer";
+import GetInvolved from "./public/components/GetInvolved";
 
 const router = <Router history={hashHistory}>
   <Route path="/" component={App}>
@@ -15,9 +16,11 @@ const router = <Router history={hashHistory}>
     <Route path="home" component={Home}/>
     <Route path="donate" component={Donate}/>
     <Route path="donateCurrent" component={DonateCurrentAppeal}/>
-    <Route path="ourWorkPage" component={OurWorkPage}/>
+    <Route path="ourWorkPage" component={OurWorkAssistance}/>
     <Route path="ourWork" component={OurWork}/>
     <Route path="getInvolvedVolunteer" component={GetInvolvedVolunteer}/>
+    <Route path="getInvolved" component={GetInvolved}/>
+
   </Route>
 </Router>;
 

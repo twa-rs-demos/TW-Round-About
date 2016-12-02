@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Media from './Media';
+import Media from './Video';
 
 export  default  class centerMedia extends Component {
   render() {
