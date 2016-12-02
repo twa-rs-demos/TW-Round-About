@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import RightTopinfo from "./RightTopinfo";
 import MenuList   from "./MenuList";
-import CenterMedia from './CenterMeida';
+
 import ApplyMonthly from "./ApplyMonthly";
 import Footer from "./Footer";
 

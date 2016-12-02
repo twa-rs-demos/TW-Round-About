@@ -1,10 +1,18 @@
 import  React, {Component} from 'react';
 import  OurWorkPageHeader from './OurWorkPageHeader';
+import ApplyMonthly from './ApplyMonthly';
+import MenuList from './MenuList';
+import Footer from './Footer';
+import RightTopinfo from './RightTopinfo';
+
 
 export  default  class ourWorkPage extends Component {
   render() {
     return (
       <div>
+        <RightTopinfo />
+        <MenuList />
+
         <OurWorkPageHeader/>
 
         <div className="save-life-situation">
@@ -28,6 +36,8 @@ export  default  class ourWorkPage extends Component {
           </div>
         </div>
 
+        <ApplyMonthly/>
+        <Footer/>
       </div>
 
     )
