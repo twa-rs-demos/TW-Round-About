@@ -8,7 +8,7 @@ import DonateCurrentAppeal from './public/components/DonateCurrentAppeal';
 
 
 import DonatingProjects from "./public/components/DonatingProjects";
- import OurWorkPage from "./public/components/OurWorkPage";
+ import OurWorkPage from "./public/components/OurWorkAssistance";
 
 const router = <Router history={hashHistory}>
   <Route path="/" component={App}>
