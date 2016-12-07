@@ -5,7 +5,7 @@ import {DropdownButton, MenuItem} from 'react-bootstrap';
 export default class MenuList extends Component {
   getMenuItemList(item) {
     return item.map((menuItem)=> {
-      return <MenuItem value="捐赠">{menuItem}</MenuItem>
+      return <MenuItem value="捐赠" className="menu-item">{menuItem}</MenuItem>
     });
   }
 
@@ -40,7 +40,7 @@ export default class MenuList extends Component {
     });
 
     return (
-      <div className="row">
+      <div className="col-md-8 padding">
         {list}
       </div>
     )

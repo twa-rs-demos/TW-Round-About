@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "webpack": "webpack",
     "wpw": "webpack -w",
     "start": "webpack-dev-server --no-info --progress --colors || exit 0",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -45,6 +46,7 @@
     "bootstrap": "^3.3.7",
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "font-awesome": "^4.7.0",
     "html-webpack-plugin": "^2.24.1",
     "jquery": "^3.1.1",
     "react": "15.3.0",

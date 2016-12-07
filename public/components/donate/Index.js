@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import RightTopinfo from "../share/RightTopinfo";
-import MenuList from "../share/MenuList";
+import RightTopinfo from "../common/RightTopinfo";
+import MenuList from "../common/MenuList";
 import DonateWay from "./DonateWay";
 import ItemDonate from "./ItemDonate";
-import DonatingProjects from "../share/DonatingProjects";
-import ApplyMothly from "../share/ApplyMonthly";
-import Footer from '../share/Footer';
+import DonatingProjects from "../common/DonatingProjects";
+import ApplyMothly from "../common/ApplyMonthly";
+import Footer from '../common/Footer';
 import "../../style/donate.css";
 
 export default class Donate extends Component {

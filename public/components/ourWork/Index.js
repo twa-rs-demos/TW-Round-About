@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import RightTopinfo from "../share/RightTopinfo";
-import MenuList   from "../share/MenuList";
+import RightTopinfo from "../common/RightTopinfo";
+import MenuList   from "../common/MenuList";
 import Video from "./Video";
-import ApplyMonthly from "../share/ApplyMonthly";
-import Footer from "../share/Footer";
+import ApplyMonthly from "../common/ApplyMonthly";
+import Footer from "../common/Footer";
 // import "../../style/index.css";
 import "../../style/ourWork.css";
 

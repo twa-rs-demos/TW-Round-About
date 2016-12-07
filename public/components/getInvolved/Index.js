@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import ApplyMonthly from '../share/ApplyMonthly';
-import MenuList from '../share/MenuList';
-import Footer from '../share/Footer';
-import RightTopinfo from '../share/RightTopinfo';
+import ApplyMonthly from '../common/ApplyMonthly';
+import MenuList from '../common/MenuList';
+import Footer from '../common/Footer';
+import RightTopinfo from '../common/RightTopinfo';
 import '../../style/getInvolved.css';
 
 export  default  class getInvolved extends Component {

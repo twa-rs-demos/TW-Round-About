@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import RightTopinfo from "../share/RightTopinfo";
-import MenuList   from "../share/MenuList";
-import BreadCrumb from "../share/BreadCrumb";
+import RightTopinfo from "../common/RightTopinfo";
+import MenuList   from "../common/MenuList";
+import BreadCrumb from "../common/BreadCrumb";
 import VolunteerStory from "./VolunteerStory";
-import ApplyMonthly from "../share/ApplyMonthly";
-import Footer from "../share/Footer";
+import ApplyMonthly from "../common/ApplyMonthly";
+import Footer from "../common/Footer";
 import "../../style/getInvolvedVolunteer.css";
 
 export default class GetInvolvedVolunteer extends Component {

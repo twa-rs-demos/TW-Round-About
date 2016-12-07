@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import BreadCrumb from '../share/BreadCrumb';
+import BreadCrumb from '../common/BreadCrumb';
 
 export  default  class OurWorkPageHeader extends Component {
   render() {

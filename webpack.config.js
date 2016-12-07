@@ -10,7 +10,7 @@ var pathToBootstarp = path.resolve(node_modules, 'bootstrap/dist/');
 var config = {
   entry: {
     "entry": './entry.js',
-    "vendors": ['bootstrap.css', 'react', 'react-dom', 'react-bootstrap']
+    "vendors": ['bootstrap.css', 'react', 'react-dom', 'react-bootstrap', 'font-awesome.css']
   },
   output: {
     path: __dirname + '/build/assets/',
@@ -50,6 +50,10 @@ var config = {
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader?limit=10000&minetype=application/font-woff'
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "url-loader?limit=10000&minetype=application/font-woff"
       },
       {
@@ -75,7 +79,8 @@ var config = {
   resolve: {
     alias: {
       'bootstrap.css': 'bootstrap/dist/css/bootstrap.min.css',
-      'bootstrap.js': 'bootstrap/dist/css/bootstrap.min.js'
+      'bootstrap.js': 'bootstrap/dist/css/bootstrap.min.js',
+      'font-awesome.css': 'font-awesome/css/font-awesome.min.css'
     }
   }
 };
