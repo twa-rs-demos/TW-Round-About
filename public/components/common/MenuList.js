@@ -33,7 +33,6 @@ export default class MenuList extends Component {
     const list = menuList.map((item)=> {
       return (
         <DropdownButton title={item.text} className="">
-          {/*<option value="捐赠" className="col-md-2" selected={item.text}>{item.text}</option>*/}
           {this.getMenuItemList(item.secondClass)}
         </DropdownButton>
       );

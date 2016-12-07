@@ -1,16 +1,14 @@
 import React, {Component} from 'react';
-import RightTopinfo from '../common/RightTopinfo';
-import MenuListinfo from '../common/MenuList';
-import BeardCrumb from '../common/BreadCrumb';
-import DonatingProjects from '../common/DonatingProjects';
+import {Header,BreadCrumb,DonatingProjects,ApplyMonthly,Footer} from '../common/index';
 export default class DonateCurrentAppeal extends Component {
   render() {
     return (
       <div>
-        <RightTopinfo/>
-        <MenuListinfo/>
-        <BeardCrumb/>
+        <Header/>
+        <BreadCrumb/>
         <DonatingProjects/>
+        <ApplyMonthly/>
+        <Footer/>
       </div>
     )
   }

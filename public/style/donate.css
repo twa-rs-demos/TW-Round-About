@@ -341,10 +341,11 @@ body {
 /*!*------------------面包屑-----------------------------*!*/
 .bread-crumb{
     background-color: #f5f5f5;
-    padding-left: 50px;
+    padding-left: 31px;
 }
 .breadcrumb{
     margin:0;
+    padding:8px 0;
 }
 .breadcrumb > li + li:before {
     position: relative;
