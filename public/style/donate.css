@@ -41,6 +41,7 @@ body {
     border: 1px #bcbcbc solid;
     margin: 19px;
 }
+
 .donate-way-content{
     margin:0 auto;
 }
@@ -87,7 +88,7 @@ body {
     text-align: center;
 }
 
-/*----------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
 .donate-way-project p {
     margin-top: 31px;
     font-size: 22px;
@@ -147,15 +148,19 @@ body {
 }
 
 /*--------------------------------------------*/
+
 .donate-guide-collect,.donate-guide-apply {
     width:100%;
 }
+
 .donate-guide-apply{
     padding: 0;
 }
+
 .donate-guide-apply p{
     margin:0 auto;
 }
+
 .donate-guide-collect .row{
     margin: 0 19px;
 }
@@ -234,10 +239,12 @@ body {
 }
 
 /*------------------------------------------------------------------------------------------*/
+
 .donating-projects h2 {
     margin-top: 76px;
     margin-bottom: 14px;
 }
+
 .donating-projects .container{
     width:100%;
     padding:0;
@@ -281,7 +288,8 @@ body {
     margin-top: 9px;
 }
 
-/*-------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
 .donating-project-paging {
     margin-top: 45px;
     margin-bottom: 121px;
@@ -312,13 +320,11 @@ body {
 }
 
 .donating-project-paging a {
-    /*margin-right:0px;*/
     float: right;
     font-size: 22px;
     line-height: 35px;
     color: #ec4c9a;
 }
-
 
 .donate-guide-collect-item span img{
     width:12px;
@@ -331,6 +337,7 @@ body {
     background: url("../images/donate/hero_donate.png");
     position: relative;
 }
+
 .donate-img-text{
     position: absolute;
     color:#fff;
@@ -338,15 +345,19 @@ body {
     bottom:60px;
     padding:0 10px;
 }
-/*!*------------------面包屑-----------------------------*!*/
+
+/*!*--------------------------------------面包屑--------------------------------------*!*/
+
 .bread-crumb{
     background-color: #f5f5f5;
     padding-left: 31px;
 }
+
 .breadcrumb{
     margin:0;
     padding:8px 0;
 }
+
 .breadcrumb > li + li:before {
     position: relative;
     font-family: FontAwesome;

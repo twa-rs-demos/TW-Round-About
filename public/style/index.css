@@ -6,7 +6,6 @@ body {
 }
 
 .top-right-items {
-    /*position: relative;*/
     top: 25px;
     font-size: 12px;
     color: #8a7676;
@@ -109,7 +108,6 @@ body {
 }
 
 .footer .col-xs-5 {
-    /*padding-right: 32px;*/
     padding: 0px;
 }
 
@@ -224,23 +222,18 @@ select {
 }
 
 .middle-text p {
-    /*position: relative;*/
     color: #ed4cb5;
     font-weight: lighter;
     font-size: 42px;
-    /*top: 34px;*/
     margin: 0 0 2% 0;
 }
 
 .middle-text span {
-    /*position: relative;*/
-    /*top: 60PX;*/
     font-size: 22px;
     color: #575757;
 }
 
 .show-video {
-    /*position: relative;*/
     text-align: center;
     top: 120px;
     width: 100%;
@@ -250,107 +243,39 @@ select {
 
 .job-icons {
     overflow: hidden;
-    padding: 1%;
+    padding-left:5em;
 }
 
-.icon-container {
-    width: 12%;
-    text-align: center;
-
-}
-
-.icon-container img {
-    /*display: table-cell;*/
+.job-icons img{
     vertical-align: middle;
+    position: absolute;
+    transform: translate3d(-50%,-50%,0);
+    top: 50%;
+    left: 50%;
 }
-
-.a-work-icon img {
-    margin-bottom: 18px;
+.job-icons p{
+    font-size: 1.5em;
+    color: #575757;
+    white-space: nowrap;
+    margin-top:15px;
+    margin-bottom:0;
 }
-
-.b-work-icon img {
-    margin-bottom: 19px;
+.e-work-icon p{
+    width:100%;
 }
-
-.c-work-icon img {
-    margin-bottom: 15px;
+.ourwork-konw-more{
+    text-align: center;
+    font-size: 22px;
+    color:#ec4c9a;
+    margin-top: 80px;
 }
-
-.d-work-icon img {
-    margin-bottom: 23px;
+.icon-container {
+    text-align: center;
 }
-
-.e-work-icon img {
-    margin-bottom: 20px;
+.job-icons-container{
+    height:120px;
+    position: relative;
 }
-
-/*.introduction {*/
-/*position: relative;*/
-/*top: 130px;*/
-/*}*/
-
-/*.jods-icons {*/
-/*position: relative;*/
-/*margin-top: 20%;*/
-/*}*/
-
-/*.jods-icons a {*/
-/*position: relative;*/
-/*left: 4%;*/
-/*display: block;*/
-/*text-align: center;*/
-/*margin: 3%;*/
-/*text-decoration: none;*/
-/*color: #979797;*/
-/*}*/
-
-/*#disater-rescue-text {*/
-/*position: relative;*/
-/*left: 3%;*/
-/*margin-right: 20px;*/
-/*}*/
-
-/*#community-rescue-text {*/
-/*position: relative;*/
-/*left: 25%;*/
-/*}*/
-
-/*.jods-icons a:hover, :active {*/
-/*text-decoration: none;*/
-/*}*/
-
-/*.jods-icons a > span {*/
-/*position: relative;*/
-/*top: 30px;*/
-/*font-size: 20px;*/
-/*white-space: nowrap;*/
-/*margin: 20px;*/
-/*left: -10px;*/
-/*}*/
-
-/*#isater-rescue-text {*/
-/*position: relative;*/
-/*left: 20px;*/
-/*right: -20px;*/
-/*}*/
-
-/*.konw-more {*/
-/*position: relative;*/
-/*margin-top: 20%;*/
-/*text-align: center;*/
-
-/*}*/
-
-/*.konw-more-text {*/
-/*font-size: 22px;*/
-/*color: #ed4cb5;*/
-/*}*/
-
-/*.know-more-icon {*/
-/*font-size: 20px;*/
-/*font-weight: lighter;*/
-/*color: #ed4cb5;*/
-/*}*/
 
 .apply-monthly-report {
     position: relative;
@@ -552,7 +477,6 @@ span.WeChat-text {
 
 .home-text {
     font-size: 48px;
-    /*line-height:68px*/
     text-align: center;
     width: 100%;
     margin: 0 auto;

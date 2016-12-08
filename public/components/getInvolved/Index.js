@@ -14,8 +14,6 @@ export  default  class getInvolved extends Component {
         <ApplyMonthly/>
         <Footer/>
       </div>
-  )
+    )
   }
-
-
-  }
+}

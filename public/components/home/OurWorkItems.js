@@ -7,31 +7,43 @@ export default class OurWorkItems extends Component {
         <p> 我们的工作</p>
         <span> 众爱在全种食品范围内支持个人救助的同时也与其它慈善机构合作救助</span>
       </div>
-      <div className="job-icons col-sm-offset-2">
-        <div className="col-md-1 icon-container a-work-icon">
-          <img src="./public/images/a-work-icon.png" alt="白血病救助"/>
-          <span className="">白血病救助</span>
-        </div>
-        <div className="col-md-1 icon-container b-work-icon">
-          <img src="./public/images/b-work-icon.png" alt="白血病救助"/>
-          <span className="">医疗救助</span>
-        </div>
-        <div className="col-md-1 icon-container c-work-icon">
-          <img src="./public/images/c-work-icon.png" alt="白血病救助"/>
-          <span className="">教育资助</span>
-        </div>
-        <div className="col-md-1 icon-container d-work-icon">
-          <img src="./public/images/d-work-icon.png" alt="白血病救助"/>
-          <span className="" id="">灾区救助</span>
-        </div>
-        <div className="col-md-1 icon-container e-work-icon">
-          <img src="./public/images/e-work-icon.png" alt="白血病救助"/>
-          <span className="" id="">社区帮扶</span>
-        </div>
 
-        <div className="konw-more">
-          <span className="konw-more-text">了解更多 ></span>
+      <div className="job-icons col-sm-offset-1 row">
+        <div className="col-md-2 icon-container a-work-icon">
+          <div className="job-icons-container">
+            <img src="./public/images/home/icon_disaster relief_small.png" alt="白血病救助"/>
+          </div>
+          <p>白血病救助</p>
         </div>
+        <div className="col-md-2 icon-container b-work-icon">
+          <div className="job-icons-container">
+            <img src="./public/images/home/icon_medical assistance_small.png" alt="医疗救助"/>
+          </div>
+          <p>医疗救助</p>
+        </div>
+        <div className="col-md-2 icon-container c-work-icon">
+          <div className="job-icons-container">
+            <img src="./public/images/home/icon_education support_small.png" alt="教育资助"/>
+          </div>
+          <p>教育资助</p>
+        </div>
+        <div className="col-md-2 icon-container d-work-icon">
+          <div className="job-icons-container">
+            <img src="./public/images/home/icon_leukemia assistance_small.png" alt="灾区救助"/>
+          </div>
+          <p id="">灾区救助</p>
+        </div>
+        <div className="col-md-2 icon-container e-work-icon">
+          <div className="job-icons-container">
+            <img src="./public/images/home/icon_community assistance_small.png" alt="社区帮扶"/>
+          </div>
+          <p id="">社区帮扶</p>
+        </div>
+        <div className="col-md-1"></div>
+      </div>
+
+      <div className="ourwork-konw-more">
+        <span className="konw-more-text">了解更多 ></span>
       </div>
     </div>);
   }
