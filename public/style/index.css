@@ -12,6 +12,8 @@ body {
     color: #8a7676;
     float: right;
     margin-right: 23px;
+    height: 18px;
+    line-height: 18px;
 }
 
 .items ol {
@@ -28,6 +30,7 @@ body {
 .items a {
     color: #8a7676;
     text-decoration: none;
+    margin-right: 5px;
 }
 
 .items img {
@@ -53,12 +56,11 @@ body {
 }
 
 .dropdown button {
-    margin-right: 36px;
-    padding: 0;
+    margin-right: 34px;
+    padding: 0 0 12px 0;
     border: none;
     font-size: 22px;
     color: #414141;
-    padding-bottom: 12px;
     font-family: STHeitiSC-Light;
 }
 
@@ -71,49 +73,60 @@ body {
     overflow: hidden;
 }
 
-.footer{
+.footer {
     font-family: Microsoft YaHei;
     background-color: #3A383F;
-    padding:32px 30px 37px 75px;
+    padding: 32px 30px 37px 75px;
 }
-.footer-list{
-    font-size:12px;
-    line-height:16px;
+
+.footer-list {
+    font-size: 12px;
+    line-height: 16px;
 }
-.footer-list div{
+
+.footer-list div {
     overflow: hidden;
 }
-.footer-list img{
-    margin-top:5px;
+
+.footer-list img {
+    margin-top: 5px;
     float: left;
 }
-.footer-list p{
-    float:left;
-    margin-left:8px;
-    margin-bottom:0px;
+
+.footer-list p {
+    float: left;
+    margin-left: 8px;
+    margin-bottom: 0px;
 }
-.footer-right-right{
-    padding-right:50px;
+
+.footer-right-right {
+    padding-right: 50px;
 }
-.footer-left-right{
+
+.footer-left-right {
     font-size: 22px;
     color: #fff;
 }
-.footer .col-xs-5{
+
+.footer .col-xs-5 {
     /*padding-right: 32px;*/
     padding: 0px;
 }
-.footer .col-md-6{
-    padding:0;
+
+.footer .col-md-6 {
+    padding: 0;
 }
-.red-text{
-    color:#EB4B99;
-    font-size:18px;
+
+.red-text {
+    color: #EB4B99;
+    font-size: 18px;
     font-family: AvenirNext-Regular;
 }
-.follow-icon{
+
+.follow-icon {
     display: inline-block;
 }
+
 .footer-right-left {
     font-size: 18px;
     text-decoration: underline;
@@ -121,30 +134,33 @@ body {
     line-height: 24px;
 }
 
-.icon-img{
+.icon-img {
     display: inline-block;
-    margin-right:20px;
-}
-.icon-img img{
-    display: inline-block;
-    width:88px;
-    height:88px;
-}
-.icon-img p{
-    text-align: center;
-    font-size:14px;
-    color:#fff;
-    line-height: 21px;
-}
-.footer-right-bottom{
-    text-align: left;
-    margin-top:80px;
-    color:#fff;
+    margin-right: 20px;
 }
 
-.roundabout-info{
+.icon-img img {
+    display: inline-block;
+    width: 88px;
+    height: 88px;
+}
+
+.icon-img p {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    line-height: 21px;
+}
+
+.footer-right-bottom {
+    text-align: left;
+    margin-top: 80px;
+    color: #fff;
+}
+
+.roundabout-info {
     font-size: 12px;
-    line-height:16px;
+    line-height: 16px;
     color: #ffffff;
 }
 
@@ -204,24 +220,27 @@ select {
 
 .middle-text {
     text-align: center;
+    padding: 3%;
 }
 
 .middle-text p {
-    position: relative;
+    /*position: relative;*/
     color: #ed4cb5;
     font-weight: lighter;
     font-size: 42px;
-    top: 34px;
+    /*top: 34px;*/
+    margin: 0 0 2% 0;
 }
 
 .middle-text span {
-    position: relative;
-    top: 60PX;
-    font-size: 20px;
+    /*position: relative;*/
+    /*top: 60PX;*/
+    font-size: 22px;
+    color: #575757;
 }
 
 .show-video {
-    position: relative;
+    /*position: relative;*/
     text-align: center;
     top: 120px;
     width: 100%;
@@ -229,73 +248,109 @@ select {
     background: #e8e8e8;
 }
 
-.introduction {
-    position: relative;
-    top: 130px;
+.job-icons {
+    overflow: hidden;
+    padding: 1%;
 }
 
-.jods-icons {
-    position: relative;
-    margin-top: 20%;
-}
-
-.jods-icons a {
-    position: relative;
-    left: 4%;
-    display: block;
-    text-align: center;
-    margin: 3%;
-    text-decoration: none;
-    color: #979797;
-}
-
-#disater-rescue-text {
-    position: relative;
-    left: 3%;
-    margin-right: 20px;
-}
-
-#community-rescue-text {
-    position: relative;
-    left: 25%;
-}
-
-.jods-icons a:hover, :active {
-    text-decoration: none;
-}
-
-.jods-icons a > span {
-    position: relative;
-    top: 30px;
-    font-size: 20px;
-    white-space: nowrap;
-    margin: 20px;
-    left: -10px;
-}
-
-#isater-rescue-text {
-    position: relative;
-    left: 20px;
-    right: -20px;
-}
-
-.konw-more {
-    position: relative;
-    margin-top: 20%;
+.icon-container {
+    width: 12%;
     text-align: center;
 
 }
 
-.konw-more-text {
-    font-size: 22px;
-    color: #ed4cb5;
+.icon-container img {
+    /*display: table-cell;*/
+    vertical-align: middle;
 }
 
-.know-more-icon {
-    font-size: 20px;
-    font-weight: lighter;
-    color: #ed4cb5;
+.a-work-icon img {
+    margin-bottom: 18px;
 }
+
+.b-work-icon img {
+    margin-bottom: 19px;
+}
+
+.c-work-icon img {
+    margin-bottom: 15px;
+}
+
+.d-work-icon img {
+    margin-bottom: 23px;
+}
+
+.e-work-icon img {
+    margin-bottom: 20px;
+}
+
+/*.introduction {*/
+/*position: relative;*/
+/*top: 130px;*/
+/*}*/
+
+/*.jods-icons {*/
+/*position: relative;*/
+/*margin-top: 20%;*/
+/*}*/
+
+/*.jods-icons a {*/
+/*position: relative;*/
+/*left: 4%;*/
+/*display: block;*/
+/*text-align: center;*/
+/*margin: 3%;*/
+/*text-decoration: none;*/
+/*color: #979797;*/
+/*}*/
+
+/*#disater-rescue-text {*/
+/*position: relative;*/
+/*left: 3%;*/
+/*margin-right: 20px;*/
+/*}*/
+
+/*#community-rescue-text {*/
+/*position: relative;*/
+/*left: 25%;*/
+/*}*/
+
+/*.jods-icons a:hover, :active {*/
+/*text-decoration: none;*/
+/*}*/
+
+/*.jods-icons a > span {*/
+/*position: relative;*/
+/*top: 30px;*/
+/*font-size: 20px;*/
+/*white-space: nowrap;*/
+/*margin: 20px;*/
+/*left: -10px;*/
+/*}*/
+
+/*#isater-rescue-text {*/
+/*position: relative;*/
+/*left: 20px;*/
+/*right: -20px;*/
+/*}*/
+
+/*.konw-more {*/
+/*position: relative;*/
+/*margin-top: 20%;*/
+/*text-align: center;*/
+
+/*}*/
+
+/*.konw-more-text {*/
+/*font-size: 22px;*/
+/*color: #ed4cb5;*/
+/*}*/
+
+/*.know-more-icon {*/
+/*font-size: 20px;*/
+/*font-weight: lighter;*/
+/*color: #ed4cb5;*/
+/*}*/
 
 .apply-monthly-report {
     position: relative;
@@ -342,9 +397,9 @@ select {
 }
 
 /*.footer {*/
-    /*width: 100%;*/
-    /*height: 280px;*/
-    /*background: #3a383f;*/
+/*width: 100%;*/
+/*height: 280px;*/
+/*background: #3a383f;*/
 /*}*/
 
 .information-tips-left {
@@ -363,9 +418,9 @@ select {
 }
 
 /*.footer-theme span {*/
-    /*position: relative;*/
-    /*top: 8px;*/
-    /*left: -5px;*/
+/*position: relative;*/
+/*top: 8px;*/
+/*left: -5px;*/
 /*}*/
 
 .information-theme {

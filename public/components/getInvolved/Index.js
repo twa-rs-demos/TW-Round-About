@@ -11,6 +11,7 @@ export  default  class getInvolved extends Component {
         <Header/>
         <PictureMax/>
         <StaticContent/>
+        <ApplyMonthly/>
         <Footer/>
       </div>
   )
