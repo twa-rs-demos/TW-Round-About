@@ -2,14 +2,6 @@ body {
     overflow-x: hidden;
 }
 
-ul li {
-    list-style-type: none;
-    display: inline;
-    color: #626262;
-
-}
-
-
 .breadcrumb > li + li:before {
     position: relative;
     font-family: FontAwesome;
