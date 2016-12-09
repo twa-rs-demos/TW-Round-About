@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {DropdownButton, MenuItem} from 'react-bootstrap';
+import {NavDropdown, MenuItem} from 'react-bootstrap';
 
 
 export default class MenuList extends Component {
@@ -32,14 +32,14 @@ export default class MenuList extends Component {
 
     const list = menuList.map((item)=> {
       return (
-        <DropdownButton title={item.text} className="">
+        <NavDropdown title={item.text} className="" eventKey="1">
           {this.getMenuItemList(item.secondClass)}
-        </DropdownButton>
+        </NavDropdown>
       );
     });
 
     return (
-      <div className="col-md-8 padding">
+      <div className="col-md-8 padding menu">
         {list}
       </div>
     )

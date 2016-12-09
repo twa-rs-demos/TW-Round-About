@@ -55,22 +55,29 @@ body {
     padding-left: 31px;
 }
 
-.dropdown button {
-    margin-right: 34px;
+.dropdown{
+    list-style: none;
+    display: inline-block;
+    margin-right: 32px;
     padding: 0 0 12px 0;
-    border: none;
+    /*border: none;*/
     font-size: 22px;
     color: #414141;
+    /*text-decoration: none;*/
     font-family: STHeitiSC-Light;
 }
 
-.dropdown:last-child button {
+.dropdown a{
+    color: #414141;
+    text-decoration: none;
+}
+
+.menu :last-child {
     margin-right: 0;
 }
 
 .header {
     border-bottom: solid 4px #EB4B99;
-    overflow: hidden;
 }
 
 .footer {

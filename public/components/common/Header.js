@@ -6,7 +6,7 @@ import Logo from '../common/Logo';
 export default class Header extends Component{
   render(){
     return (
-      <div className="header">
+      <div className="header row">
         <RightTopinfo/>
         <Logo/>
         <MenuList/>
