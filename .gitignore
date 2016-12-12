@@ -1,5 +1,4 @@
 node_modules/
 .idea/
-webpack.config2.js
 build/
-test.html
+build/assets/
