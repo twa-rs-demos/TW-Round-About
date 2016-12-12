@@ -1,15 +1,9 @@
 import React, {Component} from 'react';
 import {NavDropdown, MenuItem} from 'react-bootstrap';
 import request from 'superagent';
-import noCache from 'superagent-no-cache';
-
 
 export default class MenuList extends Component {
-  // constructor(){
-  //   this.state = {
-  //     menuList:[]
-  //   }
-  // }
+
   componentDidMount() {
     request.get('http://127.0.0.1/wp-json/wp/v2/pages/34')
       .end((err, res)=> {
@@ -17,7 +11,6 @@ export default class MenuList extends Component {
           alert(err);
         }
         console.log(res.body);
-        // this.state.menuList = res;
       });
   }
 
