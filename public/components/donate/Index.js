@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Header, ApplyMonthly, Footer, DonatingProjects} from '../common/index';
+import {DonatingProjects} from '../common/index';
 import PictureMax from './PictureMax';
 import DonateWay from "./DonateWay";
 import ItemDonate from "./ItemDonate";
