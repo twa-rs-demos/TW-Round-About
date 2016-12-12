@@ -9,7 +9,6 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Header/>
         <PictureMax/>
         <div className="donate-page-index">
           <DonateWay/>
@@ -17,8 +16,6 @@ export default class Home extends Component {
           <DonatingProjects/>
           <p>这里还需要一个翻页器组件</p>
         </div>
-        <ApplyMonthly/>
-        <Footer/>
       </div>
     )
   }
