@@ -80,7 +80,8 @@ var config = {
     alias: {
       'bootstrap.css': 'bootstrap/dist/css/bootstrap.min.css',
       'bootstrap.js': 'bootstrap/dist/css/bootstrap.min.js',
-      'font-awesome.css': 'font-awesome/css/font-awesome.min.css'
+      'font-awesome.css': 'font-awesome/css/font-awesome.min.css',
+      'ie':'component-ie'
     }
   }
 };
