@@ -9,7 +9,7 @@ var pathToBootstarp = path.resolve(node_modules, 'bootstrap/dist/');
 
 var config = {
   entry: {
-    "entry": './entry.js',
+    "entry": './public/main.js',
     "vendors": ['bootstrap.css', 'react', 'react-dom', 'react-bootstrap', 'font-awesome.css']
   },
   output: {

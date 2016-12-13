@@ -3,17 +3,6 @@ import {NavDropdown, MenuItem} from 'react-bootstrap';
 import request from 'superagent';
 
 export default class MenuList extends Component {
-
-  componentDidMount() {
-    request.get('http://127.0.0.1/wp-json/wp/v2/pages/34')
-      .end((err, res)=> {
-        if (err) {
-          alert(err);
-        }
-        console.log(res.body);
-      });
-  }
-
   getMenuItemList(item) {
     return item.map((menuItem)=> {
       return <MenuItem value="捐赠" className="menu-item">{menuItem}</MenuItem>
