@@ -13,7 +13,6 @@ export default class NewNavDropdown extends Component {
 
   getMenuItem() {
      return this.state.menuItemList.map((menuItem, index)=> {
-       console.log(menuItem.name);
       return <MenuItem value={menuItem.name} id={index} className="menu-item" key={index}>{menuItem.name}</MenuItem>
      });
   }
