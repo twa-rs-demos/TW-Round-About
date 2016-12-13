@@ -1,40 +1,48 @@
 import React, {Component} from 'react';
-import {NavDropdown, MenuItem} from 'react-bootstrap';
-
+import superagent from 'superagent';
+import noCache from  'superagent-no-cache';
+import NewNavDropdown from  './NewNavDropdown';
 
 export default class MenuList extends Component {
-  getMenuItemList(item) {
-    return item.map((menuItem)=> {
-      return <MenuItem value="捐赠" className="menu-item">{menuItem}</MenuItem>
-    });
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      menuList: []
+    };
+  }
+
+  componentDidMount() {
+    superagent
+      .get('/wp-json/wp/v2/categories/')
+      .use(noCache)
+      .end((err, res)=> {
+        if (err) {
+          throw (err);
+        } else {
+          const categoryParent = res.body.find((item)=> {
+            return item.name = 'menulist';
+          });
+          superagent
+            .get(`/wp-json/wp/v2/categories?parent=${categoryParent.id}`)
+            .use(noCache)
+            .end((err, res)=> {
+              if (err) {
+                throw (err)
+              } else {
+                this.setState({
+                  menuList: res.body
+                });
+              }
+            })
+        }
+      })
   }
 
   render() {
-    const menuList = [{
-      text: "捐赠",
-      secondClass: ["nihao", "wohao", "dajiahao"]
-    }, {
-      text: "我们的工作",
-      secondClass: ["nihao", "wohao", "dajiahao"]
-    }, {
-      text: "参与我们",
-      secondClass: ["nihao", "wohao", "dajiahao"]
-    }, {
-      text: "众爱商店",
-      secondClass: ["nihao", "wohao", "dajiahao"]
-    }, {
-      text: "新闻与活动中心",
-      secondClass: ["nihao", "wohao", "dajiahao"]
-    }, {
-      text: "关于我们",
-      secondClass: ["nihao", "wohao", "dajiahao"]
-    }];
-
-    const list = menuList.map((item)=> {
+    const list = this.state.menuList.map((item, index)=> {
       return (
-        <NavDropdown title={item.text} className="" eventKey="1">
-          {this.getMenuItemList(item.secondClass)}
-        </NavDropdown>
+        <NewNavDropdown title={item.name} id={item.id} key={index}/>
       );
     });
 
