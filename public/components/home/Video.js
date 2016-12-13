@@ -26,10 +26,9 @@ export default class media extends Component {
   }
 
   render() {
-
     return (
       <div id="test">
-        {this.state.content}
+        {xmlDoc}
       </div>
     )
   }
