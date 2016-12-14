@@ -1,23 +1,44 @@
 /*Volunteer Form*/
-.modal-dialog{
+.modal-dialog {
     margin-right: 37%;
 }
-.modal-header{
+
+.modal-header {
     border-bottom: 0;
 }
-.info{
-    margin-bottom: 20px;
+.title{
+    font-size: 120%;
+    color:#3A383F;
 }
-.info-right{
+.info {
+    margin-bottom: 29px;
+}
+
+.info-right {
     text-align: right;
 }
-.modal-content{
+
+.modal-content {
     width: 150%;
 }
-.pink{
+
+.pink {
     color: #EB4B99;
 }
 
-.modal-footer{
+.text-length {
+    width: 321%;
+}
+
+.textArea-volunteerForm {
+    resize: none
+}
+
+.input-info{
+    height: 25px;
+    line-height: 25px;
+}
+
+.modal-footer {
     border-top: 0;
 }
