@@ -305,16 +305,24 @@ select {
     width: 100%;
 }
 
-.ourwork-konw-more {
+.ourwork-know-more {
     text-align: center;
     font-size: 22px;
-    color: #ec4c9a;
     margin-top: 80px;
+}
+.know-more-text{
+    color: #ec4c9a;
+}
+
+.know-more-text:hover{
+    color: #ec4c9a;
+    text-decoration: none;
 }
 
 .icon-container {
     text-align: center;
 }
+
 
 .job-icons-container {
     height: 120px;

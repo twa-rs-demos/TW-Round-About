@@ -14,15 +14,13 @@ export default class MenuList extends Component {
 
   componentDidMount() {
     superagent
-      .get('/wp-json/wp/v2/categories/')
+      .get('/wp-json/wp/v2/categories?slug=menulist')
       .use(noCache)
       .end((err, res)=> {
         if (err) {
           throw (err);
         } else {
-          const categoryParent = res.body.find((item)=> {
-            return item.name = 'menulist';
-          });
+          const categoryParent=res.body[0];
           superagent
             .get(`/wp-json/wp/v2/categories?parent=${categoryParent.id}`)
             .use(noCache)
