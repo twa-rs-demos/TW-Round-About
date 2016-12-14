@@ -15,6 +15,10 @@ body {
     line-height: 18px;
 }
 
+.top-right-items img{
+   width: 25px;
+}
+
 .items ol {
     margin-left: -18px;
 }
@@ -42,9 +46,9 @@ body {
     padding: 0;
 }
 
-.taobao {
-    width: 25px;
-}
+/*.taobao {*/
+    /*width: 25px;*/
+/*}*/
 
 .logo {
     margin: 16px 0 17px 31px;
