@@ -84,7 +84,7 @@ export default class Footer extends Component {
         <div className="col-md-6 footer-right">
           <div className="row">
             <div className="col-xs-4">
-              <p className="footer-right-left">Newsletter Center</p>
+              <Link to="/tw-ra/newsLetter-center" className="footer-right-left">Newsletter Center</Link>
               <Link to="/tw-ra/newAndEvent" className="footer-right-left">News&Event</Link>
             </div>
             <div className="col-xs-8 footer-right-right">
