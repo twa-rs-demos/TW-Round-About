@@ -23,9 +23,9 @@ export default class DonatingProjects extends Component {
   }
 
   _getDonatingProjectsRow(donatingProjectList) {
-    return chunk(donatingProjectList, 4).map((item)=>{
+    return chunk(donatingProjectList, 4).map((item,index)=>{
       return (
-        <div className="row">
+        <div className="row" key={index}>
           {this._getDonatingProjectsCols(item)}
         </div>
       )
@@ -33,9 +33,9 @@ export default class DonatingProjects extends Component {
   }
 
   _getDonatingProjectsCols(projectCols) {
-    return projectCols.map((item)=> {
+    return projectCols.map((item,index)=> {
       return (
-        <div className="col-md-3 donating-project">
+        <div className="col-md-3 donating-project" key={index}>
           <img src={item.img} />
           <h4>{item.name}，{item.age}岁</h4>
           <div>

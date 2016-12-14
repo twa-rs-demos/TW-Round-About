@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-
-export default class DonateWay extends Component{
+import {Link} from 'react-router';
+import Scrollchor from 'react-scrollchor';
+export default class DonateWay extends Component {
 
   render() {
 
@@ -13,24 +14,28 @@ export default class DonateWay extends Component{
 
         <div className="container donate-way-content">
           <div className="row donate-way-row">
-            <div className="col-md-4">
+            <div className="col-md-4 things-donate">
               <h3>物品捐赠</h3>
               <ul>
-                <li>捐赠指南</li>
-                <li>捐赠物品代收点</li>
-                <li>上门收取捐赠物品申请表</li>
+                <li><Scrollchor to="#donate-guide-hash"> 捐赠指南</Scrollchor></li>
+                <li><Scrollchor to="#donate-guide-collect-hash">捐赠物品代收点</Scrollchor></li>
+                <li><Scrollchor to="#donate-guide-apply-hash">上门收取捐赠物品申请表</Scrollchor></li>
               </ul>
             </div>
 
             <div className="col-md-4  donate-way-donation">
               <h3>捐款</h3>
               <div className="row row-1">
-                <div className="col-md-6 donate-way-flag-1"><img src="./public/images/donate/wechat01.png" /><h4>Wechat</h4></div>
-                <div className="col-md-6 donate-way-flag-2"><img src="./public/images/donate/logo_ccafc.png" /><h4>CCAFC</h4></div>
+                <div className="col-md-6 donate-way-flag-1"><img src="./public/images/donate/wechat01.png"/><h4>
+                  Wechat</h4></div>
+                <div className="col-md-6 donate-way-flag-2"><img src="./public/images/donate/logo_ccafc.png"/><h4>
+                  CCAFC</h4></div>
               </div>
               <div className="row">
-                <div className="col-md-6 donate-way-flag-1"><img src="./public/images/donate/logo_alipay.png" /><h4>Alipay</h4></div>
-                <div className="col-md-6 donate-way-flag-2"><img src="./public/images/donate/logo_paypal.png" /><h4>Paypal</h4></div>
+                <div className="col-md-6 donate-way-flag-1"><img src="./public/images/donate/logo_alipay.png"/><h4>
+                  Alipay</h4></div>
+                <div className="col-md-6 donate-way-flag-2"><img src="./public/images/donate/logo_paypal.png"/><h4>
+                  Paypal</h4></div>
               </div>
             </div>
 
@@ -38,8 +43,8 @@ export default class DonateWay extends Component{
               <h3>募捐项目</h3>
               <p>直接通过乐捐捐款</p>
               <div>
-                <img src="./public/images/donate/wechat01.png" />
-                  <h4>腾讯</h4>
+                <img src="./public/images/donate/wechat01.png"/>
+                <h4>腾讯</h4>
               </div>
             </div>
           </div>
