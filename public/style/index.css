@@ -15,6 +15,47 @@ body {
     line-height: 18px;
 }
 
+.top-right-items img{
+   width: 25px;
+}
+
+.top-right-items .wechat-icon{
+    cursor: pointer;
+}
+
+#wechatModal .modal-title{
+    display: inline-block;
+}
+
+#wechatModal button{
+    float: right;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: none;
+}
+
+#wechatModal .modal-content{
+    width: 54%;
+    margin-left: 37%;
+    margin-top: 21%;
+    height: 309px;
+}
+
+#wechatModal .modal-header img{
+    width: 15px;
+    margin: 0;
+}
+
+#wechatModal .modal-body img{
+    width: 72%;
+    padding-left: 14%;
+    padding-bottom: 19px;
+    margin: auto;
+    clear: both;
+}
+
+#wechatModal
 .items ol {
     margin-left: -18px;
 }
@@ -42,9 +83,9 @@ body {
     padding: 0;
 }
 
-.taobao {
-    width: 25px;
-}
+/*.taobao {*/
+    /*width: 25px;*/
+/*}*/
 
 .logo {
     margin: 16px 0 17px 31px;
@@ -240,6 +281,15 @@ select {
     border-color: #cfdc00;
     box-shadow: 0 0 5px rgba(207, 220, 0, 0.4);
     border-radius: 100px;
+}
+
+.search button{
+    border: none;
+    background-color: inherit;
+}
+
+.search button:focus{
+    outline: none;
 }
 
 .search img {
