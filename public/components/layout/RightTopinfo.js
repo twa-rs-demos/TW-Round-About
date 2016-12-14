@@ -4,15 +4,14 @@ import {Modal,Button} from 'react-bootstrap';
 class WechatModal extends Component {
   render() {
     return (
-      <div className="static-modal">
+      <div className="static-modal" id="wechatModal">
         <Modal.Dialog>
           <Modal.Header>
-            <Modal.Title>Modal title</Modal.Title>
-            <Button>X</Button>
+            <Button onClick={this.props.closeWechatModal}><img src="./public/images/home/close.png"/></Button>
           </Modal.Header>
 
           <Modal.Body>
-            One fine body...
+            <img src="./public/images/home/wechat store.png"/>
           </Modal.Body>
 
         </Modal.Dialog>
@@ -29,8 +28,12 @@ export default  class MainMenu extends Component {
     };
   }
 
-  showWechat() {
+  showWechatModal() {
     this.setState({isShowWechat: true});
+  }
+
+  closeWechatModal(){
+    this.setState({isShowWechat: false});
   }
 
   render() {
@@ -39,7 +42,7 @@ export default  class MainMenu extends Component {
         <a href="#" className="col-sm-2 no-padding">月报中心</a>
         <a href="#" className="col-sm-2 no-padding">月报申领</a>
         <a href="#" className="col-sm-2 no-padding">English</a>
-        <a className="col-sm-1 no-padding" onClick={this.showWechat.bind(this)}>
+        <a className="col-sm-1 no-padding wechat-icon" onClick={this.showWechatModal.bind(this)}>
           <img src="./public/images/icon_wechat.png"/>
         </a>
         <a href="http://weibo.com/Rooundabout666?sudaref=www.so.com&is_all=1"
@@ -50,8 +53,7 @@ export default  class MainMenu extends Component {
            className="col-sm-1 no-padding" target="_blank">
           <img src="./public/images/icon_taobao.png" alt=""/>
         </a>
-        {this.state.isShowWechat ? <WechatModal/> : ''}
-        {/*<WechatModal/>*/}
+        {this.state.isShowWechat ? <WechatModal closeWechatModal={this.closeWechatModal.bind(this)}/> : ''}
       </div>
     );
   }
