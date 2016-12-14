@@ -72,16 +72,16 @@ body {
     padding: 2px 8px 2px 8px;
 }
 
-.dropdown .dropdown-toggle:active, .dropdown-toggle:focus {
-    border-radius: 100px;
-    background-color: #EB4B99;
-    color: #FFFFFF;
-}
+/*.dropdown .dropdown-toggle:active, .dropdown-toggle:focus {*/
+    /*border-radius: 100px;*/
+    /*background-color: #EB4B99;*/
+    /*color: #FFFFFF;*/
+/*}*/
 
-.dropdown-menu > .active > a {
-    background-color: #FFFFFF;
-    color: #414141;
-}
+/*.dropdown-menu > .active > a {*/
+    /*background-color: #FFFFFF;*/
+    /*color: #414141;*/
+/*}*/
 
 .menu :last-child {
     margin-right: 0;
