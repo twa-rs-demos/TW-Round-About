@@ -12,13 +12,13 @@ export default class media extends Component {
 
   componentDidMount() {
     superagent
-      .get('/wp-json/wp/v2/posts/46')
+      .get('/wp-json/wp/v2/posts?slug=index')
       .end((err, res) => {
         if (err) {
           throw(err);
         } else {
           this.setState({
-            content: res.body.content.rendered
+            content: res.body[0].content.rendered
           });
         }
       });
