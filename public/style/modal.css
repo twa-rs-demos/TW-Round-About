@@ -1,0 +1,23 @@
+/*Volunteer Form*/
+.modal-dialog{
+    margin-right: 37%;
+}
+.modal-header{
+    border-bottom: 0;
+}
+.info{
+    margin-bottom: 20px;
+}
+.info-right{
+    text-align: right;
+}
+.modal-content{
+    width: 150%;
+}
+.pink{
+    color: #EB4B99;
+}
+
+.modal-footer{
+    border-top: 0;
+}
