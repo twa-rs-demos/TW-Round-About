@@ -1,4 +1,3 @@
-/*Volunteer Form*/
 .modal-dialog {
     margin-right: 37%;
 }
@@ -6,10 +5,12 @@
 .modal-header {
     border-bottom: 0;
 }
-.title{
+
+.title {
     font-size: 120%;
-    color:#3A383F;
+    color: #3A383F;
 }
+
 .info {
     margin-bottom: 29px;
 }
@@ -18,7 +19,7 @@
     text-align: right;
 }
 
-.modal-content {
+.modal-Volunteer-content {
     width: 150%;
 }
 
@@ -34,9 +35,23 @@
     resize: none
 }
 
-.input-info{
+.input-info {
     height: 25px;
     line-height: 25px;
+}
+
+.btn-Cancel {
+    background-color: lightgrey;
+    color: white;
+    width: 250%;
+    border-radius: 4px;
+}
+
+.btn-Submit  {
+    background-color: #EB4B99;
+    color: white;
+    width: 250%;
+    border-radius: 4px;
 }
 
 .modal-footer {
