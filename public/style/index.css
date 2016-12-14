@@ -239,6 +239,15 @@ select {
     border-radius: 100px;
 }
 
+.search button{
+    border: none;
+    background-color: inherit;
+}
+
+.search button:focus{
+    outline: none;
+}
+
 .search img {
     width: 14px;
     height: 14px;
