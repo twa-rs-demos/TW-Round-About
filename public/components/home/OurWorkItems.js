@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 
 export default class OurWorkItems extends Component {
   render() {
@@ -42,8 +43,8 @@ export default class OurWorkItems extends Component {
         <div className="col-md-1"></div>
       </div>
 
-      <div className="ourwork-konw-more">
-        <span className="konw-more-text">了解更多 ></span>
+      <div className="ourwork-know-more">
+        <Link to="/tw-ra/ourWork" className="know-more-text" >了解更多 ></Link>
       </div>
     </div>);
   }
