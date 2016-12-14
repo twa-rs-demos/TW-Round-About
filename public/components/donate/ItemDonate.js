@@ -4,7 +4,7 @@ import chunk from "lodash/chunk";
 
 export default class ItemDonate extends Component {
   _getcollectCols(cols) {
-    return cols.map((item)=> {
+    return cols.map((item,index)=> {
       let phone,time;
       if(item.phone===''){
         phone = (
@@ -24,7 +24,7 @@ export default class ItemDonate extends Component {
       }
 
       return (
-        <div className="col-md-4 donate-guide-collect-item">
+        <div className="col-md-4 donate-guide-collect-item" key={index}>
           <h4>{item.title}</h4>
           <div><span><img src="./public/images/donate/icon_address_small.png"/></span>
             <p>Adjacent to Yosemite Villa Compound, Yuyang Road West, Off An Hua Road, SHUNYI,
@@ -38,9 +38,9 @@ export default class ItemDonate extends Component {
   }
 
   _getCollectRow(collectList) {
-    return chunk(collectList, 3).map((item)=>{
+    return chunk(collectList, 3).map((item,index)=>{
       return (
-        <div className="row">
+        <div className="row" key={index}>
           {this._getcollectCols(item)}
         </div>
       )
@@ -111,7 +111,7 @@ export default class ItemDonate extends Component {
       <div className="item-donation">
         <h2 className="donate-way-title">物品捐赠</h2>
         <img src="./public/images/donate/Item donation.png"/>
-        <div className="donate-guide">
+        <div className="donate-guide" id="donate-guide-hash">
           <h3>捐赠指南</h3>
           <div className="donate-guide-describe">
             <p>Open, prescription and out of date medicines.<br/>
@@ -122,12 +122,12 @@ export default class ItemDonate extends Component {
             </p>
           </div>
 
-          <div className="donate-guide-collect container">
+          <div className="donate-guide-collect container" id="donate-guide-collect-hash">
             <h3>捐赠物品代收点</h3>
             {this._getCollectRow(donateGuideCollectItems)}
           </div>
 
-          <div className="container donate-guide-apply">
+          <div className="container donate-guide-apply" id="donate-guide-apply-hash">
             <h3>申请上门收取捐赠物品</h3>
             <div>
               <p>Thank you for requesting a pick up of your donations, we will try our best to help.

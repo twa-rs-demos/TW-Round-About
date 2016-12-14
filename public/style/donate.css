@@ -34,6 +34,13 @@ body {
 .donate-way-row {
     margin: 0 auto;
 }
+.things-donate{
+    cursor:pointer;
+}
+.things-donate li a{
+    color: #444;
+    text-decoration: none;
+}
 
 .donate-way-row .col-md-4 {
     width: 300px;
