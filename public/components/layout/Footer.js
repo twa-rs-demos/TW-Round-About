@@ -1,6 +1,26 @@
 import React, {Component} from 'react';
+import VolunteerForm from './VolunteerForm';
 
 export default class Footer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isShowVolunteerForm: false
+    };
+  }
+
+  gotoVolunteer() {
+    this.setState({
+      isShowVolunteerForm: true
+    })
+  }
+
+  showVolunteerForm() {
+    this.setState({
+      isShowVolunteerForm: false
+    })
+  }
+
   render() {
     return (
       <div className="footer row">
@@ -40,7 +60,7 @@ export default class Footer extends Component {
           </div>
           <div className="col-xs-5 two-title">
             <p className="footer-left-right">Want to join us?</p>
-            <p className="red-text"> Apply To Volunteer Today > </p>
+            <p className="red-text" onClick={this.gotoVolunteer.bind(this)}> Apply To Volunteer Today > </p>
             <p className="footer-left-right">Have an enquiry?</p>
             <p className="red-text">Contact Us Now > </p>
           </div>
@@ -67,6 +87,11 @@ export default class Footer extends Component {
             </div>
           </div>
           <div className="row footer-right-bottom">@2016 Roundabout China Legal|Privaacy Policy</div>
+        </div>
+
+
+        <div className={this.state.isShowVolunteerForm ? '' : 'hidden'}>
+          <VolunteerForm showVolunteerForm={this.showVolunteerForm.bind(this)}/>
         </div>
       </div>
     )

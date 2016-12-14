@@ -75,13 +75,17 @@ var config = {
     new ExtractTextPlugin("[chunkhash:8].[name].css"),
     new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
 
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
   ],
   resolve: {
     alias: {
       'bootstrap.css': 'bootstrap/dist/css/bootstrap.min.css',
       'bootstrap.js': 'bootstrap/dist/css/bootstrap.min.js',
       'font-awesome.css': 'font-awesome/css/font-awesome.min.css',
-      'ie':'component-ie'
+      'ie': 'component-ie'
     }
   }
 };

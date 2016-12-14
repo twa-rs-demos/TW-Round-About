@@ -72,17 +72,6 @@ body {
     padding: 2px 8px 2px 8px;
 }
 
-.dropdown .dropdown-toggle:active, .dropdown-toggle:focus {
-    border-radius: 100px;
-    background-color: #EB4B99;
-    color: #FFFFFF;
-}
-
-.dropdown-menu > .active > a {
-    background-color: #FFFFFF;
-    color: #414141;
-}
-
 .menu :last-child {
     margin-right: 0;
 }
@@ -141,7 +130,10 @@ body {
 .red-text {
     color: #EB4B99;
     font-size: 18px;
-    font-family: AvenirNext-Regular;
+}
+
+.red-text:hover {
+    cursor: pointer;
 }
 
 .follow-icon {
@@ -310,11 +302,12 @@ select {
     font-size: 22px;
     margin-top: 80px;
 }
-.know-more-text{
+
+.know-more-text {
     color: #ec4c9a;
 }
 
-.know-more-text:hover{
+.know-more-text:hover {
     color: #ec4c9a;
     text-decoration: none;
 }
@@ -322,7 +315,6 @@ select {
 .icon-container {
     text-align: center;
 }
-
 
 .job-icons-container {
     height: 120px;
