@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 export default class DonateWay extends Component{
 
   render() {
+
     return (
       <div className="donate-way">
 
