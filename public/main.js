@@ -10,6 +10,7 @@ import OurWorkAssistance from "../public/components/ourWorkAssistance/Index";
 import GetInvolvedVolunteer from "../public/components/getInvolvedVolunteer/Index";
 import GetInvolved from "../public/components/getInvolved/Index";
 import SearchResult from '../public/components/result/SearchResult';
+import NewsLetter from '../public/components/result/NewsLetter';
 
 render(
   <Router history={browserHistory}>
@@ -23,6 +24,8 @@ render(
       <Route path="getInvolvedVolunteer" component={GetInvolvedVolunteer}/>
       <Route path="getInvolved" component={GetInvolved}/>
       <Route path="searchResult" component={SearchResult}/>
+      <Route path="newsLetter-center" component={NewsLetter}/>
+      <Route path="newsLetter-signUp" component={NewsLetter}/>
     </Route>
   </Router>,
   document.getElementById("page")
