@@ -26,11 +26,11 @@ export default class VolunteerForm extends Component {
               <Modal.Header>
                 <Modal.Title>
                   <div className="row">
-                    <div className="col-xs-5 col-xs-offset-1">
+                    <div className="col-xs-8 col-xs-offset-1">
                       <span className="title">{this.props.title}</span>
                     </div>
-                    <div className="col-xs-offset-5 col-xs-1">
-                      <img src="./public/images/home/close.png" onClick={this.close.bind(this)}/>
+                    <div className="col-xs-offset-2 col-xs-1">
+                      <img src="./public/images/home/close.png" className="image-close" onClick={this.close.bind(this)}/>
                     </div>
                   </div>
                 </Modal.Title>
