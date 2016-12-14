@@ -187,6 +187,9 @@ body {
     color: #fff;
     line-height: 24px;
 }
+.footer-right-left:hover{
+    color: white;
+}
 
 .icon-img {
     display: inline-block;
