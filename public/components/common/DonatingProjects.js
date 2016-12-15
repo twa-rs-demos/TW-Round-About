@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import chunk from "lodash/chunk";
+import {Link} from "react-router";
 
 export default class DonatingProjects extends Component {
   render() {
@@ -23,7 +24,7 @@ export default class DonatingProjects extends Component {
   }
 
   _getDonatingProjectsRow(donatingProjectList) {
-    return chunk(donatingProjectList, 4).map((item,index)=>{
+    return chunk(donatingProjectList, 4).map((item, index)=> {
       return (
         <div className="row" key={index}>
           {this._getDonatingProjectsCols(item)}
@@ -33,16 +34,16 @@ export default class DonatingProjects extends Component {
   }
 
   _getDonatingProjectsCols(projectCols) {
-    return projectCols.map((item,index)=> {
+    return projectCols.map((item, index)=> {
       return (
         <div className="col-md-3 donating-project" key={index}>
-          <img src={item.img} />
+          <img src={item.img}/>
           <h4>{item.name}，{item.age}岁</h4>
           <div>
             <p>{item.disease}</p>
             <p>需要&nbsp;￥{item.money}</p>
           </div>
-          <a href="#">阅读更多 ></a>
+          <Link to="/tw-ra/childStory">阅读更多 ></Link>
         </div>
       )
     });
