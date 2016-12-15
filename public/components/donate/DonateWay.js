@@ -28,8 +28,12 @@ export default class DonateWay extends Component {
               <div className="row row-1">
                 <div className="col-md-6 donate-way-flag-1"><img src="./public/images/donate/wechat01.png"/><h4>
                   Wechat</h4></div>
-                <div className="col-md-6 donate-way-flag-2"><img src="./public/images/donate/logo_ccafc.png"/><h4>
-                  CCAFC</h4></div>
+                <div className="col-md-6 donate-way-flag-2">
+                  <a href="http://www.ccafc.org.cn/templates/Donation/txxx.aspx?nodeid=5&projectid=3299&strname=&jiner=&notes_email=" target="_blank">
+                    <img src="./public/images/donate/logo_ccafc.png"/>
+                  </a>
+                  <h4>CCAFC</h4>
+                </div>
               </div>
               <div className="row">
                 <div className="col-md-6 donate-way-flag-1"><img src="./public/images/donate/logo_alipay.png"/><h4>

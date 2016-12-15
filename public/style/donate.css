@@ -128,7 +128,7 @@ body {
 }
 
 /*----------------------------------------------*/
-.item-donation img {
+.item-donation-img {
     display: block;
     width: 690px;
     height: 460px;
@@ -144,6 +144,10 @@ body {
     margin-top: 38px;
     margin-bottom: 35px;
     text-align: center;
+}
+#donate-guide-title{
+    color: #EB4B99;
+    text-decoration: none;
 }
 
 .donate-guide-describe {

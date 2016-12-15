@@ -50,7 +50,7 @@
     border-radius: 4px;
 }
 
-.btn-Submit  {
+.btn-Submit {
     background-color: #EB4B99;
     color: white;
     width: 250%;
@@ -60,3 +60,53 @@
 .modal-footer {
     border-top: 0;
 }
+
+/*--------------------donate-things-rules----------------*/
+.donate-things-rules {
+    width: 570px;
+}
+.donate-things-rules .modal-dialog{
+    margin-right:0;
+}
+
+.donate-things-rules h2 {
+    font-size: 36px;
+    color: #EB4B99;
+
+}
+
+.donate-things-rules .modal-content {
+    padding-left: 40px;
+}
+
+.donate-things-rules ul {
+    list-style: none;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.donate-things-rules .modal-header {
+    position: relative;
+}
+
+.donate-things-rules .modal-body {
+    width: 86%;
+    padding-top: 0;
+}
+
+.donate-things-rules .btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border:none;
+}
+
+.close-btn {
+    width: 28px;
+    height: 28px;
+}
+
+/*-------------------------------------------------------*/

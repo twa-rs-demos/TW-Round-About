@@ -14,7 +14,6 @@ class WechatModal extends Component {
           <Modal.Body>
             <img src="./public/images/home/wechat store.png"/>
           </Modal.Body>
-
         </Modal.Dialog>
       </div>
     )

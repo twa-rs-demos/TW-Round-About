@@ -1,118 +1,59 @@
 import React, {Component} from 'react';
-import chunk from "lodash/chunk";
+import DonateGuide from './DonateGuide';
+import {Modal,Button} from 'react-bootstrap';
 
+class ElasticBox extends Component {
+  render() {
+    return (
+      <div className="donate-things-rules">
+        <Modal.Dialog>
+          <Modal.Header>
+            <Button onClick={this.props.closeElasticBox}><img className="close-btn" src="./public/images/home/close.png"/></Button>
+            {/*<Button onMouseOver={this.props.closeElasticBox}></Button>*/}
+            <h2>我们不接受的物品</h2>
+          </Modal.Header>
+
+          <Modal.Body>
+            <ul>
+              <li>Open, prescription and out of date medicines.</li>
+              <li>Used underwear, including socks.</li>
+              <li>Anything previously used by an animal – such as a dog’s bed</li>
+              <li>Copies of magazines over 6 months old.</li>
+              <li>Computers, monitors and printers over 4 years old.</li>
+            </ul>
+          </Modal.Body>
+        </Modal.Dialog>
+      </div>
+    )
+  }
+}
 
 export default class ItemDonate extends Component {
-  _getcollectCols(cols) {
-    return cols.map((item,index)=> {
-      let phone,time;
-      if(item.phone===''){
-        phone = (
-          <div></div>
-        );
-      }else if(item.phone!==''){
-        phone = (
-          <div><span><img src="./public/images/donate/icon_phone_small.png"/></span>
-            <p>{item.phone}</p>
-          </div>
-        );
-      }if(item.time!==''){
-        time=(
-          <div><span><img src="./public/images/donate/icon_time_small.png"/></span>
-            <p>{item.time}</p></div>
-        );
-      }
-
-      return (
-        <div className="col-md-4 donate-guide-collect-item" key={index}>
-          <h4>{item.title}</h4>
-          <div><span><img src="./public/images/donate/icon_address_small.png"/></span>
-            <p>Adjacent to Yosemite Villa Compound, Yuyang Road West, Off An Hua Road, SHUNYI,
-              101302</p>
-          </div>
-          {phone}
-          {time}
-        </div>
-      )
-    });
+  constructor(props) {
+    super(props);
+    this.state = {
+      isShowElasticBox: false
+    };
   }
 
-  _getCollectRow(collectList) {
-    return chunk(collectList, 3).map((item,index)=>{
-      return (
-        <div className="row" key={index}>
-          {this._getcollectCols(item)}
-        </div>
-      )
-    })
+  showElasticBox() {
+    this.setState({isShowElasticBox: true});
   }
 
+  closeElasticBox(){
+    this.setState({isShowElasticBox: false});
+  }
 
   render() {
-    const donateGuideCollectItems = [
-      {
-        title: 'Roundabout Store',
-        address: 'Adjacent to Yosemite Villa Compound, Yuyang Road West, Off An Hua Road, SHUNYI, 101302',
-        phone: '+86 137 1805 3814 ( for directions in Chinese )',
-        time: 'Monday - Sunday 24hours'
-      },
-      {
-        title: 'CCAFC office',
-        address: 'F4,Zhongfu International,No.9 Zhang hua Road,Haidian District,Beijing ',
-        phone: '86 10 5166 0112',
-        time: 'Monday - Friday 9am - 5pm'
-      },
-      {
-        title: 'Zarah Cafe',
-        address: 'Gulou Dongdajie No.46, Dongcheng District, 100009 Beijing P.R.China',
-        phone: ' 86 10 8403 9807',
-        time: 'Monday - Sunday 24hours'
-      },
-      {
-        title: 'Tuan Jie Hu Community Recycle Station',
-        address: 'Room 101,Aprt1,Building 1, Bei Er Tiao, Tuanjiehu Zhong Lu, Chao Yang District,Beijing',
-        phone: ' 86 10 139 1075 9629',
-        time: 'Monday - Sunday 24hours'
-      },
-      {
-        title: 'OASIS Hospital',
-        address: '#9 Jiu Xian Qian Bei Lu,Chaoyang District,Beijing',
-        phone: '86 10 59850405',
-        time: 'Monday - Friday 9am - 5pm'
-      },
-      {
-        title: 'Riviera Clubhouse',
-        address: '#1 Xiang Jiang Bei Lu, Chaoyang Distict,Beijing',
-        phone: '86 10 8450 6888',
-        time: 'Monday - Sunday 6am - 10pm'
-      },
-      {
-        title: 'Bo Ya School',
-        address: '#2105 Gahood Villa, Houshayu, Shunyi Distrit, Beijing',
-        phone: '86 10 158 1128 6996',
-        time: 'Monday - Sunday 9am - 5pm'
-      },
-      {title: 'BIBA', address: '#5 Yu Min Street,Houshayu,Shunyi District,Beijing Staff Only', phone: '', time: ''},
-      {
-        title: 'SCOUT Real Estate',
-        address: 'Room 101,F1,Building 81,No.4 Workers\'Stadim North Road, Chaoyang District,Beijing',
-        phone: '86 10 8596 8873',
-        time: 'Monday - Friday 9am - 6pm'
-      },
-      {
-        title: 'Shine Hills',
-        address: 'F3,Buliding 5, Shine Hills,An Xiang Street, Shunyi District, Beijing',
-        phone: '86 10 6144 5671',
-        time: 'Monday - Sunday 10am - 8:30pm'
-      }
-    ];
-
-    return (
+     return (
       <div className="item-donation">
         <h2 className="donate-way-title">物品捐赠</h2>
-        <img src="./public/images/donate/Item donation.png"/>
+        <img className="item-donation-img" src="./public/images/donate/Item donation.png"/>
         <div className="donate-guide" id="donate-guide-hash">
-          <h3>捐赠指南</h3>
+          <h3><a id="donate-guide-title" onMouseOver={this.showElasticBox.bind(this)}>捐赠指南</a></h3>
+
+          {this.state.isShowElasticBox ? <ElasticBox closeElasticBox={this.closeElasticBox.bind(this)}/> : ''}
+
           <div className="donate-guide-describe">
             <p>Open, prescription and out of date medicines.<br/>
               Used underwear, including socks.<br/>
@@ -122,10 +63,7 @@ export default class ItemDonate extends Component {
             </p>
           </div>
 
-          <div className="donate-guide-collect container" id="donate-guide-collect-hash">
-            <h3>捐赠物品代收点</h3>
-            {this._getCollectRow(donateGuideCollectItems)}
-          </div>
+          <DonateGuide/>
 
           <div className="container donate-guide-apply" id="donate-guide-apply-hash">
             <h3>申请上门收取捐赠物品</h3>
