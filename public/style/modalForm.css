@@ -14,6 +14,9 @@
 .info {
     margin-bottom: 29px;
 }
+.image-close{
+    cursor: pointer;
+}
 
 .info-right {
     text-align: right;

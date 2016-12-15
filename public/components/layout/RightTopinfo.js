@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Modal,Button} from 'react-bootstrap';
+import {Modal, Button} from 'react-bootstrap';
+import {Link} from 'react-router';
 
 class WechatModal extends Component {
   render() {
@@ -31,15 +32,15 @@ export default  class MainMenu extends Component {
     this.setState({isShowWechat: true});
   }
 
-  closeWechatModal(){
+  closeWechatModal() {
     this.setState({isShowWechat: false});
   }
 
   render() {
     return (
       <div className="items col-md-3 row top-right-items no-padding">
-        <a href="#" className="col-sm-2 no-padding">月报中心</a>
-        <a href="#" className="col-sm-2 no-padding">月报申领</a>
+        <Link to="/tw-ra/newsLetter-center" className="col-sm-2 no-padding">月报中心</Link>
+        <Link to="/tw-ra/newsLetter-signUp" className="col-sm-2 no-padding">月报申领</Link>
         <a href="#" className="col-sm-2 no-padding">English</a>
         <a className="col-sm-1 no-padding wechat-icon" onClick={this.showWechatModal.bind(this)}>
           <img src="./public/images/icon_wechat.png"/>

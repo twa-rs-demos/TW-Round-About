@@ -11,7 +11,8 @@ import GetInvolvedVolunteer from "../public/components/getInvolvedVolunteer/Inde
 import GetInvolved from "../public/components/getInvolved/Index";
 import SearchResult from '../public/components/result/SearchResult';
 import ChildStory from '../public/components/childStory/index';
-
+import NewsLetter from '../public/components/result/NewsLetter';
+import NewAndEvent from '../public/components/newAndEvent/NewAndEvent';
 
 render(
   <Router history={browserHistory}>
@@ -26,6 +27,9 @@ render(
       <Route path="getInvolvedVolunteer" component={GetInvolvedVolunteer}/>
       <Route path="getInvolved" component={GetInvolved}/>
       <Route path="searchResult" component={SearchResult}/>
+      <Route path="newsLetter-center" component={NewsLetter}/>
+      <Route path="newsLetter-signUp" component={NewsLetter}/>
+      <Route path="newAndEvent" component={NewAndEvent}/>
     </Route>
   </Router>,
   document.getElementById("page")
