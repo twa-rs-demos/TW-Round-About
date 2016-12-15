@@ -18,7 +18,7 @@ import CommunityCenter from '../public/components/community-center/CommunityCent
 
 render(
   <Router history={browserHistory}>
-    <Route path="/tw-ra" component={Layout}>
+    <Route path={URI_PREFIX} component={Layout}>
       <IndexRoute component={Home}/>
       <Route path="home" component={Home}/>
       <Route path="donate" component={Donate}/>

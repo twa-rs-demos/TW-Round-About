@@ -9,7 +9,7 @@ export default class StaticContent extends Component {
         <div className="row">
           <div className="col-md-6">
             <img src="./public/images/getInvolved/icon_volunteer.png"/>
-            <Link to="/tw-ra/volunteer">加入志愿者行列</Link>
+            <Link to={URI_PREFIX + "/volunteer"}>加入志愿者行列</Link>
           </div>
           <div className="col-md-6  get-involved-second-col">
             <img src="./public/images/getInvolved/icon_apply.png"/>
@@ -20,22 +20,22 @@ export default class StaticContent extends Component {
         <div className="row">
           <div className="col-md-6">
             <img src="./public/images/getInvolved/icon_support.png"/>
-            <Link to="/tw-ra/classifieds">合作与支持的慈善机构</Link>
+            <Link to={URI_PREFIX + "/classifieds"}>合作与支持的慈善机构</Link>
           </div>
           <div className="col-md-6 get-involved-second-col">
             <img src="./public/images/getInvolved/icon_donate.png"/>
-            <Link to="/tw-ra/donate">捐赠</Link>
+            <Link to={URI_PREFIX +"/donate"}>捐赠</Link>
           </div>
         </div>
 
         <div className="row get-involved-last-row">
           <div className="col-md-6">
             <img src="./public/images/getInvolved/icon_support.png"/>
-            <Link to="/tw-ra/directory">您的捐赠可以帮到谁</Link>
+            <Link to={URI_PREFIX +"/directory"}>您的捐赠可以帮到谁</Link>
           </div>
           <div className="col-md-6 get-involved-second-col">
             <img src="./public/images/getInvolved/icon_community center.png"/>
-            <Link to="/tw-ra/communityCenter">社区中心</Link>
+            <Link to={URI_PREFIX +"/communityCenter"}>社区中心</Link>
           </div>
         </div>
       </div>
