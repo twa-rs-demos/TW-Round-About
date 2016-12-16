@@ -43,24 +43,57 @@ body{
     margin:80px;
 }
 
-.our-jobs-icons-second{
-    position: relative;
-    margin-top:100px;
-}
+/*.our-jobs-icons-second{*/
+    /*position: relative;*/
+    /*margin-top:100px;*/
+/*}*/
 
-.our-jods-icons a {
+/*.our-jods-icons a {*/
+    /*position: relative;*/
+    /*left:5%;*/
+    /*text-decoration: none;*/
+    /*color:#858585;*/
+    /*height:155px;*/
+/*}*/
+/*.our-jods-icons span{*/
+    /*display: block;*/
+/*}*/
+.job-icons-container {
+    height: 120px;
     position: relative;
-    left:5%;
-    text-decoration: none;
-    color:#858585;
-    height:155px;
-}
-.our-jods-icons span{
-    display: block;
 }
 
 .ourwork-job-icons{
     margin-top:5.5em;
+}
+
+.job-icons {
+    overflow: hidden;
+    padding-left: 5em;
+}
+
+.job-icons img {
+    vertical-align: middle;
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%;
+}
+
+.job-icons a {
+    font-size: 1.5em;
+    color: #575757;
+    white-space: nowrap;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-decoration: none;
+    outline:none;
+}
+
+.job-icons a:hover{
+    color: #EC4C9A;
+    outline:none;
+    text-decoration: none;
 }
 
 .icon-community{

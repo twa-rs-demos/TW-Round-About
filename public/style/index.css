@@ -224,7 +224,6 @@ body {
 .middle-image {
     position: relative;
     display: inline-block;
-    /*background-image: url("../images/middle-image.png");*/
     background-color: #ccc;
     background-repeat: no-repeat;
     background-size: cover;
@@ -249,16 +248,6 @@ select {
     cursor: pointer;
 }
 
-/*.search {*/
-/*position: relative;*/
-/*right: 18px;*/
-/*float: right;*/
-/*width: 15%;*/
-/*text-align: center;*/
-/*vertical-align: middle;*/
-/*margin: 12px 0;*/
-/*display: inline;*/
-/*}*/
 .search {
     width: 146px;
     border-radius: 100px;
@@ -325,27 +314,6 @@ select {
     background: #e8e8e8;
 }
 
-.job-icons {
-    overflow: hidden;
-    padding-left: 5em;
-}
-
-.job-icons img {
-    vertical-align: middle;
-    position: absolute;
-    transform: translate3d(-50%, -50%, 0);
-    top: 50%;
-    left: 50%;
-}
-
-.job-icons p {
-    font-size: 1.5em;
-    color: #575757;
-    white-space: nowrap;
-    margin-top: 15px;
-    margin-bottom: 0;
-}
-
 .e-work-icon p {
     width: 100%;
 }
@@ -367,11 +335,6 @@ select {
 
 .icon-container {
     text-align: center;
-}
-
-.job-icons-container {
-    height: 120px;
-    position: relative;
 }
 
 .apply-monthly-report {
