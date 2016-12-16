@@ -39,8 +39,8 @@ export default  class MainMenu extends Component {
   render() {
     return (
       <div className="items col-md-3 row top-right-items no-padding">
-        <Link to="/tw-ra/newsLetter-center" className="col-sm-2 no-padding">月报中心</Link>
-        <Link to="/tw-ra/newsLetter-signUp" className="col-sm-2 no-padding">月报申领</Link>
+        <Link to={URI_PREFIX + "/newsLetter-center"} className="col-sm-2 no-padding">月报中心</Link>
+        <Link to={URI_PREFIX + "/newsLetter-signUp"} className="col-sm-2 no-padding">月报申领</Link>
         <a href="#" className="col-sm-2 no-padding">English</a>
         <a className="col-sm-1 no-padding wechat-icon" onClick={this.showWechatModal.bind(this)}>
           <img src="./public/images/icon_wechat.png"/>
