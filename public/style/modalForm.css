@@ -14,7 +14,8 @@
 .info {
     margin-bottom: 29px;
 }
-.image-close{
+
+.image-close {
     cursor: pointer;
 }
 
@@ -65,8 +66,9 @@
 .donate-things-rules {
     width: 570px;
 }
-.donate-things-rules .modal-dialog{
-    margin-right:0;
+
+.donate-things-rules .modal-dialog {
+    margin-right: 0;
 }
 
 .donate-things-rules h2 {
@@ -92,6 +94,7 @@
 .donate-things-rules .modal-body {
     width: 86%;
     padding-top: 0;
+    margin: 0;
 }
 
 .donate-things-rules .btn {
@@ -101,7 +104,7 @@
     position: absolute;
     right: 20px;
     top: 20px;
-    border:none;
+    border: none;
 }
 
 .close-btn {
@@ -110,7 +113,7 @@
 }
 
 /*-----------------------Donation apply form------------------------------*/
-.overlay{
+.overlay {
     margin: 0 !important;
     display: none;
     position: fixed;
@@ -118,112 +121,166 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.5);
-    z-index:100;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
 }
-.donation-apply-form{
-    padding:0 65px;
-    display: none;
-    margin: 0 auto;
-    margin-top:10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+
+.donation-apply-form .modal-header {
+    margin-top: 0;
+}
+
+.donation-apply-form {
+    overflow: hidden;
+    border: 1px solid #000000;
+}
+
+.donation-apply-form .modal-body {
+    margin-top: 0px;
+}
+
+.donation-apply-form h2 {
+    /*margin:30px !important;*/
+}
+
+.donation-apply-form .modal-content {
+    margin-top: 0;
+    padding: 0 30px;
+
+}
+
+.donation-apply-form .no-margin-top {
+    margin-top: 0;
+}
+
+.donation-apply-form .modal-dialog {
+    margin-top: 0;
     width: 85%;
-    height: 1700px;
-    background: #fff;
-    z-index: 101;
+    height: 550px;
+    overflow: scroll;
 }
-.donation-apply-form .row{
-    padding:0;
+
+.donation-apply-form .dialog {
+
 }
-.donation-apply-form .content div{
-    margin-top:0;
+
+.donation-apply-form .applyform-btn {
+    position: fixed;
+    top: 40px;
+    right: 20px;
 }
-.donation-apply-form .content .row{
-    margin-top:20px;
+
+.donation-apply-form .row {
+    padding: 0;
 }
-.donation-apply-form .content input{
-    width:96%;
+
+.donation-apply-form .content div {
+    margin-top: 0;
 }
+
+.donation-apply-form .content .row {
+    margin-top: 20px;
+}
+
+.donation-apply-form .content input {
+    width: 96%;
+}
+
 .donation-apply-form .con
-.donation-apply-form p{
+.donation-apply-form p {
     font-size: 18px;
     line-height: 25px;
 }
 
-.apply-form-header button{
+.donation-apply-form .apply-form-header {
+    margin: 0;
+}
+
+.apply-form-header button {
     border: none;
     background: none;
     position: absolute;
     top: 20px;
     right: 20px;
 }
-.apply-form-header h2{
-    margin-top:40px;
-}
-.apply-form-header .header-right{
+
+.apply-form-header .header-right {
     position: absolute;
     right: 80px;
     top: 40px;
 }
-.donation-apply-form .input-name-text{
+
+.donation-apply-form .input-name-text {
     font-size: 20px;
     font-weight: 500;
 }
 
-.input-name-text .name-input{
+.input-name-text .name-input {
     display: inline-block;
-    margin-left:25px;
+    margin-left: 25px;
 }
-.checkboxes .checkbox-item{
+
+.checkboxes .checkbox-item {
     display: inline-block;
-    margin-right:80px;
+    margin-right: 80px;
 }
+
 .call-language .checkboxes {
-    margin-bottom:40px;
-    margin-top:20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
-.call-language .container{
+
+.call-language .container {
     width: inherit;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
-.call-language .container .row{
-    margin:0;
-    margin-top:20px;
+
+.call-language .container .row {
+    margin: 0;
+    margin-top: 20px;
 }
-.call-language .row .col{
-    margin:0 !important;
+
+.call-language .row .col {
+    margin: 0 !important;
 }
-.call-language .container input{
-    width:100%;
+
+.call-language .container input {
+    width: 100%;
 }
-.donation-apply-form .bottom-notes h3,.donation-apply-form .call-language h3,.donation-apply-form .content h3{
+
+.donation-apply-form .bottom-notes h3, .donation-apply-form .call-language h3, .donation-apply-form .content h3 {
     font-size: 25px;
     font-weight: 600;
     text-align: left;
-    margin-top:30px;
+    margin-top: 30px;
 }
-.bottom-notes ul{
+
+.bottom-notes ul {
     list-style: none;
 }
-.bottom-notes li{
-    margin-top:5px;
+
+.bottom-notes li {
+    margin-top: 5px;
 }
-.apply-form-button button{
-    margin-right:80px;
-    width:100%;
+
+.apply-form-button button {
+    margin-right: 80px;
+    width: 100%;
     background-color: #f0f0f0;
 }
-.apply-form-button{
-    margin-top:0;
+
+.donation-apply-form .apply-form-button {
+    margin-top: 0;
+    margin-bottom: 80px;
 }
-.apply-form-button button:hover{
+
+.apply-form-button button:hover {
     background-color: #ec4c9a;
-    color:#fff;
+    color: #fff;
+}
+
+.donation-apply-form .call-language-checkbox {
+    margin-right: 10px;
 }
 
 /*------------------------------------------------------------------------*/
