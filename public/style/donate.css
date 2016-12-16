@@ -34,10 +34,12 @@ body {
 .donate-way-row {
     margin: 0 auto;
 }
-.things-donate{
-    cursor:pointer;
+
+.things-donate {
+    cursor: pointer;
 }
-.things-donate li a{
+
+.things-donate li a {
     color: #444;
     text-decoration: none;
 }
@@ -49,8 +51,8 @@ body {
     margin: 19px;
 }
 
-.donate-way-content{
-    margin:0 auto;
+.donate-way-content {
+    margin: 0 auto;
 }
 
 .donate-way-content h3 {
@@ -79,6 +81,7 @@ body {
     /*margin:0 7px;*/
     margin: 0 auto;
 }
+
 .donate-way-donation h3 {
     margin-bottom: 18px;
 }
@@ -145,7 +148,8 @@ body {
     margin-bottom: 35px;
     text-align: center;
 }
-#donate-guide-title{
+
+#donate-guide-title {
     color: #EB4B99;
     text-decoration: none;
 }
@@ -160,19 +164,19 @@ body {
 
 /*--------------------------------------------*/
 
-.donate-guide-collect,.donate-guide-apply {
-    width:100%;
+.donate-guide-collect, .donate-guide-apply {
+    width: 100%;
 }
 
-.donate-guide-apply{
+.donate-guide-apply {
     padding: 0;
 }
 
-.donate-guide-apply p{
-    margin:0 auto;
+.donate-guide-apply p {
+    margin: 0 auto;
 }
 
-.donate-guide-collect .row{
+.donate-guide-collect .row {
     margin: 0 19px;
 }
 
@@ -236,7 +240,7 @@ body {
     margin-top: 34px
 }
 
-.donate-guide-apply button {
+.donate-guide-apply .apply-button {
     display: block;
     margin: 0 auto;
     width: 290px;
@@ -256,19 +260,21 @@ body {
     margin-bottom: 14px;
 }
 
-.donating-projects .container{
-    width:100%;
-    padding:0;
+.donating-projects .container {
+    width: 100%;
+    padding: 0;
 }
+
 .donating-projects .row {
-    margin:0 auto;
+    margin: 0 auto;
     /*padding:19px;*/
 }
 
 .donating-project {
-    padding:0;
+    padding: 0;
     width: 184px;
     margin: 34px 38px;
+    position: relative;
 }
 
 .donating-project img {
@@ -286,11 +292,9 @@ body {
 }
 
 .donating-project div {
-
     font-size: 22px;
     line-height: 30px;
     color: #575757;
-    margin: 16px 0;
 }
 
 .donating-project a {
@@ -337,36 +341,71 @@ body {
     color: #ec4c9a;
 }
 
-.donate-guide-collect-item span img{
-    width:12px;
-    height:12px;
-    background: none;
-    margin-top:4px;
+/*--------------------------child-profile-----------------------------------*/
+.child-profile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 184px;
+    height: 184px;
 }
 
-.donate-img{
+.child-profile p {
+    transform: translate3d(0, -50%, 0);
+    position: absolute;
+    top: 50%;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding: 0 17px;
+}
+
+.child-profile:hover {
+    background-color: #ec4c9a;
+    cursor: pointer;
+    display: block;
+    opacity: 0.5;
+}
+
+.child-profile:hover p {
+    opacity: 1;
+    color:#fff;
+    /*z-index:10;*/
+}
+
+/*--------------------------------------------------------------------*/
+
+.donate-guide-collect-item span img {
+    width: 12px;
+    height: 12px;
+    background: none;
+    margin-top: 4px;
+}
+
+.donate-img {
     background: url("../images/donate/hero_donate.png");
     position: relative;
 }
 
-.donate-img-text{
+.donate-img-text {
     position: absolute;
-    color:#fff;
-    right:60px;
-    bottom:60px;
-    padding:0 10px;
+    color: #fff;
+    right: 60px;
+    bottom: 60px;
+    padding: 0 10px;
 }
 
 /*!*--------------------------------------面包屑--------------------------------------*!*/
 
-.bread-crumb{
+.bread-crumb {
     background-color: #f5f5f5;
     padding-left: 31px;
 }
 
-.breadcrumb{
-    margin:0;
-    padding:8px 0;
+.breadcrumb {
+    margin: 0;
+    padding: 8px 0;
 }
 
 .breadcrumb > li + li:before {
@@ -383,4 +422,6 @@ body {
 .breadcrumb > li {
     margin: 3px;
 }
+
+
 
