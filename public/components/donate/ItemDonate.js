@@ -19,7 +19,6 @@ export default class ItemDonate extends Component {
     this.setState({isShowElasticBox: false});
   }
   showApplyForm(){
-    console.log('came into function show apply form');
     $('.js-open-box').on('click',function(){
       $('.overlay,.donation-apply-form').fadeIn(400);
     });
@@ -71,7 +70,7 @@ export default class ItemDonate extends Component {
                 <p>Large items of furniture – monetary donation not necessary</p>
               </p>
             </div>
-            <button className="apply-button js-open-box" onClick={this.showApplyForm.bind(this)}>上门收取捐赠物品申请表</button>
+            <button className="apply-button js-open-box" onMouseOver={this.showApplyForm.bind(this)}>上门收取捐赠物品申请表</button>
             <DonationApplyForm/>
             <div className="overlay"></div>
           </div>
