@@ -38,6 +38,9 @@ export default class DonatingProjects extends Component {
       return (
         <div className="col-md-3 donating-project" key={index}>
           <img src={item.img}/>
+          <div className="child-profile">
+            <p>这里是简介哦-。-！已经测试过长度的问题，不会越界的，放心哦^0^</p>
+          </div>
           <h4>{item.name}，{item.age}岁</h4>
           <div>
             <p>{item.disease}</p>

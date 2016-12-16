@@ -1,17 +1,53 @@
 import React, {Component} from 'react';
+import {Modal} from 'react-bootstrap';
 
-export default class ApplyMonthly extends Component {
+class ModalSuccess extends Component {
   render() {
     return (
-      <div className="apply-monthly-report">
-        <img src="./public/images/icon_newsletter.png"/>
-        <div className="apply-monthly-report-text">申领月报</div>
-        <form onSubmit={this._onSubmit.bind(this)}>
-          <input type="text" className="input-email" placeholder="请输入你的电子邮箱"/>
-          <button className="submit" type="submit">提交</button>
-        </form>
+      <div className="static-modal" id="myModal">
+        <Modal.Dialog>
+          <Modal.Body>
+            <h6> 提交成功</h6>
+          </Modal.Body>
+        </Modal.Dialog>
       </div>
     )
   }
-  _onSubmit(event) {}
+}
+
+export default class ApplyMonthly extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isShowModalSuccess: false
+    }
+  }
+
+  _onSubmit() {
+
+    this.setState({isShowModalSuccess: true}, ()=> {
+      setTimeout(()=> {
+        this.setState({
+          isShowModalSuccess: false
+        })
+      }, 5000);
+    })
+
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="apply-monthly-report">
+          <img src="./public/images/icon_newsletter.png"/>
+          <div className="apply-monthly-report-text">申领月报</div>
+          <input type="email" className="input-email" placeholder="请输入你的电子邮箱"/>
+          <button className="submit " type="submit" onClick={this._onSubmit.bind(this)}>提交</button>
+        </div>
+        <div className={this.state.isShowModalSuccess ? '' : 'hidden'}>
+          <ModalSuccess/>
+        </div>
+      </div>
+    )
+  }
 };

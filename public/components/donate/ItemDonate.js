@@ -1,38 +1,13 @@
 import React, {Component} from 'react';
 import DonateGuide from './DonateGuide';
-import {Modal,Button} from 'react-bootstrap';
-
-class ElasticBox extends Component {
-  render() {
-    return (
-      <div className="donate-things-rules">
-        <Modal.Dialog>
-          <Modal.Header>
-            <Button onClick={this.props.closeElasticBox}><img className="close-btn" src="./public/images/home/close.png"/></Button>
-            {/*<Button onMouseOver={this.props.closeElasticBox}></Button>*/}
-            <h2>我们不接受的物品</h2>
-          </Modal.Header>
-
-          <Modal.Body>
-            <ul>
-              <li>Open, prescription and out of date medicines.</li>
-              <li>Used underwear, including socks.</li>
-              <li>Anything previously used by an animal – such as a dog’s bed</li>
-              <li>Copies of magazines over 6 months old.</li>
-              <li>Computers, monitors and printers over 4 years old.</li>
-            </ul>
-          </Modal.Body>
-        </Modal.Dialog>
-      </div>
-    )
-  }
-}
+import DonateRules from './DonateRules';
+import DonationApplyForm from './DonationApplyForm';
 
 export default class ItemDonate extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isShowElasticBox: false
+      isShowElasticBox: false,
     };
   }
 
@@ -40,19 +15,29 @@ export default class ItemDonate extends Component {
     this.setState({isShowElasticBox: true});
   }
 
-  closeElasticBox(){
+  closeElasticBox() {
     this.setState({isShowElasticBox: false});
+  }
+  showApplyForm(){
+    $('.js-open-box').on('click',function(){
+      $('.overlay,.donation-apply-form').fadeIn(400);
+    });
+    $('.overlay').on('click',function(){
+      $('.overlay,.donation-apply-form').fadeOut(400,function(){
+        $(this).removeAttr('style');
+      });
+    });
   }
 
   render() {
-     return (
+    return (
       <div className="item-donation">
         <h2 className="donate-way-title">物品捐赠</h2>
         <img className="item-donation-img" src="./public/images/donate/Item donation.png"/>
         <div className="donate-guide" id="donate-guide-hash">
           <h3><a id="donate-guide-title" onMouseOver={this.showElasticBox.bind(this)}>捐赠指南</a></h3>
 
-          {this.state.isShowElasticBox ? <ElasticBox closeElasticBox={this.closeElasticBox.bind(this)}/> : ''}
+          {this.state.isShowElasticBox ? <DonateRules closeElasticBox={this.closeElasticBox.bind(this)}/> : ''}
 
           <div className="donate-guide-describe">
             <p>Open, prescription and out of date medicines.<br/>
@@ -85,7 +70,9 @@ export default class ItemDonate extends Component {
                 <p>Large items of furniture – monetary donation not necessary</p>
               </p>
             </div>
-            <button>上门收取捐赠物品申请表</button>
+            <button className="apply-button js-open-box" onMouseOver={this.showApplyForm.bind(this)}>上门收取捐赠物品申请表</button>
+            <DonationApplyForm/>
+            <div className="overlay"></div>
           </div>
 
         </div>
