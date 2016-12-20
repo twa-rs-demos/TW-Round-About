@@ -23,7 +23,7 @@ export default class ApplyMonthly extends Component {
     }
   }
 
-  _onSubmit() {
+  onSubmit() {
 
     this.setState({isShowModalSuccess: true}, ()=> {
       setTimeout(()=> {
@@ -38,11 +38,11 @@ export default class ApplyMonthly extends Component {
   render() {
     return (
       <div>
-        <div className="apply-monthly-report">
+        <div className="apply-monthly-report" id="apply-monthly-report">
           <img src="./public/images/icon_newsletter.png"/>
           <div className="apply-monthly-report-text">申领月报</div>
           <input type="email" className="input-email" placeholder="请输入你的电子邮箱"/>
-          <button className="submit " type="submit" onClick={this._onSubmit.bind(this)}>提交</button>
+          <button className="submit " type="submit" onClick={this.onSubmit.bind(this)}>提交</button>
         </div>
         <div className={this.state.isShowModalSuccess ? '' : 'hidden'}>
           <ModalSuccess/>

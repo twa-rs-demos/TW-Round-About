@@ -3,7 +3,7 @@ import {chunk} from 'lodash';
 
 export default class DonateGuide extends Component {
 
-  _getcollectCols(cols) {
+  getcollectCols(cols) {
     return cols.map((item, index)=> {
       let phone, time;
       if (item.phone === '') {
@@ -38,11 +38,11 @@ export default class DonateGuide extends Component {
     });
   }
 
-  _getCollectRow(collectList) {
+  getCollectRow(collectList) {
     return chunk(collectList, 3).map((item, index)=> {
       return (
         <div className="row" key={index}>
-          {this._getcollectCols(item)}
+          {this.getcollectCols(item)}
         </div>
       )
     })
@@ -109,7 +109,7 @@ export default class DonateGuide extends Component {
     return (
       <div className="donate-guide-collect container" id="donate-guide-collect-hash">
         <h3>捐赠物品代收点</h3>
-        {this._getCollectRow(donateGuideCollectItems)}
+        {this.getCollectRow(donateGuideCollectItems)}
       </div>
     )
   }

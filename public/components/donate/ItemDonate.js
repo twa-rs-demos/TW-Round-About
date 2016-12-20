@@ -21,6 +21,7 @@ export default class ItemDonate extends Component {
   }
 
   showApplyForm() {
+    $('.overlay,.donation-apply-form').fadeIn(400);
     this.setState({isShowApplyForm: true});
   }
 
@@ -28,12 +29,6 @@ export default class ItemDonate extends Component {
     this.setState({isShowApplyForm: false});
     $('.overlay,.donation-apply-form').fadeOut(400, function () {
       $(this).removeAttr('style');
-    });
-  }
-
-  showoverlay() {
-    $('.js-open-box').on('click', function () {
-      $('.overlay,.donation-apply-form').fadeIn(400);
     });
   }
 
@@ -75,11 +70,9 @@ export default class ItemDonate extends Component {
                 <p>Large items of furniture – monetary donation not necessary</p>
               </p>
             </div>
-            <button className="apply-button js-open-box" onMouseOver={this.showoverlay}
-                    onClick={this.showApplyForm.bind(this)}>上门收取捐赠物品申请表
+            <button className="apply-button js-open-box" onClick={this.showApplyForm.bind(this)}>上门收取捐赠物品申请表
             </button>
             {this.state.isShowApplyForm ? <DonationApplyForm closeApplyForm={this.closeApplyForm.bind(this)}/> : ''}
-            {/*<DonationApplyForm/>*/}
             <div className="overlay"></div>
           </div>
 

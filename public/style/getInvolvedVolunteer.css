@@ -1,16 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    color: #444;
-    box-sizing: border-box;
-    font: 14px/1 Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, WenQuanYi Micro Hei, sans-serif;
-}
-
 .involved-volunteer {
     color: #575757;
     font-size: 22px;
@@ -24,14 +11,14 @@ body {
     margin-bottom: 31px;
 }
 
-/*----------------------*/
 .involved-volunteer-join {
     background-color: #f8f9fb;
     padding-bottom: 60px;
     padding-top: 29px;
 }
-.involved-volunteer-join h2{
-    margin-top:0px;
+
+.involved-volunteer-join h2 {
+    margin-top: 0px;
 }
 
 .involved-volunteer-join button {
@@ -48,32 +35,36 @@ body {
     margin-top: 41px;
 }
 
-/*-----------------------*/
 .involved-volunteer-area h2 {
     margin-top: 85px;
     margin-bottom: 27px;
 }
-.involved-volunteer-area img{
+
+.involved-volunteer-area img {
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
 }
-/*---------------------*/
-.involved-volunteer-stores h2{
-    margin-bottom:30px;
+
+.involved-volunteer-stores h2 {
+    margin-bottom: 30px;
 }
-.involved-volunteer-stores h4{
-    margin-top:13px;
+
+.involved-volunteer-stores h4 {
+    margin-top: 13px;
     margin-bottom: 25px;
     font-size: 22px;
     line-height: 30px;
-    color:#575757;
+    color: #575757;
 }
-.involved-volunteer-stores a{
-    margin:0;
+
+.involved-volunteer-stores a {
+    margin: 0;
 }
-.involved-volunteer-stores .donating-project{
-    margin-top:26px;
+
+.involved-volunteer-stores .donating-project {
+    margin-top: 26px;
 }
-.max-image img{
-    width:100%;
+
+.max-image img {
+    width: 100%;
 }

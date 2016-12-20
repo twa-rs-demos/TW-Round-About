@@ -18,23 +18,23 @@ export default class VolunteerStory extends Component {
       <div className="involved-volunteer-stores donate-page-index donating-projects ">
         <h2 className="donate-way-title">志愿者故事</h2>
         <div className="container">
-          {this._getVolunteerStorysRow(storyList)}
+          {this.getVolunteerStorysRow(storyList)}
         </div>
       </div>
     )
   }
 
-  _getVolunteerStorysRow(storyList) {
+  getVolunteerStorysRow(storyList) {
     return chunk(storyList, 4).map((item)=> {
       return (
         <div className="row">
-          {this._getstoryCols(item)}
+          {this.getstoryCols(item)}
         </div>
       )
     })
   }
 
-  _getstoryCols(projectCols) {
+  getstoryCols(projectCols) {
     return projectCols.map((item)=> {
       return (
         <div className="col-md-3 donating-project">

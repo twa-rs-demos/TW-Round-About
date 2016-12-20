@@ -17,23 +17,23 @@ export default class DonatingProjects extends Component {
       <div className="donating-projects donate-page-index">
         <h2 className="donate-way-title">正在捐款的项目</h2>
         <div className="container">
-          {this._getDonatingProjectsRow(donatingProjectList)}
+          {this.getDonatingProjectsRow(donatingProjectList)}
         </div>
       </div>
     )
   }
 
-  _getDonatingProjectsRow(donatingProjectList) {
+  getDonatingProjectsRow(donatingProjectList) {
     return chunk(donatingProjectList, 4).map((item, index)=> {
       return (
         <div className="row" key={index}>
-          {this._getDonatingProjectsCols(item)}
+          {this.getDonatingProjectsCols(item)}
         </div>
       )
     })
   }
 
-  _getDonatingProjectsCols(projectCols) {
+  getDonatingProjectsCols(projectCols) {
     return projectCols.map((item, index)=> {
       return (
         <div className="col-md-3 donating-project" key={index}>
