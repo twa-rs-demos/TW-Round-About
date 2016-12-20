@@ -5,60 +5,6 @@ body {
     font: 14px/1 Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, WenQuanYi Micro Hei, sans-serif;
 }
 
-.top-right-items {
-    top: 25px;
-    font-size: 12px;
-    color: #8a7676;
-    float: right;
-    margin-right: 1.5em;
-    height: 18px;
-    line-height: 18px;
-}
-
-.top-right-items img{
-   width: 25px;
-}
-
-.top-right-items .wechat-icon{
-    cursor: pointer;
-}
-
-#wechatModal .modal-title{
-    display: inline-block;
-}
-
-#wechatModal button{
-    float: right;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    background: none;
-}
-
-#wechatModal .modal-content{
-    width: 54%;
-    margin-left: 37%;
-    margin-top: 21%;
-    height: 309px;
-}
-
-#wechatModal .modal-header img{
-    width: 15px;
-    margin: 0;
-}
-
-#wechatModal .modal-body img{
-    width: 72%;
-    padding-left: 14%;
-    padding-bottom: 19px;
-    margin: auto;
-    clear: both;
-}
-
-#wechatModal
-.items ol {
-    margin-left: -18px;
-}
 
 .items i {
     position: relative;
@@ -83,9 +29,7 @@ body {
     padding: 0;
 }
 
-/*.taobao {*/
-    /*width: 25px;*/
-/*}*/
+
 
 .logo {
     margin: 16px 0 17px 31px;
