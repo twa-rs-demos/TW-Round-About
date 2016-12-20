@@ -11,8 +11,8 @@
     color: #3A383F;
 }
 
-.info {
-    margin-bottom: 29px;
+.footer .modal-Volunteer-content .info {
+    margin-bottom: 30px;
 }
 
 .image-close {
@@ -32,7 +32,7 @@
 }
 
 .text-length {
-    width: 321%;
+    width: 327%;
 }
 
 .textArea-volunteerForm {
