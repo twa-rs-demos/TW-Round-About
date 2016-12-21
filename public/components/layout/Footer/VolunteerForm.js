@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
-import '../../style/modalForm.css';
+import '../../../style/modalForm.css';
 
 export default class VolunteerForm extends Component {
 
@@ -83,7 +83,7 @@ export default class VolunteerForm extends Component {
                     <span>{this.props.textAreaInfo}<span className="pink">*</span></span>
                   </div>
                   <div className="col-xs-3 ">
-                  <textarea cols="87" rows="10" className="textArea-volunteerForm" placeholder="5000 Characters Max"
+                  <textarea cols="84" rows="10" className="textArea-volunteerForm" placeholder="5000 Characters Max"
                             maxLength="5000" required="required"/>
                   </div>
                 </div>

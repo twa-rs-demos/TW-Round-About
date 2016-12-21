@@ -44,8 +44,9 @@ export default class MenuList extends Component {
       );
     });
 
+
     return (
-      <div className="col-md-9 padding menu">
+      <div className="">
         {list}
       </div>
     )
