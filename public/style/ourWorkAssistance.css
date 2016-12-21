@@ -188,3 +188,8 @@
     font-size: 22px;
     line-height: 52px;
 }
+
+.picture-max .read-more :hover{
+    color:#ec4c9a ;
+    text-decoration: none;
+}

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 
 export default class PictureMax extends Component {
   render() {
@@ -12,7 +13,9 @@ export default class PictureMax extends Component {
           <p> The dignity of our recipients is something</p>
           <div className="ourWorkAssistence-picture-btn">阅读杨斌的故事</div>
         </div>
-        <div className="ourWorkAssistence-picture-readMore">阅读更多></div>
+        <div className="col-xs-offset-11  col-xs-1 read-more">
+          <Link to={URI_PREFIX + '/donateCurrent'} className="ourWorkAssistence-picture-readMore">阅读更多> </Link>
+        </div>
       </div>
     )
   }

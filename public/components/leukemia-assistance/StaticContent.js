@@ -19,7 +19,7 @@ export default class ContentStatic extends Component {
     console.log("vni");
   }
 
-  close(){
+  close() {
     this.setState({
       isShowDonateMoney: false
     })
@@ -65,7 +65,6 @@ export default class ContentStatic extends Component {
               <Modal.Body>
                 <ColTwo/>
               </Modal.Body>
-
             </Modal.Dialog>
           </div>
 
