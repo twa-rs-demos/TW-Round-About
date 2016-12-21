@@ -176,7 +176,6 @@
     color: #ec4c9a;
 }
 
-
 .I-want-donate {
     width: 226px;
     height: 52px;
@@ -189,7 +188,12 @@
     line-height: 52px;
 }
 
-.picture-max .read-more :hover{
-    color:#ec4c9a ;
+.picture-max .read-more :hover {
+    color: #ec4c9a;
+    text-decoration: none;
+}
+
+.ourWorkAssistence-picture-btn .story {
+    color: white;
     text-decoration: none;
 }
