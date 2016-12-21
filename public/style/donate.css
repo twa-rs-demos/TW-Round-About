@@ -8,6 +8,18 @@
 .dobate-way {
     color: #575757;
 }
+.donate-way .span{
+    font-size: 18px;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+}
+.donate-way img:hover{
+    cursor: pointer;
+}
+.donate-way .no-hover:hover{
+    cursor: default;
+}
 
 .donate-way-title {
     text-align: center;
@@ -31,7 +43,7 @@
     text-decoration: none;
 }
 
-.donate-way-row .col-md-4 {
+.donate-way-row .col-xs-4 {
     width: 300px;
     height: 380px;
     border: 1px #bcbcbc solid;
@@ -65,7 +77,6 @@
 
 .donate-way-donation .row {
     width: 230px;
-    /*margin:0 7px;*/
     margin: 0 auto;
 }
 
@@ -73,16 +84,16 @@
     margin-bottom: 18px;
 }
 
-.donate-way-donation img {
+.donate-way-donation .col-xs-6 img {
     width: 82px;
     height: 82px;
     background-color: #ccc;
     margin-top: 10px;
+    border:1px solid #ccc;
 }
 
-.donate-way-donation h4 {
-    font-size: 18px;
-    text-align: center;
+.donate-way-donation .col-xs-6 .no-border{
+    border:none;
 }
 
 /*---------------------------donate-way-project------------------------------------*/
@@ -93,20 +104,13 @@
     text-align: center;
 }
 
-.donate-way-project div {
-    width: 82px;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-
 .donate-way-project img {
     width: 80px;
     height: 82px;
     border: 1px solid #ccc;
-}
-
-.donate-way-project h4 {
-    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 /*---------------------------donate-way-text------------------------------------*/
@@ -219,7 +223,7 @@
     margin-top: 79px;
 }
 
-.donate-guide-apply div {
+.donate-guide-apply .margin-top-34 {
     color: #575757;
     font-size: 22px;
     line-height: 30px;

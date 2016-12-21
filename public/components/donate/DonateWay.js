@@ -1,17 +1,13 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router';
 import Scrollchor from 'react-scrollchor';
+
 export default class DonateWay extends Component {
-
   render() {
-
     return (
       <div className="donate-way">
-
         <h2 className="donate-way-title">
           捐款方式
         </h2>
-
         <div className="container donate-way-content">
           <div className="row donate-way-row">
             <div className="col-md-4 things-donate">
@@ -23,23 +19,30 @@ export default class DonateWay extends Component {
               </ul>
             </div>
 
-            <div className="col-md-4  donate-way-donation">
+            <div className="col-md-4 donate-way-donation">
               <h3>捐款</h3>
               <div className="row row-1">
-                <div className="col-md-6 donate-way-flag-1"><img src="./public/images/donate/wechat01.png"/><h4>
-                  Wechat</h4></div>
+                <div className="col-md-6 donate-way-flag-1">
+                  <img src="./public/images/donate/wechat01.png"/>
+                  <h4>Wechat</h4>
+                </div>
                 <div className="col-md-6 donate-way-flag-2">
-                  <a href="http://www.ccafc.org.cn/templates/Donation/txxx.aspx?nodeid=5&projectid=3299&strname=&jiner=&notes_email=" target="_blank">
+                  <a href="http://www.ccafc.org.cn/templates/Donation/txxx.aspx?nodeid=5&projectid=3299&strname=&jiner=&notes_email="
+                    target="_blank">
                     <img src="./public/images/donate/logo_ccafc.png"/>
                   </a>
                   <h4>CCAFC</h4>
                 </div>
               </div>
               <div className="row">
-                <div className="col-md-6 donate-way-flag-1"><img src="./public/images/donate/logo_alipay.png"/><h4>
-                  Alipay</h4></div>
-                <div className="col-md-6 donate-way-flag-2"><img src="./public/images/donate/logo_paypal.png"/><h4>
-                  Paypal</h4></div>
+                <div className="col-md-6 donate-way-flag-1">
+                  <img src="./public/images/donate/logo_alipay.png"/>
+                  <h4>Alipay</h4>
+                </div>
+                <div className="col-md-6 donate-way-flag-2">
+                  <img src="./public/images/donate/logo_paypal.png"/>
+                  <h4>Paypal</h4>
+                </div>
               </div>
             </div>
 
