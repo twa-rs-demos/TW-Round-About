@@ -55,10 +55,10 @@ export default class ContentStatic extends Component {
 
         <div className={this.state.isShowDonateMoney ? '' : 'hidden'}>
 
-          <div className='static-modal'>
+          <div className='static-modal donate-money'>
             <Modal.Dialog>
               <Modal.Header>
-                <div className="col-xs-offset-10 col-xs-2">
+                <div className="col-xs-offset-11 col-xs-1">
                   <img src="./public/images/home/close.png" className="image-close" onClick={this.close.bind(this)}/>
                 </div>
               </Modal.Header>
