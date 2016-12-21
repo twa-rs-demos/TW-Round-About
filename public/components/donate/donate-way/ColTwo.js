@@ -20,7 +20,7 @@ export default class ColTwo extends Component {
   render() {
     return (
       <div>
-        <h3>捐款</h3>
+        <h3 className="text-center">捐款</h3>
         <div className="row row-1">
           <div className="col-xs-6">
             <img src="./public/images/donate/wechat01.png" className="no-border no-hover img-center"/>
