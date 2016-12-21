@@ -94,7 +94,7 @@
     margin: 40px;
 }
 
-.participate-rescue, .want-donate {
+.participate-rescue {
     width: 226px;
     height: 52px;
     color: #ffffff;
@@ -174,4 +174,17 @@
     padding-right: 72px;
     line-height: 95px;
     color: #ec4c9a;
+}
+
+
+.I-want-donate {
+    width: 226px;
+    height: 52px;
+    color: #ffffff;
+    background: #ec4c9a;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    font-size: 22px;
+    line-height: 52px;
 }

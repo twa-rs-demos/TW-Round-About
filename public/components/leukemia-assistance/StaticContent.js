@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
+import ColTwo from '../donate/donate-way/ColTwo';
+import {Modal, Button} from 'react-bootstrap';
 
 export default class ContentStatic extends Component {
 
@@ -9,6 +11,20 @@ export default class ContentStatic extends Component {
       isShowDonateMoney: false
     };
   }
+
+  handleShowForm() {
+    this.setState({
+      isShowDonateMoney: true
+    });
+    console.log("vni");
+  }
+
+  close(){
+    this.setState({
+      isShowDonateMoney: false
+    })
+  }
+
   render() {
     return (
       <div>
@@ -31,10 +47,28 @@ export default class ContentStatic extends Component {
 
           <div className="fact-situation-graph">
             <img src="./public/images/ourWorkAssistance/cure rate.png"/>
-            <div className="want-donate">我要捐赠</div>
+            <div>
+              <button className="I-want-donate" onClick={this.handleShowForm.bind(this)}>我要捐赠</button>
+            </div>
           </div>
         </div>
-        <div className={this.props.isShowDonateMoney?'':'hidden'}>
+
+        <div className={this.state.isShowDonateMoney ? '' : 'hidden'}>
+
+          <div className='static-modal'>
+            <Modal.Dialog>
+              <Modal.Header>
+                <div>
+                  <img src="./public/images/home/close.png" className="image-close" onClick={this.close.bind(this)}/>
+                </div>
+              </Modal.Header>
+              <Modal.Body>
+                <ColTwo/>
+              </Modal.Body>
+
+            </Modal.Dialog>
+          </div>
+
         </div>
       </div>
     )
