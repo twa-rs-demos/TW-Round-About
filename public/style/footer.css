@@ -110,3 +110,13 @@
 .footer-head-text {
     margin-top: -10px;
 }
+
+
+.footBottom-info{
+    color:white;
+}
+
+.footBottom-info:hover{
+    color: #EB4B99;
+    text-decoration: none;
+}

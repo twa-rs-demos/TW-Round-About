@@ -21,7 +21,7 @@ import EducationSupport from '../public/components/education-support/EducationSu
 import DisasterRelief from '../public/components/disaster-relief/DisasterRelief'
 import CommunityAssistance from '../public/components/community-assitance/CommunityAssitance';
 import Legal from '../public/components/legal';
-import PrivacyPolicy from '../public/components/privaacyPolicy';
+import PrivacyPolicy from '../public/components/privacyPolicy';
 
 render(
   <Router history={browserHistory}>
