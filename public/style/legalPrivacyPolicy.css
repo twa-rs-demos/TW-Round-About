@@ -1,23 +1,27 @@
 /*legal*/
-.Legal{
-    width:90%;
-    margin:0 auto;
+.Legal {
+    width: 90%;
+    margin: 0 auto;
 }
-.title{
+
+.legal-title {
     font-size: 40px;
     color: #74298e;
 }
-.Legal-content{
+
+.Legal-content {
     margin-bottom: 25px;
 }
-.li-item{
+
+.li-item {
     margin-bottom: 5px;
 }
 
 /*privacyPolicy*/
-.item-sections{
+.item-sections {
     margin-bottom: 30px;
 }
-.item-title{
+
+.item-title {
     font-weight: 700;
 }
