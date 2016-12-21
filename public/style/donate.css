@@ -8,16 +8,24 @@
 .dobate-way {
     color: #575757;
 }
-.donate-way .span{
+
+.span {
     font-size: 18px;
     text-align: center;
     display: block;
     margin: 10px 0;
 }
-.donate-way img:hover{
+
+.img-center{
+    display:block;
+    margin:0 auto;
+}
+
+.donate-way img:hover {
     cursor: pointer;
 }
-.donate-way .no-hover:hover{
+
+.donate-way .no-hover:hover {
     cursor: default;
 }
 
@@ -73,6 +81,30 @@
     width: 195px;
 }
 
+/*---------------------------donate-way-paypal-----------------------------------------*/
+
+.donate-way-elastic .modal-dialog {
+    margin: 0 auto;
+    margin-top: 180px;
+    width: 20%;
+}
+
+.donate-way-elastic .modal-header {
+    padding: 0;
+}
+
+.donate-way-elastic .modal-body {
+    padding: 0;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+
+.donate-way-elastic .btn {
+    float: right;
+    border: none;
+}
+
 /*---------------------------donate-way-donation------------------------------------*/
 
 .donate-way-donation .row {
@@ -89,11 +121,11 @@
     height: 82px;
     background-color: #ccc;
     margin-top: 10px;
-    border:1px solid #ccc;
+    border: 1px solid #ccc;
 }
 
-.donate-way-donation .col-xs-6 .no-border{
-    border:none;
+.donate-way-donation .col-xs-6 .no-border {
+    border: none;
 }
 
 /*---------------------------donate-way-project------------------------------------*/
@@ -361,7 +393,7 @@
 
 .child-profile:hover p {
     opacity: 1;
-    color:#fff;
+    color: #fff;
 }
 
 /*---------------------------donate img------------------------------------*/
