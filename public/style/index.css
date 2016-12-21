@@ -15,19 +15,19 @@ body {
     line-height: 18px;
 }
 
-.top-right-items img{
-   width: 25px;
+.top-right-items img {
+    width: 25px;
 }
 
-.top-right-items .wechat-icon{
+.top-right-items .wechat-icon {
     cursor: pointer;
 }
 
-#wechatModal .modal-title{
+#wechatModal .modal-title {
     display: inline-block;
 }
 
-#wechatModal button{
+#wechatModal button {
     float: right;
     border: none;
     outline: none;
@@ -35,19 +35,19 @@ body {
     background: none;
 }
 
-#wechatModal .modal-content{
+#wechatModal .modal-content {
     width: 54%;
     margin-left: 37%;
     margin-top: 21%;
     height: 309px;
 }
 
-#wechatModal .modal-header img{
+#wechatModal .modal-header img {
     width: 15px;
     margin: 0;
 }
 
-#wechatModal .modal-body img{
+#wechatModal .modal-body img {
     width: 72%;
     padding-left: 14%;
     padding-bottom: 19px;
@@ -55,7 +55,6 @@ body {
     clear: both;
 }
 
-#wechatModal
 .items ol {
     margin-left: -18px;
 }
@@ -83,10 +82,6 @@ body {
     padding: 0;
 }
 
-/*.taobao {*/
-    /*width: 25px;*/
-/*}*/
-
 .logo {
     margin: 16px 0 17px 31px;
     width: 60px;
@@ -97,25 +92,6 @@ body {
 .padding {
     padding: 0 0 0 31px;
 }
-
-/*.dropdown {*/
-    /*list-style: none;*/
-    /*display: inline-block;*/
-    /*margin-right: 36px;*/
-    /*padding: 0 0 12px 0;*/
-    /*font-size: 22px;*/
-    /*font-family: STHeitiSC-Light;*/
-/*}*/
-
-/*.dropdown a {*/
-    /*color: #414141;*/
-    /*text-decoration: none;*/
-    /*padding: 2px 8px 2px 8px;*/
-/*}*/
-
-/*.menu :last-child {*/
-    /*margin-right: 0;*/
-/*}*/
 
 .header {
     border-bottom: solid 4px #EB4B99;
@@ -187,7 +163,8 @@ body {
     color: #fff;
     line-height: 24px;
 }
-.footer-right-left:hover{
+
+.footer-right-left:hover {
     color: white;
 }
 
@@ -275,12 +252,12 @@ select {
     border-radius: 100px;
 }
 
-.search button{
+.search button {
     border: none;
     background-color: inherit;
 }
 
-.search button:focus{
+.search button:focus {
     outline: none;
 }
 

@@ -86,11 +86,10 @@ export default class MenuList extends Component {
   }
 
   render() {
-    {/*const menuList = <div onMouseEnter={this.showMenu.bind(this)} onMouseLeave={this.hideMenu.bind(this)}>*/
-    }
     const menuList = this.state.menuList.map((menu, index) => {
       return <div className="menu-list" key={index}
-                  onMouseEnter={this.showMenu.bind(this, menu.id)} >
+                  onMouseEnter={this.showMenu.bind(this, menu.id)}
+                  onMouseLeave={this.hideMenu.bind(this)}>
         <div className="first-menu"><a href="#">{menu.name}</a></div>
         {this.state.currentMenuId === menu.id ? <Menu id={menu.id}/> : ''}
       </div>;

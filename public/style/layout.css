@@ -13,6 +13,7 @@
 .menu-list {
     display: inline-block;
     margin-right: 52px;
+    position: relative;
 }
 
 .first-menu {
@@ -31,10 +32,14 @@ a {
     text-decoration: none;
 }
 
-.first-menu:hover{
+.first-menu:hover, :focus {
     background-color: #EC4C9A;
     border-radius: 100px;
-    color: #FFFFFF!important;
+}
+
+.first-menu a:hover, a:focus {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .menu :last-child {
@@ -47,6 +52,9 @@ a {
     -moz-opacity: 0.8;
     opacity: 1;
     z-index: 100;
+    margin-left: -10px;
+    left: 50%;
+    transform: translate3d(-41%, 0, 0);
 }
 
 .triangle-tip-up {
@@ -70,7 +78,7 @@ a {
 }
 
 .dropdown-list :after {
-    content: "";
+    content: '';
     width: 0;
     height: 0;
     border: 6px solid transparent;
@@ -78,7 +86,7 @@ a {
     position: absolute;
     left: 46%;
     bottom: 100%;
-    top: 1%;
+    top: 2%;
     margin-top: 1px;
 }
 
@@ -87,7 +95,7 @@ a {
     border: 1px solid #EC4C9A;
 }
 
-.dropdown-list :last-child{
+.dropdown-list :last-child {
     margin-bottom: 0;
 }
 
