@@ -58,7 +58,7 @@ export default class ContentStatic extends Component {
           <div className='static-modal'>
             <Modal.Dialog>
               <Modal.Header>
-                <div>
+                <div className="col-xs-offset-10 col-xs-2">
                   <img src="./public/images/home/close.png" className="image-close" onClick={this.close.bind(this)}/>
                 </div>
               </Modal.Header>
