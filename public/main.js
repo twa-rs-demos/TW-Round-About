@@ -20,6 +20,8 @@ import MedicalAssistance from '../public/components/medical-assistance/MedicalAs
 import EducationSupport from '../public/components/education-support/EducationSupport';
 import DisasterRelief from '../public/components/disaster-relief/DisasterRelief'
 import CommunityAssistance from '../public/components/community-assitance/CommunityAssitance';
+import Legal from '../public/components/legal';
+import PrivacyPolicy from '../public/components/privaacyPolicy';
 
 render(
   <Router history={browserHistory}>
@@ -44,6 +46,9 @@ render(
       <Route path="classifieds" component={Classifieds}/>
       <Route path="directory" component={Directory}/>
       <Route path="communityCenter" component={CommunityCenter}/>
+      <Route path="legal" component={Legal}/>
+      <Route path="privacy-policy" component={PrivacyPolicy}/>
+
     </Route>
   </Router>,
   document.getElementById("page")
