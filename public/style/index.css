@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font: 14px/1 Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, Microsoft YaHei, \\5FAE\8F6F\96C5\9ED1, WenQuanYi Micro Hei, sans-serif;
+    font: 14px/1  icrosoft YaHei,Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, \\5FAE\8F6F\96C5\9ED1, WenQuanYi Micro Hei, sans-serif;
 }
 
 .top-right-items {
@@ -101,102 +101,6 @@ body {
     padding: 0;
 }
 
-.footer {
-    font-family: Microsoft YaHei;
-    background-color: #3A383F;
-    padding: 32px 30px 37px 75px;
-}
-
-.footer-list {
-    font-size: 12px;
-    line-height: 16px;
-}
-
-.footer-list div {
-    overflow: hidden;
-}
-
-.footer-list img {
-    margin-top: 5px;
-    float: left;
-}
-
-.footer-list p {
-    float: left;
-    margin-left: 8px;
-    margin-bottom: 0px;
-}
-
-.footer-right-right {
-    padding-right: 50px;
-}
-
-.footer-left-right {
-    font-size: 22px;
-    color: #fff;
-}
-
-.footer .col-xs-5 {
-    padding: 0px;
-}
-
-.footer .col-md-6 {
-    padding: 0;
-}
-
-.red-text {
-    color: #EB4B99;
-    font-size: 18px;
-}
-
-.red-text:hover {
-    cursor: pointer;
-}
-
-.follow-icon {
-    display: inline-block;
-}
-
-.footer-right-left {
-    font-size: 18px;
-    text-decoration: underline;
-    color: #fff;
-    line-height: 24px;
-}
-
-.footer-right-left:hover {
-    color: white;
-}
-
-.icon-img {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.icon-img img {
-    display: inline-block;
-    width: 88px;
-    height: 88px;
-}
-
-.icon-img p {
-    text-align: center;
-    font-size: 14px;
-    color: #fff;
-    line-height: 21px;
-}
-
-.footer-right-bottom {
-    text-align: left;
-    margin-top: 80px;
-    color: #fff;
-}
-
-.roundabout-info {
-    font-size: 12px;
-    line-height: 16px;
-    color: #ffffff;
-}
 
 .middle-image {
     position: relative;
@@ -252,7 +156,7 @@ select {
     border-radius: 100px;
 }
 
-.search button {
+.search button{
     border: none;
     background-color: inherit;
 }
@@ -500,7 +404,7 @@ span.WeChat-text {
     top: 100px;
 }
 
-/*--------------页面上方最大的图片样式----------------_*/
+/*--------------------------picture-max-------------------------------------*/
 .picture-max {
     position: relative;
     marign: 0;

@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import {DonatingProjects} from '../common/index';
 import PictureMax from './PictureMax';
-import DonateWay from "./DonateWay";
+import DonateWay from "./donate-way/index";
 import ItemDonate from "./ItemDonate";
 import "../../style/donate.css";
+import "../../style/modalForm.css";
 import {Link} from 'react-router';
 
 export default class Home extends Component {

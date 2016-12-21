@@ -3,31 +3,31 @@ import {chunk} from 'lodash';
 
 export default class DonateGuide extends Component {
 
-  _getcollectCols(cols) {
+  getcollectCols(cols) {
     return cols.map((item, index)=> {
       let phone, time;
       if (item.phone === '') {
         phone = (
-          <div></div>
+          <div className="margin-top-34"></div>
         );
       } else if (item.phone !== '') {
         phone = (
-          <div><span><img src="./public/images/donate/icon_phone_small.png"/></span>
+          <div className="margin-top-34"><span><img src="./public/images/donate/icon_phone_small.png"/></span>
             <p>{item.phone}</p>
           </div>
         );
       }
       if (item.time !== '') {
         time = (
-          <div><span><img src="./public/images/donate/icon_time_small.png"/></span>
+          <div className="margin-top-34"><span><img src="./public/images/donate/icon_time_small.png"/></span>
             <p>{item.time}</p></div>
         );
       }
 
       return (
-        <div className="col-md-4 donate-guide-collect-item" key={index}>
+        <div className="col-md-4 donate-guide-collect-item margin-top-34" key={index}>
           <h4>{item.title}</h4>
-          <div><span><img src="./public/images/donate/icon_address_small.png"/></span>
+          <div className="margin-top-34"><span><img src="./public/images/donate/icon_address_small.png"/></span>
             <p>Adjacent to Yosemite Villa Compound, Yuyang Road West, Off An Hua Road, SHUNYI,
               101302</p>
           </div>
@@ -38,11 +38,11 @@ export default class DonateGuide extends Component {
     });
   }
 
-  _getCollectRow(collectList) {
+  getCollectRow(collectList) {
     return chunk(collectList, 3).map((item, index)=> {
       return (
         <div className="row" key={index}>
-          {this._getcollectCols(item)}
+          {this.getcollectCols(item)}
         </div>
       )
     })
@@ -109,7 +109,7 @@ export default class DonateGuide extends Component {
     return (
       <div className="donate-guide-collect container" id="donate-guide-collect-hash">
         <h3>捐赠物品代收点</h3>
-        {this._getCollectRow(donateGuideCollectItems)}
+        {this.getCollectRow(donateGuideCollectItems)}
       </div>
     )
   }

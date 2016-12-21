@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import superagent from 'superagent';
 import noCache from  'superagent-no-cache';
-import '../../style/layout.css';
+import '../../../style/layout.css';
 
 class Menu extends Component {
   constructor(props) {

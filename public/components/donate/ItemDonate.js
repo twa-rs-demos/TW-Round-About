@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import DonateGuide from './DonateGuide';
 import DonateRules from './DonateRules';
-import DonationApplyForm from './DonationApplyForm';
+import DonationApplyForm from './doantion-apply-form/index';
 
 export default class ItemDonate extends Component {
   constructor(props) {
@@ -21,6 +21,7 @@ export default class ItemDonate extends Component {
   }
 
   showApplyForm() {
+    $('.overlay,.donation-apply-form').fadeIn(400);
     this.setState({isShowApplyForm: true});
   }
 
@@ -28,12 +29,6 @@ export default class ItemDonate extends Component {
     this.setState({isShowApplyForm: false});
     $('.overlay,.donation-apply-form').fadeOut(400, function () {
       $(this).removeAttr('style');
-    });
-  }
-
-  showoverlay() {
-    $('.js-open-box').on('click', function () {
-      $('.overlay,.donation-apply-form').fadeIn(400);
     });
   }
 
@@ -45,7 +40,7 @@ export default class ItemDonate extends Component {
         <div className="donate-guide" id="donate-guide-hash">
           <h3><a id="donate-guide-title" onMouseOver={this.showElasticBox.bind(this)}>捐赠指南</a></h3>
           {this.state.isShowElasticBox ? <DonateRules closeElasticBox={this.closeElasticBox.bind(this)}/> : ''}
-          <div className="donate-guide-describe">
+          <div className="donate-guide-describe margin-top-34">
             <p>Open, prescription and out of date medicines.<br/>
               Used underwear, including socks.<br/>
               Anything previously used by an animal – such as a dog’s bed
@@ -55,9 +50,9 @@ export default class ItemDonate extends Component {
           </div>
           <DonateGuide/>
 
-          <div className="container donate-guide-apply" id="donate-guide-apply-hash">
+          <div className="container donate-guide-apply margin-top-34" id="donate-guide-apply-hash">
             <h3>申请上门收取捐赠物品</h3>
-            <div>
+            <div className="margin-top-34">
               <p>Thank you for requesting a pick up of your donations, we will try our best to help.
                 <p>Please start by filling in the pick up request form. One of our staff will then contact you to
                   make
@@ -75,11 +70,9 @@ export default class ItemDonate extends Component {
                 <p>Large items of furniture – monetary donation not necessary</p>
               </p>
             </div>
-            <button className="apply-button js-open-box" onMouseOver={this.showoverlay}
-                    onClick={this.showApplyForm.bind(this)}>上门收取捐赠物品申请表
+            <button className="apply-button js-open-box" onClick={this.showApplyForm.bind(this)}>上门收取捐赠物品申请表
             </button>
             {this.state.isShowApplyForm ? <DonationApplyForm closeApplyForm={this.closeApplyForm.bind(this)}/> : ''}
-            {/*<DonationApplyForm/>*/}
             <div className="overlay"></div>
           </div>
 
