@@ -7,7 +7,7 @@ class ModalSuccess extends Component {
       <div className="static-modal" id="myModal">
         <Modal.Dialog>
           <Modal.Body>
-            <h6> 提交成功</h6>
+            <p> 提交成功</p>
           </Modal.Body>
         </Modal.Dialog>
       </div>

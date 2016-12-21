@@ -1,6 +1,14 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 
 export default class ContentStatic extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      isShowDonateMoney: false
+    };
+  }
   render() {
     return (
       <div>
@@ -10,7 +18,9 @@ export default class ContentStatic extends Component {
             <img src="./public/images/ourWorkAssistance/lives helped.png"/>
             <img src="./public/images/ourWorkAssistance/raised.png"/>
           </div>
-          <button className="participate-rescue">参与挽救一个生命</button>
+          <Link to={URI_PREFIX + '/donate'}>
+            <button className="participate-rescue">参与挽救一个生命</button>
+          </Link>
         </div>
 
         <div className="fact-situation">
@@ -23,6 +33,8 @@ export default class ContentStatic extends Component {
             <img src="./public/images/ourWorkAssistance/cure rate.png"/>
             <div className="want-donate">我要捐赠</div>
           </div>
+        </div>
+        <div className={this.props.isShowDonateMoney?'':'hidden'}>
         </div>
       </div>
     )
