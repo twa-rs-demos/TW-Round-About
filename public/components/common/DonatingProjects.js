@@ -15,7 +15,7 @@ export default class DonatingProjects extends Component {
     ];
     return (
       <div className="donating-projects donate-page-index">
-        <h2 className="donate-way-title">正在捐款的项目</h2>
+        <h2 className="donate-way-title">{this.props.title}</h2>
         <div className="container">
           {this.getDonatingProjectsRow(donatingProjectList)}
         </div>

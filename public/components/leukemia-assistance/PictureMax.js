@@ -14,7 +14,7 @@ export default class PictureMax extends Component {
           <div className="ourWorkAssistence-picture-btn">阅读杨斌的故事</div>
         </div>
         <div className="col-xs-offset-11  col-xs-1 read-more">
-          <Link to={URI_PREFIX + '/donateCurrent'} className="ourWorkAssistence-picture-readMore">阅读更多> </Link>
+          <Link to={URI_PREFIX + '/leukemia-stories'} className="ourWorkAssistence-picture-readMore">阅读更多> </Link>
         </div>
       </div>
     )

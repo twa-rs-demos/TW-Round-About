@@ -22,6 +22,7 @@ import DisasterRelief from '../public/components/disaster-relief/DisasterRelief'
 import CommunityAssistance from '../public/components/community-assitance/CommunityAssitance';
 import Legal from '../public/components/legal';
 import PrivacyPolicy from '../public/components/privacyPolicy';
+import LeukemiaStories from '../public/components/leukemia-stories';
 
 render(
   <Router history={browserHistory}>
@@ -48,7 +49,7 @@ render(
       <Route path="communityCenter" component={CommunityCenter}/>
       <Route path="legal" component={Legal}/>
       <Route path="privacy-policy" component={PrivacyPolicy}/>
-
+      <Route path="leukemia-stories" component={LeukemiaStories}/>
     </Route>
   </Router>,
   document.getElementById("page")
