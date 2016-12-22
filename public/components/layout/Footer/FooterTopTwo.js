@@ -12,29 +12,33 @@ export default class FooterTopTwo extends Component {
   }
 
   gotoVolunteer() {
+    $('.overlay').fadeIn(400);
     this.setState({
       isShowVolunteerForm: true
     })
   }
 
   gotoContact() {
+    $('.overlay').fadeIn(400);
     this.setState({
       isContactUSForm: true
-    })
+    });
   }
 
   showForm() {
     if (this.state.isShowVolunteerForm) {
       this.setState({
         isShowVolunteerForm: false
-      })
+      });
     }
     if (this.state.isContactUSForm) {
       this.setState({
         isContactUSForm: false
-      })
+      });
     }
-
+    $('.overlay,.donation-apply-form').fadeOut(400, function () {
+      $(this).removeAttr('style');
+    });
   }
 
   render() {
@@ -58,6 +62,7 @@ export default class FooterTopTwo extends Component {
                          textAreaInfo="Description"/>
           />
         </div>
+        <div className="overlay"></div>
       </div>
     )
   }
