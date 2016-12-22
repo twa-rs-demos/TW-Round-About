@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import superagent from 'superagent';
 import noCache from  'superagent-no-cache';
 import '../../../style/layout.css';
+import {Link} from 'react-router';
 
 class Menu extends Component {
   constructor(props) {
@@ -92,7 +93,7 @@ export default class MenuList extends Component {
                   onMouseLeave={this.hideMenu.bind(this, menu.id)}
       >
         <div className="first-menu">
-          <a href="#">{menu.name}</a>
+          <Link to={URI_PREFIX + '/' + menu.slug}>{menu.name}</Link>
           {/*<i className="fa fa-caret-down"> </i>*/}
         </div>
         {this.state.currentMenuId === menu.id ? <Menu id={menu.id}/> : ''}
