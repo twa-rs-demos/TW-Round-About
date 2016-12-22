@@ -64,19 +64,19 @@ export default [
     parent: 3,
     level: 3,
     text: '众爱人',
-    uri: ''
+    uri: '/people'
   }, {
     id: 11,
     parent: 3,
     level: 3,
     text: '创始故事',
-    uri: ''
+    uri: '/foundingStory'
   }, {
     id: 12,
     parent: 3,
     level: 3,
     text: '合作伙伴',
-    uri: ''
+    uri: '/partners'
   }, {
     id: 13,
     parent: 3,
@@ -88,7 +88,7 @@ export default [
     parent: 3,
     level: 3,
     text: '联系我们',
-    uri: ''
+    uri: '/contactUs'
   },
 
 
@@ -103,7 +103,7 @@ export default [
     parent: 4,
     level: 3,
     text: '志愿者',
-    uri: ''
+    uri: '/volunteer'
   }, {
     id: 17,
     parent: 4,
@@ -115,7 +115,7 @@ export default [
     parent: 4,
     level: 3,
     text: '社区中心',
-    uri: ''
+    uri: '/communityCenter'
   }, {
     id: 19,
     parent: 4,
@@ -148,7 +148,7 @@ export default [
     parent: 6,
     level: 3,
     text: '募捐项目',
-    uri: ''
+    uri: '/donateCurrent'
   },
 
 
@@ -157,19 +157,19 @@ export default [
     parent: 7,
     level: 3,
     text: '日历',
-    uri: ''
+    uri: '/calendar'
   }, {
     id: 25,
     parent: 7,
     level: 3,
     text: '书市',
-    uri: ''
+    uri: '/bookFairs'
   }, {
     id: 26,
     parent: 7,
     level: 3,
     text: '月报',
-    uri: ''
+    uri: '/newsLetterCenter'
   },
 
   {
@@ -207,5 +207,5 @@ export default [
     parent: 5,
     level: 3,
     text: '图片集锦',
-    uri: ''
+    uri: '/gallery'
   }]
