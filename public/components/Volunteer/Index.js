@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import {BreadCrumb} from '../common/index';
 import PictureMax from './PictureMax';
 import StaticContent from './StaticContent';
-import VolunteerStory from "./VolunteerStory";
-import "../../style/getInvolvedVolunteer.css";
+import VolunteerStory from './VolunteerStory';
+import '../../style/getInvolvedVolunteer.css';
 
 export default class GetInvolvedVolunteer extends Component {
   render() {
@@ -14,6 +14,6 @@ export default class GetInvolvedVolunteer extends Component {
         <StaticContent/>
         <VolunteerStory/>
       </div>
-    )
+    );
   }
 }

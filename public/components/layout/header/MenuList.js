@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import superagent from 'superagent';
-import noCache from  'superagent-no-cache';
+import noCache from 'superagent-no-cache';
 import '../../../style/layout.css';
 import {Link} from 'react-router';
 import async from 'async';
@@ -10,7 +10,7 @@ class Menu extends Component {
     super(props);
     this.state = {
       menuItemList: []
-    }
+    };
   }
 
   componentDidMount() {
@@ -23,25 +23,27 @@ class Menu extends Component {
         } else {
           this.setState({
             menuItemList: res.body
-          })
+          });
         }
       });
   }
 
   render() {
     const menuItemList = this.state.menuItemList.map((menuItem, index) => {
-      return <li key={index} className="dropdown-item"><a href="#">{menuItem.name}</a></li>
+      return (
+        <li key={index} className='dropdown-item'><a href='#'>{menuItem.name}</a></li>
+      );
     });
     return (
-      <div className="dropdown">
-        <div className="triangle-tip-up"></div>
-        <div className="dropdown-list">
-          <ul className="dropdown-items">
+      <div className='dropdown'>
+        <div className='triangle-tip-up'></div>
+        <div className='dropdown-list'>
+          <ul className='dropdown-items'>
             {menuItemList}
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }
 
@@ -86,7 +88,6 @@ export default class MenuList extends Component {
       }
       this.setState({menuList: result});
     });
-
   }
 
   showMenu(id) {
@@ -99,21 +100,22 @@ export default class MenuList extends Component {
 
   render() {
     const menuList = this.state.menuList.map((menu, index) => {
-      return <div className="menu-list" key={index}
+      return <div className='menu-list' key={index}
                   onMouseEnter={this.showMenu.bind(this, menu.id)}
                   onMouseLeave={this.hideMenu.bind(this, menu.id)}
       >
-        <div className="first-menu">
+
+        <div className='first-menu'>
           <Link to={URI_PREFIX + '/' + menu.slug}>
             {menu.name}
-            <span className="triangle"> </span>
-          </Link>
+            <span className='triangle'></span>
+            </Link>
         </div>
         {this.state.currentMenuId === menu.id ? <Menu id={menu.id}/> : ''}
       </div>;
     });
     return (
-      <div className="menu">
+      <div className='menu'>
         {menuList}
       </div>
     );

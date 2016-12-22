@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    font: 14px/1  icrosoft YaHei,Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, \\5FAE\8F6F\96C5\9ED1, WenQuanYi Micro Hei, sans-serif;
+    font: 14px/1 icrosoft YaHei, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, \\5FAE\8F6F\96C5\9ED1, WenQuanYi Micro Hei, sans-serif;
 }
 
 .top-right-items {
@@ -97,7 +97,6 @@ body {
     padding: 0;
 }
 
-
 .middle-image {
     position: relative;
     display: inline-block;
@@ -152,7 +151,7 @@ select {
     border-radius: 100px;
 }
 
-.search button{
+.search button {
     border: none;
     background-color: inherit;
 }
@@ -242,7 +241,6 @@ select {
     width: 400px;
     height: 33px;
     padding-left: 19px;
-    /*margin-bottom: 151px;*/
     font-size: 19px;
 }
 
@@ -257,12 +255,6 @@ select {
     font-size: 19px;
     margin-left: 14px;
 }
-
-/*.footer {*/
-/*width: 100%;*/
-/*height: 280px;*/
-/*background: #3a383f;*/
-/*}*/
 
 .information-tips-left {
     position: relative;

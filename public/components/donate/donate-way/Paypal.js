@@ -1,14 +1,13 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
 
-
-export default class Alipay extends Component{
-  render(){
+export default class Alipay extends Component {
+  render() {
     return (
-      <div className="donate-way-elastic">
+      <div className='donate-way-elastic'>
         <Modal.Dialog>
           <Modal.Header>
-            <Button onClick={this.props.closePaypalModal}><img src="./public/images/home/close.png"/></Button>
+            <Button onClick={this.props.closePaypalModal}><img src='./public/images/home/close.png'/></Button>
           </Modal.Header>
 
           <Modal.Body>
@@ -17,6 +16,6 @@ export default class Alipay extends Component{
           </Modal.Body>
         </Modal.Dialog>
       </div>
-    )
+    );
   }
 }

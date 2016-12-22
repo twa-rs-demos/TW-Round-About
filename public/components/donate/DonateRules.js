@@ -1,14 +1,14 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
 
 export default class DonateRules extends Component {
   render() {
     return (
-      <div className="donate-things-rules">
+      <div className='donate-things-rules'>
         <Modal.Dialog>
           <Modal.Header>
-            <Button onClick={this.props.closeElasticBox}><img className="close-btn"
-                                                              src="./public/images/home/close.png"/></Button>
+            <Button onClick={this.props.closeElasticBox}><img className='close-btn'
+                                                              src='./public/images/home/close.png'/></Button>
             <h2>我们不接受的物品</h2>
           </Modal.Header>
 
@@ -23,6 +23,6 @@ export default class DonateRules extends Component {
           </Modal.Body>
         </Modal.Dialog>
       </div>
-    )
+    );
   }
 }

@@ -1,9 +1,11 @@
-import React,{Component} from 'react';
+import {Component} from 'react';
 
-export default class MedicalAssitance extends Component{
-  render(){
-    return (<div>
-      MedicalAssitance
-    </div>);
+export default class MedicalAssitance extends Component {
+  render() {
+    return (
+      <div>
+        MedicalAssitance
+      </div>
+    );
   }
 }

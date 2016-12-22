@@ -1,9 +1,11 @@
-import React,{Component} from 'react';
+import {Component} from 'react';
 
-export default class JoinUs extends Component{
-  render(){
-    return (<div>
-      JoinUs
-    </div>);
+export default class JoinUs extends Component {
+  render() {
+    return (
+      <div>
+        JoinUs
+      </div>
+    );
   }
 }
