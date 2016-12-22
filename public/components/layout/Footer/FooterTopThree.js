@@ -5,8 +5,12 @@ export default class FooterTopThree extends Component {
   render() {
     return (
       <div>
-        <Link to='/tw-ra/newsLetter-center' className='footer-right-left'>Newsletter Center</Link>
-        <Link to='/tw-ra/newAndEvent' className='footer-right-left'>News&Event</Link>
+        <div>
+          <Link to={URI_PREFIX + '/newsAndEvent/newsLetterCenter'} className='footer-right-left'>NewsletterCenter</Link>
+        </div>
+        <div>
+          <Link to={URI_PREFIX + '/newsAndEvent'} className='footer-right-left'>CenterNews&Event</Link>
+        </div>
       </div>
     );
   }

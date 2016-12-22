@@ -3,6 +3,7 @@ import superagent from 'superagent';
 import noCache from 'superagent-no-cache';
 import '../../../style/layout.css';
 import {Link} from 'react-router';
+import async from 'async';
 
 class Menu extends Component {
   constructor(props) {
@@ -28,9 +29,12 @@ class Menu extends Component {
   }
 
   render() {
+
     const menuItemList = this.state.menuItemList.map((menuItem, index) => {
       return (
-        <li key={index} className='dropdown-item'><a href='#'>{menuItem.name}</a></li>
+        <li key={index} className='dropdown-item'>
+          <Link to={URI_PREFIX + '/' + this.props.slug + '/' + menuItem.slug}>{menuItem.name}</Link>
+        </li>
       );
     });
     return (
@@ -56,28 +60,37 @@ export default class MenuList extends Component {
   }
 
   componentDidMount() {
-    superagent
-      .get('/wp-json/wp/v2/categories?slug=menulist')
-      .use(noCache)
-      .end((err, res) => {
-        if (err) {
-          throw (err);
-        } else {
-          const categoryParent = res.body[0];
-          superagent
-            .get(`/wp-json/wp/v2/categories?parent=${categoryParent.id}`)
-            .use(noCache)
-            .end((err, res) => {
-              if (err) {
-                throw (err);
-              } else {
-                this.setState({
-                  menuList: res.body
-                });
-              }
-            });
-        }
-      });
+    async.waterfall([
+      (done) => {
+        superagent
+          .get('/wp-json/wp/v2/categories?slug=menulist')
+          .use(noCache)
+          .end((err, res) => {
+            if (err) {
+              done(err, null);
+            } else {
+              done(null, res.body[0]);
+            }
+          });
+      },
+      (categoryParent, done) => {
+        superagent
+          .get(`/wp-json/wp/v2/categories?parent=${categoryParent.id}`)
+          .use(noCache)
+          .end((err, res) => {
+            if (err) {
+              done(err, null);
+            } else {
+              done(null, res.body);
+            }
+          });
+      }
+    ], (err, result) => {
+      if (err) {
+        throw err;
+      }
+      this.setState({menuList: result});
+    });
   }
 
   showMenu(id) {
@@ -99,9 +112,9 @@ export default class MenuList extends Component {
           <Link to={URI_PREFIX + '/' + menu.slug}>
             {menu.name}
             <span className='triangle'></span>
-            </Link>
+          </Link>
         </div>
-        {this.state.currentMenuId === menu.id ? <Menu id={menu.id}/> : ''}
+        {this.state.currentMenuId === menu.id ? <Menu id={menu.id} slug={menu.slug}/> : ''}
       </div>;
     });
     return (
