@@ -94,8 +94,12 @@ export default class MenuList extends Component {
                   onMouseEnter={this.showMenu.bind(this, menu.id)}
                   onMouseLeave={this.hideMenu.bind(this, menu.id)}
       >
+
         <div className='first-menu'>
-          <Link to={URI_PREFIX + '/' + menu.slug}>{menu.name}</Link>
+          <Link to={URI_PREFIX + '/' + menu.slug}>
+            {menu.name}
+            <span className='triangle'></span>
+            </Link>
         </div>
         {this.state.currentMenuId === menu.id ? <Menu id={menu.id}/> : ''}
       </div>;

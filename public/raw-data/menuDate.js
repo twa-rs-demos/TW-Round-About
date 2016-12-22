@@ -10,19 +10,19 @@ export default [
     parent: 1,
     level: 2,
     text: '众爱商店',
-    uri: '/home'
+    uri: '/store'
   }, {
     id: 3,
     parent: 1,
     level: 2,
     text: '关于我们',
-    uri: ''
+    uri: '/aboutUs'
   }, {
     id: 4,
     parent: 1,
     level: 2,
     text: '参与我们',
-    uri: ''
+    uri: '/joinUs'
   }, {
     id: 5,
     parent: 1,
@@ -40,7 +40,7 @@ export default [
     parent: 1,
     level: 2,
     text: '新闻与活动中心',
-    uri: ''
+    uri: '/newsAndEvent'
   },
 
 
@@ -82,7 +82,7 @@ export default [
     parent: 3,
     level: 3,
     text: '媒体报道',
-    uri: ''
+    uri: '/aboutUs'
   }, {
     id: 14,
     parent: 3,
@@ -177,31 +177,31 @@ export default [
     parent: 5,
     level: 3,
     text: '白血病救助',
-    uri: ''
+    uri: '/leukemiaAssistance'
   }, {
     id: 28,
     parent: 5,
     level: 3,
     text: '医疗救助',
-    uri: ''
+    uri: '/medicalAssistance'
   }, {
     id: 29,
     parent: 5,
     level: 3,
     text: '教育资助',
-    uri: ''
+    uri: '/educationSupport'
   }, {
     id: 30,
     parent: 5,
     level: 3,
     text: '灾区救助',
-    uri: ''
+    uri: '/disasterRelief'
   }, {
     id: 31,
     parent: 5,
     level: 3,
     text: '社区帮扶',
-    uri: ''
+    uri: '/communityAssistance'
   }, {
     id: 32,
     parent: 5,
