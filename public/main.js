@@ -42,10 +42,9 @@ render(
       <Route path="home" component={Home}/>
 
       <Route path="donate" component={Donate}>
+        <IndexRoute component={Donate}/>
         <Route path="donateCurrent" component={DonateCurrentAppeals}/>
       </Route>
-
-      <Route path="childStory" component={ChildStory}/>
 
       <Route path="ourWork" component={OurWork}>
         <IndexRoute component={OurWork}/>
@@ -95,6 +94,7 @@ render(
         <IndexRoute component={Store}/>
       </Route>
 
+      <Route path="childStory" component={ChildStory}/>
       <Route path="legal" component={Legal}/>
       <Route path="privacy-policy" component={PrivacyPolicy}/>
       <Route path="searchResult" component={SearchResult}/>
