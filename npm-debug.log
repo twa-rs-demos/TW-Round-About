@@ -1,6 +1,11 @@
 0 info it worked if it ends with ok
+<<<<<<< 4d6f92d3c4b24a02585a8a9b5bdadb036f3829de
 1 verbose cli [ '/home/never/.nvm/versions/node/v6.3.0/bin/node',
 1 verbose cli   '/home/never/.nvm/versions/node/v6.3.0/bin/npm',
+=======
+1 verbose cli [ '/home/mahong/.nvm/versions/node/v6.7.0/bin/node',
+1 verbose cli   '/home/mahong/.nvm/versions/node/v6.7.0/bin/npm',
+>>>>>>> modified bugs
 1 verbose cli   'run',
 1 verbose cli   'eslint' ]
 2 info using npm@3.10.3
@@ -10,26 +15,45 @@
 6 silly lifecycle TW-Round-About@1.0.0~preeslint: no script for preeslint, continuing
 7 info lifecycle TW-Round-About@1.0.0~eslint: TW-Round-About@1.0.0
 8 verbose lifecycle TW-Round-About@1.0.0~eslint: unsafe-perm in lifecycle true
+<<<<<<< 4d6f92d3c4b24a02585a8a9b5bdadb036f3829de
 9 verbose lifecycle TW-Round-About@1.0.0~eslint: PATH: /home/never/.nvm/versions/node/v6.3.0/lib/node_modules/npm/bin/node-gyp-bin:/home/never/tw-academy/TW-Round-About/node_modules/.bin:/home/never/.nvm/versions/node/v6.3.0/bin:/home/never/.rbenv/shims:/home/never/.rbenv/bin:/home/never/.nvm/versions/node/v6.3.0/bin:/home/never/bin:/home/never/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 10 verbose lifecycle TW-Round-About@1.0.0~eslint: CWD: /home/never/tw-academy/TW-Round-About
+=======
+9 verbose lifecycle TW-Round-About@1.0.0~eslint: PATH: /home/mahong/.nvm/versions/node/v6.7.0/lib/node_modules/npm/bin/node-gyp-bin:/home/mahong/TW-Round-About/node_modules/.bin:/home/mahong/.nvm/versions/node/v6.7.0/bin:/home/mahong/.rbenv/shims:/home/mahong/.rbenv/bin:/home/mahong/.nvm/versions/node/v6.7.0/bin:/home/mahong/.sdkman/candidates/gradle/current/bin:/home/mahong/bin:/home/mahong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+10 verbose lifecycle TW-Round-About@1.0.0~eslint: CWD: /home/mahong/TW-Round-About
+>>>>>>> modified bugs
 11 silly lifecycle TW-Round-About@1.0.0~eslint: Args: [ '-c', 'eslint ./public/components' ]
 12 silly lifecycle TW-Round-About@1.0.0~eslint: Returned: code: 1  signal: null
 13 info lifecycle TW-Round-About@1.0.0~eslint: Failed to exec eslint script
 14 verbose stack Error: TW-Round-About@1.0.0 eslint: `eslint ./public/components`
 14 verbose stack Exit status 1
+<<<<<<< 4d6f92d3c4b24a02585a8a9b5bdadb036f3829de
 14 verbose stack     at EventEmitter.<anonymous> (/home/never/.nvm/versions/node/v6.3.0/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
 14 verbose stack     at emitTwo (events.js:106:13)
 14 verbose stack     at EventEmitter.emit (events.js:191:7)
 14 verbose stack     at ChildProcess.<anonymous> (/home/never/.nvm/versions/node/v6.3.0/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+=======
+14 verbose stack     at EventEmitter.<anonymous> (/home/mahong/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/utils/lifecycle.js:242:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (/home/mahong/.nvm/versions/node/v6.7.0/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+>>>>>>> modified bugs
 14 verbose stack     at emitTwo (events.js:106:13)
 14 verbose stack     at ChildProcess.emit (events.js:191:7)
 14 verbose stack     at maybeClose (internal/child_process.js:852:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
 15 verbose pkgid TW-Round-About@1.0.0
+<<<<<<< 4d6f92d3c4b24a02585a8a9b5bdadb036f3829de
 16 verbose cwd /home/never/tw-academy/TW-Round-About
 17 error Linux 4.4.0-53-generic
 18 error argv "/home/never/.nvm/versions/node/v6.3.0/bin/node" "/home/never/.nvm/versions/node/v6.3.0/bin/npm" "run" "eslint"
 19 error node v6.3.0
+=======
+16 verbose cwd /home/mahong/TW-Round-About
+17 error Linux 4.4.0-57-generic
+18 error argv "/home/mahong/.nvm/versions/node/v6.7.0/bin/node" "/home/mahong/.nvm/versions/node/v6.7.0/bin/npm" "run" "eslint"
+19 error node v6.7.0
+>>>>>>> modified bugs
 20 error npm  v3.10.3
 21 error code ELIFECYCLE
 22 error TW-Round-About@1.0.0 eslint: `eslint ./public/components`

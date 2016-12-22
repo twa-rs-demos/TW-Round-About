@@ -29,9 +29,12 @@ class Menu extends Component {
   }
 
   render() {
+
     const menuItemList = this.state.menuItemList.map((menuItem, index) => {
       return (
-        <li key={index} className='dropdown-item'><a href='#'>{menuItem.name}</a></li>
+        <li key={index} className='dropdown-item'>
+          <Link to={URI_PREFIX + '/' + this.props.slug + '/' + menuItem.slug}>{menuItem.name}</Link>
+        </li>
       );
     });
     return (
@@ -109,9 +112,9 @@ export default class MenuList extends Component {
           <Link to={URI_PREFIX + '/' + menu.slug}>
             {menu.name}
             <span className='triangle'></span>
-            </Link>
+          </Link>
         </div>
-        {this.state.currentMenuId === menu.id ? <Menu id={menu.id}/> : ''}
+        {this.state.currentMenuId === menu.id ? <Menu id={menu.id} slug={menu.slug}/> : ''}
       </div>;
     });
     return (
