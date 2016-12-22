@@ -96,7 +96,6 @@
 
 .dropdown-list {
     width: 135px;
-    border: 1px solid #EC4C9A;
 }
 
 .dropdown-list :last-child {
@@ -106,7 +105,9 @@
 .dropdown-items {
     list-style: none;
     background-color: #ffffff;
-    padding: 18px 0 16px 10px;
+    padding: 18px 0 16px 14px;
+    border-radius: 5px;
+    border: 1px solid #EC4C9A;
 }
 
 .dropdown-item {
