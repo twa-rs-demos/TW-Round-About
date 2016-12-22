@@ -25,6 +25,7 @@ import PrivacyPolicy from '../public/components/privacyPolicy';
 import Store from './components/store/RounaboutStore';
 import AboutUs from './components/about-us/AboutUs';
 import JoinUs from './components/join-us/JoinUs';
+import LeukemiaStories from '../public/components/leukemia-stories';
 
 render(
   <Router history={browserHistory}>
@@ -55,6 +56,7 @@ render(
       <Route path="joinUs" component={JoinUs}/>
       <Route path="aboutUs" component={AboutUs}/>
 
+      <Route path="leukemia-stories" component={LeukemiaStories}/>
     </Route>
   </Router>,
   document.getElementById("page")

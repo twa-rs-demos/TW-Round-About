@@ -5,7 +5,7 @@ export default class DonateCurrentAppeal extends Component {
     return (
       <div>
         <BreadCrumb/>
-        <DonatingProjects/>
+        <DonatingProjects title="正在捐款的项目"/>
       </div>
     )
   }
