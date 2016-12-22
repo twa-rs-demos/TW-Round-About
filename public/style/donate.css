@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-.span {
+.span{
     font-size: 18px;
     text-align: center;
     display: block;
@@ -450,4 +450,17 @@
 }
 
 
+/*---------------------------leukemia-assistance-modal-denate-money------------------------------------*/
+.donate-money .modal-dialog{
+    margin:40px auto 0;
+    width: 40%;
+}
 
+.donate-money .modal-header{
+    padding-bottom: 0;
+}
+
+.donate-money .modal-body{
+    padding-top: 0;
+    margin-top:-20px;
+}

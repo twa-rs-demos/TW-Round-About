@@ -1,10 +1,10 @@
 import {Component} from 'react';
 
-export default class MedicalAssitance extends Component {
+export default class ChildStory extends Component {
   render() {
     return (
       <div>
-        MedicalAssitance
+        救助儿童故事页面
       </div>
     );
   }

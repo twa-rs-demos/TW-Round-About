@@ -1,12 +1,12 @@
 import {Component} from 'react';
 import {BreadCrumb, DonatingProjects} from '../common/index';
 
-export default class DonateCurrentAppeal extends Component {
+export default class LeukemiaStories extends Component {
   render() {
     return (
       <div>
         <BreadCrumb/>
-        <DonatingProjects title='正在捐款的项目'/>
+        <DonatingProjects title='白血病故事'/>
       </div>
     );
   }

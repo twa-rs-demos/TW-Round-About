@@ -1,9 +1,9 @@
 import {Component} from 'react';
 
-export default class Classifieds extends Component {
+export default class AboutUs extends Component {
   render() {
     return (<div>
-      Classifieds
+      AboutUs
     </div>);
   }
 }

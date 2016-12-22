@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import VolunteerForm from './VolunteerForm';
 
 export default class FooterTopTwo extends Component {
@@ -15,7 +15,7 @@ export default class FooterTopTwo extends Component {
     $('.overlay').fadeIn(400);
     this.setState({
       isShowVolunteerForm: true
-    })
+    });
   }
 
   gotoContact() {
@@ -36,7 +36,7 @@ export default class FooterTopTwo extends Component {
         isContactUSForm: false
       });
     }
-    $('.overlay,.donation-apply-form').fadeOut(400, function () {
+    $('.overlay,.donation-apply-form').fadeOut(400, function() {
       $(this).removeAttr('style');
     });
   }
@@ -44,26 +44,24 @@ export default class FooterTopTwo extends Component {
   render() {
     return (
       <div>
-        <div className="two-title">
-          <p className="footer-left-right">Want to join us?</p>
-          <p className="red-text" onClick={this.gotoVolunteer.bind(this)}> Apply To Volunteer Today > </p>
-          <p className="footer-left-right">Have an enquiry?</p>
-          <p className="red-text" onClick={this.gotoContact.bind(this)}>Contact Us Now > </p>
+        <div className='two-title'>
+          <p className='footer-left-right'>Want to join us?</p>
+          <p className='red-text' onClick={this.gotoVolunteer.bind(this)}> Apply To Volunteer Today > </p>
+          <p className='footer-left-right'>Have an enquiry?</p>
+          <p className='red-text' onClick={this.gotoContact.bind(this)}>Contact Us Now > </p>
         </div>
         <div className={this.state.isShowVolunteerForm ? '' : 'hidden'}>
           <VolunteerForm showForm={this.showForm.bind(this)}
-                         title="VOLUNTEERS APPLICATION FORM" inputTextInfo="Email Address"
-                         textAreaInfo="Commits"/>
+                         title='VOLUNTEERS APPLICATION FORM' inputTextInfo='Email Address'
+                         textAreaInfo='Commits'/>
         </div>
-
         <div className={this.state.isContactUSForm ? '' : 'hidden'}>
           <VolunteerForm showForm={this.showForm.bind(this)}
-                         title="You may also fill the form below contact us" inputTextInfo="Enquiry"
-                         textAreaInfo="Description"/>
-          />
+                         title='You may also fill the form below contact us' inputTextInfo='Enquiry'
+                         textAreaInfo='Description'/>
         </div>
-        <div className="overlay"></div>
+        <div className='overlay'></div>
       </div>
-    )
+    );
   }
 }

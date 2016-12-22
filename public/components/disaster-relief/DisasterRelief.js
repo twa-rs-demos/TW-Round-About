@@ -1,9 +1,10 @@
-import React,{Component} from 'react';
+import {Component} from 'react';
 
-export default class DisaterRelief extends Component{
-  render(){
+export default class DisaterRelief extends Component {
+  render() {
     return (<div>
       DisaterRelief
-    </div>);
+    </div>
+    );
   }
 }

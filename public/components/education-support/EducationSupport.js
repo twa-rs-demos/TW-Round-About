@@ -1,9 +1,10 @@
-import React,{Component} from 'react';
+import {Component} from 'react';
 
-export default class EducationSupport extends Component{
-  render(){
+export default class EducationSupport extends Component {
+  render() {
     return (<div>
-      EducationSupport
-    </div>);
+        EducationSupport
+      </div>
+    );
   }
 }

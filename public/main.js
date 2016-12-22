@@ -9,7 +9,7 @@ import LeukemiaAssistance from '../public/components/leukemia-assistance/Index';
 import Volunteer from '../public/components/Volunteer/Index';
 import GetInvolved from '../public/components/getInvolved/Index';
 import SearchResult from '../public/components/result/SearchResult';
-import ChildStory from '../public/components/childStory/index';
+import ChildStory from './components/child-story/index';
 import NewsLetter from '../public/components/result/NewsLetter';
 import NewAndEvent from '../public/components/newAndEvent/NewAndEvent';
 import Classifieds from '../public/components/classifieds/Classifieds';
@@ -21,6 +21,10 @@ import DisasterRelief from '../public/components/disaster-relief/DisasterRelief'
 import CommunityAssistance from '../public/components/community-assitance/CommunityAssitance';
 import Legal from '../public/components/legal';
 import PrivacyPolicy from '../public/components/privacyPolicy';
+import Store from './components/store/RounaboutStore';
+import AboutUs from './components/about-us/AboutUs';
+import JoinUs from './components/join-us/JoinUs';
+import LeukemiaStories from '../public/components/leukemia-stories';
 
 render(
   <Router history={browserHistory}>
@@ -39,7 +43,7 @@ render(
       <Route path="volunteer" component={Volunteer}/>
       <Route path="getInvolved" component={GetInvolved}/>
       <Route path="searchResult" component={SearchResult}/>
-      <Route path="newsLetter-center" component={NewsLetter}/>
+      <Route path="newsLetterCenter" component={NewsLetter}/>
       <Route path="newsLetter-signUp" component={NewsLetter}/>
       <Route path="newAndEvent" component={NewAndEvent}/>
       <Route path="classifieds" component={Classifieds}/>
@@ -47,7 +51,11 @@ render(
       <Route path="communityCenter" component={CommunityCenter}/>
       <Route path="legal" component={Legal}/>
       <Route path="privacy-policy" component={PrivacyPolicy}/>
+      <Route path="store" component={Store}/>
+      <Route path="joinUs" component={JoinUs}/>
+      <Route path="aboutUs" component={AboutUs}/>
 
+      <Route path="leukemia-stories" component={LeukemiaStories}/>
     </Route>
   </Router>,
   document.getElementById("page")

@@ -1,26 +1,26 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
 import {Link} from 'react-router';
 
 class WechatModal extends Component {
   render() {
     return (
-      <div className="static-modal" id="wechatModal">
+      <div className='static-modal' id='wechatModal'>
         <Modal.Dialog>
           <Modal.Header>
-            <Button onClick={this.props.closeWechatModal}><img src="./public/images/home/close.png"/></Button>
+            <Button onClick={this.props.closeWechatModal}><img src='./public/images/home/close.png'/></Button>
           </Modal.Header>
 
           <Modal.Body>
-            <img src="./public/images/home/wechat store.png"/>
+            <img src='./public/images/home/wechat store.png'/>
           </Modal.Body>
         </Modal.Dialog>
       </div>
-    )
+    );
   }
 }
 
-export default  class MainMenu extends Component {
+export default class MainMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -38,23 +38,23 @@ export default  class MainMenu extends Component {
 
   render() {
     return (
-      <div className=" row  right-topinfo">
-        <Link to={URI_PREFIX + "/newsLetter-center"} className="col-sm-2 top-right-word  no-padding">月报中心</Link>
-        <Link to={URI_PREFIX + "/newsLetter-signUp"} className="col-sm-2  top-right-word no-padding">月报申领</Link>
-        <a href="#" className="col-sm-2 no-padding top-right-word">English</a>
+      <div className='row right-topinfo'>
+        <Link to={URI_PREFIX + '/newsLetter-center'} className='col-sm-2 top-right-word  no-padding'>月报中心</Link>
+        <Link to={URI_PREFIX + '/newsLetter-signUp'} className='col-sm-2  top-right-word no-padding'>月报申领</Link>
+        <a href='#' className='col-sm-2 no-padding top-right-word'>English</a>
 
-        <a className="col-sm-1 no-padding top-left-icon " onClick={this.showWechatModal.bind(this)}>
-          <img src="./public/images/icon_wechat.png"/>
+        <a className='col-sm-1 no-padding top-left-icon ' onClick={this.showWechatModal.bind(this)}>
+          <img src='./public/images/icon_wechat.png'/>
         </a>
 
-        <a href="http://weibo.com/Rooundabout666?sudaref=www.so.com&is_all=1"
-           className="col-sm-1 no-padding top-left-icon" target="_blank">
-          <img src="./public/images/icon_weibo.png"/>
+        <a href='http://weibo.com/Rooundabout666?sudaref=www.so.com&is_all=1'
+           className='col-sm-1 no-padding top-left-icon' target='_blank'>
+          <img src='./public/images/icon_weibo.png'/>
         </a>
 
-        <a href="https://shop125100050.taobao.com/index.htm?spm=2013.1.w5002-12973215066.2.AXTtj4"
-           className="col-sm-1 no-padding  top-left-icon " target="_blank">
-          <img src="./public/images/icon_taobao.png" alt=""/>
+        <a href='https://shop125100050.taobao.com/index.htm?spm=2013.1.w5002-12973215066.2.AXTtj4'
+           className='col-sm-1 no-padding  top-left-icon ' target='_blank'>
+          <img src='./public/images/icon_taobao.png' alt=''/>
         </a>
 
         {this.state.isShowWechat ? <WechatModal closeWechatModal={this.closeWechatModal.bind(this)}/> : ''}

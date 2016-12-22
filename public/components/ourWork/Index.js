@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import Video from "./Video";
-import OurWorkItems from "./OurWorkItems";
-import "../../style/ourWork.css";
+import {Component} from 'react';
+import Video from './Video';
+import OurWorkItems from './OurWorkItems';
+import '../../style/ourWork.css';
 
 export default class OurWork extends Component {
   render() {
@@ -10,6 +10,6 @@ export default class OurWork extends Component {
         <Video/>
         <OurWorkItems/>
       </div>
-    )
+    );
   }
 }

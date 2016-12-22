@@ -1,51 +1,51 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import {chunk} from 'lodash';
 
 export default class DonateGuide extends Component {
 
   getcollectCols(cols) {
-    return cols.map((item, index)=> {
+    return cols.map((item, index) => {
       let phone, time;
       if (item.phone === '') {
         phone = (
-          <div className="margin-top-34"></div>
+          <div className='margin-top-34'></div>
         );
       } else if (item.phone !== '') {
         phone = (
-          <div className="margin-top-34"><span><img src="./public/images/donate/icon_phone_small.png"/></span>
+          <div className='margin-top-34'><span><img src='./public/images/donate/icon_phone_small.png'/></span>
             <p>{item.phone}</p>
           </div>
         );
       }
       if (item.time !== '') {
         time = (
-          <div className="margin-top-34"><span><img src="./public/images/donate/icon_time_small.png"/></span>
+          <div className='margin-top-34'><span><img src='./public/images/donate/icon_time_small.png'/></span>
             <p>{item.time}</p></div>
         );
       }
 
       return (
-        <div className="col-md-4 donate-guide-collect-item margin-top-34" key={index}>
+        <div className='col-md-4 donate-guide-collect-item margin-top-34' key={index}>
           <h4>{item.title}</h4>
-          <div className="margin-top-34"><span><img src="./public/images/donate/icon_address_small.png"/></span>
+          <div className='margin-top-34'><span><img src='./public/images/donate/icon_address_small.png'/></span>
             <p>Adjacent to Yosemite Villa Compound, Yuyang Road West, Off An Hua Road, SHUNYI,
               101302</p>
           </div>
           {phone}
           {time}
         </div>
-      )
+      );
     });
   }
 
   getCollectRow(collectList) {
-    return chunk(collectList, 3).map((item, index)=> {
+    return chunk(collectList, 3).map((item, index) => {
       return (
-        <div className="row" key={index}>
+        <div className='row' key={index}>
           {this.getcollectCols(item)}
         </div>
-      )
-    })
+      );
+    });
   }
 
   render() {
@@ -107,10 +107,10 @@ export default class DonateGuide extends Component {
       }
     ];
     return (
-      <div className="donate-guide-collect container" id="donate-guide-collect-hash">
+      <div className='donate-guide-collect container' id='donate-guide-collect-hash'>
         <h3>捐赠物品代收点</h3>
         {this.getCollectRow(donateGuideCollectItems)}
       </div>
-    )
+    );
   }
 }

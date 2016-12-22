@@ -1,9 +1,10 @@
-import React,{Component} from 'react';
+import {Component} from 'react';
 
-export default class CommunityCenter extends Component{
-  render(){
+export default class CommunityCenter extends Component {
+  render() {
     return (<div>
       CommunityCenter
-    </div>);
+    </div>
+    );
   }
 }

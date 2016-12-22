@@ -1,9 +1,10 @@
-import React,{Component} from 'react';
+import {Component} from 'react';
 
-export default class Directory extends Component{
-  render(){
+export default class Directory extends Component {
+  render() {
     return (<div>
       Directory
-    </div>);
+    </div>
+    );
   }
 }
