@@ -1,3 +1,7 @@
+.menu {
+    padding: 0 0 0 19px;
+}
+
 .menu-item {
     border: none;
     margin-right: 36px;
@@ -12,7 +16,7 @@
 
 .menu-list {
     display: inline-block;
-    margin-right: 52px;
+    margin-right: 39px;
     position: relative;
 }
 
@@ -22,7 +26,7 @@
     margin-bottom: 4px;
 }
 
-a {
+.first-menu a, .dropdown-item a {
     color: #414141;
     text-decoration: none;
 }
@@ -32,12 +36,12 @@ a {
     text-decoration: none;
 }
 
-.first-menu:hover, :focus {
+.first-menu:hover, .first-menu :focus {
     background-color: #EC4C9A;
     border-radius: 100px;
 }
 
-.first-menu a:hover, a:focus {
+.first-menu a:hover, .first-menu a:focus {
     color: #FFFFFF;
     text-decoration: none;
 }

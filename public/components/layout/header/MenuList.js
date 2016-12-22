@@ -89,13 +89,17 @@ export default class MenuList extends Component {
     const menuList = this.state.menuList.map((menu, index) => {
       return <div className="menu-list" key={index}
                   onMouseEnter={this.showMenu.bind(this, menu.id)}
-                  onMouseLeave={this.hideMenu.bind(this)}>
-        <div className="first-menu"><a href="#">{menu.name}</a></div>
+                  onMouseLeave={this.hideMenu.bind(this, menu.id)}
+      >
+        <div className="first-menu">
+          <a href="#">{menu.name}</a>
+          {/*<i className="fa fa-caret-down"> </i>*/}
+        </div>
         {this.state.currentMenuId === menu.id ? <Menu id={menu.id}/> : ''}
       </div>;
     });
     return (
-      <div className="col-md-9 padding menu">
+      <div className="menu">
         {menuList}
       </div>
     );
