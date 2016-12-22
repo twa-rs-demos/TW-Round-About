@@ -3,6 +3,7 @@ import superagent from 'superagent';
 import noCache from  'superagent-no-cache';
 import '../../../style/layout.css';
 import {Link} from 'react-router';
+import async from 'async';
 
 class Menu extends Component {
   constructor(props) {
@@ -54,28 +55,38 @@ export default class MenuList extends Component {
   }
 
   componentDidMount() {
-    superagent
-      .get('/wp-json/wp/v2/categories?slug=menulist')
-      .use(noCache)
-      .end((err, res) => {
-        if (err) {
-          throw (err);
-        } else {
-          const categoryParent = res.body[0];
-          superagent
-            .get(`/wp-json/wp/v2/categories?parent=${categoryParent.id}`)
-            .use(noCache)
-            .end((err, res) => {
-              if (err) {
-                throw (err)
-              } else {
-                this.setState({
-                  menuList: res.body
-                });
-              }
-            })
-        }
-      })
+    async.waterfall([
+      (done) => {
+        superagent
+          .get('/wp-json/wp/v2/categories?slug=menulist')
+          .use(noCache)
+          .end((err, res) => {
+            if (err) {
+              done(err, null);
+            } else {
+              done(null, res.body[0]);
+            }
+          });
+      },
+      (categoryParent, done) => {
+        superagent
+          .get(`/wp-json/wp/v2/categories?parent=${categoryParent.id}`)
+          .use(noCache)
+          .end((err, res) => {
+            if (err) {
+              done(err, null);
+            } else {
+              done(null, res.body);
+            }
+          });
+      }
+    ], (err, result) => {
+      if (err) {
+        throw err;
+      }
+      this.setState({menuList: result});
+    });
+
   }
 
   showMenu(id) {
@@ -95,8 +106,8 @@ export default class MenuList extends Component {
         <div className="first-menu">
           <Link to={URI_PREFIX + '/' + menu.slug}>
             {menu.name}
-            <span className="triangle"></span>
-            </Link>
+            <span className="triangle"> </span>
+          </Link>
         </div>
         {this.state.currentMenuId === menu.id ? <Menu id={menu.id}/> : ''}
       </div>;
