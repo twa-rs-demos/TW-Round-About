@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import Header from './header/Header';
+import Header from './header/index';
 import ApplyMonthly from './ApplyMonthly';
 import Footer from './Footer/index';
 

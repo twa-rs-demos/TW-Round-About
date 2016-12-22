@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import MenuList from './MenuList';
-import Search from './SearchBox';
+import SearchBox from './SearchBox';
 
 export default class NavMenu extends Component {
   render() {
@@ -10,7 +10,7 @@ export default class NavMenu extends Component {
           <MenuList/>
         </div>
         <div className='col-xs-2'>
-          <Search/>
+          <SearchBox/>
         </div>
       </div>
     );
