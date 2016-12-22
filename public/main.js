@@ -100,7 +100,6 @@ render(
       <Route path="privacy-policy" component={PrivacyPolicy}/>
       <Route path="searchResult" component={SearchResult}/>
 
-
     </Route>
   </Router>,
   document.getElementById("page")
