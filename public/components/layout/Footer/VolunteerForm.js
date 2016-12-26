@@ -19,8 +19,8 @@ export default class VolunteerForm extends Component {
   render() {
     return (
       <div className='static-modal'>
+        <div id="modal-Volunteer-content">
         <Modal.Dialog>
-          <div className='modal-content' id="modal-Volunteer-content">
             <Modal.Header>
               <Modal.Title>
                 <div className='row'>
@@ -100,8 +100,8 @@ export default class VolunteerForm extends Component {
                 </div>
               </div>
             </Modal.Footer>
-          </div>
         </Modal.Dialog>
+        </div>
       </div>
     );
   }

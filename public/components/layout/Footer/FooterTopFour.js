@@ -5,15 +5,15 @@ export default class FooterTopFour extends Component {
     return (
       <div>
         <div className='icon-img'>
-          <img src='./public/images/home/taobao store.png'/>
+          <img src='http://localhost/tw-ra/public/images/home/taobao store.png'/>
           <p>淘宝</p>
         </div>
         <div className='icon-img'>
-          <img src='./public/images/home/wechat store.png'/>
+          <img src='http://localhost/tw-ra/public/images/home/wechat store.png'/>
           <p>微信</p>
         </div>
         <div className='icon-img'>
-          <img src='./public/images/home/Weibo01.png'/>
+          <img src='http://localhost/tw-ra/public/images/home/Weibo01.png'/>
           <p>微博</p>
         </div>
       </div>
