@@ -8,13 +8,13 @@ export default class FooterTop extends Component {
   render() {
     return (
       <div className='row'>
-        <div className='col-xs-3 footer-top-one no-padding'>
+        <div className='col-xs-3 no-padding'>
           <FooterTopOne/>
         </div>
         <div className='col-xs-3 footer-top-two'>
           <FooterTopTwo/>
         </div>
-        <div className='col-xs-2 footer-top-three'>
+        <div className='col-xs-2'>
           <FooterTopThree/>
         </div>
         <div className='col-xs-4 footer-top-four'>

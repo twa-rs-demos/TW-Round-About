@@ -5,164 +5,8 @@ body {
     font: 14px/1 icrosoft YaHei, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, \\5FAE\8F6F\96C5\9ED1, WenQuanYi Micro Hei, sans-serif;
 }
 
-.top-right-items {
-    top: 25px;
-    font-size: 12px;
-    color: #8a7676;
-    float: right;
-    margin-right: 1.5em;
-    height: 18px;
-    line-height: 18px;
-}
-
-.top-right-items img {
-    width: 25px;
-}
-
-.top-right-items .wechat-icon {
-    cursor: pointer;
-}
-
-#wechatModal .modal-title {
-    display: inline-block;
-}
-
-#wechatModal button {
-    float: right;
-    border: none;
-    outline: none;
-    box-shadow: none;
-    background: none;
-}
-
-#wechatModal .modal-content {
-    width: 54%;
-    margin-left: 37%;
-    margin-top: 21%;
-    height: 309px;
-}
-
-#wechatModal .modal-header img {
-    width: 15px;
-    margin: 0;
-}
-
-#wechatModal .modal-body img {
-    width: 72%;
-    padding-left: 14%;
-    padding-bottom: 19px;
-    margin: auto;
-    clear: both;
-}
-
-.items ol {
-    margin-left: -18px;
-}
-
-.items i {
-    position: relative;
-    top: -6px;
-    left: 8px;
-    margin-left: 10px;
-}
-
-.items a {
-    color: #8a7676;
-    text-decoration: none;
-    margin-right: 13px;
-}
-
-.items img {
-    position: relative;
-    right: -8%;
-    margin: 0 10px;
-}
-
 .no-padding {
     padding: 0;
-}
-
-.logo {
-    margin: 16px 0 17px 31px;
-    width: 60px;
-    height: 70px;
-    padding: 0;
-}
-
-.header {
-    border-bottom: solid 4px #EB4B99;
-}
-
-.no-padding {
-    padding: 0;
-}
-
-.middle-image {
-    position: relative;
-    display: inline-block;
-    background-color: #ccc;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-}
-
-select {
-    position: relative;
-    -webkit-appearance: none;
-    border: 0;
-    outline: none;
-    height: 22px;
-    width: 14%;
-    left: -2%;
-    direction: rtl;
-    background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
-    font-size: 23px;
-    color: #736f6e;
-    margin: 12px 10px 12px -26px;
-    padding-right: 20px;
-    cursor: pointer;
-}
-
-.search {
-    width: 146px;
-    border-radius: 100px;
-    background-color: #D8D8D8;
-    border: none;
-    height: 22px;
-    padding: 0 8px 0 8px;
-}
-
-.search input {
-    width: 103px !important;
-    border-radius: 100px;
-    background-color: #D8D8D8;
-    border: none;
-    height: 22px;
-    padding: 0 8px 0 10px;
-    font-size: 12px;
-    color: #535353;
-}
-
-.search input:focus {
-    outline: none;
-    border-color: #cfdc00;
-    box-shadow: 0 0 5px rgba(207, 220, 0, 0.4);
-    border-radius: 100px;
-}
-
-.search button {
-    border: none;
-    background-color: inherit;
-}
-
-.search button:focus {
-    outline: none;
-}
-
-.search img {
-    width: 14px;
-    height: 14px;
 }
 
 .middle-text {
@@ -225,7 +69,7 @@ select {
 
 .apply-monthly-report img {
     position: relative;
-    top: 18.5px;
+    top: 18px;
 }
 
 .apply-monthly-report-text {
@@ -271,125 +115,16 @@ select {
     top: 20px;
 }
 
-/*.footer-theme span {*/
-/*position: relative;*/
-/*top: 8px;*/
-/*left: -5px;*/
-/*}*/
-
 .information-theme {
     font-size: 22px;
     color: #fff;
     margin-left: 13px;
 }
 
-.introduction-text {
-    border: 0;
-    font-size: 12px;
-    background: #3a383f;
-    color: #d1d1d3;
-}
-
-.introduction-text span {
-    position: relative;
-    margin: 5px;
-    display: inline-block;
-    width: 430px;
-    height: 50px;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    word-spacing: -1px;
-    text-align: left;
-}
-
-.introduction-text i {
-    position: relative;
-    font-size: 13px;
-    word-spacing: 2px;
-}
-
-.email-text {
-    color: #bc4580;
-    font-size: 14px;
-}
-
 pre {
     border: 0;
     background: #3a383f;
     color: #d1d1d3;
-}
-
-.information-tips-center {
-    position: relative;
-    top: 10%;
-    width: 60%;
-    height: 50%;
-    letter-spacing: -2px;
-    left: 7%;
-}
-
-.information-tips-center span {
-    position: relative;
-    font-size: 25px;
-    color: #d1d1d3;
-    margin-top: 10px;
-    text-align: left;
-
-}
-
-.information-tips-center a {
-    text-decoration: none;
-    font-size: 20px;
-    color: #bc4580;
-}
-
-div.enquiry {
-    position: relative;
-    margin-top: 30px;
-}
-
-a.break-line {
-    display: block;;
-}
-
-a.news-text {
-    position: relative;
-    left: 10%;
-    width: 10%;
-    text-align: left;
-    color: #d1d1d3;
-    padding-bottom: 2px;
-    border-bottom: 1px solid #d1d1d3;
-}
-
-.information-tips-right {
-    position: relative;
-    float: right;
-    width: 24%;
-    top: -35%;
-}
-
-.information-tips-right img {
-    display: inline;
-    margin-right: 5%;
-}
-
-.QRcode-text {
-    position: relative;
-    font-size: 14px;
-    color: #d1d1d3;
-    top: 8px;
-    left: 8%;
-}
-
-span.WeChat-text {
-    margin: 0 25%;
-}
-
-.foot-annotation {
-    position: relative;
-    top: 100px;
 }
 
 /*--------------------------picture-max-------------------------------------*/

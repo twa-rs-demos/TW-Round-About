@@ -6,10 +6,10 @@ export default class FooterTopThree extends Component {
     return (
       <div>
         <div>
-          <Link to={URI_PREFIX + '/newsAndEvent/newsLetterCenter'} className='footer-right-left'>NewsletterCenter</Link>
+          <Link to={URI_PREFIX + '/newsAndEvent/newsLetterCenter'} className='col-three-text'>NewsletterCenter</Link>
         </div>
         <div>
-          <Link to={URI_PREFIX + '/newsAndEvent'} className='footer-right-left'>CenterNews&Event</Link>
+          <Link to={URI_PREFIX + '/newsAndEvent'} className='col-three-text'>CenterNews&Event</Link>
         </div>
       </div>
     );

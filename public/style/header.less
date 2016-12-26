@@ -1,0 +1,234 @@
+#header {
+  border-bottom: 4px solid #EB4B99;
+
+  .no-padding() {
+    padding: 0;
+  }
+
+  /*-------------------------------------logo------------------------------------------*/
+  .logo {
+    margin: 16px 0 17px 31px;
+    width: 60px;
+    height: 70px;
+    padding: 0;
+  }
+
+  /*-------------------------------------right-topinfo------------------------------------------*/
+  .right-topinfo {
+    margin-top: 28px;
+    padding-left: 30px;
+  }
+
+  .top-right-word {
+    margin: 0 5px 0 5px;
+    color: #8a7676;
+  }
+
+  .top-left-icon {
+    margin: 0 15px 0 0;
+  }
+
+  /*-------------------------------------menu------------------------------------------*/
+  .menu {
+    padding: 0 0 0 19px;
+  }
+
+  .menu-item {
+    border: none;
+    margin-right: 36px;
+    font-size: 22px;
+    padding: 0;
+    color: #414141;
+  }
+
+  .menu:last-child {
+    margin-right: 0;
+  }
+
+  .menu-list {
+    display: inline-block;
+    margin-right: 17px;
+    position: relative;
+  }
+
+  .first-menu {
+    font-size: 22px;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 4px;
+  }
+
+  .first-menu a, .dropdown-item a {
+    color: #414141;
+    text-decoration: none;
+  }
+
+  .dropdown-item a:hover {
+    color: #EC4C9A;
+    text-decoration: none;
+  }
+
+  .first-menu:hover, .first-menu :focus {
+    background-color: #EC4C9A;
+    border-radius: 100px;
+  }
+
+  .first-menu a:hover, .first-menu a:focus {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  .menu :last-child {
+    margin-right: 0;
+  }
+
+  .dropdown {
+    position: absolute;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 1;
+    z-index: 100;
+    margin-left: -10px;
+    left: 50%;
+    transform: translate3d(-41%, 0, 0);
+  }
+
+  .first-menu .triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-width: 6px 5px 0 7px;
+    border-style: solid;
+    border-color: #A1A1A1 transparent;
+    vertical-align: middle;
+    margin-left: 7px;
+  }
+
+  .triangle-tip-up {
+    width: 135px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 14px;
+  }
+
+  .triangle-tip-up:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 0 8px 7px;
+    border-style: solid;
+    border-color: transparent transparent #EC4C9A;
+    position: absolute;
+    left: 60px;
+    top: -7px;
+  }
+
+  .dropdown-list :after {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #FFFFFF;
+    position: absolute;
+    left: 46%;
+    bottom: 100%;
+    top: 2%;
+    margin-top: 1px;
+  }
+
+  .dropdown-list {
+    width: 135px;
+  }
+
+  .dropdown-list :last-child {
+    margin-bottom: 0;
+  }
+
+  .dropdown-items {
+    list-style: none;
+    background-color: #ffffff;
+    padding: 18px 0 16px 14px;
+    border-radius: 5px;
+    border: 1px solid #EC4C9A;
+  }
+
+  .dropdown-item {
+    font-size: 15px;
+    margin-bottom: 13px;
+  }
+
+  /*-------------------------------------search-box------------------------------------------*/
+  .search {
+    width: 146px;
+    border-radius: 100px;
+    background-color: #D8D8D8;
+    border: none;
+    height: 22px;
+    padding: 0 8px 0 8px;
+  }
+
+  .search input {
+    width: 103px !important;
+    border-radius: 100px;
+    background-color: #D8D8D8;
+    border: none;
+    height: 22px;
+    padding: 0 8px 0 10px;
+    font-size: 12px;
+    color: #535353;
+  }
+
+  .search input:focus {
+    outline: none;
+    border-color: #cfdc00;
+    box-shadow: 0 0 5px rgba(207, 220, 0, 0.4);
+    border-radius: 100px;
+  }
+
+  .search button {
+    border: none;
+    background-color: inherit;
+  }
+
+  .search button:focus {
+    outline: none;
+  }
+
+  .search img {
+    width: 14px;
+    height: 14px;
+  }
+
+  /*-------------------------------------wechatModal------------------------------------------*/
+  #wechatModal .modal-title {
+    display: inline-block;
+  }
+
+  #wechatModal button {
+    float: right;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: none;
+  }
+
+  #wechatModal .modal-content {
+    width: 54%;
+    margin-left: 37%;
+    margin-top: 21%;
+    height: 309px;
+  }
+
+  #wechatModal .modal-header img {
+    width: 15px;
+    margin: 0;
+  }
+
+  #wechatModal .modal-body img {
+    width: 72%;
+    padding-left: 14%;
+    padding-bottom: 19px;
+    margin: auto;
+    clear: both;
+  }
+}
