@@ -37,7 +37,7 @@ export default class ApplyMonthly extends Component {
     return (
       <div>
         <div className='apply-monthly-report' id='apply-monthly-report'>
-          <img src='./public/images/icon_newsletter.png'/>
+          <img src='http://localhost/tw-ra/public/images/icon_newsletter.png'/>
           <div className='apply-monthly-report-text'>申领月报</div>
           <input type='email' className='input-email' placeholder='请输入你的电子邮箱'/>
           <button className='submit' type='submit' onClick={this.onSubmit.bind(this)}>提交</button>
