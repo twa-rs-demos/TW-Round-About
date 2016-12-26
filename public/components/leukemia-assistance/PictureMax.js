@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 
 export default class PictureMax extends Component {
   render() {
-    const pictureSrc = './public/images/ourWorkAssistance/hero_leukemia assistance.png';
+    const pictureSrc = 'http://localhost/tw-ra/public/images/ourWorkAssistance/hero_leukemia assistance.png';
     return (
       <div className='picture-max'>
         <img src={pictureSrc}/>

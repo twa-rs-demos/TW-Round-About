@@ -30,7 +30,7 @@ export default class VolunteerForm extends Component {
                       <span className='title'>{this.props.title}</span>
                     </div>
                     <div className='col-xs-offset-2 col-xs-1'>
-                      <img src='./public/images/home/close.png' className='image-close' onClick={this.close.bind(this)}/>
+                      <img src='http://localhost/tw-ra/public/images/home/close.png' className='image-close' onClick={this.close.bind(this)}/>
                     </div>
                   </div>
                 </Modal.Title>

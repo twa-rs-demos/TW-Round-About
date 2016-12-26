@@ -30,8 +30,8 @@ export default class ContentStatic extends Component {
         <div className='save-life-situation'>
           <h2>我们参与挽救的生命</h2>
           <div className='Rescue-situation-img'>
-            <img src='./public/images/ourWorkAssistance/lives helped.png'/>
-            <img src='./public/images/ourWorkAssistance/raised.png'/>
+            <img src='http://localhost/tw-ra/public/images/ourWorkAssistance/lives helped.png'/>
+            <img src='http://localhost/tw-ra/public/images/ourWorkAssistance/raised.png'/>
           </div>
           <Link to={URI_PREFIX + '/donate'}>
             <button className='participate-rescue'>参与挽救一个生命</button>
@@ -45,7 +45,7 @@ export default class ContentStatic extends Component {
           <span> 你可以改变他们的命运。</span>
 
           <div className='fact-situation-graph'>
-            <img src='./public/images/ourWorkAssistance/cure rate.png'/>
+            <img src='http://localhost/tw-ra/public/images/ourWorkAssistance/cure rate.png'/>
             <div>
               <button className='I-want-donate' onClick={this.handleShowForm.bind(this)}>我要捐赠</button>
             </div>
@@ -57,7 +57,7 @@ export default class ContentStatic extends Component {
             <Modal.Dialog>
               <Modal.Header>
                 <div className='col-xs-offset-11 col-xs-1'>
-                  <img src='./public/images/home/close.png' className='image-close' onClick={this.close.bind(this)}/>
+                  <img src='http://localhost/tw-ra/public/images/home/close.png' className='image-close' onClick={this.close.bind(this)}/>
                 </div>
               </Modal.Header>
               <Modal.Body>
