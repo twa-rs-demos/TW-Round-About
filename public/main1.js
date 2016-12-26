@@ -1,12 +1,5 @@
-import React, {Component} from 'react';
 import {render} from 'react-dom';
-import {Router, Route, browserHistory, IndexRoute, withRouter} from 'react-router';
-import {createStore, applyMiddleware} from 'redux';
-import thunkMiddleware from 'redux-thunk';
-import rootReducer from './reducers/index.js';
-import {Provider, connect} from 'react-redux';
-import createLogger from 'redux-logger';
-// import {Router, Route, IndexRoute, browserHistory} from 'react-router';
+import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 import Layout from './components/layout/index';
 import Home from './components/home/index';
 import Donate from './components/donate/index';
@@ -42,87 +35,72 @@ import Article from './components/article';
 import PartnerStories from './components/partner-stories';
 import FoundingStory from  './components/founding-story';
 
-const store = createStore(
-  rootReducer,
-  applyMiddleware(createLogger(), thunkMiddleware)
-);
-class Main extends Component {
-
-  render() {
-    return ( <Router history={browserHistory}>
-      <Route path={URI_PREFIX} component={Layout}>
-        <IndexRoute component={Home}/>
-        <Route path="home" component={Home}/>
+render(
+  <Router history={browserHistory}>
+    <Route path={URI_PREFIX} component={Layout}>
+      <IndexRoute component={Home}/>
+      <Route path="home" component={Home}/>
 
       <Route path="donate" component={Donate}>
         <IndexRoute component={Donate}/>
-        <Route path="donatecurrent" component={DonateCurrentAppeals}/>
+        <Route path="donateCurrent" component={DonateCurrentAppeals}/>
       </Route>
 
-      <Route path="ourwork" component={OurWork}>
+      <Route path="ourWork" component={OurWork}>
         <IndexRoute component={OurWork}/>
-        <Route path="leukemiaassistance" component={LeukemiaAssistance}>
+        <Route path="leukemiaAssistance" component={LeukemiaAssistance}>
           <IndexRoute component={LeukemiaAssistance}/>
-          <Route path="leukemiastories" component={LeukemiaStories}/>
+          <Route path="leukemia-stories" component={LeukemiaStories}/>
         </Route>
-        <Route path="medicalassistance" component={MedicalAssistance}/>
-        <Route path="educationsupport" component={EducationSupport}/>
-        <Route path="disasterrelief" component={DisasterRelief}/>
-        <Route path="communityassistance" component={CommunityAssistance}/>
+        <Route path="medicalAssistance" component={MedicalAssistance}/>
+        <Route path="educationSupport" component={EducationSupport}/>
+        <Route path="disasterRelief" component={DisasterRelief}/>
+        <Route path="communityAssistance" component={CommunityAssistance}/>
         <Route path="gallery" component={Gallery}/>
       </Route>
 
 
-      <Route path="getinvolved" component={GetInvolved}>
+      <Route path="getInvolved" component={GetInvolved}>
         <IndexRoute component={GetInvolved}/>
         <Route path="volunteer" component={Volunteer}/>
-        <Route path="communitycenter" component={CommunityCenter}/>
+        <Route path="communityCenter" component={CommunityCenter}/>
         <Route path="classifieds" component={Classifieds}/>
         <Route path="directory" component={Directory}/>
       </Route>
 
-      <Route path="newsandevent" component={NewAndEvent}>
+      <Route path="newsAndEvent" component={NewAndEvent}>
         <IndexRoute component={NewAndEvent}/>
-        <Route path="newslettercenter" component={NewsLetter}/>
-        <Route path="bookfairs" component={BookFairs}>
+        <Route path="newsLetterCenter" component={NewsLetter}/>
+        <Route path="bookFairs" component={BookFairs}>
           <IndexRoute component={BookFairs}/>
           <Route path="article" component={Article}/>
         </Route>
         <Route path="calendar" component={Calendar}/>
       </Route>
 
-      <Route path="aboutus" component={AboutUs}>
+      <Route path="aboutUs" component={AboutUs}>
         <IndexRoute component={AboutUs}/>
         <Route path="people" component={People}/>
         <Route path="partners" component={Partners}>
           <IndexRoute component={Partners}/>
-          <Route path="partnerstories" component={PartnerStories}/>
+          <Route path="partnerStories" component={PartnerStories}/>
         </Route>
-        <Route path="foundingstory" component={FoundingStory}/>
+        <Route path="foundingStory" component={FoundingStory}/>
         <Route path="press" component={Press}/>
-        <Route path="contactus" component={ContactUs}/>
+        <Route path="contactUs" component={ContactUs}/>
       </Route>
 
 
-        <Route path="store" component={Store}>
-          <IndexRoute component={Store}/>
-        </Route>
+      <Route path="store" component={Store}>
+        <IndexRoute component={Store}/>
+      </Route>
 
-      <Route path="childstory" component={ChildStory}/>
+      <Route path="childStory" component={ChildStory}/>
       <Route path="legal" component={Legal}/>
-      <Route path="privacypolicy" component={PrivacyPolicy}/>
-      <Route path="searchresult" component={SearchResult}/>
+      <Route path="privacy-policy" component={PrivacyPolicy}/>
+      <Route path="searchResult" component={SearchResult}/>
 
-      </Route>
-    </Router>);
-  }
-}
-const mapStateToProps = (state) => state;
-
-let RootApp = connect(mapStateToProps)(Main);
-
-render(
-  <Provider store={store}>
-    <RootApp/>
-  </Provider>,
-  document.getElementById('page'));
+    </Route>
+  </Router>,
+  document.getElementById("page")
+);
