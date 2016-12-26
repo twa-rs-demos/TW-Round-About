@@ -7,7 +7,7 @@ import rootReducer from './reducers/index.js';
 import {Provider, connect} from 'react-redux';
 import createLogger from 'redux-logger';
 // import {Router, Route, IndexRoute, browserHistory} from 'react-router';
-import Layout from './components/layout/index';
+import Layout from './containers/layout/layout';
 import Home from './components/home/index';
 import Donate from './components/donate/index';
 import DonateCurrentAppeals from './components/donate-current-appeals/index';
