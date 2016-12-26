@@ -106,6 +106,7 @@ export default class MenuList extends Component {
       return <div className='menu-list' key={index}
                   onMouseEnter={this.showMenu.bind(this, menu.id)}
                   onMouseLeave={this.hideMenu.bind(this, menu.id)}
+                  onClick={this.hideMenu.bind(this, menu.id)}
       >
 
         <div className='first-menu'>

@@ -29,13 +29,15 @@ export default [
     level: 2,
     text: '我们的工作',
     uri: '/ourWork'
-  }, {
+  }
+  , {
     id: 6,
     parent: 1,
     level: 2,
     text: '捐赠',
     uri: '/donate'
-  }, {
+  },
+  {
     id: 7,
     parent: 1,
     level: 2,
@@ -44,19 +46,19 @@ export default [
   },
 
 
-  {
-    id: 8,
-    parent: 2,
-    level: 3,
-    text: '实体店',
-    uri: ''
-  }, {
-    id: 9,
-    parent: 2,
-    level: 3,
-    text: '线上商店',
-    uri: ''
-  },
+  // {
+  //   id: 8,
+  //   parent: 2,
+  //   level: 3,
+  //   text: '实体店',
+  //   uri: ''
+  // }, {
+  //   id: 9,
+  //   parent: 2,
+  //   level: 3,
+  //   text: '线上商店',
+  //   uri: ''
+  // },
 
 
   {
@@ -131,19 +133,20 @@ export default [
   },
 
 
+  // {
+  //   id: 21,
+  //   parent: 6,
+  //   level: 3,
+  //   text: '捐款',
+  //   uri: ''
+  // }, {
+  //   id: 22,
+  //   parent: 6,
+  //   level: 3,
+  //   text: '捐物',
+  //   uri: ''
+  // },
   {
-    id: 21,
-    parent: 6,
-    level: 3,
-    text: '捐款',
-    uri: ''
-  }, {
-    id: 22,
-    parent: 6,
-    level: 3,
-    text: '捐物',
-    uri: ''
-  }, {
     id: 23,
     parent: 6,
     level: 3,

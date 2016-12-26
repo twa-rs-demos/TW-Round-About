@@ -43,51 +43,51 @@ render(
 
       <Route path="donate" component={Donate}>
         <IndexRoute component={Donate}/>
-        <Route path="donateCurrent" component={DonateCurrentAppeals}/>
+        <Route path="donatecurrent" component={DonateCurrentAppeals}/>
       </Route>
 
-      <Route path="ourWork" component={OurWork}>
+      <Route path="ourwork" component={OurWork}>
         <IndexRoute component={OurWork}/>
-        <Route path="leukemiaAssistance" component={LeukemiaAssistance}>
+        <Route path="leukemiaassistance" component={LeukemiaAssistance}>
           <IndexRoute component={LeukemiaAssistance}/>
-          <Route path="leukemia-stories" component={LeukemiaStories}/>
+          <Route path="leukemiastories" component={LeukemiaStories}/>
         </Route>
-        <Route path="medicalAssistance" component={MedicalAssistance}/>
-        <Route path="educationSupport" component={EducationSupport}/>
-        <Route path="disasterRelief" component={DisasterRelief}/>
-        <Route path="communityAssistance" component={CommunityAssistance}/>
+        <Route path="medicalassistance" component={MedicalAssistance}/>
+        <Route path="educationsupport" component={EducationSupport}/>
+        <Route path="disasterrelief" component={DisasterRelief}/>
+        <Route path="communityassistance" component={CommunityAssistance}/>
         <Route path="gallery" component={Gallery}/>
       </Route>
 
 
-      <Route path="getInvolved" component={GetInvolved}>
+      <Route path="getinvolved" component={GetInvolved}>
         <IndexRoute component={GetInvolved}/>
         <Route path="volunteer" component={Volunteer}/>
-        <Route path="communityCenter" component={CommunityCenter}/>
+        <Route path="communitycenter" component={CommunityCenter}/>
         <Route path="classifieds" component={Classifieds}/>
         <Route path="directory" component={Directory}/>
       </Route>
 
-      <Route path="newsAndEvent" component={NewAndEvent}>
+      <Route path="newsandevent" component={NewAndEvent}>
         <IndexRoute component={NewAndEvent}/>
-        <Route path="newsLetterCenter" component={NewsLetter}/>
-        <Route path="bookFairs" component={BookFairs}>
+        <Route path="newslettercenter" component={NewsLetter}/>
+        <Route path="bookfairs" component={BookFairs}>
           <IndexRoute component={BookFairs}/>
           <Route path="article" component={Article}/>
         </Route>
         <Route path="calendar" component={Calendar}/>
       </Route>
 
-      <Route path="aboutUs" component={AboutUs}>
+      <Route path="aboutus" component={AboutUs}>
         <IndexRoute component={AboutUs}/>
         <Route path="people" component={People}/>
         <Route path="partners" component={Partners}>
           <IndexRoute component={Partners}/>
-          <Route path="partnerStories" component={PartnerStories}/>
+          <Route path="partnerstories" component={PartnerStories}/>
         </Route>
-        <Route path="foundingStory" component={FoundingStory}/>
+        <Route path="foundingstory" component={FoundingStory}/>
         <Route path="press" component={Press}/>
-        <Route path="contactUs" component={ContactUs}/>
+        <Route path="contactus" component={ContactUs}/>
       </Route>
 
 
@@ -95,10 +95,10 @@ render(
         <IndexRoute component={Store}/>
       </Route>
 
-      <Route path="childStory" component={ChildStory}/>
+      <Route path="childstory" component={ChildStory}/>
       <Route path="legal" component={Legal}/>
-      <Route path="privacy-policy" component={PrivacyPolicy}/>
-      <Route path="searchResult" component={SearchResult}/>
+      <Route path="privacypolicy" component={PrivacyPolicy}/>
+      <Route path="searchresult" component={SearchResult}/>
 
     </Route>
   </Router>,
