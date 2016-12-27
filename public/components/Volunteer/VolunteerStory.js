@@ -4,14 +4,14 @@ import chunk from 'lodash/chunk';
 export default class VolunteerStory extends Component {
   render() {
     const storyList = [
-      {name: 'Mr Raj', src: './public/images/getInvolvedVolunteer/volunteer story01.png'},
-      {name: 'Bettina', src: './public/images/getInvolvedVolunteer/volunteer story02.png'},
-      {name: 'Michael', src: './public/images/getInvolvedVolunteer/volunteer story03.png'},
-      {name: 'Friederike', src: './public/images/getInvolvedVolunteer/volunteer story04.png'},
-      {name: 'Mr Raj', src: './public/images/getInvolvedVolunteer/volunteer story01.png'},
-      {name: 'Bettina', src: './public/images/getInvolvedVolunteer/volunteer story02.png'},
-      {name: 'Michael', src: './public/images/getInvolvedVolunteer/volunteer story03.png'},
-      {name: 'Friederike', src: './public/images/getInvolvedVolunteer/volunteer story04.png'}
+      {name: 'Mr Raj', src: 'http://localhost/tw-ra/public/images/getInvolvedVolunteer/volunteer story01.png'},
+      {name: 'Bettina', src: 'http://localhost/tw-ra/public/images/getInvolvedVolunteer/volunteer story02.png'},
+      {name: 'Michael', src: 'http://localhost/tw-ra/public/images/getInvolvedVolunteer/volunteer story03.png'},
+      {name: 'Friederike', src: 'http://localhost/tw-ra/public/images/getInvolvedVolunteer/volunteer story04.png'},
+      {name: 'Mr Raj', src: 'http://localhost/tw-ra/public/images/getInvolvedVolunteer/volunteer story01.png'},
+      {name: 'Bettina', src: 'http://localhost/tw-ra/public/images/getInvolvedVolunteer/volunteer story02.png'},
+      {name: 'Michael', src: 'http://localhost/tw-ra/public/images/getInvolvedVolunteer/volunteer story03.png'},
+      {name: 'Friederike', src: 'http://localhost/tw-ra/public/images/getInvolvedVolunteer/volunteer story04.png'}
     ];
 
     return (

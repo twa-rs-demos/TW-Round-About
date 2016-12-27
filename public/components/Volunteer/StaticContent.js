@@ -20,7 +20,7 @@ export default class StaticContent extends Component {
 
         <div className='involved-volunteer-area'>
           <h2 className='donate-way-title'>来自<span>50</span>多个国家和地区</h2>
-          <img src='./public/images/getInvolvedVolunteer/50 countries.png'/>
+          <img src='http://localhost/tw-ra/public/images/getInvolvedVolunteer/50 countries.png'/>
         </div>
       </div>
     );
