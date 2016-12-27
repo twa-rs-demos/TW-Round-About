@@ -4,7 +4,7 @@ import {Modal, Button} from 'react-bootstrap';
 export default class DonateRules extends Component {
   render() {
     return (
-      <div className='donate-things-rules'>
+      <div id='donate-things-rules'>
         <Modal.Dialog>
           <Modal.Header>
             <Button onClick={this.props.closeElasticBox}><img className='close-btn'

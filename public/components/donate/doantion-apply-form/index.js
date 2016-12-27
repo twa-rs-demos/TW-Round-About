@@ -10,7 +10,7 @@ import {Modal} from 'react-bootstrap';
 export default class DonationApplyForm extends Component {
   render() {
     return (
-      <div className='donation-apply-form'>
+      <div id='donation-apply-form'>
         <Modal.Dialog>
           <Modal.Header>
             <FormHeader closeApplyForm={this.props.closeApplyForm}/>

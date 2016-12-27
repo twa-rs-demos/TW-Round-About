@@ -3,6 +3,8 @@ import Header from './header/index';
 import ApplyMonthly from './ApplyMonthly';
 import Footer from './Footer/index';
 import BreadCrumb from '../../containers/layout/breadCrumb';
+import '../../style/header.less';
+import '../../style/footer.less';
 
 export default class Test extends Component {
   constructor(props) {
