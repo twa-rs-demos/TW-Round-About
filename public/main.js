@@ -6,7 +6,6 @@ import thunkMiddleware from 'redux-thunk';
 import rootReducer from './reducers/index.js';
 import {Provider, connect} from 'react-redux';
 import createLogger from 'redux-logger';
-// import {Router, Route, IndexRoute, browserHistory} from 'react-router';
 import Layout from './containers/layout/layout';
 import Home from './components/home/index';
 import Donate from './components/donate/index';
