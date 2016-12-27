@@ -29,7 +29,6 @@ class Menu extends Component {
   }
 
   render() {
-
     const menuItemList = this.state.menuItemList.map((menuItem, index) => {
       return (
         <li key={index} className='dropdown-item'>

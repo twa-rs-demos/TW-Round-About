@@ -1,8 +1,8 @@
 import {combineReducers} from 'redux';
-import breadCrumb from './breadCrumb';
+import breadcrumb from './breadcrumb';
 
 const rootReducer = combineReducers({
-  breadCrumb
+  breadcrumb
 });
 
 export default rootReducer;
