@@ -12,7 +12,6 @@ export default (state = [], action) => {
           }
         });
       }
-      // return breadcrumb;
       if(breadcrumb.length>1){
         return breadcrumb;
       }

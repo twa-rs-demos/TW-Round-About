@@ -24,9 +24,12 @@ export default class media extends Component {
       });
   }
 
+
   render() {
+
     return (
-      <div className='content' dangerouslySetInnerHTML={{__html: this.state.content}}></div>
+      <div className='content' dangerouslySetInnerHTML={{__html: this.state.content}}>
+      </div>
     );
   }
 }
