@@ -1,12 +1,12 @@
 import {Component} from 'react';
 import Video from './Video';
 import OurWorkItems from './OurWorkItems';
-import '../../style/ourWork.css';
+import '../../style/ourWork.less';
 
 export default class OurWork extends Component {
   render() {
     return (
-      <div>
+      <div id="ourwork">
         <Video/>
         <OurWorkItems/>
       </div>

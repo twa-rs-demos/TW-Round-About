@@ -2,7 +2,9 @@ import {Component} from 'react';
 import Header from './header/index';
 import ApplyMonthly from './ApplyMonthly';
 import Footer from './Footer/index';
-import BreadCrumb from '../../containers/layout/breadCrumb';
+import '../../style/header.less';
+import '../../style/footer.less';
+import Breadcrumb from '../../containers/layout/breadcrumb';
 
 export default class Test extends Component {
 
@@ -14,19 +16,17 @@ export default class Test extends Component {
 
     this.props.router.listen(location => {
       this.props.dispatch({
-          type: 'UPDATE_URI',
-          uri: location
-        }
-      );
+        type: 'UPDATE_URI',
+        uri: location
+      });
     });
   }
 
   render() {
-
     return (
       <div>
         <Header/>
-        <BreadCrumb/>
+        <Breadcrumb/>
         {this.props.children}
         <ApplyMonthly/>
         <Footer/>
@@ -34,22 +34,3 @@ export default class Test extends Component {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

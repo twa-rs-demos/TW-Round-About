@@ -1,11 +1,11 @@
 import {Component} from 'react';
-import {BreadCrumb, DonatingProjects} from '../common/index';
+import {DonatingProjects} from '../common/index';
+import '../../style/donate.less';
 
 export default class DonateCurrentAppeal extends Component {
   render() {
     return (
       <div>
-        <BreadCrumb/>
         <DonatingProjects title='正在捐款的项目'/>
       </div>
     );

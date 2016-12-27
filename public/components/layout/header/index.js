@@ -1,7 +1,6 @@
 import {Component} from 'react';
 import NavMenu from './NavMenu';
 import TopInfo from './TopInfo';
-import '../../../style/header.less';
 
 export default class Header extends Component {
   render() {

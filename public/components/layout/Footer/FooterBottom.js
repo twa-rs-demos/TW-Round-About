@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import {Link} from 'react-router';
-import '../../../style/legalPrivacyPolicy.css';
+import '../../../style/legalPrivacyPolicy.less';
 
 export default class FooterBottom extends Component {
   render() {
@@ -9,7 +9,7 @@ export default class FooterBottom extends Component {
         <div className='footer-bottom-text'>
           @2016 Roundabout China
           <Link to={URI_PREFIX + '/legal'} className='footBottom-info'>&nbsp; Legal</Link> |
-          <Link to={URI_PREFIX + '/privacy-policy'} className='footBottom-info'> Privacy Policy</Link>
+          <Link to={URI_PREFIX + '/privacypolicy'} className='footBottom-info'> Privacy Policy</Link>
         </div>
       </div>
     );

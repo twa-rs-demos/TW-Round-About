@@ -1,7 +1,6 @@
 import {Component} from 'react';
 import superagent from 'superagent';
 import noCache from 'superagent-no-cache';
-import '../../../style/layout.css';
 import {Link} from 'react-router';
 import async from 'async';
 
@@ -29,7 +28,6 @@ class Menu extends Component {
   }
 
   render() {
-
     const menuItemList = this.state.menuItemList.map((menuItem, index) => {
       return (
         <li key={index} className='dropdown-item'>
