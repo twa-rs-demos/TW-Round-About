@@ -1,5 +1,4 @@
 import {Component} from 'react';
-import {BreadCrumb} from '../common/index';
 import PictureMax from './PictureMax';
 import ContentStatic from './StaticContent';
 import '../../style/ourWorkAssistance.less';
@@ -7,8 +6,7 @@ import '../../style/ourWorkAssistance.less';
 export default class ourWorkPage extends Component {
   render() {
     return (
-      <div>
-        <BreadCrumb/>
+      <div id='ourwork-assistance'>
         <PictureMax/>
         <ContentStatic/>
       </div>
