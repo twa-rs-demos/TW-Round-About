@@ -15,8 +15,8 @@ export default class VolunteerStory extends Component {
     ];
 
     return (
-      <div className='involved-volunteer-stores donate-page-index donating-projects '>
-        <h2 className='donate-way-title'>志愿者故事</h2>
+      <div>
+        <h2 className='middle-title'>志愿者故事</h2>
         <div className='container'>
           {this.getVolunteerStorysRow(storyList)}
         </div>
@@ -25,9 +25,9 @@ export default class VolunteerStory extends Component {
   }
 
   getVolunteerStorysRow(storyList) {
-    return chunk(storyList, 4).map((item) => {
+    return chunk(storyList, 4).map((item, index) => {
       return (
-        <div className='row'>
+        <div className='row' key={index}>
           {this.getstoryCols(item)}
         </div>
       );
@@ -35,9 +35,9 @@ export default class VolunteerStory extends Component {
   }
 
   getstoryCols(projectCols) {
-    return projectCols.map((item) => {
+    return projectCols.map((item,index) => {
       return (
-        <div className='col-md-3 donating-project'>
+        <div className='col-md-3 donating-project' key={index}>
           <img src={item.src}/>
           <h4>{item.name}‘s Story</h4>
           <a href='#'>Read More ></a>
