@@ -1,10 +1,8 @@
 @import "common";
 
 #donate-page-index {
-  //max-width: 1050px;
-  //margin: 0 auto;
   /*---------------------------donate-way------------------------------------*/
-  .dobate-way {
+  .donate-way {
     color: @black-color;
   }
 
@@ -67,93 +65,95 @@
 
   .donate-way-content {
     margin: 0 auto;
-  }
+    h3 {
+      margin-top: 18px;
+      color: @pink-color;
+      text-align: center;
+      font-size: 32px;
+    }
 
-  .donate-way-content h3 {
-    margin-top: 18px;
-    color: @pink-color;
-    text-align: center;
-    font-size: 32px;
-  }
-
-  .donate-way-content ul {
-    padding-left: 65px;
-    margin-top: 56px;
-    font-size: 22px;
-    line-height: 30px;
-  }
-
-  .donate-way-content ul li {
-    margin-top: 14px;
-    width: 195px;
+    ul {
+      padding-left: 65px;
+      margin-top: 56px;
+      font-size: 22px;
+      line-height: 30px;
+      li {
+        margin-top: 14px;
+        width: 195px;
+      }
+    }
   }
 
   /*---------------------------donate-way-paypal-----------------------------------------*/
+  .donate-way-elastic {
+    .modal-dialog {
+      margin: 0 auto;
+      margin-top: 180px;
+      width: 20%;
+    }
 
-  .donate-way-elastic .modal-dialog {
-    margin: 0 auto;
-    margin-top: 180px;
-    width: 20%;
-  }
+    .modal-header {
+      padding: 0;
+    }
 
-  .donate-way-elastic .modal-header {
-    padding: 0;
-  }
+    .modal-body {
+      padding: 0;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: -10px;
+    }
 
-  .donate-way-elastic .modal-body {
-    padding: 0;
-    width: 60%;
-    margin: 0 auto;
-    margin-top: -10px;
-  }
-
-  .donate-way-elastic .btn {
-    float: right;
-    border: none;
+    .btn {
+      float: right;
+      border: none;
+    }
   }
 
   /*---------------------------donate-way-donation------------------------------------*/
+  .donate-way-donation {
+    .row {
+      width: 230px;
+      margin: 0 auto;
+    }
 
-  .donate-way-donation .row {
-    width: 230px;
-    margin: 0 auto;
-  }
+    h3 {
+      margin-bottom: 18px;
+    }
 
-  .donate-way-donation h3 {
-    margin-bottom: 18px;
-  }
+    .col-xs-6 {
+      img {
+        width: 82px;
+        height: 82px;
+        background-color: #ccc;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+      }
 
-  .donate-way-donation .col-xs-6 img {
-    width: 82px;
-    height: 82px;
-    background-color: #ccc;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-  }
-
-  .donate-way-donation .col-xs-6 .no-border {
-    border: none;
+      .no-border {
+        border: none;
+      }
+    }
   }
 
   /*---------------------------donate-way-project------------------------------------*/
+  .donate-way-project {
+    p {
+      margin-top: 31px;
+      font-size: 22px;
+      text-align: center;
+    }
 
-  .donate-way-project p {
-    margin-top: 31px;
-    font-size: 22px;
-    text-align: center;
-  }
-
-  .donate-way-project img {
-    width: 80px;
-    height: 82px;
-    border: 1px solid #ccc;
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
+    img {
+      width: 80px;
+      height: 82px;
+      border: 1px solid #ccc;
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
   }
 
   /*---------------------------donate-way-text------------------------------------*/
-
   .donate-way-text {
     padding-top: 19px;
     font-size: 22px;
@@ -163,7 +163,6 @@
   }
 
   /*---------------------------donate-guide------------------------------------*/
-
   .item-donation-img {
     display: block;
     width: 690px;
@@ -201,18 +200,19 @@
 
   .donate-guide-apply {
     padding: 0;
+    p {
+      margin: 0 auto;
+    }
   }
 
-  .donate-guide-apply p {
-    margin: 0 auto;
-  }
+  .donate-guide-collect {
+    .row {
+      margin: 0 19px;
+    }
 
-  .donate-guide-collect .row {
-    margin: 0 19px;
-  }
-
-  .donate-guide-collect h3 {
-    margin-bottom: 61px;
+    h3 {
+      margin-bottom: 61px;
+    }
   }
 
   .donate-guide-collect h3, .donate-guide-apply h3 {
@@ -229,74 +229,77 @@
     margin: 9px 10px;
     background-color: #f8f9fb;
     color: #262626;
+
+    h4 {
+      font-size: 18px;
+      line-height: 22px;
+      color: @pink-color;
+      margin-top: 9px;
+    }
+
+    div {
+      float: left;
+      margin-bottom: -11px;
+    }
+
+    span {
+      float: left;
+      line-height: 22px;
+    }
+
+    p {
+      float: right;
+      overflow: hidden;
+      margin-left: 6px;
+      margin-right: -22px;
+      font-size: 14px;
+      line-height: 22px;
+      width: 263px;
+    }
   }
 
-  .donate-guide-collect-item h4 {
-    font-size: 18px;
-    line-height: 22px;
-    color: @pink-color;
-    margin-top: 9px;
-  }
+  .donate-guide-apply {
+    h3 {
+      margin-top: 79px;
+    }
 
-  .donate-guide-collect-item div {
-    float: left;
-    margin-bottom: -11px;
-  }
+    .margin-top-34 {
+      color: @black-color;
+      font-size: 22px;
+      line-height: 30px;
+      margin: 0 auto;
+      margin-top: 34px
+    }
 
-  .donate-guide-collect-item span {
-    float: left;
-    line-height: 22px;
-  }
-
-  .donate-guide-collect-item p {
-    float: right;
-    overflow: hidden;
-    margin-left: 6px;
-    margin-right: -22px;
-    font-size: 14px;
-    line-height: 22px;
-    width: 263px;
-  }
-
-  .donate-guide-apply h3 {
-    margin-top: 79px;
-  }
-
-  .donate-guide-apply .margin-top-34 {
-    color: @black-color;
-    font-size: 22px;
-    line-height: 30px;
-    margin: 0 auto;
-    margin-top: 34px
-  }
-
-  .donate-guide-apply .apply-button {
-    display: block;
-    margin: 0 auto;
-    width: 290px;
-    height: 52px;
-    line-height: 52px;
-    border-radius: 4px;
-    background-color: @pink-color;
-    font-size: 22px;
-    color: #ffffff;
-    margin-top: 45px;
+    .apply-button {
+      display: block;
+      margin: 0 auto;
+      width: 290px;
+      height: 52px;
+      line-height: 52px;
+      border-radius: 4px;
+      background-color: @pink-color;
+      font-size: 22px;
+      color: #ffffff;
+      margin-top: 45px;
+    }
   }
 
   /*---------------------------donate-projects------------------------------------*/
+  .donating-projects {
+    h2 {
+      margin-top: 76px;
+      margin-bottom: 14px;
+    }
 
-  .donating-projects h2 {
-    margin-top: 76px;
-    margin-bottom: 14px;
-  }
+    .container {
+      width: 100%;
+      padding: 0;
+    }
 
-  .donating-projects .container {
-    width: 100%;
-    padding: 0;
-  }
-
-  .donating-projects .row {
-    margin: 0 auto;
+    .row {
+      margin: 0 auto;
+    }
   }
 
   .donating-project {
@@ -304,74 +307,72 @@
     width: 184px;
     margin: 34px 38px;
     position: relative;
-  }
 
-  .donating-project img {
-    width: 184px;
-    height: 184px;
-    background-color: #ccc;
-    margin: 0 auto;
-  }
+    img {
+      width: 184px;
+      height: 184px;
+      background-color: #ccc;
+      margin: 0 auto;
+    }
 
-  .donating-project h4 {
-    font-size: 24px;
-    line-height: 22px;
-    color: #262626;
-    margin-top: 18px;
-  }
+    h4 {
+      font-size: 24px;
+      line-height: 22px;
+      color: #262626;
+      margin-top: 18px;
+    }
 
-  .donating-project div {
-    font-size: 22px;
-    line-height: 30px;
-    color: @black-color;
-  }
+    div {
+      font-size: 22px;
+      line-height: 30px;
+      color: @black-color;
+    }
 
-  .donating-project a {
-    color: @pink-color;
-    font-size: 22px;
-    margin-top: 9px;
+    a {
+      color: @pink-color;
+      font-size: 22px;
+      margin-top: 9px;
+    }
   }
 
   /*---------------------------donate-project-paging------------------------------------*/
-
   .donating-project-paging {
     margin-top: 45px;
     margin-bottom: 121px;
     height: 35px;
     padding-right: 50px;
     padding-left: 40px;
-  }
 
-  .donating-project-paging ul {
-    list-style: none;
+    ul {
+      list-style: none;
+    }
+
+    li {
+      float: left;
+      overflow: hidden;
+      width: 40px;
+      height: 35px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 35px;
+      color: #4a4a4a;
+      margin-right: 8px;
+      background-color: #f8f9fb;
+    }
+
+    a {
+      float: right;
+      font-size: 22px;
+      line-height: 35px;
+      color: @pink-color;
+    }
   }
 
   .donating-project-paging-selected {
     background-color: #eB4b99 !important;
   }
 
-  .donating-project-paging li {
-    float: left;
-    overflow: hidden;
-    width: 40px;
-    height: 35px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 35px;
-    color: #4a4a4a;
-    margin-right: 8px;
-    background-color: #f8f9fb;
-  }
-
-  .donating-project-paging a {
-    float: right;
-    font-size: 22px;
-    line-height: 35px;
-    color: @pink-color;
-  }
-
   /*---------------------------child-profile------------------------------------*/
-
   .child-profile {
     position: absolute;
     left: 0;
@@ -379,29 +380,23 @@
     opacity: 0;
     width: 184px;
     height: 184px;
-  }
 
-  .child-profile p {
-    transform: translate3d(0, -50%, 0);
-    position: absolute;
-    top: 50%;
-    font-size: 14px;
-    line-height: 18px;
-    color: #fff;
-    padding: 0 17px;
-  }
+    p {
+      transform: translate3d(0, -50%, 0);
+      position: absolute;
+      top: 50%;
+      font-size: 14px;
+      line-height: 18px;
+      color: #fff;
+      padding: 0 17px;
+    }
 
-  .child-profile {
     &:hover {
       background-color: @pink-color;
       cursor: pointer;
       display: block;
       opacity: 0.5;
-    }
-  }
 
-  .child-profile {
-    &:hover {
       p {
         opacity: 1;
         color: #fff;
@@ -410,7 +405,6 @@
   }
 
   /*---------------------------donate img------------------------------------*/
-
   .donate-guide-collect-item span img {
     width: 12px;
     height: 12px;
@@ -432,18 +426,20 @@
   }
 
   /*---------------------------leukemia-assistance-modal-denate-money------------------------------------*/
-  .donate-money .modal-dialog {
-    margin: 40px auto 0;
-    width: 40%;
-  }
+  .donate-money {
+    .modal-dialog {
+      margin: 40px auto 0;
+      width: 40%;
+    }
 
-  .donate-money .modal-header {
-    padding-bottom: 0;
-  }
+    .modal-header {
+      padding-bottom: 0;
+    }
 
-  .donate-money .modal-body {
-    padding-top: 0;
-    margin-top: -20px;
+    .modal-body {
+      padding-top: 0;
+      margin-top: -20px;
+    }
   }
 }
 
