@@ -1,30 +1,9 @@
 @import "common";
-#ourwork{
 
-  .our-work-center-text {
-    position: relative;
-    text-align: center;
-  }
-
-  .our-work-center-text h1 {
-    font-weight: lighter;
-    font-size: 40px;
-    color: #ec4c9a;
-  }
-
-  .our-work-center-text p {
-    font-size: 20px;
-    color: #6d6d6d;
-  }
-
-  .video-section {
-    position: relative;
-    text-align: center;
-    height: 380px;
-    width: 100%;
-    top: 40px;
-    background-size: cover;
-    background: #e8e8e8;
+#ourwork {
+  .middle-text {
+    margin-top: 57px;
+    margin-bottom: 65px;
   }
 
   .control {
@@ -34,50 +13,20 @@
     text-align: center;
   }
 
-  .what-do h1 {
-    text-align: center;
-    font-weight: lighter;
-    font-size: 40px;
-    color: #ec4c9a;
-    margin: 80px;
-  }
-
-  .job-icons-container {
-    height: 120px;
-    position: relative;
-  }
-
-  .ourwork-job-icons {
-    margin-top: 5.5em;
-  }
-
-  .job-icons {
-    overflow: hidden;
-    padding-left: 5em;
-  }
-
-  .job-icons img {
-    vertical-align: middle;
-    position: absolute;
-    transform: translate3d(-50%, -50%, 0);
-    top: 50%;
-    left: 50%;
-  }
-
   .job-icons a {
     font-size: 1.5em;
-    color: #575757;
+    color: @black-color;
     white-space: nowrap;
     margin-top: 15px;
     margin-bottom: 0;
     text-decoration: none;
     outline: none;
-  }
+    &:hover {
+      color: @pink-color;
+      outline: none;
+      text-decoration: none;
+    }
 
-  .job-icons a:hover {
-    color: #EC4C9A;
-    outline: none;
-    text-decoration: none;
   }
 
   .icon-community {

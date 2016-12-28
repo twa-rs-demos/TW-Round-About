@@ -5,7 +5,7 @@
   //margin: 0 auto;
   /*---------------------------donate-way------------------------------------*/
   .dobate-way {
-    color: #575757;
+    color: @black-color;
   }
 
   .text-center {
@@ -24,12 +24,25 @@
     margin: 0 auto;
   }
 
-  .donate-way img:hover {
-    cursor: pointer;
+  .donate-way img {
+    &:hover {
+      cursor: pointer;
+    }
   }
 
-  .donate-way .no-hover:hover {
-    cursor: default;
+  .donate-way .no-hover {
+    &:hover {
+      cursor: default;
+    }
+  }
+
+  .donate-way-title {
+    text-align: center;
+    color: @pink-color;
+    font-size: 48px;
+    line-height: 56px;
+    margin-top: 57px;
+    margin-bottom: 21px;
   }
 
   .donate-way-row {
@@ -58,7 +71,7 @@
 
   .donate-way-content h3 {
     margin-top: 18px;
-    color: #ec4c9a;
+    color: @pink-color;
     text-align: center;
     font-size: 32px;
   }
@@ -179,7 +192,7 @@
     margin: 0 auto;
     font-size: 22px;
     line-height: 30px;
-    color: #575757;
+    color: @black-color;
   }
 
   .donate-guide-collect, .donate-guide-apply {
@@ -205,7 +218,7 @@
   .donate-guide-collect h3, .donate-guide-apply h3 {
     font-size: 36px;
     line-height: 32px;
-    color: #575757;
+    color: @black-color;
     margin-top: 35px;
     text-align: center;
   }
@@ -221,7 +234,7 @@
   .donate-guide-collect-item h4 {
     font-size: 18px;
     line-height: 22px;
-    color: #ec4c9a;
+    color: @pink-color;
     margin-top: 9px;
   }
 
@@ -250,7 +263,7 @@
   }
 
   .donate-guide-apply .margin-top-34 {
-    color: #575757;
+    color: @black-color;
     font-size: 22px;
     line-height: 30px;
     margin: 0 auto;
@@ -264,7 +277,7 @@
     height: 52px;
     line-height: 52px;
     border-radius: 4px;
-    background-color: #ec4c9a;
+    background-color: @pink-color;
     font-size: 22px;
     color: #ffffff;
     margin-top: 45px;
@@ -309,11 +322,11 @@
   .donating-project div {
     font-size: 22px;
     line-height: 30px;
-    color: #575757;
+    color: @black-color;
   }
 
   .donating-project a {
-    color: #ec4c9a;
+    color: @pink-color;
     font-size: 22px;
     margin-top: 9px;
   }
@@ -353,7 +366,7 @@
     float: right;
     font-size: 22px;
     line-height: 35px;
-    color: #ec4c9a;
+    color: @pink-color;
   }
 
   /*---------------------------child-profile------------------------------------*/
@@ -377,16 +390,22 @@
     padding: 0 17px;
   }
 
-  .child-profile:hover {
-    background-color: #ec4c9a;
-    cursor: pointer;
-    display: block;
-    opacity: 0.5;
+  .child-profile {
+    &:hover {
+      background-color: @pink-color;
+      cursor: pointer;
+      display: block;
+      opacity: 0.5;
+    }
   }
 
-  .child-profile:hover p {
-    opacity: 1;
-    color: #fff;
+  .child-profile {
+    &:hover {
+      p {
+        opacity: 1;
+        color: #fff;
+      }
+    }
   }
 
   /*---------------------------donate img------------------------------------*/
@@ -409,33 +428,6 @@
     right: 60px;
     bottom: 60px;
     padding: 0 10px;
-  }
-
-  /*---------------------------bread-crumb------------------------------------*/
-
-  .bread-crumb {
-    background-color: #f5f5f5;
-    padding-left: 31px;
-  }
-
-  .breadcrumb {
-    margin: 0;
-    padding: 8px 0;
-  }
-
-  .breadcrumb > li + li:before {
-    position: relative;
-    font-family: FontAwesome;
-    font-size: 14px;
-    content: "\f105";
-    color: #B2B6BF;
-    padding: 0;
-    margin: 0 8px 0 0;
-    top: 1px;
-  }
-
-  .breadcrumb > li {
-    margin: 3px;
   }
 
   /*---------------------------leukemia-assistance-modal-denate-money------------------------------------*/
