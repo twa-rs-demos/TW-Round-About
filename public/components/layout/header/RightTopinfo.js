@@ -8,11 +8,11 @@ class WechatModal extends Component {
       <div className='static-modal' id='wechatModal'>
         <Modal.Dialog>
           <Modal.Header>
-            <Button onClick={this.props.closeWechatModal}><img src='./public/images/home/close.png'/></Button>
+            <Button onClick={this.props.closeWechatModal}><img src='http://localhost/tw-ra/public/images/home/close.png'/></Button>
           </Modal.Header>
 
           <Modal.Body>
-            <img src='./public/images/home/wechat store.png'/>
+            <img src='http://localhost/tw-ra/public/images/home/wechat store.png'/>
           </Modal.Body>
         </Modal.Dialog>
       </div>
