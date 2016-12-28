@@ -28,7 +28,7 @@ export default class media extends Component {
   render() {
 
     return (
-      <div className='content' dangerouslySetInnerHTML={{__html: this.state.content}}>
+      <div dangerouslySetInnerHTML={{__html: this.state.content}}>
       </div>
     );
   }
