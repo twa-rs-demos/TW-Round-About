@@ -19,7 +19,7 @@ export default class ColTwo extends Component {
 
   render() {
     return (
-      <div>
+      <div id="donatemoney">
         <h3 className='text-center'>捐款</h3>
         <div className='row row-1'>
           <div className='col-xs-6'>
