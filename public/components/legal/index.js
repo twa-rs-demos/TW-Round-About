@@ -1,17 +1,17 @@
 import {Component} from 'react';
-// import '../../style/legalPrivacyPolicy.less';
+import '../../style/legalPrivacyPolicy.less';
 
 export default class Legal extends Component {
   render() {
     return (
-      <div className='Legal' id='legal'>
-        <h2 className='Legal-title'>Legal</h2>
-        <p className='Legal-content'>Welcome to our website. If you continue to browse and use this website you are
+      <div id='legal'>
+        <h2 className='legal-title'>Legal</h2>
+        <p className='legal-content'>Welcome to our website. If you continue to browse and use this website you are
           agreeing to comply with and be
           bound by the following terms and conditions of use, which together with our privacy policy govern Roundabout’s
           relationship with you in relation to this website.</p>
-        <p className='Legal-content'>The term “Roundabout” or “us” or “we” refers to the owner of the website.</p>
-        <p className='Legal-content'>The term “you” refers to the user or viewer of our website.</p>
+        <p className='legal-content'>The term “Roundabout” or “us” or “we” refers to the owner of the website.</p>
+        <p className='legal-content'>The term “you” refers to the user or viewer of our website.</p>
 
         <p>The use of this website is subject to the following terms of use:</p>
         <ul>
@@ -58,7 +58,7 @@ export default class Legal extends Component {
           </li>
         </ul>
 
-        <p className='Legal-content'>This website and its content is copyright of Roundabout. All rights reserved.</p>
+        <p className='legal-content'>This website and its content is copyright of Roundabout. All rights reserved.</p>
         <p>Any redistribution or reproduction of part or all of the contents in any form is prohibited other than the
           following:</p>
         <ul>

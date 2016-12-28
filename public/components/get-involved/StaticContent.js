@@ -5,7 +5,7 @@ export default class StaticContent extends Component {
   render() {
     return (
       <div className='container get-involved-welcome'>
-        <h2 className='donate-way-title'>欢迎来到众爱大家庭</h2>
+        <h2 className='middle-title'>欢迎来到众爱大家庭</h2>
         <div className='row'>
           <div className='col-md-6'>
             <img src='http://localhost/tw-ra/public/images/getInvolved/icon_volunteer.png'/>
@@ -28,7 +28,7 @@ export default class StaticContent extends Component {
           </div>
         </div>
 
-        <div className='row get-involved-last-row'>
+        <div className='row'>
           <div className='col-md-6'>
             <img src='http://localhost/tw-ra/public/images/getInvolved/icon_support.png'/>
             <Link to={URI_PREFIX + '/directory'}>您的捐赠可以帮到谁</Link>
