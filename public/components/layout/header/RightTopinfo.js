@@ -1,7 +1,6 @@
 import {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
 import {Link} from 'react-router';
-import Scrollchor from 'react-scrollchor';
 
 class WechatModal extends Component {
   render() {
