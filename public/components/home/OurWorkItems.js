@@ -17,25 +17,25 @@ export default class OurWorkItems extends Component {
             </div>
             <p>白血病救助</p>
           </div>
-          <div className='col-md-2 icon-container b-work-icon'>
+          <div className='col-md-2 icon-container'>
             <div className='job-icons-container'>
               <img src='http://localhost/public/images/home/icon_medical assistance_small.png' alt='医疗救助'/>
             </div>
             <p>医疗救助</p>
           </div>
-          <div className='col-md-2 icon-container c-work-icon'>
+          <div className='col-md-2 icon-container'>
             <div className='job-icons-container'>
               <img src='http://localhost/public/images/home/icon_education support_small.png' alt='教育资助'/>
             </div>
             <p>教育资助</p>
           </div>
-          <div className='col-md-2 icon-container d-work-icon'>
+          <div className='col-md-2 icon-container'>
             <div className='job-icons-container'>
               <img src='http://localhost/public/images/home/icon_leukemia assistance_small.png' alt='灾区救助'/>
             </div>
             <p>灾区救助</p>
           </div>
-          <div className='col-md-2 icon-container e-work-icon'>
+          <div className='col-md-2 icon-container'>
             <div className='job-icons-container'>
               <img src='http://localhost/public/images/home/icon_community assistance_small.png' alt='社区帮扶'/>
             </div>
