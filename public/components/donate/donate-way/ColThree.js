@@ -3,7 +3,7 @@ import {Component} from 'react';
 export default class ColThree extends Component {
   render() {
     return (
-      <div>
+      <div id="donateitems">
         <h3>募捐项目</h3>
         <p>直接通过乐捐捐款</p>
         <div>

@@ -4,7 +4,7 @@ import Scrollchor from 'react-scrollchor';
 export default class ColOne extends Component {
   render() {
     return (
-      <div>
+      <div id="donatethings">
         <h3>物品捐赠</h3>
         <ul>
           <li><Scrollchor to='#donate-guide-hash'> 捐赠指南</Scrollchor></li>
