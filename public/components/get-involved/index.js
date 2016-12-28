@@ -6,7 +6,7 @@ import '../../style/getInvolved.less';
 export default class getInvolved extends Component {
   render() {
     return (
-      <div id="get-involved">
+      <div id='get-involved'>
         <PictureMax/>
         <StaticContent/>
       </div>
