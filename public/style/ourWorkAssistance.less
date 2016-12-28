@@ -1,58 +1,6 @@
+@import "common";
+
 #ourwork-assistance {
-  .Leukemia-rescue-image {
-    position: relative;
-    padding: 0;
-
-    border: 1px solid red;
-    top: -16px;
-    margin: 0px;
-    height: 420px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .patient-profile {
-    position: relative;
-    float: right;
-    right: 10%;
-    top: 50%;
-    font-weight: lighter;
-    line-height: inherit;
-    font-size: 22px;
-    color: #FFFFFF;
-  }
-
-  .patient-profile p {
-    word-spacing: -7px;
-    line-height: 30px;
-  }
-
-  .child-story-btn {
-    position: relative;
-    float: right;
-    top: 85%;
-    left: 11%;
-    width: 276px;
-    height: 42px;
-    color: #ffffff;
-    background: #ec4c9a;
-    border: 0;
-    border-radius: 5px;
-    font-size: 22px;
-    line-height: 42px;
-  }
-
-  .more-story {
-    position: relative;
-    float: right;
-    outline: none;
-    border: 0;
-    background: none;
-    margin: 40px 50px;
-
-  }
-
   .save-life-situation {
     margin: 100px 0;
     margin-top: 0;
@@ -63,28 +11,18 @@
     text-align: center;
   }
 
-  .save-life-situation h2 {
-    margin: 0;
-    padding: 0;
-    color: #ed6cab;
-    font-size: 48px;
-    line-height: 56px;
-    padding: 3%;
-  }
-
-  .Rescue-situation-img {
+  .rescue-situation-img {
     text-align: center;
-  }
-
-  .Rescue-situation-img img {
-    margin: 40px;
+    img {
+      margin: 40px;
+    }
   }
 
   .participate-rescue {
     width: 226px;
     height: 52px;
     color: #ffffff;
-    background: #ec4c9a;
+    background: @pink-color;
     border: 0;
     border-radius: 4px;
     font-size: 22px;
@@ -93,13 +31,12 @@
 
   .fact-situation {
     text-align: center;
-  }
-
-  .fact-situation h2 {
-    font-size: 48px;
-    line-height: 56px;
-    margin-bottom: 20px;
-    color: #ec4c9a;
+    h2 {
+      font-size: 48px;
+      line-height: 56px;
+      margin-bottom: 20px;
+      color: @pink-color;
+    }
   }
 
   .fact-situation p, .fact-situation span {
@@ -109,23 +46,24 @@
   }
 
   .fact-situation span {
-    color: #ec4c9a;
+    color: @pink-color;
   }
 
-  .fact-situation-graph img {
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
-  }
-
-  .fact-situation-graph div {
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 225px;
-    text-align: center;
-    line-height: 52px;
-    color: #fff;
-    background-color: #ec4c9a;
+  .fact-situation-graph {
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+    div {
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 225px;
+      text-align: center;
+      line-height: 52px;
+      color: #fff;
+      background-color: @pink-color;
+    }
   }
 
   /*---------------------maxPicture--------------------------*/
@@ -137,21 +75,21 @@
     line-height: 28px;
     color: #fff;
     width: 425px;
-  }
 
-  .ourWorkAssistence-picture-text p {
-    margin: 0;
-  }
+    p {
+      margin: 0;
+    }
 
-  .ourWorkAssistence-picture-text div {
-    margin-top: 27px;
-    background-color: #ec4c9a;
-    width: 65%;
-    height: 42px;
-    border-radius: 4px;
-    font-size: 22px;
-    text-align: center;
-    line-height: 42px;
+    div {
+      margin-top: 27px;
+      background-color: @pink-color;
+      width: 65%;
+      height: 42px;
+      border-radius: 4px;
+      font-size: 22px;
+      text-align: center;
+      line-height: 42px;
+    }
   }
 
   .ourWorkAssistence-picture-readMore {
@@ -159,14 +97,14 @@
     text-align: right;
     padding-right: 72px;
     line-height: 95px;
-    color: #ec4c9a;
+    color: @pink-color;
   }
 
   .I-want-donate {
     width: 226px;
     height: 52px;
     color: #ffffff;
-    background: #ec4c9a;
+    background: @pink-color;
     border: 0;
     padding: 0;
     border-radius: 0;
@@ -174,9 +112,11 @@
     line-height: 52px;
   }
 
-  .picture-max .read-more :hover {
-    color: #ec4c9a;
-    text-decoration: none;
+  .picture-max .read-more {
+    &:hover {
+      color: @pink-color;
+      text-decoration: none;
+    }
   }
 
   .ourWorkAssistence-picture-btn .story {
