@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import {Link} from 'react-router';
-import ColTwo from '../donate/donate-way/ColTwo';
+import ColTwo from '../donate/donate-way/DonateMoney';
 import {Modal} from 'react-bootstrap';
 
 export default class ContentStatic extends Component {

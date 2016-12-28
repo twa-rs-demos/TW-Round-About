@@ -1,7 +1,7 @@
 import {Component} from 'react';
-import ColOne from './DonateGoods';
-import ColTwo from './DonateMoney';
-import ColThree from './DonationProjects';
+import DonateGoods from './DonateGoods';
+import DonateMoney from './DonateMoney';
+import DonationProjects from './DonationProjects';
 
 export default class DonateWay extends Component {
   render() {
@@ -14,13 +14,13 @@ export default class DonateWay extends Component {
           <div className='container donate-way-content'>
             <div className='row donate-way-row'>
               <div className='col-xs-4 things-donate'>
-                <ColOne/>
+                <DonateGoods/>
               </div>
               <div className='col-xs-4 donate-way-donation'>
-                <ColTwo/>
+                <DonateMoney/>
               </div>
               <div className='col-xs-4  donate-way-project '>
-                <ColThree/>
+                <DonationProjects/>
               </div>
             </div>
           </div>
