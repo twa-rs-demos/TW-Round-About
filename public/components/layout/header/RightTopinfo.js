@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
 import {Link} from 'react-router';
+import Scrollchor from 'react-scrollchor';
 
 class WechatModal extends Component {
   render() {
@@ -39,8 +40,9 @@ export default class MainMenu extends Component {
   render() {
     return (
       <div className='row right-topinfo'>
-        <Link to={URI_PREFIX + '/newsLetter-center'} className='col-sm-2 top-right-word  no-padding'>月报中心</Link>
-        <Link to={URI_PREFIX + '/newsLetter-signUp'} className='col-sm-2  top-right-word no-padding'>月报申领</Link>
+        <Link to={URI_PREFIX + '/newsandevent/newslettercenter'}
+              className='col-sm-2 top-right-word  no-padding'>月报中心</Link>
+        <a href='#apply-monthly-report' className='col-sm-2  top-right-word no-padding'>月报申领</a>
         <a href='#' className='col-sm-2 no-padding top-right-word'>English</a>
 
         <a className='col-sm-1 no-padding top-left-icon ' onClick={this.showWechatModal.bind(this)}>
