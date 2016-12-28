@@ -1,7 +1,7 @@
 import {Component} from 'react';
-import ColOne from './ColOne';
-import ColTwo from './ColTwo';
-import ColThree from './ColThree';
+import ColOne from './DonateGoods';
+import ColTwo from './DonateMoney';
+import ColThree from './DonationProjects';
 
 export default class DonateWay extends Component {
   render() {
