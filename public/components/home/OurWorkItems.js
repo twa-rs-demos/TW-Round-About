@@ -15,31 +15,31 @@ export default class OurWorkItems extends Component {
             <div className='job-icons-container'>
               <img src='http://localhost/tw-ra/public/images/home/icon_disaster relief_small.png' alt='白血病救助'/>
             </div>
-            <p>白血病救助</p>
+            <p className='middle-describe'>白血病救助</p>
           </div>
           <div className='col-sm-2 col-xs-6 icon-container'>
             <div className='job-icons-container'>
               <img src='http://localhost/tw-ra/public/images/home/icon_medical assistance_small.png' alt='医疗救助'/>
             </div>
-            <p>医疗救助</p>
+            <p className='middle-describe'>医疗救助</p>
           </div>
           <div className='col-sm-2 col-xs-6 icon-container'>
             <div className='job-icons-container'>
               <img src='http://localhost/tw-ra/public/images/home/icon_education support_small.png' alt='教育资助'/>
             </div>
-            <p>教育资助</p>
+            <p className='middle-describe'>教育资助</p>
           </div>
           <div className='col-sm-2 col-xs-6 icon-container'>
             <div className='job-icons-container'>
               <img src='http://localhost/tw-ra/public/images/home/icon_leukemia assistance_small.png' alt='灾区救助'/>
             </div>
-            <p>灾区救助</p>
+            <p className='middle-describe'>灾区救助</p>
           </div>
           <div className='col-sm-2 col-xs-6 icon-container'>
             <div className='job-icons-container'>
               <img src='http://localhost/tw-ra/public/images/home/icon_community assistance_small.png' alt='社区帮扶'/>
             </div>
-            <p>社区帮扶</p>
+            <p className='middle-describe'>社区帮扶</p>
           </div>
           <div className='col-sm-1 col-xs-6'></div>
         </div>
