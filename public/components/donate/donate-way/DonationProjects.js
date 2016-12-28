@@ -1,6 +1,6 @@
 import {Component} from 'react';
 
-export default class ColThree extends Component {
+export default class DonationProjects extends Component {
   render() {
     return (
       <div id="donateitems">

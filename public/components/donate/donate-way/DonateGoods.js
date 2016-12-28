@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import Scrollchor from 'react-scrollchor';
 
-export default class ColOne extends Component {
+export default class DonateGoods extends Component {
   render() {
     return (
       <div id="donatethings">
