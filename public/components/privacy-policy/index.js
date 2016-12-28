@@ -3,7 +3,7 @@ import {Component} from 'react';
 export default class PrivacyPolicy extends Component {
   render() {
     return (
-      <div className='Legal' id="legal">
+      <div className='Legal' id='legal'>
         <h2 className='Legal-title'>Privacy Policy</h2>
         <p className='Legal-content'>This privacy policy sets out how “Roundabout” uses and protects any information
           that you give“Roundabout”when

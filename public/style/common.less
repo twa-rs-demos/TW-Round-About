@@ -1,13 +1,15 @@
+@pink-color: #ec4c9a;
+@black-color: #575757;
+@title-font:48px;
+@descibe-font:22px;
 
-@pink-color:#ec4c9a;
-.no-padding{
-  padding:0;
+
+.no-padding {
+  padding: 0;
 }
-.no-margin{
-  margin:0;
-}
+
 .pink {
-  color: #EB4B99;
+  color: @pink-color;
 }
 
 pre {
@@ -15,32 +17,24 @@ pre {
   background: #3a383f;
   color: #d1d1d3;
 }
+
 /*--------------------------main-title-------------------------------------*/
-
-.middle-text {
+.middle-text() {
   text-align: center;
-  padding: 3%;
 }
 
-.middle-text p {
-  color: #ed4cb5;
-  font-weight: lighter;
-  font-size: 48px;
-  margin: 0 0 2% 0;
-}
-
-.middle-text span {
-  font-size: 22px;
-  color: #575757;
-}
-
-.donate-way-title {
-  text-align: center;
-  color: #ec4c9a;
-  font-size: 48px;
+.middle-title {
+  color: @pink-color;
+  font-size: @title-font;
   line-height: 56px;
-  margin-top: 57px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
+  .middle-text();
+}
+
+.middle-describe {
+  color: @black-color;
+  font-size:@descibe-font;
+  .middle-text();
 }
 
 /*--------------------------picture-max-------------------------------------*/

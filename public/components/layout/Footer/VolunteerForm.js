@@ -19,7 +19,7 @@ export default class VolunteerForm extends Component {
   render() {
     return (
       <div className='static-modal'>
-        <div id="modal-Volunteer-content">
+        <div id='modal-Volunteer-content'>
         <Modal.Dialog>
             <Modal.Header>
               <Modal.Title>

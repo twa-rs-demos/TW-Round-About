@@ -5,9 +5,9 @@ export default class OurWorkItems extends Component {
   render() {
     return (
       <div>
-        <div className='middle-text'>
-          <p> 我们的工作</p>
-          <span> 众爱在全种食品范围内支持个人救助的同时也与其它慈善机构合作救助</span>
+        <div className='ourwork-item'>
+          <h2 className="middle-title"> 我们的工作</h2>
+          <p className="middle-describe"> 众爱在全种食品范围内支持个人救助的同时也与其它慈善机构合作救助</p>
         </div>
 
         <div className='job-icons col-sm-offset-1 row'>

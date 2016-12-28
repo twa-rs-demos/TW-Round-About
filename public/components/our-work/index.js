@@ -6,7 +6,7 @@ import '../../style/ourWork.less';
 export default class OurWork extends Component {
   render() {
     return (
-      <div id="ourwork">
+      <div id='ourwork'>
         <Video/>
         <OurWorkItems/>
       </div>

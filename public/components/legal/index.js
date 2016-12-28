@@ -4,7 +4,7 @@ import {Component} from 'react';
 export default class Legal extends Component {
   render() {
     return (
-      <div className='Legal' id="legal">
+      <div className='Legal' id='legal'>
         <h2 className='Legal-title'>Legal</h2>
         <p className='Legal-content'>Welcome to our website. If you continue to browse and use this website you are
           agreeing to comply with and be

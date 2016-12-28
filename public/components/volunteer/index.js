@@ -7,7 +7,7 @@ import '../../style/getInvolvedVolunteer.less';
 export default class GetInvolvedVolunteer extends Component {
   render() {
     return (
-      <div id="get-involved-volunteer">
+      <div id='get-involved-volunteer'>
         <PictureMax/>
         <StaticContent/>
         <VolunteerStory/>
