@@ -1,3 +1,4 @@
+@import "common";
 #header {
   border-bottom: .4rem solid #EB4B99;
 
@@ -39,7 +40,7 @@
   .menu-item {
     border: none;
     margin-right: 3.6rem;
-    font-size: 2.2rem;
+    font-size: 2rem;
     padding: 0;
     color: #414141;
   }
@@ -51,11 +52,11 @@
   }
 
   .first-menu {
-    font-size: 2.2rem;
-    padding: .5rem 1.0rem .5rem 1.0rem;
+    font-size: 2rem;
+    padding: .1rem 1.0rem .1rem 1.0rem;
     margin-bottom: .4rem;
-    &:hover, &:focus {
-      background-color: #EC4C9A;
+    &:hover {
+      background-color: @pink-color;
       border-radius: 10.0rem;
     }
     a {
@@ -75,6 +76,14 @@
       border-color: #A1A1A1 transparent;
       vertical-align: middle;
       margin-left: .7rem;
+    }
+  }
+  .active {
+    background-color: @pink-color;
+    border-radius: 10.0rem;
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
     }
   }
 
@@ -100,7 +109,7 @@
         height: 0;
         border-width: 0 .8rem .7rem;
         border-style: solid;
-        border-color: transparent transparent #EC4C9A;
+        border-color: transparent transparent @pink-color;
         position: absolute;
         left: 6.0rem;
         top: -.7rem;
@@ -130,7 +139,7 @@
         background-color: #ffffff;
         padding: 1.8rem 0 1.6rem 1.4rem;
         border-radius: .5rem;
-        border: .1rem solid #EC4C9A;
+        border: .1rem solid @pink-color;
 
         .dropdown-item {
           font-size: 1.5rem;
@@ -139,7 +148,7 @@
             color: #414141;
             text-decoration: none;
             &:hover {
-              color: #EC4C9A;
+              color: @pink-color;
               text-decoration: none;
             }
           }

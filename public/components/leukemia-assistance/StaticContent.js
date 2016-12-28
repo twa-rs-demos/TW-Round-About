@@ -27,6 +27,9 @@ export default class ContentStatic extends Component {
   render() {
     return (
       <div>
+        <div className='col-xs-offset-11  col-xs-1 read-more'>
+          <Link to={URI_PREFIX + '/leukemia-stories'} className='ourWorkAssistence-picture-readMore'>阅读更多> </Link>
+        </div>
         <div className='save-life-situation'>
           <h2 className="middle-title">我们参与挽救的生命</h2>
           <div className='rescue-situation-img'>
@@ -57,7 +60,8 @@ export default class ContentStatic extends Component {
             <Modal.Dialog>
               <Modal.Header>
                 <div className='col-xs-offset-11 col-xs-1'>
-                  <img src='http://localhost/tw-ra/public/images/home/close.png' className='image-close' onClick={this.close.bind(this)}/>
+                  <img src='http://localhost/tw-ra/public/images/home/close.png' className='image-close'
+                       onClick={this.close.bind(this)}/>
                 </div>
               </Modal.Header>
               <Modal.Body>

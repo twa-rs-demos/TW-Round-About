@@ -59,7 +59,8 @@ export default class MenuList extends Component {
     super(props);
     this.state = {
       menuList: [],
-      currentMenuId: ''
+      currentMenuId: '',
+      selectedMenuId: ''
     };
   }
 
@@ -105,15 +106,19 @@ export default class MenuList extends Component {
     this.setState({currentMenuId: ''});
   }
 
+  selectMenu(id) {
+    this.setState({selectedMenuId: id, currentMenuId: ''});
+  }
+
   render() {
     const menuList = this.state.menuList.map((menu, index) => {
       return <div className='menu-list' key={index}
                   onMouseEnter={this.showMenu.bind(this, menu.id)}
                   onMouseLeave={this.hideMenu.bind(this, menu.id)}
-                  onClick={this.hideMenu.bind(this, menu.id)}
+                  onClick={this.selectMenu.bind(this, menu.id)}
       >
 
-        <div className='first-menu'>
+        <div className={'first-menu ' + (this.state.selectedMenuId === menu.id ? 'active' : '')}>
           <Link to={URI_PREFIX + '/' + menu.slug}>
             {menu.name}
             <span className='triangle'></span>
