@@ -18,7 +18,7 @@ export default class Home extends Component {
           </div>
         </MaxPicture>
         <div className='container'>
-          <div className='col-xs-offset-1 col-xs-10'>
+          <div className='row'>
             <DonateWay/>
             <ItemDonate/>
             <DonatingProjects title='正在捐款的项目'/>
