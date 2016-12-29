@@ -5,7 +5,7 @@ import TopInfo from './TopInfo';
 export default class Header extends Component {
   render() {
     return (
-      <div id='header' className="container no-padding no-margin">
+      <div id='header'>
         <TopInfo/>
         <NavMenu/>
       </div>
