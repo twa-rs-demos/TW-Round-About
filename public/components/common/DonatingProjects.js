@@ -57,7 +57,7 @@ export default class DonatingProjects extends Component {
     ];
     return (
       <div className='donating-projects'>
-        <div className="donating-middle-text">
+        <div className='donating-middle-text'>
           <h2 className='middle-title'>{this.props.title}</h2>
         </div>
         <div>
@@ -85,7 +85,7 @@ export default class DonatingProjects extends Component {
           <div className='child-profile'>
             <p>这里是简介哦-。-！已经测试过长度的问题，不会越界的，放心哦^0^</p>
           </div>
-          <div className="child-profile-text">
+          <div className='child-profile-text'>
             <h4>{item.name}，{item.age}岁</h4>
             <p>{item.disease}</p>
             <p>需要&nbsp;￥{item.money}</p>

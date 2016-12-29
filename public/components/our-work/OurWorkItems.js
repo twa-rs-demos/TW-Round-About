@@ -5,8 +5,8 @@ export default class ourWorkItems extends Component {
   render() {
     return (
       <div>
-        <div className="middle-text">
-          <h3 className="middle-title"> 我们都做什么</h3>
+        <div className='middle-text'>
+          <h3 className='middle-title'> 我们都做什么</h3>
         </div>
         <div>
           <div className='job-icons row col-xs-offset-1'>

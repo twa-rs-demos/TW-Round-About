@@ -3,10 +3,10 @@ import {Component} from 'react';
 export default class DonationProjects extends Component {
   render() {
     return (
-      <div id="donateProjects" className="donate">
+      <div id='donateProjects' className='donate'>
         <h3>募捐项目</h3>
         <p className='middle-describe'>直接通过乐捐捐款</p>
-        <div className="wechat-image">
+        <div className='wechat-image'>
           <img src='./public/images/donate/wechat01.png' className='no-hover'/>
           <span className='span'>腾讯</span>
         </div>

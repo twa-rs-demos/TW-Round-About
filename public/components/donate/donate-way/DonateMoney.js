@@ -19,10 +19,9 @@ export default class DonateMoney extends Component {
 
   render() {
     return (
-      <div id="donatemoney" className="donate">
+      <div id='donatemoney' className='donate'>
         <h3 className='text-center'>捐款</h3>
         <div className='row'>
-
           <div className='col-xs-offset-1 col-xs-5'>
             <img src='http://localhost/tw-ra/public/images/donate/wechat01.png'
                  className='img-center'/>
@@ -44,10 +43,8 @@ export default class DonateMoney extends Component {
         <div className='row'>
           <div className='col-xs-offset-1 col-xs-5'>
             <a href='http://love.alipay.com/donate/itemDetail.htm?name=2015081315541167376' target='_blank'>
-
               <img src='http://localhost/tw-ra/public/images/donate/logo_alipay.png'
                    className='img-center'/>
-
             </a>
             <span className='span'>Alipay</span>
           </div>
@@ -58,9 +55,7 @@ export default class DonateMoney extends Component {
                    className='img-center'/>
             </div>
             <span className='span'>Paypal</span>
-
           </div>
-
           {this.state.isShowPaypal ? <Paypal closePaypalModal={this.closePaypalModal.bind(this)}/> : ''}
         </div>
       </div>

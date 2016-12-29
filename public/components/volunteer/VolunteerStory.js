@@ -35,7 +35,7 @@ export default class VolunteerStory extends Component {
   }
 
   getstoryCols(projectCols) {
-    return projectCols.map((item,index) => {
+    return projectCols.map((item, index) => {
       return (
         <div className='col-md-3 donating-project' key={index}>
           <img src={item.src}/>
