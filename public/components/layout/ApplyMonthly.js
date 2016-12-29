@@ -36,7 +36,7 @@ export default class ApplyMonthly extends Component {
   render() {
     return (
       <div>
-        <div className='apply-monthly-report' id='apply-monthly-report'>
+        <div id='apply-monthly-report'>
           <img src='http://localhost/tw-ra/public/images/icon_newsletter.png'/>
           <div className='apply-monthly-report-text'>申领月报</div>
           <input type='email' className='input-email' placeholder='请输入你的电子邮箱'/>
