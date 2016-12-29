@@ -4,9 +4,9 @@ import Scrollchor from 'react-scrollchor';
 export default class DonateGoods extends Component {
   render() {
     return (
-      <div id='donatethings' className='donate '>
+      <div id='donatethings' className=' donate '>
         <h3>物品捐赠</h3>
-        <ul className='col-xs-offset-1 col-xs-10'>
+        <ul className='col-xs-offset-3 col-xs-9'>
           <li >
             <Scrollchor className='donate-goods-item' to='#donate-guide-hash'> 捐赠指南</Scrollchor></li>
           <li>

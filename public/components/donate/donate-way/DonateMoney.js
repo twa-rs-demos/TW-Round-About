@@ -21,7 +21,8 @@ export default class DonateMoney extends Component {
     return (
       <div id='donatemoney' className='donate'>
         <h3 className='text-center'>捐款</h3>
-        <div className='row'>
+        <div className='row donate-money-margin'>
+
           <div className='col-xs-offset-1 col-xs-5'>
             <img src='http://localhost/tw-ra/public/images/donate/wechat01.png'
                  className='img-center'/>

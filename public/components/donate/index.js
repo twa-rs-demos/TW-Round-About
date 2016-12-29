@@ -18,7 +18,6 @@ export default class Home extends Component {
           </div>
         </MaxPicture>
         <div className='container'>
-          <div className='row'>
             <DonateWay/>
             <ItemDonate/>
             <DonatingProjects title='正在捐款的项目'/>
@@ -26,7 +25,6 @@ export default class Home extends Component {
               <span>这里还需要一个翻页器组件</span>
               <Link to='/tw-ra/donateCurrent'><span>更多</span></Link>
             </p>
-          </div>
         </div>
       </div>
     );
