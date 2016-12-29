@@ -33,15 +33,15 @@
       cursor: default;
     }
   }
-
-  .donate-way-title {
-    text-align: center;
-    color: @pink-color;
-    font-size: 4.8rem;
-    line-height: 5.6rem;
-    margin-top: 5.7rem;
-    margin-bottom: 2rem;
-  }
+  //
+  //.donate-way-title {
+  //  text-align: center;
+  //  color: @pink-color;
+  //  font-size: 4.5rem;
+  //  line-height: 5.6rem;
+  //  margin-top: 5.7rem;
+  //  margin-bottom: 2rem;
+  //}
 
   .donate-way-row {
     margin: 0 auto;
@@ -75,7 +75,7 @@
     ul {
       padding-left: 6.5rem;
       margin-top: 5.6rem;
-      font-size: 2.2rem;
+      font-size: @descibe-font;
       line-height: 3rem;
       li {
         margin-top: 1.4rem;
@@ -139,7 +139,7 @@
   .donate-way-project {
     p {
       margin-top: 3.1rem;
-      font-size: 2.2rem;
+      font-size: @descibe-font;
       text-align: center;
     }
 
@@ -156,7 +156,7 @@
   /*---------------------------donate-way-text------------------------------------*/
   .donate-way-text {
     padding-top: 1.9rem;
-    font-size: 2.2rem;
+    font-size: @descibe-font;
     line-height: 3rem;
     width: 96.6rem;
     margin: 0 auto;
@@ -189,7 +189,7 @@
   .donate-guide-describe {
     width: 60.8rem;
     margin: 0 auto;
-    font-size: 2.2rem;
+    font-size: @descibe-font;
     line-height: 3rem;
     color: @black-color;
   }
@@ -265,7 +265,7 @@
 
     .margin-top-34 {
       color: @black-color;
-      font-size: 2rem;
+      font-size: @descibe-font;
       line-height: 3rem;
       margin: 0 auto;
       margin-top: 3.4rem
@@ -287,18 +287,8 @@
 
   /*---------------------------donate-projects------------------------------------*/
   .donating-projects {
-    h2 {
-      margin-top: 7.6rem;
-      margin-bottom: 1.4rem;
-    }
-
-    .container {
-      width: 100%;
-      padding: 0;
-    }
-
-    .row {
-      margin: 0 auto;
+    .donating-middle-text {
+      margin-top: 7rem;
     }
   }
 
@@ -310,26 +300,30 @@
     img {
       width: 18.4rem;
       height: 18.4rem;
+      display: block;
       background-color: #ccc;
       margin: 0 auto;
     }
 
     h4 {
-      font-size: 2rem;
+      font-size: @descibe-font;
       line-height: 2rem;
       color: #262626;
       margin-top: 1.8rem;
     }
 
     div {
-      font-size: 2rem;
+      font-size: @descibe-font;
       line-height: 3rem;
       color: @black-color;
     }
-
+    .child-profile-text {
+      width: 18.4rem;
+      margin: 0 auto;
+    }
     a {
       color: @pink-color;
-      font-size: 2rem;
+      font-size: @descibe-font;
       margin-top: 0.9rem;
     }
   }
@@ -361,7 +355,7 @@
 
     a {
       float: right;
-      font-size: 2rem;
+      font-size: @descibe-font;
       line-height: 3.5rem;
       color: @pink-color;
     }
@@ -373,21 +367,20 @@
 
   /*---------------------------child-profile------------------------------------*/
   .child-profile {
-    position: absolute;
-    left: 0;
+    .center-center();
     top: 0;
+    transform: translate3d(-50%, 0, 0);
     opacity: 0;
     width: 18.4rem;
     height: 18.4rem;
 
     p {
-      transform: translate3d(0, -50%, 0);
-      position: absolute;
-      top: 50%;
+      .center-center();
       font-size: 1.4rem;
       line-height: 1.8rem;
       color: #fff;
       padding: 0 1.7rem;
+      width: 100%;
     }
 
     &:hover {
