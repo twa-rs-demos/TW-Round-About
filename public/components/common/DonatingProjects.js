@@ -15,7 +15,7 @@ export default class DonatingProjects extends Component {
     ];
     return (
       <div className='donating-projects donate-page-index'>
-        <h2 className='donate-way-title'>{this.props.title}</h2>
+        <h2 className='middle-title'>{this.props.title}</h2>
         <div className='container'>
           {this.getDonatingProjectsRow(donatingProjectList)}
         </div>
@@ -36,7 +36,7 @@ export default class DonatingProjects extends Component {
   getDonatingProjectsCols(projectCols) {
     return projectCols.map((item, index) => {
       return (
-        <div className='col-md-3 donating-project' key={index}>
+        <div className='col-md-3 col-sm-4 col-xs-6 donating-project' key={index}>
           <img src={item.img}/>
           <div className='child-profile'>
             <p>这里是简介哦-。-！已经测试过长度的问题，不会越界的，放心哦^0^</p>

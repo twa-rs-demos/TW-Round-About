@@ -17,11 +17,11 @@ export default class Home extends Component {
             <h3>—— St Francis of Assisi</h3>
           </div>
         </MaxPicture>
-        <div className='container row'>
-          <div className="col-xs-offset-1 col-xs-10">
+        <div className='container no-padding'>
+          <div className='col-xs-offset-1 col-xs-10 no-padding'>
             <DonateWay/>
             <ItemDonate/>
-            <DonatingProjects/>
+            <DonatingProjects title='正在捐款的项目'/>
             <p>
               <span>这里还需要一个翻页器组件</span>
               <Link to='/tw-ra/donateCurrent'><span>更多</span></Link>
