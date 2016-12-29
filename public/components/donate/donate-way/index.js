@@ -11,7 +11,7 @@ export default class DonateWay extends Component {
           <h2 className='donate-way-title'>
             捐款方式
           </h2>
-          <div className='container donate-way-content'>
+          <div className='donate-way-content'>
             <div className='row donate-way-row'>
               <div className='col-xs-4 things-donate'>
                 <DonateGoods/>
