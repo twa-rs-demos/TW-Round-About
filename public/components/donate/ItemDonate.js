@@ -64,25 +64,26 @@ export default class ItemDonate extends Component {
           <div className='container donate-guide-apply col-xs-12' id='donate-guide-apply-hash'>
             <h3 className='donate-items-title'>申请上门收取捐赠物品</h3>
             <div className='apply-extra-info'>
-              <p>Thank you for requesting a pick up of your donations, we will try our best to help.
-                <p>Please start by filling in the pick up request form. One of our staff will then contact you to
-                  make
-                  arrangements for the pick up. Please allow 2 business days for us to respond, as we have a small
-                  staff.
-                </p>
-                <p>**Due to the nature of Beijing traffic, we cannot guarantee an exact pick-up time. We will strive
-                  to
-                  arrive within a 1-hour window and call you if our driver is running late. Thank you for giving
-                  us as
-                  much notice as possible. The more notice you give us, the more likely we will be to have vans
-                  and
-                  trucks available at your preferred time.**
-                </p>
-                <p>Large items of furniture – monetary donation not necessary</p>
+              <p>Thank you for requesting a pick up of your donations, we will try our best to help.</p>
+              <p>Please start by filling in the pick up request form. One of our staff will then contact you to
+                make
+                arrangements for the pick up. Please allow 2 business days for us to respond, as we have a small
+                staff.
               </p>
+              <p>**Due to the nature of Beijing traffic, we cannot guarantee an exact pick-up time. We will strive
+                to
+                arrive within a 1-hour window and call you if our driver is running late. Thank you for giving
+                us as
+                much notice as possible. The more notice you give us, the more likely we will be to have vans
+                and
+                trucks available at your preferred time.**
+              </p>
+              <p>Large items of furniture – monetary donation not necessary</p>
             </div>
-            <button className='apply-button js-open-box' onClick={this.showApplyForm.bind(this)}>上门收取捐赠物品申请表
-            </button>
+            <div className="col-sm-offset-4 col-xs-offset-0 col-sm-4 col-xs-12 apply-collect-items">
+              <button className='apply-button js-open-box' onClick={this.showApplyForm.bind(this)}>上门收取捐赠物品申请表
+              </button>
+            </div>
             {this.state.isShowApplyForm ? <DonationApplyForm closeApplyForm={this.closeApplyForm.bind(this)}/> : ''}
             <div className='overlay'></div>
           </div>
