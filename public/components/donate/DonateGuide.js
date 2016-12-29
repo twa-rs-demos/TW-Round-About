@@ -26,8 +26,8 @@ export default class DonateGuide extends Component {
 
       return (
         <div className='col-md-4 col-sm-6 col-xs-12 no-padding' key={index}>
-          <div className="col-xs-offset-1 col-xs-10 contact-content">
-            <div className="item-title">{item.title}</div>
+          <div className='col-xs-offset-1 col-xs-10 contact-content'>
+            <div className='item-title'>{item.title}</div>
             <div><span className='content-icon'><img src='./public/images/donate/icon_address_small.png'/></span>
               <span className='contact-info'>Adjacent to Yosemite Villa Compound, Yuyang Road West, Off An Hua Road, SHUNYI,
                 101302</span>
@@ -110,7 +110,7 @@ export default class DonateGuide extends Component {
     ];
     return (
       <div id='donate-guide-collect-hash'>
-        <h3 className="donate-items-title">捐赠物品代收点</h3>
+        <h3 className='donate-items-title'>捐赠物品代收点</h3>
         {this.getCollectRow(donateGuideCollectItems)}
       </div>
     );

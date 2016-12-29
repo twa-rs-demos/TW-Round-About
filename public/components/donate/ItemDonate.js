@@ -80,7 +80,7 @@ export default class ItemDonate extends Component {
               </p>
               <p>Large items of furniture – monetary donation not necessary</p>
             </div>
-            <div className="col-sm-offset-4 col-xs-offset-0 col-sm-4 col-xs-12 apply-collect-items">
+            <div className='col-sm-offset-4 col-xs-offset-0 col-sm-4 col-xs-12 apply-collect-items'>
               <button className='apply-button js-open-box' onClick={this.showApplyForm.bind(this)}>上门收取捐赠物品申请表
               </button>
             </div>

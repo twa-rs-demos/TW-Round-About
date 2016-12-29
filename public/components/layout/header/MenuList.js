@@ -29,12 +29,12 @@ class Menu extends Component {
 
   render() {
     const menuItemList = this.state.menuItemList.map((menuItem, index) => {
-      let path = menuItem.description === 'inside-page' ?
-        <a href={URI_PREFIX + '/' + this.props.slug + '#' + menuItem.slug}>{menuItem.name}</a>
+      let path = menuItem.description === 'inside-page'
+        ? <a href={URI_PREFIX + '/' + this.props.slug + '#' + menuItem.slug}>{menuItem.name}</a>
         : <Link to={URI_PREFIX + '/' + this.props.slug + '/' + menuItem.slug}>{menuItem.name}</Link>;
 
-      path = menuItem.description === 'donate' ?
-        <Link to={URI_PREFIX + '/donate'}>{menuItem.name}</Link> : path;
+      path = menuItem.description === 'donate'
+        ? <Link to={URI_PREFIX + '/donate'}>{menuItem.name}</Link> : path;
       return (
         <li key={index} className='dropdown-item'>
           {path}
