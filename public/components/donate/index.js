@@ -17,8 +17,8 @@ export default class Home extends Component {
             <h3>—— St Francis of Assisi</h3>
           </div>
         </MaxPicture>
-        <div className='container no-padding'>
-          <div className='col-xs-offset-1 col-xs-10 no-padding'>
+        <div className='container'>
+          <div className='col-xs-offset-1 col-xs-10'>
             <DonateWay/>
             <ItemDonate/>
             <DonatingProjects title='正在捐款的项目'/>
