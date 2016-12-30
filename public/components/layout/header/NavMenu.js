@@ -6,10 +6,10 @@ export default class NavMenu extends Component {
   render() {
     return (
       <div className='row'>
-        <div className='col-xs-10'>
+        <div className='col-md-10 col-xs-8'>
           <MenuList/>
         </div>
-        <div className='col-xs-2'>
+        <div className='col-md-2 col-xs-4 text-right'>
           <SearchBox/>
         </div>
       </div>

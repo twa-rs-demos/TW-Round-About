@@ -24,7 +24,7 @@ export default class Test extends Component {
 
   render() {
     return (
-      <div>
+      <div className='container-fluid no-padding'>
         <Header/>
         <Breadcrumb/>
         {this.props.children}

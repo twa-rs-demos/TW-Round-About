@@ -29,8 +29,7 @@ export default class SearchBox extends Component {
 
   render() {
     return (
-      <div className='col-sm-3 no-padding'>
-        <div className='col-sm-offset-4 search'>
+        <div className='search'>
           <input type='text' placeholder={this.state.placeholder} onFocus={this.clearPlaceholder.bind(this)}
                  onBlur={this.setPlaceholder.bind(this)} onKeyDown={this.handleKeyDown.bind(this)}
                  ref={(ref) => {
@@ -40,7 +39,6 @@ export default class SearchBox extends Component {
             <img src='http://localhost/tw-ra/public/images/home/icon_search_small_focused.png' alt='search'/>
           </button>
         </div>
-      </div>
     );
   }
 }
