@@ -5,10 +5,10 @@ export default class TopInfo extends Component {
   render() {
     return (
       <div className='row'>
-        <div className='col-xs-6'>
+        <div className='col-sm-6 col-xs-3'>
           <Logo/>
         </div>
-        <div className='col-xs-6'>
+        <div className='col-sm-6 col-xs-9 text-right'>
           <RightTopInfo/>
         </div>
       </div>
