@@ -2,6 +2,17 @@
 @black-color: #575757;
 @title-font:4.2rem;
 @descibe-font:2rem;
+@screen-sm-min:480px;
+@screen-md-min:768px;
+@screen-lg-min:1200px;
+
+@media (min-width: @screen-sm-min) { body{font-size:6px;} }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {body{font-size:8px;}}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { body{font-size: 10px}}
 
 body{
   width:100%;
@@ -9,7 +20,6 @@ body{
   margin:0;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing:border-box;
-  font-size:10px;
 }
 
 //@viewport{
