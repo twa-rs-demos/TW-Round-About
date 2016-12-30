@@ -11,15 +11,18 @@ export default class DonateWay extends Component {
           捐款方式
         </h2>
         <div className='row'>
-
-          <div className='col-xs-offset-1 col-xs-3'>
-            <DonateGoods/>
-          </div>
-          <div className='col-xs-3'>
-            <DonateMoney/>
-          </div>
-          <div className=' col-xs-3'>
-            <DonationProjects/>
+          <div className="col-sm-offset-1 col-sm-10">
+            <div className='row'>
+              <div className='col-sm-4 col-xs-12'>
+                <DonateGoods/>
+              </div>
+              <div className='col-sm-4 col-xs-12'>
+                <DonateMoney/>
+              </div>
+              <div className=' col-sm-4 col-xs-12'>
+                <DonationProjects/>
+              </div>
+            </div>
           </div>
         </div>
         <div className='row donate-way-text'>
