@@ -37,7 +37,7 @@ export default class ItemDonate extends Component {
       <div className='item-donation' id='item-donation'>
         <h2 className='donate-way-title'>物品捐赠</h2>
         <div className='row'>
-          <div className='col-xs-offset-1 col-xs-10'>
+          <div>
             <img className='item-donation-img' src='http://localhost/tw-ra/public/images/donate/Item donation.png'/>
           </div>
         </div>
