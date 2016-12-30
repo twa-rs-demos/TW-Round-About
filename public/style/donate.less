@@ -2,8 +2,74 @@
 
 #donate-page-index {
   /*---------------------------donate-way------------------------------------*/
-  .donate-way {
+  .donate-way-title {
+    text-align: center;
+    color: @pink-color;
+    font-size: @title-font;
+    line-height: 5.6rem;
+    margin-top: 5.7rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #donate-way {
     color: @black-color;
+
+    .donate-way-text {
+      padding-top: 3.5rem;
+      font-size: @descibe-font;
+      line-height: 3rem;
+      margin: 0 auto;
+    }
+
+    .donate {
+      height: 34rem;
+      border: 0.1rem #bcbcbc solid;
+      cursor: pointer;
+    }
+
+    #donatethings {
+      .donate-goods-item {
+        color: @black-color;
+      }
+      & :hover {
+        text-decoration: none;
+      }
+      margin: 0 auto;
+
+      ul {
+
+        margin-top: 2.59rem;
+        font-size: @descibe-font;
+        line-height: 3rem;
+        li {
+          margin-top: 1.4rem;
+        }
+      }
+    }
+
+    #donatemoney {
+      .image-border {
+        border: 0.1rem #bcbcbc solid;
+      }
+      .donate-money-margin {
+        margin-top: 2rem;
+      }
+
+    }
+
+    #donateProjects {
+      .wechat-image {
+        text-align: center;
+      }
+      .donate-projects-tect {
+        margin-top: 3rem;
+        margin-bottom: 4.9rem;
+      }
+      .donateProjects-wechat {
+        max-width: 100%;
+      }
+    }
+
   }
 
   .text-center {
@@ -23,36 +89,9 @@
     max-width: 100%;
   }
 
-  .donate-way img {
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  .donate-way .no-hover {
-    &:hover {
-      cursor: default;
-    }
-  }
-
-  .donate-way-title {
-    text-align: center;
-    color: @pink-color;
-    font-size: @title-font;
-    line-height: 5.6rem;
-    margin-top: 5.7rem;
-    margin-bottom: 2.5rem;
-  }
-
   .things-donate li a {
     color: #444;
     text-decoration: none;
-  }
-
-  .donate {
-    height: 34rem;
-    border: 0.1rem #bcbcbc solid;
-    cursor: pointer;
   }
 
   /*---------------------------donate-way-paypal-----------------------------------------*/
@@ -85,56 +124,6 @@
     color: @pink-color;
     text-align: center;
     font-size: 2.7rem;
-  }
-
-  #donatethings {
-    .donate-goods-item {
-      color: @black-color;
-    }
-    & :hover {
-      text-decoration: none;
-    }
-    margin: 0 auto;
-
-    ul {
-
-      margin-top: 2.59rem;
-      font-size: @descibe-font;
-      line-height: 3rem;
-      li {
-        margin-top: 1.4rem;
-      }
-    }
-  }
-
-  #donatemoney {
-    .image-border {
-      border: 0.1rem #bcbcbc solid;
-    }
-    .donate-money-margin{
-      margin-top: 2rem;
-    }
-
-  }
-
-  #donateProjects {
-    .wechat-image {
-      text-align: center;
-    }
-    .donate-projects-tect{
-      margin-top: 3rem;
-      margin-bottom: 4.9rem;
-    }
-    .donateProjects-wechat{
-      max-width: 100%;
-    }
-  }
-
-  .donate-way-text {
-    padding-top: 3.5rem;
-    font-size: @descibe-font;
-    line-height: 3rem;
-    margin: 0 auto;
   }
 
   /*---------------------------donate-guide------------------------------------*/
