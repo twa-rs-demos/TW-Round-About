@@ -4,7 +4,7 @@ import RightTopInfo from './RightTopinfo';
 export default class TopInfo extends Component {
   render() {
     return (
-      <div className='row'>
+      <div className='row no-margin'>
         <div className='col-sm-6 col-xs-3'>
           <Logo/>
         </div>
