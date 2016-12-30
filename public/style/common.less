@@ -6,13 +6,9 @@
 @screen-md-min:768px;
 @screen-lg-min:1200px;
 
-@media (min-width: @screen-sm-min) { body{font-size:6px;} }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {body{font-size:8px;}}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { body{font-size: 10px}}
+@media (min-width: @screen-sm-min) {html{font-size:8px;} }
+@media (min-width: @screen-md-min) {html{font-size:9px;}}
+@media (min-width: @screen-lg-min) {html{font-size:10px}}
 
 body{
   width:100%;
@@ -21,16 +17,6 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   box-sizing:border-box;
 }
-
-//@viewport{
-//  zoom: 1.0;
-//  width: device-width;
-//}
-//
-//@-ms-viewport{
-//  width: extend-to-zoom;
-//  zoom: 1.0;
-//}
 
 .no-padding {
   padding: 0;
@@ -73,14 +59,14 @@ pre {
   position: relative;
   marign: 0;
   padding: 0;
-  //width: 100%;
+  width: 100%;
   height: 400px;
 }
 
-//.picture-max img {
-//  width: 100%;
-//  height: 470px;
-//}
+.picture-max img {
+  width: 100%;
+  height: 470px;
+}
 
 /*--------------------------what we do five icons-------------------------------------*/
 .icon-container {
@@ -89,7 +75,7 @@ pre {
 
 .job-icons {
   overflow: hidden;
-  padding-left: 5em;
+  padding-left: 5rem;
 }
 
 .job-icons-container {
@@ -104,6 +90,7 @@ pre {
   top: 50%;
   left: 50%;
 }
+
 /*--------------------------center-center-------------------------------------*/
 .center-center(){
   position:absolute;

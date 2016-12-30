@@ -4,9 +4,8 @@ export default class MaxPicture extends Component {
 
   render() {
     const background = {
-      backgroundRepeat:'no-repeat',
-      backgroundSize:'cover',
-      // backgroundSize:'contain',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
       backgroundImage: 'url(' + this.props.src + ')'
     };
     return (
