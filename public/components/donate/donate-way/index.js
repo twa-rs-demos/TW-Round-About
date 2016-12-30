@@ -19,7 +19,7 @@ export default class DonateWay extends Component {
               <div className='col-sm-4 col-xs-12'>
                 <DonateMoney/>
               </div>
-              <div className=' col-sm-4 col-xs-12'>
+              <div className='col-sm-4 col-xs-12'>
                 <DonationProjects/>
               </div>
             </div>
