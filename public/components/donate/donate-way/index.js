@@ -7,9 +7,11 @@ export default class DonateWay extends Component {
   render() {
     return (
       <div id='donate-way'>
-        <h2 className='donate-way-title'>
-          捐款方式
-        </h2>
+        <div className="donate-way-title">
+          <h2 className='middle-title'>
+            捐款方式
+          </h2>
+        </div>
         <div className='row'>
           <div className="col-sm-offset-1 col-sm-10">
             <div className='row'>
