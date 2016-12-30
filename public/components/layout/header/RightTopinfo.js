@@ -8,7 +8,8 @@ class WechatModal extends Component {
       <div className='static-modal' id='wechatModal'>
         <Modal.Dialog>
           <Modal.Header>
-            <Button onClick={this.props.closeWechatModal}><img src='http://localhost/tw-ra/public/images/home/close.png'/></Button>
+            <Button onClick={this.props.closeWechatModal}><img
+              src='http://localhost/tw-ra/public/images/home/close.png'/></Button>
           </Modal.Header>
 
           <Modal.Body>
@@ -38,23 +39,23 @@ export default class MainMenu extends Component {
 
   render() {
     return (
-      <div className='row right-topinfo'>
+      <div className='right-topinfo'>
         <Link to={URI_PREFIX + '/newsandevent/newslettercenter'}
-              className='col-sm-2 top-right-word  no-padding'>月报中心</Link>
-        <a href='#apply-monthly-report' className='col-sm-2  top-right-word no-padding'>月报申领</a>
-        <a href='#' className='col-sm-2 no-padding top-right-word'>English</a>
+              className='top-right-word  no-padding'>月报中心</Link>
+        <a href='#apply-monthly-report' className='top-right-word no-padding'>月报申领</a>
+        <a href='#' className='no-padding top-right-word'>English</a>
 
-        <a className='col-sm-1 no-padding top-left-icon ' onClick={this.showWechatModal.bind(this)}>
+        <a className='no-padding top-left-icon ' onClick={this.showWechatModal.bind(this)}>
           <img src='http://localhost/tw-ra/public/images/icon_wechat.png'/>
         </a>
 
         <a href='http://weibo.com/Rooundabout666?sudaref=www.so.com&is_all=1'
-           className='col-sm-1 no-padding top-left-icon' target='_blank'>
+           className='no-padding top-left-icon' target='_blank'>
           <img src='http://localhost/tw-ra/public/images/icon_weibo.png'/>
         </a>
 
         <a href='https://shop125100050.taobao.com/index.htm?spm=2013.1.w5002-12973215066.2.AXTtj4'
-           className='col-sm-1 no-padding  top-left-icon ' target='_blank'>
+           className='no-padding  top-left-icon ' target='_blank'>
           <img src='http://localhost/tw-ra/public/images/icon_taobao.png' alt=''/>
         </a>
 

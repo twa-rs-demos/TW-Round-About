@@ -26,7 +26,7 @@ export default class DonateGuide extends Component {
 
       return (
         <div className='col-md-4 col-sm-6 col-xs-12 no-padding' key={index}>
-          <div className='col-xs-offset-1 col-xs-10 contact-content'>
+          <div className='col-sm-offset-1 col-xs-offset-0 col-sm-10 col-xs-12 contact-content'>
             <div className='item-title'>{item.title}</div>
             <div><span className='content-icon'><img src='./public/images/donate/icon_address_small.png'/></span>
               <span className='contact-info'>Adjacent to Yosemite Villa Compound, Yuyang Road West, Off An Hua Road, SHUNYI,

@@ -44,11 +44,11 @@ export default class ItemDonate extends Component {
           </div>
         </div>
         <div className='row'>
-          <div className='donate-guide col-xs-offset-2 col-xs-8'>
+          <div className='donate-guide col-sm-offset-2 col-xs-offset-0 col-sm-8 col-xs-12'>
             <h3 className='donate-items-title'><a className='donate-guide-title'
                                                   onMouseOver={this.showElasticBox.bind(this)}>捐赠指南</a></h3>
             {this.state.isShowElasticBox ? <DonateRules closeElasticBox={this.closeElasticBox.bind(this)}/> : ''}
-            <div className='col-xs-offset-1 col-xs-10 donate-guide-content'>
+            <div className='col-md-offset-2 col-xs-offset-1 col-md-8 col-xs-10 donate-guide-content'>
               <p>Open, prescription and out of date medicines.</p>
               <p>Used underwear, including socks.</p>
               <p>Anything previously used by an animal – such as a dog’s bed</p>
