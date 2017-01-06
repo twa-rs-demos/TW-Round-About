@@ -54,5 +54,11 @@ export default [
     age: '8',
     disease: '白血病',
     money: '20,000'
+  },{
+    img: 'http://localhost/tw-ra/public/images/donate/current appeals02.png',
+    name: '程程',
+    age: '8',
+    disease: '白血病',
+    money: '20,000'
   }
 ];

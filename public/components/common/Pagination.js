@@ -45,41 +45,13 @@ export default class Pagination extends Component {
     }
   }
 
-  cacluatePagination(totalPage, currentPage, pageArray) {
-    this.caculatePageArray(1, 3, pageArray);
-    if (currentPage > 2 && currentPage < 6) {
-      this.caculatePageArray(4, currentPage + 1, pageArray);
-    } else {
-      pageArray.push({page: '...'});
-      this.caculatePageArray(currentPage - 1, currentPage + 1, pageArray);
-    }
-    if (totalPage - currentPage === 2 || totalPage - currentPage === 3 || totalPage - currentPage === 4) {
-      this.caculatePageArray(currentPage + 2, totalPage, pageArray);
-    } else {
-      pageArray.push({page: '...'});
-      this.caculatePageArray(totalPage - 2, totalPage, pageArray);
-    }
-  }
-
-  getPagination(totalPage, currentPage, pageArray) {
-    if (currentPage <= 2 || totalPage - currentPage <= 1) {
-      this.caculatePageArray(1, 3, pageArray);
-      pageArray.push({page: '...'});
-      this.caculatePageArray(totalPage - 2, totalPage, pageArray);
-    } else {
-      this.cacluatePagination(totalPage, currentPage, pageArray);
-    }
-  }
-
   render() {
     const totalPage = this.props.totalPage;
     let currentPage = this.state.currentPage;
     const pageArray = [];
 
-    if (totalPage < 7 && totalPage > 0) {
+    if (totalPage > 0) {
       this.caculatePageArray(1, totalPage, pageArray);
-    } else {
-      this.getPagination(totalPage, currentPage, pageArray);
     }
 
     let pageIndex = pageArray.map((page, index) => {
@@ -92,20 +64,22 @@ export default class Pagination extends Component {
 
     const previousClass = currentPage === 1 ? 'disabled' : '';
     const nextClass = currentPage === this.props.totalPage ? 'disabled' : '';
-    return (<div>
-      <ul className='pagination'>
-        <li className={previousClass}>
-          <a onClick={this.goPrevious.bind(this)}>
-            <i className='fa fa-chevron-left'></i>
-          </a>
-        </li>
-        {pageIndex}
-        <li className={nextClass}>
-          <a onClick={this.goNext.bind(this)}>
-            <i className='fa fa-chevron-right'></i>
-          </a>
-        </li>
-      </ul>
-    </div>);
+    return (
+      <div className='pagination-project'>
+        <ul className='pagination'>
+          <li className={previousClass}>
+            <a onClick={this.goPrevious.bind(this)}>
+              <i className='fa fa-chevron-left'></i>
+            </a>
+          </li>
+          {pageIndex}
+          <li className={nextClass}>
+            <a onClick={this.goNext.bind(this)}>
+              <i className='fa fa-chevron-right'></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    );
   }
 }

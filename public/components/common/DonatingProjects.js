@@ -1,27 +1,22 @@
 import {Component} from 'react';
 import chunk from 'lodash/chunk';
 import {Link} from 'react-router';
+import Pagination from './Pagination';
 import donatingProjectList from './donateingProjectsDates';
 
+
 export default class DonatingProjects extends Component {
-  render() {
 
-    return (
-      <div className='donating-projects'>
-        <div className='donating-middle-text'>
-          <h2 className='middle-title'>{this.props.title}</h2>
-        </div>
-        <div>
-          {this.getDonatingProjectsRow(donatingProjectList)}
-        </div>
-
-        <span>这里还需要一个翻页器组件</span>
-        <Link to='/tw-ra/donateCurrent'><p className='text-right'>更多</p></Link>
-      </div>
-    );
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentPage: 1,
+      pageCount: 8
+    };
   }
 
   getDonatingProjectsRow(donatingProjectList) {
+
     return chunk(donatingProjectList, 4).map((item, index) => {
       return (
         <div className='row' key={index}>
@@ -48,6 +43,43 @@ export default class DonatingProjects extends Component {
         </div>
       );
     });
+  }
+
+  handlePageChange(page) {
+    console.log("hahhah");
+    //此处发请求
+    
+  }
+
+
+  render() {
+    const totalPage = Math.ceil(donatingProjectList.length / this.state.pageCount);
+
+    return (
+      <div className='donating-projects'>
+        <div className='donating-middle-text'>
+          <h2 className='middle-title'>{this.props.title}</h2>
+        </div>
+        <div>
+          {this.getDonatingProjectsRow(donatingProjectList.slice(this.state.currentPage, this.state.currentPage + 9))}
+        </div>
+
+        <div className='row' id='pagination-project'>
+          <div className='col-md-3 col-sm-5 col-xs-6 '>
+            <Pagination totalPage={totalPage} currentPage={this.state.currentPage}
+                        onPageChange={this.handlePageChange.bind(this)}/>
+          </div>
+          <div className='col-md-8 col-sm-6 col-xs-5'>
+            <div className='text-right'>
+              <Link to='/tw-ra/donateCurrent'>
+                <div className='donateProject-more'>更多></div>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    );
   }
 }
 

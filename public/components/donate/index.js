@@ -4,7 +4,6 @@ import DonateWay from './donate-way/index';
 import ItemDonate from './ItemDonate';
 import '../../style/donate.less';
 import '../../style/modalForm.less';
-import {Link} from 'react-router';
 
 export default class Home extends Component {
   render() {
