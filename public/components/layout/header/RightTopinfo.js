@@ -46,17 +46,17 @@ export default class MainMenu extends Component {
         <a href='#' className='no-padding top-right-word'>English</a>
 
         <a className='no-padding top-left-icon ' onClick={this.showWechatModal.bind(this)}>
-          <img src='http://localhost/tw-ra/public/images/icon_wechat.png'/>
+          <img className='icon' src='http://localhost/tw-ra/public/images/icon_wechat.png'/>
         </a>
 
         <a href='http://weibo.com/Rooundabout666?sudaref=www.so.com&is_all=1'
            className='no-padding top-left-icon' target='_blank'>
-          <img src='http://localhost/tw-ra/public/images/icon_weibo.png'/>
+          <img className='icon' src='http://localhost/tw-ra/public/images/icon_weibo.png'/>
         </a>
 
         <a href='https://shop125100050.taobao.com/index.htm?spm=2013.1.w5002-12973215066.2.AXTtj4'
            className='no-padding  top-left-icon ' target='_blank'>
-          <img src='http://localhost/tw-ra/public/images/icon_taobao.png' alt=''/>
+          <img className='icon' src='http://localhost/tw-ra/public/images/icon_taobao.png' alt=''/>
         </a>
 
         {this.state.isShowWechat ? <WechatModal closeWechatModal={this.closeWechatModal.bind(this)}/> : ''}
