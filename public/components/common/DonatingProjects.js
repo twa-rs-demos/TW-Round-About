@@ -1,60 +1,11 @@
 import {Component} from 'react';
 import chunk from 'lodash/chunk';
 import {Link} from 'react-router';
+import donatingProjectList from './donateingProjectsDates';
 
 export default class DonatingProjects extends Component {
   render() {
-    const donatingProjectList = [
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals01.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals02.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals03.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals01.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals02.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals03.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals01.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      }
-    ];
+
     return (
       <div className='donating-projects'>
         <div className='donating-middle-text'>
@@ -63,6 +14,9 @@ export default class DonatingProjects extends Component {
         <div>
           {this.getDonatingProjectsRow(donatingProjectList)}
         </div>
+
+        <span>这里还需要一个翻页器组件</span>
+        <Link to='/tw-ra/donateCurrent'><p className='text-right'>更多</p></Link>
       </div>
     );
   }
