@@ -19,12 +19,12 @@ export default class RounaboutStore extends Component {
             <RoundAboutTaoBao/>
           </div>
         </div>
-        <div className='row shopping-for-children'>
+        <div className='row shopping-for-children' id='onlinestore'>
           <div className='col-sm-offset-3 col-xs-offset-1 col-sm-6 col-xs-10 no-padding'>
             <ShoppingForChildren/>
           </div>
         </div>
-        <div className='row physical-store'>
+        <div className='row physical-store' id='physicalstore'>
           <div className='col-sm-offset-2 col-xs-offset-1 col-sm-8 col-xs-10 no-padding'>
             <PhysicalStore/>
           </div>

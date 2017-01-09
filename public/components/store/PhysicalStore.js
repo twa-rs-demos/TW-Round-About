@@ -12,7 +12,7 @@ export default class PhysicalStore extends Component {
         <div className='col-sm-7 round-about-place'>
           <img src='http://localhost/tw-ra/public/images/store/donate2.png' alt=''/>
         </div>
-        <div className='col-sm-5 round-about'>
+        <div className='col-sm-5 round-about no-padding'>
           <div className='round-about-store'>
             <p className='title'>Roundabout</p>
             <p>Yuyang Road West, Adjacent to Yosemite Villas, Houshayu Town, Shunyi District, Beijing. 101302</p>
