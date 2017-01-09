@@ -5,7 +5,7 @@ export default class Header extends Component {
   render() {
     return (
       <div id='aboutUs-header'>
-        <h3 className='middle-title header-title'>每个孩子都应该享有同样的机会</h3>
+        <h3 className='middle-title aboutUs-title'>每个孩子都应该享有同样的机会</h3>
         <div className='text-center'>
           <button className='button-style button-change-destiny'>改变TA的命运</button>
         </div>
