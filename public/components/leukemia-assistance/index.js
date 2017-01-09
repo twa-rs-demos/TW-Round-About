@@ -9,7 +9,6 @@ export default class ourWorkPage extends Component {
     const pictureSrc = 'http://localhost/tw-ra/public/images/ourWorkAssistance/hero_leukemiaAssistance.png';
     return (
       <div id='ourwork-assistance'>
-
         <MaxPicture src={pictureSrc}>
           <div className='ourWorkAssistence-picture-text'>
             <p>Yang bin is a 9 year old boy from Xi’an.</p>
@@ -20,7 +19,11 @@ export default class ourWorkPage extends Component {
             </div>
           </div>
         </MaxPicture>
-
+        <div className='row'>
+          <div className='text-right'>
+              <Link to={URI_PREFIX + '/leukemia-stories'} className='ourWorkAssistence-picture-readMore'>更多故事> </Link>
+          </div>
+        </div>
         <ContentStatic/>
       </div>
     );

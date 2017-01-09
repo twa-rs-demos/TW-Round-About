@@ -1,7 +1,7 @@
 import {Component} from 'react';
-import {Link} from 'react-router';
 import DonateMoney from '../donate/donate-way/DonateMoney';
 import {Modal} from 'react-bootstrap';
+import SaveLife from './SaveLife';
 
 export default class ContentStatic extends Component {
 
@@ -27,20 +27,7 @@ export default class ContentStatic extends Component {
   render() {
     return (
       <div>
-        <div className='col-xs-offset-11  col-xs-1 read-more'>
-          <Link to={URI_PREFIX + '/leukemia-stories'} className='ourWorkAssistence-picture-readMore'>阅读更多> </Link>
-        </div>
-        <div className='save-life-situation'>
-          <h2 className='middle-title'>我们参与挽救的生命</h2>
-          <div className='rescue-situation-img'>
-            <img src='http://localhost/tw-ra/public/images/ourWorkAssistance/lives helped.png'/>
-            <img src='http://localhost/tw-ra/public/images/ourWorkAssistance/raised.png'/>
-          </div>
-          <Link to={URI_PREFIX + '/donate'}>
-            <button className='button-style'>参与挽救一个生命</button>
-          </Link>
-        </div>
-
+        <SaveLife />
         <div className='fact-situation'>
           <h2 className='middle-title'>你知道吗？</h2>
           <p>理论上，中国的儿童白血病的治愈率超过<span>70%</span>。但是只有<span>20%</span>的孩子能活下来。</p>
@@ -49,7 +36,7 @@ export default class ContentStatic extends Component {
 
           <div className='fact-situation-graph'>
             <img src='http://localhost/tw-ra/public/images/ourWorkAssistance/cure rate.png'/>
-            <div>
+            <div className='button-style'>
               <button className='I-want-donate' onClick={this.handleShowForm.bind(this)}>我要捐赠</button>
             </div>
           </div>
