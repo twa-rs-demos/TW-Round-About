@@ -9,7 +9,7 @@ export default class NavMenu extends Component {
         <div className='col-md-10 col-xs-7'>
           <MenuList/>
         </div>
-        <div className='col-md-2 col-xs-5 text-right'>
+        <div className='col-md-2 col-xs-5 text-right no-padding'>
           <SearchBox/>
         </div>
       </div>

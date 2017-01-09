@@ -8,7 +8,7 @@
 
   /*-------------------------------------logo------------------------------------------*/
   .logo {
-    margin: 1.6rem 0 1.7rem 3.1rem;
+    margin: 1.6rem 0 1.7rem 0;
     max-width:100%;
     //height: 7.0rem;
     padding: 0;
@@ -24,15 +24,21 @@
   .top-right-word {
     color: #8a7676;
     margin-right: 3rem;
+    font-size: 1.1rem;
   }
 
   .top-left-icon {
     margin-right: 2rem;
+    display: inline-block;
+    .icon{
+      width: 2.3rem;
+      height: 1.8rem;
+    }
   }
 
   /*-------------------------------------menu------------------------------------------*/
   .menu {
-    padding: 0 0 0 1.9rem;
+    //padding: 0 0 0 1.9rem;
     &:last-child {
       margin-right: 0;
     }
@@ -168,6 +174,7 @@
     padding: 0 .8rem 0 .8rem;
     display: inline-block;
     margin-right: 2rem;
+    position: relative;
 
     input {
       width: 10.3rem !important;
@@ -175,20 +182,21 @@
       background-color: #D8D8D8;
       border: none;
       height: 2.2rem;
-      padding: 0 .8rem 0 1.0rem;
       font-size: 1.2rem;
       color: #535353;
+      position: absolute;
+      left: 1.5rem;
+      padding-right: 1.7rem;
       &:focus {
         outline: none;
-        border-color: #cfdc00;
-        box-shadow: 0 0 .5rem rgba(207, 220, 0, 0.4);
-        border-radius: 10.0rem;
       }
     }
 
     button {
       border: none;
       background-color: inherit;
+      position: absolute;
+      left: 11rem;
       &:focus {
         outline: none;
       }
@@ -197,6 +205,8 @@
     img {
       width: 1.4rem;
       height: 1.4rem;
+      position:absolute;
+      top: 0.5rem;
     }
   }
   /*-------------------------------------wechatModal------------------------------------------*/

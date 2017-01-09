@@ -1,70 +1,18 @@
 import {Component} from 'react';
 import chunk from 'lodash/chunk';
 import {Link} from 'react-router';
+import Pagination from './Pagination';
+import donatingProjectList from './donateingProjectsDates';
+
 
 export default class DonatingProjects extends Component {
-  render() {
-    const donatingProjectList = [
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals01.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals02.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals03.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals01.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals02.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals03.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      },
-      {
-        img: 'http://localhost/tw-ra/public/images/donate/current appeals01.png',
-        name: '程程',
-        age: '8',
-        disease: '白血病',
-        money: '20,000'
-      }
-    ];
-    return (
-      <div className='donating-projects'>
-        <div className='donating-middle-text'>
-          <h2 className='middle-title'>{this.props.title}</h2>
-        </div>
-        <div className="row">
-          {this.getDonatingProject(donatingProjectList)}
-        </div>
-      </div>
-    );
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentPage: 1,
+      pageCount: 8
+    };
   }
 
   getDonatingProject(lists) {
@@ -84,6 +32,43 @@ export default class DonatingProjects extends Component {
         </div>
       );
     });
+  }
+
+  handlePageChange(page) {
+    console.log("hahhah");
+    //此处发请求
+
+  }
+
+
+  render() {
+    const totalPage = Math.ceil(donatingProjectList.length / this.state.pageCount);
+
+    return (
+      <div className='donating-projects'>
+        <div className='donating-middle-text'>
+          <h2 className='middle-title'>{this.props.title}</h2>
+        </div>
+        <div>
+          {this.getDonatingProjectsRow(donatingProjectList.slice(this.state.currentPage, this.state.currentPage + 9))}
+        </div>
+
+        <div className='row' id='pagination-project'>
+          <div className='col-md-3 col-sm-5 col-xs-6 '>
+            <Pagination totalPage={totalPage} currentPage={this.state.currentPage}
+                        onPageChange={this.handlePageChange.bind(this)}/>
+          </div>
+          <div className='col-md-8 col-sm-6 col-xs-5'>
+            <div className='text-right'>
+              <Link to='/tw-ra/donateCurrent'>
+                <div className='donateProject-more'>更多></div>
+              </Link>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    );
   }
 }
 

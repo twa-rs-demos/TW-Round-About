@@ -2,16 +2,17 @@
 
 #donate-page-index {
   /*---------------------------donate-way------------------------------------*/
-
   .donate-way-title {
+    text-align: center;
+    color: @pink-color;
+    font-size: @title-font;
+    line-height: 5.6rem;
     margin-top: 5.7rem;
-    margin-bottom: 0;
   }
 
   .span {
     font-size: 1.8rem;
     text-align: center;
-    display: block;
     margin: 1rem 0;
   }
 
@@ -19,6 +20,8 @@
     display: block;
     margin: 0 auto;
     max-width: 100%;
+    width: 8.8rem;
+    height: 8.8rem;
   }
 
   #donate-way {
@@ -35,6 +38,9 @@
       height: 34rem;
       border: 0.1rem #bcbcbc solid;
       cursor: pointer;
+    }
+    .donate-item {
+      margin-top: 2.5rem;
     }
 
     #donatethings {
@@ -119,10 +125,6 @@
 
   /*---------------------------donate-guide------------------------------------*/
   #item-donation {
-    .item-donation-title{
-      margin-top:5rem;
-      margin-bottom:2.5rem;
-    }
     .donate-guide {
       .donate-guide-title {
         color: #EC4C9A;
@@ -141,6 +143,7 @@
       margin-top: 3.8rem;
       margin-bottom: 3.5rem;
       text-align: center;
+      color: #575757;
     }
     .item-donation-img {
       display: block;
@@ -346,3 +349,30 @@
   }
 }
 
+/*-----------pagination----------------------*/
+#pagination-project {
+  .pagination-project {
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+  .pagination {
+    a{
+      margin: 0 0.3rem;
+      border-radius: 0;
+      background-color: #f8f9fb;
+    }
+    .active {
+      a {
+        background-color: @pink-color;
+        border-color: @pink-color;
+
+      }
+    }
+  }
+  .donateProject-more{
+    display: inline-block;
+    margin-top: 2.5rem;
+    color: #ec4c9a;
+    font-size: 2rem;
+  }
+}

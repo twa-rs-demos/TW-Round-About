@@ -26,7 +26,7 @@ export default class DonateMoney extends Component {
           <div className='col-xs-offset-1 col-xs-5'>
             <img src='http://localhost/tw-ra/public/images/donate/wechat01.png'
                  className='img-center'/>
-            <span className='span'>Wechat</span>
+            <div className='span'>Wechat</div>
           </div>
           <div className='col-xs-5'>
             <a
@@ -37,7 +37,7 @@ export default class DonateMoney extends Component {
                      className='img-center'/>
               </div>
             </a>
-            <span className='span'>CCAFC</span>
+            <div className='span'>CCAFC</div>
           </div>
         </div>
 
@@ -47,7 +47,7 @@ export default class DonateMoney extends Component {
               <img src='http://localhost/tw-ra/public/images/donate/logo_alipay.png'
                    className='img-center'/>
             </a>
-            <span className='span'>Alipay</span>
+            <div className='span'>Alipay</div>
           </div>
           <div className='col-xs-5'>
             <div className='image-border'>
@@ -55,7 +55,7 @@ export default class DonateMoney extends Component {
                    onClick={this.showPaypalModal.bind(this)}
                    className='img-center'/>
             </div>
-            <span className='span'>Paypal</span>
+            <div className='span'>Paypal</div>
           </div>
           {this.state.isShowPaypal ? <Paypal closePaypalModal={this.closePaypalModal.bind(this)}/> : ''}
         </div>

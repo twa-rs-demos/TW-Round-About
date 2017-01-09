@@ -15,13 +15,13 @@ export default class DonateWay extends Component {
         <div className='row'>
           <div className="col-sm-offset-1 col-sm-10">
             <div className='row'>
-              <div className='col-sm-4 col-xs-12'>
+              <div className='col-sm-4 col-xs-12  donate-item'>
                 <DonateGoods/>
               </div>
-              <div className='col-sm-4 col-xs-12'>
+              <div className='col-sm-4 col-xs-12  donate-item'>
                 <DonateMoney/>
               </div>
-              <div className='col-sm-4 col-xs-12'>
+              <div className='col-sm-4 col-xs-12  donate-item'>
                 <DonationProjects/>
               </div>
             </div>

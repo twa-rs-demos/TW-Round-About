@@ -37,7 +37,7 @@ export default class ContentStatic extends Component {
             <img src='http://localhost/tw-ra/public/images/ourWorkAssistance/raised.png'/>
           </div>
           <Link to={URI_PREFIX + '/donate'}>
-            <button className='participate-rescue'>参与挽救一个生命</button>
+            <button className='button-style'>参与挽救一个生命</button>
           </Link>
         </div>
 
