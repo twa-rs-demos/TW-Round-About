@@ -25,7 +25,7 @@ export default class Video extends Component {
 
   render() {
     return (
-      <div className='content' dangerouslySetInnerHTML={{__html: this.state.content}}></div>
+      <div dangerouslySetInnerHTML={{__html: this.state.content}}></div>
     );
   }
 }

@@ -1,9 +1,7 @@
 import {Component} from 'react';
-import chunk from 'lodash/chunk';
 import {Link} from 'react-router';
 import Pagination from './Pagination';
 import donatingProjectList from './donateingProjectsDates';
-
 
 export default class DonatingProjects extends Component {
 
@@ -35,11 +33,10 @@ export default class DonatingProjects extends Component {
   }
 
   handlePageChange(page) {
-    console.log("hahhah");
+    console.log('hahhah');
     //此处发请求
 
   }
-
 
   render() {
     const totalPage = Math.ceil(donatingProjectList.length / this.state.pageCount);

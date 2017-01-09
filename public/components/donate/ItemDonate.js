@@ -27,7 +27,7 @@ export default class ItemDonate extends Component {
 
   closeApplyForm() {
     this.setState({isShowApplyForm: false});
-    $('.overlay,.donation-apply-form').fadeOut(400, function () {
+    $('.overlay,.donation-apply-form').fadeOut(400, function() {
       $(this).removeAttr('style');
     });
   }
@@ -35,7 +35,7 @@ export default class ItemDonate extends Component {
   render() {
     return (
       <div className='item-donation' id='item-donation'>
-        <div className="item-donation-title">
+        <div className='item-donation-title'>
           <h2 className='middle-title'>物品捐赠</h2>
         </div>
         <div className='row'>
