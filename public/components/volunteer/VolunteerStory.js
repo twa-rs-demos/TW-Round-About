@@ -1,5 +1,4 @@
 import {Component} from 'react';
-import chunk from 'lodash/chunk';
 
 export default class VolunteerStory extends Component {
   render() {
@@ -14,35 +13,20 @@ export default class VolunteerStory extends Component {
       {name: 'Friederike', src: 'http://localhost/tw-ra/public/images/getInvolvedVolunteer/volunteer story04.png'}
     ];
 
+    const stories = storyList.map((item, index) => {
+      return <div key={index} className='col-md-3 col-sm-4 col-xs-6 no-padding story-item'>
+        <img src={item.src} className='story-picture'/>
+        <p>{item.name}’s Story</p>
+        <a href='#'>Read More ></a>
+      </div>;
+    });
     return (
-      <div>
+      <div className='volunteer-stories'>
         <h2 className='middle-title'>志愿者故事</h2>
-        <div className='container'>
-          {this.getVolunteerStorysRow(storyList)}
+        <div className='row text-center'>
+          {stories}
         </div>
       </div>
     );
-  }
-
-  getVolunteerStorysRow(storyList) {
-    return chunk(storyList, 4).map((item, index) => {
-      return (
-        <div className='row' key={index}>
-          {this.getstoryCols(item)}
-        </div>
-      );
-    });
-  }
-
-  getstoryCols(projectCols) {
-    return projectCols.map((item, index) => {
-      return (
-        <div className='col-md-3 donating-project' key={index}>
-          <img src={item.src}/>
-          <h4>{item.name}‘s Story</h4>
-          <a href='#'>Read More ></a>
-        </div>
-      );
-    });
   }
 }
