@@ -60,25 +60,15 @@ export default class DonatingProjects extends Component {
         <div className='donating-middle-text'>
           <h2 className='middle-title'>{this.props.title}</h2>
         </div>
-        <div>
-          {this.getDonatingProjectsRow(donatingProjectList)}
+        <div className="row">
+          {this.getDonatingProject(donatingProjectList)}
         </div>
       </div>
     );
   }
 
-  getDonatingProjectsRow(donatingProjectList) {
-    return chunk(donatingProjectList, 4).map((item, index) => {
-      return (
-        <div className='row' key={index}>
-          {this.getDonatingProjectsCols(item)}
-        </div>
-      );
-    });
-  }
-
-  getDonatingProjectsCols(projectCols) {
-    return projectCols.map((item, index) => {
+  getDonatingProject(lists) {
+    return lists.map((item, index) => {
       return (
         <div className='col-md-3 col-sm-4 col-xs-6 donating-project' key={index}>
           <img src={item.img}/>
