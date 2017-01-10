@@ -6,6 +6,7 @@ export default class DonateGoods extends Component {
     return (
       <div id='donatethings' className=' donate '>
         <h3>物品捐赠</h3>
+        <div className='row'>
         <ul className='col-xs-offset-3 col-xs-9'>
           <li >
             <Scrollchor className='donate-goods-item' to='#donate-guide-hash'> 捐赠指南</Scrollchor></li>
@@ -14,6 +15,7 @@ export default class DonateGoods extends Component {
           <li>
             <Scrollchor className='donate-goods-item' to='#donate-guide-apply-hash'>上门收取捐赠物品申请表</Scrollchor></li>
         </ul>
+          </div>
       </div>
     );
   }
