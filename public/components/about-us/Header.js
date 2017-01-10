@@ -9,11 +9,12 @@ export default class Header extends Component {
         <div className='text-center'>
           <button className='button-style button-change-destiny'>改变TA的命运</button>
         </div>
-        <div className='video about-video'>
-          <embed src='http://player.youku.com/player.php/sid/XMTM1NjIyMTA0NA==/v.swf'
-                 width='950' height='396'
-                 type='application/x-shockwave-flash'>
-          </embed>
+        <div className='video about-video row'>
+          <div className='col-md-offset-2 col-md-8 col-xs-12'>
+            <embed src='http://player.youku.com/player.php/sid/XMTM1NjIyMTA0NA==/v.swf'
+                   type='application/x-shockwave-flash' className='video-content'>
+            </embed>
+          </div>
 
         </div>
       </div>
