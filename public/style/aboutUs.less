@@ -25,11 +25,62 @@
   }
 
   #aboutUs-footer {
-    margin-top: 5rem;
     background-color: #F8F9FB;
+    margin-top: 5rem;
 
     .aboutUs-event {
-      margin-top: 5rem;
+      padding-top: 5rem;
     }
+
+    .no-padding-right{
+      padding-right: 0;
+    }
+    .time-line {
+      margin-top: 7.1rem;
+      border-top:0.2rem solid #c2c2c2;
+      position: relative;
+    }
+
+    .circle-year{
+      position:absolute;
+      top:-4.5rem;
+
+    }
+    .circle{
+      color: #B7B7B7;
+      font-size: 1.2rem;
+      &:hover{
+        color: @pink-color;
+      }
+    }
+    .chevron{
+      position: absolute;
+      bottom: -7.8rem;
+    }
+    .year{
+      display: block;
+      color: @pink-color;
+      font-size: 2.2rem;
+    }
+
+    .aboutUs-container{
+      padding-bottom: 14rem;
+    }
+
   }
+}
+
+
+#aboutUs-years-events{
+  border-left: 0.1rem solid @pink-color;
+  padding-left: 1rem;
+  width:20rem ;
+  font-size:1.7rem;
+  .fist-event{
+    padding-top: 6.3rem;
+  }
+  .second-event{
+    padding-top: 5rem;
+  }
+
 }
