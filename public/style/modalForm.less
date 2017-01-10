@@ -1,16 +1,20 @@
+@import "common";
 
-#modal-Volunteer-content {
+#modal-volunteer-content {
   margin-bottom: 3.0rem;
 
   .modal-content {
     width: 150%;
   }
-  .modal-dialog {
-    margin-right: 37%;
+  .modal-header{
+    padding-bottom:0;
   }
 
-  .modal-header {
-    border-bottom: 0;
+  .modal-dialog {
+    margin-right: 37%;
+    .row{
+      margin:1.5rem 0;
+    }
   }
 
   .title {
@@ -23,11 +27,11 @@
   }
 
   .text-length {
-    width: 327%;
+    //width: 100%;
   }
 
   .textArea-volunteerForm {
-    resize: none
+    resize: none;
   }
 
   .btn-Cancel {
@@ -73,10 +77,6 @@
     padding: 0;
   }
 
-  .modal-header {
-    position: relative;
-  }
-
   .modal-body {
     width: 86%;
     padding-top: 0;
@@ -116,7 +116,7 @@
   z-index: 100;
 }
 
-#donation-apply-form{
+#donation-apply-form {
   .modal-body {
     padding-top: 0;
   }
@@ -214,10 +214,11 @@
     width: 100%;
   }
 
-  .apply-form-header h3 {
+  .modal-content h3 {
     font-size: 2.0rem;
     margin: 0;
     text-align: left;
+    color: @black-color;
   }
 
   .donation-apply-form .bottom-notes h3, .donation-apply-form .call-language h3, .donation-apply-form .content h3 {
@@ -236,7 +237,6 @@
 
   .bottom-notes li {
     margin-top: .5rem;
-
   }
 
   .apply-form-button button {
@@ -251,7 +251,7 @@
   }
 
   .apply-form-button button:hover {
-    background-color: #ec4c9a;
+    background-color: @pink-color;
     color: #fff;
   }
 
