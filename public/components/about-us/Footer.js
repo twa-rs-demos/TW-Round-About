@@ -19,14 +19,14 @@ export default class Footer extends Component {
     return (
       <div id='aboutUs-footer'>
         <h3 className='middle-title aboutUs-event'>众爱大事记</h3>
-        <div className='container'>
+        <div className='container aboutUs-container'>
           <div className='row'>
 
-            <div className='col-xs-offset-1 col-xs-1 no-padding-right'>
+            <div className='col-md-offset-1 col-md-1  col-xs-offset-1 col-xs-1 no-padding-right'>
               <div className='time-line'></div>
             </div>
 
-            <div className='col-xs-1 no-padding'>
+            <div className='col-md-1 col-xs-1 no-padding'>
               <div className='time-line'>
                 <div className='circle-year'>
                   <span className='year'>2008</span>
@@ -35,19 +35,16 @@ export default class Footer extends Component {
               </div>
             </div>
 
-            <div className='col-xs-1  no-padding'>
+            <div className='col-md-1 col-xs-1 no-padding'>
               <div className='time-line'>
                 <div className='circle-year' onClick={this.showEvents2009.bind(this)}>
                   <span className='year'>2009</span>
                   <i className='fa fa-circle circle'> </i>
-                  <div className={this.state.events ? '' : 'hidden'}>
-                    <Events/>
-                  </div>
                 </div>
               </div>
             </div>
 
-            <div className='col-xs-1 no-padding'>
+            <div className='col-md-1  col-xs-1 no-padding'>
               <div className='time-line'>
                 <div className='circle-year'>
                   <span className='year'>2010</span>
@@ -56,7 +53,7 @@ export default class Footer extends Component {
               </div>
             </div>
 
-            <div className='col-xs-1  no-padding'>
+            <div className='col-md-1 col-xs-1  no-padding'>
               <div className='time-line'>
                 <div className='circle-year'>
                   <span className='year'>2011</span>
@@ -65,7 +62,7 @@ export default class Footer extends Component {
               </div>
             </div>
 
-            <div className='col-xs-1  no-padding'>
+            <div className='col-md-1 col-xs-1 no-padding'>
               <div className='time-line'>
                 <div className='circle-year'>
                   <span className='year'>2012</span>
@@ -74,7 +71,7 @@ export default class Footer extends Component {
               </div>
             </div>
 
-            <div className='col-xs-1  no-padding'>
+            <div className='col-md-1 col-xs-1 no-padding'>
               <div className='time-line'>
                 <div className='circle-year'>
                   <span className='year'>2013</span>
@@ -83,7 +80,7 @@ export default class Footer extends Component {
               </div>
             </div>
 
-            <div className='col-xs-1  no-padding'>
+            <div className='col-md-1 col-xs-1 no-padding'>
               <div className='time-line'>
                 <div className='circle-year'>
                   <span className='year'>2014</span>
@@ -92,7 +89,7 @@ export default class Footer extends Component {
               </div>
             </div>
 
-            <div className='col-xs-1 time-axis no-padding'>
+            <div className='col-md-1 col-xs-1 no-padding'>
               <div className='time-line'>
                 <div className='circle-year'>
                   <span className='year'>2015</span>
@@ -101,16 +98,25 @@ export default class Footer extends Component {
               </div>
             </div>
 
-            <div className='col-xs-1 time-axis no-padding'>
+            <div className='col-md-1 col-xs-1 no-padding'>
               <div className='time-line'>
                 <div className='circle-year'>
                   <span className='year'>2016</span>
                   <i className='fa fa-circle circle'> </i>
-                  <i className='fa fa-chevron-right circle chevron'> </i>
                 </div>
               </div>
             </div>
+
+            <div className='col-md-1 col-xs-1 no-padding'>
+              <i className='fa fa-chevron-right circle chevron'> </i>
+            </div>
           </div>
+          <div className='col-xs-offset-3 col-xs-1'>
+            <div className={this.state.events ? '' : 'hidden'}>
+              <Events/>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -124,7 +130,7 @@ class Events extends Component {
     return (
       <div id='aboutUs-years-events'>
 
-        <div  className='fist-event'>
+        <div className='fist-event'>
           <div>FIRST BOOK FAIR</div>
           <div>@ Mar 23,2009</div>
         </div>
