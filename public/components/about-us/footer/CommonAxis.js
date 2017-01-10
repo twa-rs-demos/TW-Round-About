@@ -1,6 +1,7 @@
 import {Component} from 'react';
 
 export default class CommonAxis extends Component {
+
   showEvents(){
     this.props.everyYearEvents();
   }

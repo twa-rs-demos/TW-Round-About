@@ -15,7 +15,6 @@ export default class Events extends Component {
           <div>FIRST BOOK FAIR</div>
           <div>@ Mar 23,2009</div>
         </div>
-
       </div>
     );
   }
