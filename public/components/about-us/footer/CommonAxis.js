@@ -33,7 +33,9 @@ export default class CommonAxis extends Component {
           </div>
         </div>
         <div className={this.state.events ? '' : 'hidden'}>
-          <Events/>
+          <Events firstEvent={this.props.firstEvent} firstEventTime={this.props.firstEventTime}
+                  secondEvent={this.props.secondEvent} secondEventTime={this.props.secondEventTime}
+          />
         </div>
       </div>
     );

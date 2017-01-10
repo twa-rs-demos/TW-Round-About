@@ -1,15 +1,16 @@
 import {Component} from 'react';
 import CommonAxis from './CommonAxis';
+import yearsDate from './timeAndEventDate';
 
 export default class Axis extends Component {
 
   render() {
-    const years = ['2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'];
 
-    const axis = years.map((year, index)=> {
+    const axis = yearsDate.map((year, index)=> {
       return (
         <div key={index}>
-          <CommonAxis year={year}/>
+          <CommonAxis year={year.year} firstEvent={year.firstEvent} firstEventTime={year.firstEventTime}
+                      secondEvent={year.secondEvent} secondEventTime={year.secondEventTime}/>
         </div>)
     });
 
