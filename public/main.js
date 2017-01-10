@@ -40,6 +40,7 @@ import Gallery from './components/gallery';
 import Article from './components/article';
 import PartnerStories from './components/partner-stories';
 import FoundingStory from  './components/founding-story';
+import './style/index.less';
 
 const store = createStore(
   rootReducer,
