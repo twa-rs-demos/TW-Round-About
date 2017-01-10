@@ -47,7 +47,7 @@ export default class DonatingProjects extends Component {
           <h2 className='middle-title'>{this.props.title}</h2>
         </div>
         <div>
-          {this.getDonatingProjectsRow(donatingProjectList.slice(this.state.currentPage, this.state.currentPage + 9))}
+          {this.getDonatingProject(donatingProjectList.slice(this.state.currentPage, this.state.currentPage + 9))}
         </div>
 
         <div className='row' id='pagination-project'>
@@ -63,9 +63,7 @@ export default class DonatingProjects extends Component {
             </div>
           </div>
         </div>
-
       </div>
     );
   }
 }
-
