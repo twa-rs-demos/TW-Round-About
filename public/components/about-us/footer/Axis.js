@@ -1,21 +1,7 @@
 import {Component} from 'react';
 import CommonAxis from './CommonAxis';
-// import Events from './Events';
 
 export default class Axis extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      events: false
-    };
-  }
-
-  showEvents2009() {
-    this.setState({
-      events: !this.state.events
-    });
-  }
 
   render() {
     const years = ['2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016'];
@@ -23,7 +9,7 @@ export default class Axis extends Component {
     const axis = years.map((year, index)=> {
       return (
         <div key={index}>
-          <CommonAxis year={year} everyYearEvents={this.showEvents2009.bind(this)}/>
+          <CommonAxis year={year}/>
         </div>)
     });
 
@@ -38,15 +24,7 @@ export default class Axis extends Component {
             <i className='fa fa-caret-right circle chevron'> </i>
           </div>
         </div>
-
       </div>
     );
   }
 }
-
-
-// <div className='col-xs-offset-3 col-xs-1 no-padding'>
-//   <div className={this.state.events ? '' : 'hidden'}>
-//     <Events/>
-//   </div>
-// </div>
