@@ -27,7 +27,7 @@ export default class ItemDonate extends Component {
 
   closeApplyForm() {
     this.setState({isShowApplyForm: false});
-    $('.overlay,.donation-apply-form').fadeOut(400, function() {
+    $('.overlay,.donation-apply-form').fadeOut(400, function () {
       $(this).removeAttr('style');
     });
   }
@@ -44,7 +44,7 @@ export default class ItemDonate extends Component {
           </div>
         </div>
         <div className='row'>
-          <div className='donate-guide col-sm-offset-2 col-xs-offset-0 col-sm-8 col-xs-12'>
+          <div className='donate-guide col-sm-offset-2 col-xs-offset-0 col-sm-8 col-xs-12 no-padding'>
             <h3 className='donate-items-title'><a className='donate-guide-title'
                                                   onMouseOver={this.showElasticBox.bind(this)}>捐赠指南</a></h3>
             {this.state.isShowElasticBox ? <DonateRules closeElasticBox={this.closeElasticBox.bind(this)}/> : ''}

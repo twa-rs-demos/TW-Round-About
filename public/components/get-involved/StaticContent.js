@@ -10,7 +10,7 @@ export default class StaticContent extends Component {
           <div className='col-sm-6 text-left get-involved-item'>
             <div className='child'>
               <img src='http://localhost/tw-ra/public/images/getInvolved/icon_volunteer.png'/>
-              <Link to={URI_PREFIX + '/volunteer'}>加入志愿者行列</Link>
+              <Link to={URI_PREFIX + '/getinvolved/volunteer'}>加入志愿者行列</Link>
             </div>
           </div>
           <div className='col-sm-6 text-left get-involved-item' id='applyrescue'>
@@ -23,7 +23,7 @@ export default class StaticContent extends Component {
           <div className='col-sm-6 text-left get-involved-item' id='charities'>
             <div className='child'>
               <img src='http://localhost/tw-ra/public/images/getInvolved/icon_support.png'/>
-              <Link to={URI_PREFIX + '/classifieds'}>合作与支持的慈善机构</Link>
+              <Link to={URI_PREFIX + '/getinvolved/classifieds'}>合作与支持的慈善机构</Link>
             </div>
           </div>
           <div className='col-sm-6 text-left get-involved-item'>
@@ -37,13 +37,13 @@ export default class StaticContent extends Component {
             <div className='col-sm-6 text-left get-involved-item'>
               <div className='child'>
                 <img src='http://localhost/tw-ra/public/images/getInvolved/icon_support.png'/>
-                <Link to={URI_PREFIX + '/directory'}>您的捐赠可以帮到谁</Link>
+                <Link to={URI_PREFIX + '/getinvolved/directory'}>您的捐赠可以帮到谁</Link>
               </div>
             </div>
             <div className='col-sm-6 text-left get-involved-item' id='communitycenter'>
               <div className='child'>
                 <img src='http://localhost/tw-ra/public/images/getInvolved/icon_community center.png'/>
-                <Link to={URI_PREFIX + '/communityCenter'}>社区中心</Link>
+                <Link to={URI_PREFIX + '/getinvolved/communityCenter'}>社区中心</Link>
               </div>
             </div>
           </div>

@@ -1,3 +1,5 @@
+@import "common";
+
 #get-involved-volunteer {
   .involved-volunteer {
     color: #575757;
@@ -7,11 +9,6 @@
     padding: 0 1.5rem;
     margin-bottom: 6.2rem;
   }
-
-  .involved_volunteer h2 {
-    margin-bottom: 3.1rem;
-  }
-
   .involved-volunteer-join {
     background-color: #f8f9fb;
     padding-bottom: 6.0rem;
@@ -20,8 +17,8 @@
       margin-top: 0;
     }
     button {
-      width: 36.2rem;
-      height: 5.2rem;
+      width: 33rem;
+      height: 5rem;
       line-height: 5.2rem;
       font-size: 2rem;
       display: block;
@@ -33,5 +30,27 @@
       margin-top: 4.1rem;
     }
   }
-
+  .volunteer-countries {
+    .countries-quantity {
+      font-size: 6rem;
+    }
+  }
+  .volunteer-stories {
+    .story-item {
+      margin-bottom: 5.5rem;
+      p {
+        margin: 1.5rem 0 14px 0;
+        font-size: 2rem;
+      }
+      a {
+        color: @pink-color;
+        outline: none;
+        text-decoration: none;
+        font-size: 2rem;
+      }
+      .story-picture {
+        width: 62%;
+      }
+    }
+  }
 }

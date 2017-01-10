@@ -18,8 +18,8 @@ export default class StaticContent extends Component {
           <button>现在申请成为志愿者</button>
         </div>
 
-        <div>
-          <h2 className='middle-title'>来自<span>50</span>多个国家和地区</h2>
+        <div className='col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12 volunteer-countries'>
+          <h2 className='middle-title'>来自<span className='countries-quantity'>50</span>多个国家和地区</h2>
           <img src='http://localhost/tw-ra/public/images/getInvolvedVolunteer/50 countries.png'/>
         </div>
       </div>
