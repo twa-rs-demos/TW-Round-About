@@ -43,7 +43,7 @@ export default class FooterTopTwo extends Component {
 
   render() {
     return (
-      <div>
+      <div className='col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12 no-padding'>
         <div className='two-title'>
           <p className='col-two-text'>Want to join us?</p>
           <p className='red-text' onClick={this.gotoVolunteer.bind(this)}> Apply To Volunteer Today > </p>
