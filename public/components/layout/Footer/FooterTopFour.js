@@ -3,7 +3,7 @@ import {Component} from 'react';
 export default class FooterTopFour extends Component {
   render() {
     return (
-      <div>
+      <div className='col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12 no-padding icon-imgs'>
         <div className='icon-img'>
           <img src='http://localhost/tw-ra/public/images/home/taobao store.png'/>
           <p>淘宝</p>

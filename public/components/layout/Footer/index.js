@@ -5,9 +5,9 @@ import FooterBottom from './FooterBottom';
 export default class Footer extends Component {
   render() {
     return (
-      <div id='footer' className='container'>
-        <FooterTop/>
-        <FooterBottom/>
+      <div id='footer' className='row'>
+          <FooterTop/>
+          <FooterBottom/>
       </div>
     );
   }
