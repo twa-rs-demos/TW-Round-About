@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import CommonAxis from './CommonAxis';
+import Events from './Events';
 
 export default class Footer extends Component {
   constructor(props) {
@@ -35,7 +36,7 @@ export default class Footer extends Component {
             <CommonAxis year='2016'/>
 
             <div className='col-md-1 col-xs-1 no-padding'>
-              <i className='fa fa-chevron-right circle chevron'> </i>
+              <i className='fa fa-caret-right circle chevron'> </i>
             </div>
           </div>
           <div className='col-xs-offset-3 col-xs-1 no-padding'>
@@ -45,28 +46,6 @@ export default class Footer extends Component {
           </div>
 
         </div>
-
-      </div>
-    );
-  }
-}
-
-class Events extends Component {
-
-  render() {
-    return (
-      <div id='aboutUs-years-events'>
-
-        <div className='fist-event'>
-          <div>FIRST BOOK FAIR</div>
-          <div>@ Mar 23,2009</div>
-        </div>
-
-        <div className='second-event'>
-          <div>FIRST BOOK FAIR</div>
-          <div>@ Mar 23,2009</div>
-        </div>
-
       </div>
     );
   }

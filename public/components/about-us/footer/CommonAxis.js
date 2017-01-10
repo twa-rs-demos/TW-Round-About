@@ -11,7 +11,7 @@ export default class CommonAxis extends Component {
         <div className='time-line'>
           <div className='circle-year' onMouseOver={this.showEvents.bind(this)}>
             <span className='year'>{this.props.year}</span>
-            <i className='fa fa-circle circle'> </i>
+            <i className='fa fa-dot-circle-o circle'> </i>
           </div>
         </div>
       </div>

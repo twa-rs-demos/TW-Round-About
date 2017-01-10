@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import Header from './Header';
 import Content from './Content';
-import Footer from './Footer';
+import Footer from './footer/index';
 import '../../style/aboutUs.less';
 
 export default class AboutUs extends Component {
