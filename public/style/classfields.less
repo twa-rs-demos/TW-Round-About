@@ -33,6 +33,12 @@
     .search-type {
       color: @pink-color;
       font-size: 2rem;
+      button {
+        border: none;
+        background-color: #FFF;
+        padding: 0;
+        outline: none;
+      }
     }
   }
   .provide-and-question {
@@ -57,4 +63,38 @@
       }
     }
   }
+}
+
+#filter {
+  .modal-content {
+    width: 51%;
+    left: 50%;
+    .modal-header {
+      padding-bottom: 0;
+      .modal-title {
+        font-size: 3rem;
+        color: @pink-color;
+      }
+    }
+    .modal-body {
+      padding-top: 6px;
+      .filter-button {
+        border: 1px @pink-color solid;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        margin: 0 19px 10px 0;
+        padding: 0 10px;
+        outline: none;
+      }
+      .active {
+        background-color: @pink-color;
+        color: #FFFFFF;
+      }
+      p {
+        font-size: 2rem;
+        padding-top: 0;
+      }
+    }
+  }
+
 }
