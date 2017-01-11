@@ -9,4 +9,4 @@ export default [
     name: 'Jake Tomas,Chief',
     introduce: 'a pick up of you donations,we will try our best to help.'
   }
-]
+];

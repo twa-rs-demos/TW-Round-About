@@ -15,13 +15,12 @@ const volunteerPictures = [
 export default class OurCommityLeaders extends Component {
 
   render() {
-
-    const commityLeaders = volunteerPictures.map((volunteerPicture, index)=> {
+    const commityLeaders = volunteerPictures.map((volunteerPicture, index) => {
       return (
         <div className='col-md-4 col-xs-12 commity-leader' key={index}>
           <img className='center-block' src={volunteerPicture.src}/>
         </div>
-      )
+      );
     });
 
     return (

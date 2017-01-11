@@ -4,8 +4,7 @@ import ourLeadersData from './ourLeadersData';
 export default class OurLeaderShip extends Component {
 
   render() {
-
-    const ourLeaders = ourLeadersData.map((leader, index)=> {
+    const ourLeaders = ourLeadersData.map((leader, index) => {
       return (
         <div className='col-md-6 col-xs-12 leader' key={index}>
           <img className='center-block' src={leader.src}/>
@@ -14,7 +13,7 @@ export default class OurLeaderShip extends Component {
             <p>{leader.introduce}</p>
           </div>
         </div>
-      )
+      );
     });
 
     return (

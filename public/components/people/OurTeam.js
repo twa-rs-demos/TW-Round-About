@@ -1,12 +1,11 @@
 import {Component} from 'react';
 import teamMembersPictures from './teamMembersPictureDate';
 
-
 export default class OurTeam extends Component {
 
   render() {
-    const teamMembers = teamMembersPictures.map((member, index)=> {
-      if (index == 5) {
+    const teamMembers = teamMembersPictures.map((member, index) => {
+      if (index === 5) {
         return (
           <div>
             <div className='col-md-2'></div>
@@ -14,15 +13,13 @@ export default class OurTeam extends Component {
               <img className='center-block' src={member.src}/>
             </div>
           </div>
-        )
-
-      }
-      else {
+        );
+      } else {
         return (
           <div className='col-md-2 col-xs-5 teamMember' key={index}>
             <img className='center-block' src={member.src}/>
           </div>
-        )
+        );
       }
     });
 
