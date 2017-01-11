@@ -17,7 +17,7 @@ import GetInvolved from './components/get-involved/index';
 import SearchResult from './components/result/SearchResult';
 import ChildStory from './components/child-story/index';
 import NewsLetter from './components/result/NewsLetter';
-import NewAndEvent from './components/new-and-event/index';
+import NewAndEvent from './components/news-and-event/index';
 import Classifieds from './components/classifieds/index';
 import Directory from './components/directory/index';
 import CommunityCenter from './components/community-center/index';
