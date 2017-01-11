@@ -33,22 +33,28 @@ export default class OurTeam extends Component {
     });
 
     return (
-      <div id='ourTeam' className='col-md-offset-1 col-md-10 col-xs-offset-3 col-xs-6'>
-        <h3 className='middle-title ourTime-h3'>我们的团队</h3>
-        <div className='row'>
-          <div className='col-md-2'></div>
-          {teamMembers}
+      <div id='ourTeam' className='container'>
+        <div className='col-md-offset-1 col-md-10 col-xs-offset-3 col-xs-6'>
+          <h3 className='middle-title ourTime-h3'>我们的团队</h3>
         </div>
-
-        <button className='button-style center-block welcome-family' onClick={this.showVolunteerForm.bind(this)}>
-          <span>加入众爱大家庭</span>
-        </button>
+        <div className='col-md-10  col-xs-10'>
+          <div className='row'>
+            <div className='col-md-2'></div>
+            {teamMembers}
+          </div>
+        </div>
+        <div className='col-md-offset-1 col-md-10 col-xs-offset-3 col-xs-6'>
+          <button className='button-style center-block welcome-family' onClick={this.showVolunteerForm.bind(this)}>
+            <span>加入众爱大家庭</span>
+          </button>
+        </div>
 
         <div className={this.props.state ? '' : 'hidden'}>
           <VolunteerForm showForm={this.showForm.bind(this)}
                          title='VOLUNTEERS APPLICATION FORM' inputTextInfo='Email Address'
                          textAreaInfo='Commits'/>
         </div>
+
       </div>
     );
   }
