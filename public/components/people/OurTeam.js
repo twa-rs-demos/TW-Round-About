@@ -1,15 +1,24 @@
 import {Component} from 'react';
 import teamMembersPictures from './teamMembersPictureDate';
+import VolunteerForm from '../layout/Footer/VolunteerForm';
 
 export default class OurTeam extends Component {
+
+  showVolunteerForm() {
+    this.props.showApplicationForm();
+  }
+
+  showForm() {
+    this.props.closeForm();
+  }
 
   render() {
     const teamMembers = teamMembersPictures.map((member, index) => {
       if (index === 5) {
         return (
-          <div>
+          <div key={index}>
             <div className='col-md-2'></div>
-            <div className='col-md-2 col-xs-5 teamMember' key={index}>
+            <div className='col-md-2 col-xs-5 teamMember'>
               <img className='center-block' src={member.src}/>
             </div>
           </div>
@@ -31,8 +40,15 @@ export default class OurTeam extends Component {
           {teamMembers}
         </div>
 
-        <button className='button-style center-block welcome-family'><span>加入众爱大家庭</span></button>
+        <button className='button-style center-block welcome-family' onClick={this.showVolunteerForm.bind(this)}>
+          <span>加入众爱大家庭</span>
+        </button>
 
+        <div className={this.props.state ? '' : 'hidden'}>
+          <VolunteerForm showForm={this.showForm.bind(this)}
+                         title='VOLUNTEERS APPLICATION FORM' inputTextInfo='Email Address'
+                         textAreaInfo='Commits'/>
+        </div>
       </div>
     );
   }
