@@ -11,44 +11,44 @@ export default class PublicResource extends Component {
       </div>
       <div className='search-box row'>
         <div className='col-sm-offset-4 col-xs-offset-3 col-sm-4 col-xs-6 no-padding search-box-container'>
-          <input type="text"/>
+          <input type='text'/>
           <button>
-            <img src="http://localhost/tw-ra/public/images/home/icon_search_small_focused.png" alt=""/>
+            <img src='http://localhost/tw-ra/public/images/home/icon_search_small_focused.png' alt=''/>
           </button>
         </div>
         <div className='col-sm-offset-4 col-xs-offset-3 col-sm-4 col-xs-6 no-padding search-type'>高级搜索 ></div>
       </div>
-      <div className="provide-and-question row">
-        <div className="col-sm-6 col-xs-12 provide">
-          <div className="title">提供</div>
-          <div className="provided-types">
-            <div className="col-xs-6 provided-name">
+      <div className='provide-and-question row'>
+        <div className='col-sm-6 col-xs-12 provide'>
+          <div className='title'>提供</div>
+          <div className='provided-types'>
+            <div className='col-xs-6 provided-name'>
               <button>Items</button>
             </div>
-            <div className="col-xs-6 provided-name">
+            <div className='col-xs-6 provided-name'>
               <button>Skills & Expertise</button>
             </div>
-            <div className="col-xs-6 provided-name">
+            <div className='col-xs-6 provided-name'>
               <button>Time</button>
             </div>
-            <div className="col-xs-6 provided-name">
+            <div className='col-xs-6 provided-name'>
               <button>Other</button>
             </div>
           </div>
         </div>
-        <div className="col-sm-6 col-xs-12 question">
-          <div className="title">提问</div>
-          <div className="provided-types">
-            <div className="col-xs-6 provided-name">
+        <div className='col-sm-6 col-xs-12 question'>
+          <div className='title'>提问</div>
+          <div className='provided-types'>
+            <div className='col-xs-6 provided-name'>
               <button>Items</button>
             </div>
-            <div className="col-xs-6 provided-name">
+            <div className='col-xs-6 provided-name'>
               <button>Skills & Expertise</button>
             </div>
-            <div className="col-xs-6 provided-name">
+            <div className='col-xs-6 provided-name'>
               <button>Time</button>
             </div>
-            <div className="col-xs-6 provided-name">
+            <div className='col-xs-6 provided-name'>
               <button>Other</button>
             </div>
           </div>
