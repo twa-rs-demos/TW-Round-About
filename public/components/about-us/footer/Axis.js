@@ -5,13 +5,12 @@ import yearsDate from './timeAndEventDate';
 export default class Axis extends Component {
 
   render() {
-
-    const axis = yearsDate.map((year, index)=> {
+    const axis = yearsDate.map((year, index) => {
       return (
         <div key={index}>
           <CommonAxis year={year.year} firstEvent={year.firstEvent} firstEventTime={year.firstEventTime}
                       secondEvent={year.secondEvent} secondEventTime={year.secondEventTime}/>
-        </div>)
+        </div>);
     });
 
     return (

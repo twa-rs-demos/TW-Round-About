@@ -45,7 +45,6 @@ export default class VolunteerForm extends Component {
 
                 </div>
 
-
                 <div className='row '>
 
                   <div className='col-md-3 col-xs-4 info-right info-margin'>
@@ -64,7 +63,6 @@ export default class VolunteerForm extends Component {
 
                 </div>
 
-
                 <div className='row'>
                   <div className='col-md-3  col-xs-4 info-right info-margin'>
                     <span>{this.props.inputTextInfo}<span className='pink'>*</span></span>
@@ -73,7 +71,6 @@ export default class VolunteerForm extends Component {
                     <input type='text' className='text-length input-info' required='required'/>
                   </div>
                 </div>
-
 
                 <div className='row '>
                   <div className='col-md-3 col-xs-4 info-right '>
@@ -86,7 +83,6 @@ export default class VolunteerForm extends Component {
                   </div>
                 </div>
 
-
                 <div className='row'>
                   <div className='col-md-offset-3 col-md-3 col-xs-offset-4 col-xs-3'>
                     <Button className='btn-Cancel btn btn-default btn-sm'
@@ -98,20 +94,14 @@ export default class VolunteerForm extends Component {
                   </div>
                 </div>
 
-
               </div>
 
               <div className='col-md-1 col-xs-1'>
                 <img src='http://localhost/tw-ra/public/images/home/close.png' className='image-close'
                      onClick={this.close.bind(this)}/>
               </div>
-
             </div>
-
-
           </Modal.Body>
-
-
         </Modal.Dialog>
       </div>
     );
