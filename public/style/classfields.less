@@ -5,6 +5,7 @@
   .public-resource {
     p {
       font-size: 2rem;
+      padding: 0 0.5rem 0 0.5rem;
     }
   }
   .search-box {
@@ -17,7 +18,7 @@
       display: block;
       input {
         outline: none;
-        width: 87%;
+        width: 83%;
         border: none;
         background-color: #D8D8D8;
       }
@@ -26,6 +27,7 @@
         background-color: #D8D8D8;
         outline: none;
         border-radius: 2rem;
+        padding-right: 0;
       }
     }
     .search-type {
@@ -41,14 +43,17 @@
       font-size: 2rem;
     }
     .provided-types {
-      button {
-        border: 1px @pink-color solid;
-        background-color: #FFFFFF;
-        width: 100%;
-        border-radius: 2rem;
-        margin-bottom: 2rem;
-        outline: none;
-        font-size: 1.5rem;
+      .provided-name {
+        padding-left: 0;
+        button {
+          border: 1px @pink-color solid;
+          background-color: #FFFFFF;
+          width: 100%;
+          border-radius: 2rem;
+          margin-bottom: 2rem;
+          outline: none;
+          font-size: 1.5rem;
+        }
       }
     }
   }
