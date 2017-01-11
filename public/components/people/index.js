@@ -2,6 +2,7 @@ import {Component} from 'react';
 import {MaxPicture} from '../common/';
 import PeopleVolunteer from './PeopleVolunteer';
 import OurLeaderShip from './OurLeaderShip';
+import OurCommityLeaders from './OurCommityLeaders';
 
 export default class People extends Component {
 
@@ -12,8 +13,8 @@ export default class People extends Component {
         <MaxPicture src={pictureSrc}/>
         <PeopleVolunteer/>
         <OurLeaderShip/>
+        <OurCommityLeaders/>
       </div>
-
 
     );
   }

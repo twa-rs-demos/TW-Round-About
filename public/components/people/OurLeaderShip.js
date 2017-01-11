@@ -7,7 +7,7 @@ export default class OurLeaderShip extends Component {
 
     const ourLeaders = ourLeadersData.map((leader, index)=> {
       return (
-        <div className='col-md-6 col-xs-12 leader'>
+        <div className='col-md-6 col-xs-12 leader' key={index}>
           <img className='center-block' src={leader.src}/>
           <div className='leader-picture'>
             <p>{leader.name}</p>
