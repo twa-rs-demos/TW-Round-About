@@ -4,7 +4,9 @@ import PublicResource from './PublicResource';
 export default class Classifieds extends Component {
   render() {
     return (<div className='row' id='class-fields'>
-      <PublicResource/>
+      <div className='col-sm-offset-2 col-sm-8 no-padding'>
+        <PublicResource/>
+      </div>
     </div>);
   }
 }
