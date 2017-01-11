@@ -12,9 +12,7 @@ const volunteerPictures = [
   }
 ];
 
-
 export default class OurCommityLeaders extends Component {
-
 
   render() {
 
@@ -27,7 +25,7 @@ export default class OurCommityLeaders extends Component {
     });
 
     return (
-      <div id='ourCommityLeaders' className='col-md-offset-3 col-md-6'>
+      <div id='ourCommityLeaders' className='col-md-offset-3 col-md-6 col-xs-offset-3 col-xs-6'>
         <h3 className='middle-title title-h3'>我们的志愿者领队</h3>
         <div className='row'>
           {commityLeaders}

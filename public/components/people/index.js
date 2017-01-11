@@ -3,6 +3,7 @@ import {MaxPicture} from '../common/';
 import PeopleVolunteer from './PeopleVolunteer';
 import OurLeaderShip from './OurLeaderShip';
 import OurCommityLeaders from './OurCommityLeaders';
+import OurTime from './OurTeam';
 
 export default class People extends Component {
 
@@ -14,6 +15,7 @@ export default class People extends Component {
         <PeopleVolunteer/>
         <OurLeaderShip/>
         <OurCommityLeaders/>
+        <OurTime/>
       </div>
 
     );
