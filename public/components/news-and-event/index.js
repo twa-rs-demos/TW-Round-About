@@ -2,7 +2,6 @@ import {Component} from 'react';
 import NewsSearchHead from './NewsSearchHead';
 import {MaxPicture} from '../common/';
 import MainContent from './MainContent/index';
-import '../../style/newsAndEvent.less';
 
 export default class NewAndEvent extends Component {
 

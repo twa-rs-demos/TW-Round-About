@@ -1,7 +1,6 @@
 import {Component} from 'react';
 import Video from './Video';
 import OurWorkItems from './OurWorkItems';
-import '../../style/ourWork.less';
 
 export default class OurWork extends Component {
   render() {
