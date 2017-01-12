@@ -1,6 +1,3 @@
-/**
- * Created by mahong on 16-12-22.
- */
 import {Component} from 'react';
 
 export default class Partners extends Component {

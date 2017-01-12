@@ -2,7 +2,6 @@ import {Component} from 'react';
 import StaticContent from './StaticContent';
 import VolunteerStory from './VolunteerStory';
 import {MaxPicture} from '../common/';
-import '../../style/volunteer.less';
 
 export default class GetInvolvedVolunteer extends Component {
   render() {

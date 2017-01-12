@@ -1,5 +1,4 @@
 import {Component} from 'react';
-import '../../style/store.less';
 import RoundAboutTaoBao from './RoundAboutTaoBao';
 import ShoppingForChildren from './ShoppingForChildren';
 import PhysicalStore from './PhysicalStore';

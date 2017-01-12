@@ -2,8 +2,6 @@ import {Component} from 'react';
 import {DonatingProjects, MaxPicture} from '../common/index';
 import DonateWay from './donate-way/index';
 import ItemDonate from './ItemDonate';
-import '../../style/donate.less';
-import '../../style/modalForm.less';
 
 export default class Home extends Component {
   render() {

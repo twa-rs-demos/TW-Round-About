@@ -2,8 +2,6 @@ import {Component} from 'react';
 import Header from './header/index';
 import ApplyMonthly from './ApplyMonthly';
 import Footer from './Footer/index';
-import '../../style/header.less';
-import '../../style/footer.less';
 import Breadcrumb from '../../containers/layout/breadcrumb';
 
 export default class Test extends Component {

@@ -2,7 +2,6 @@ import {Component} from 'react';
 import ContentStatic from './StaticContent';
 import {MaxPicture} from '../common/';
 import {Link} from 'react-router';
-import '../../style/ourWorkAssistance.less';
 
 export default class ourWorkPage extends Component {
   render() {
