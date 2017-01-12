@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import {MaxPicture} from '../common/index';
+import SameFamily from './SameFamily';
 
 export default class Partners extends Component {
 
@@ -27,8 +28,13 @@ export default class Partners extends Component {
           <div className="more-stories text-right">
             <a href="#">更多合作伙伴故事 ></a>
           </div>
-        </div>
+          <div className="row same-family">
+            <SameFamily/>
+          </div>
+          <div clasName="row become-partner">
 
+          </div>
+        </div>
       </div>
     );
   }
