@@ -11,7 +11,7 @@ export default class MainContent extends Component {
             <div className='row news-event-switch text-right'>
               <Switch/>
             </div>
-            <div className='row news-event'>
+            <div className='news-event'>
               <EventAndDate/>
             </div>
           </div>

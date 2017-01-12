@@ -16,7 +16,7 @@ export default class Dates extends Component {
       <div id='date-list' className='row'>
         <div className='col-md-12 col-xs-6 margin-bottom '>
           <div className='row'>
-            <div className='col-xs-2 no-padding'>
+            <div className='col-xs-2'>
               <div className='box-border'>
                 <div className='num-box'>{firstDate.num}</div>
               </div>
@@ -29,7 +29,7 @@ export default class Dates extends Component {
         </div>
         <div className='col-md-12 col-xs-6 margin-bottom'>
           <div className='row'>
-            <div className='col-xs-2 no-padding'>
+            <div className='col-xs-2'>
               <div className='box-border'>
                 <div className='num-box'>{secondDate.num}</div>
               </div>

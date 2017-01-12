@@ -10,7 +10,7 @@ export default class EventAndDate extends Component {
           <div className='col-md-8 col-xs-12'>
             <Events data={item.event}/>
           </div>
-          <div className='col-md-4 col-xs-12'>
+          <div className='col-md-4 col-xs-12 no-display'>
             <Dates data={item.dates}/>
           </div>
         </div>
