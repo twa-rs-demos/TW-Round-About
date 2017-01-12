@@ -34,7 +34,7 @@ export default class MainContent extends Component {
                       showCalendarContent={this.showCalendar.bind(this)}
                       state={this.state.showContent}/>
             </div>
-            <div className={this.state.showContent === 'eventAndDate' ? 'news-event' : 'hidden'}>
+            <div id="news-event" className={this.state.showContent === 'eventAndDate' ? '' : 'hidden'}>
               <EventAndDate/>
             </div>
 

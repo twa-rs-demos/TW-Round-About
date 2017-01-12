@@ -7,7 +7,7 @@ export default class NewAndEvent extends Component {
   render() {
     const pictureSrc = './public/images/newsAndEvent/hero_news&events.png';
     return (
-      <div id='news_event'>
+      <div id="news-and-event">
         <MaxPicture src={pictureSrc}/>
         <NewsSearchHead />
         <MainContent/>
