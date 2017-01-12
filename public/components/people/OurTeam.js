@@ -37,7 +37,7 @@ export default class OurTeam extends Component {
         <div className='col-md-offset-1 col-md-10 col-xs-offset-3 col-xs-6'>
           <h3 className='middle-title ourTime-h3'>我们的团队</h3>
         </div>
-        <div className='col-md-10  col-xs-10'>
+        <div className='col-md-offset-1 col-md-9  col-xs-offset-2  col-xs-9'>
           <div className='row'>
             <div className='col-md-2'></div>
             {teamMembers}
