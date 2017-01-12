@@ -7,10 +7,10 @@ export default class EventAndDate extends Component {
     return datas.map((item) => {
       return (
         <div className='row row-margin-bottom'>
-          <div className='col-md-8 col-xs-12'>
+          <div className='col-md-9 col-xs-12'>
             <Events data={item.event}/>
           </div>
-          <div className='col-md-4 col-xs-12 no-display'>
+          <div className='col-md-3 col-xs-12 no-display'>
             <Dates data={item.dates}/>
           </div>
         </div>
