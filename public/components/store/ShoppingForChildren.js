@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import DonateWayModal from './DonateWayModal';
+import RequestFormModal from '../donate/doantion-apply-form/index';
 
 export default class ShoppingForChildren extends Component {
   constructor(props) {
@@ -16,6 +17,14 @@ export default class ShoppingForChildren extends Component {
 
   hideDonateWayModal() {
     this.setState({showDonateWayModal: false});
+  }
+
+  showRequestFormModal() {
+    this.setState({showRequestFormModal: true});
+  }
+
+  hideRequestFormModal() {
+    this.setState({showRequestFormModal: false});
   }
 
   render() {
@@ -35,10 +44,11 @@ export default class ShoppingForChildren extends Component {
       <div className='col-xs-6 donate-button'>
         <div className='col-xs-11 text-right'>
           <button className='donate-type' onClick={this.showDonateWayModal.bind(this)}>捐款</button>
-          <button className='donate-type'>捐物</button>
+          <button className='donate-type' onClick={this.showRequestFormModal.bind(this)}>捐物</button>
           <div>... Or if you’re in the giving mood</div>
         </div>
         {this.state.showDonateWayModal ? <DonateWayModal hideModal={this.hideDonateWayModal.bind(this)}/> : ''}
+        {this.state.showRequestFormModal ? <RequestFormModal/> : ''}
       </div>
     </div>);
   }
