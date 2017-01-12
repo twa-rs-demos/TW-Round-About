@@ -17,13 +17,13 @@ export default class People extends Component {
   showApplicationForm() {
     this.setState({
       showVolunteerForm: true
-    })
+    });
   }
 
   closeForm() {
     this.setState({
       showVolunteerForm: false
-    })
+    });
   }
 
   render() {

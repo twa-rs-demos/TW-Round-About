@@ -2,7 +2,6 @@ import {Component} from 'react';
 import OurWorkItems from './OurWorkItems';
 import Video from '../home/Video';
 import {MaxPicture} from '../common/';
-import '../../style/home.less';
 
 export default class Home extends Component {
   render() {

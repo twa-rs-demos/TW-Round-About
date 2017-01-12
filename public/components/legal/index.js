@@ -1,5 +1,4 @@
 import {Component} from 'react';
-import '../../style/legalPrivacyPolicy.less';
 
 export default class Legal extends Component {
   render() {
