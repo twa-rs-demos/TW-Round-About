@@ -4,9 +4,9 @@ import Dates from './Dates';
 
 export default class EventAndDate extends Component {
   getEventDateRow(datas) {
-    return datas.map((item) => {
+    return datas.map((item, index) => {
       return (
-        <div className='row row-margin-bottom'>
+        <div className='row row-margin-bottom' key={index}>
           <div className='col-md-8 col-xs-12'>
             <Events data={item.event}/>
           </div>
