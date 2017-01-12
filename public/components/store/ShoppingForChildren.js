@@ -29,8 +29,8 @@ export default class ShoppingForChildren extends Component {
 
   render() {
     return (<div>
-      <h2 className='shopping-title text-center'>通过购物来改变孩子的<span>命运</span></h2>
-      <p className='text-center'>所得利润用于支持和帮助困境群体。</p>
+      <h2 className='shopping-title text-center round-store-title'>通过购物来改变孩子的<span>命运</span></h2>
+      <p className='text-center shopping-statement'>所得利润用于支持和帮助困境群体。</p>
       <div className='col-xs-6 two-dimension-code no-padding'>
         <div className='col-xs-6 inline text-right no-padding relative-positon'>
           <img className='store-picture' src='http://localhost/tw-ra/public/images/wechat01.png' alt=''/>
