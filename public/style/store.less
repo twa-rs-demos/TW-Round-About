@@ -52,9 +52,10 @@
       }
     }
     .donate-button {
-      button {
+      .donate-type {
         display: inline-block;
         width: 19rem;
+        outline: none;
         background-color: #EC4C9A;
         color: #FFFFFF;
         border: none;
@@ -97,6 +98,41 @@
     }
     .physical-store-title {
       margin: 6rem 0 2rem 0;
+    }
+  }
+}
+
+#donate-way-modal {
+  .modal-content {
+    width: 335px;
+    .modal-header {
+      padding-top: 7px;
+      .close-modal {
+        font-size: 2rem;
+        border: none;
+        outline: none;
+        display: inline-block;
+        &:hover, &:focus {
+          background-color: #FFFFFF;
+        }
+      }
+      .modal-title {
+        .title {
+          font-size: 3rem;
+          color: @pink-color;
+        }
+      }
+    }
+    .modal-body {
+      .donate-way {
+        height: 120px;
+        .donate-img {
+          height: 65px;
+        }
+        .border {
+          border: 1px #D8D8D8 solid;
+        }
+      }
     }
   }
 }
