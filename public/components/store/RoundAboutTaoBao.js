@@ -8,8 +8,8 @@ export default class RoundAboutTaoBao extends Component {
 \t48 charitable organizations in the Beijing area and many more throughoutChina, Inner Mongolia and Mongolia.`;
 
     return (<div className='store-taobao'>
-      <h2 className='store-taobao-title text-center'>众爱商店是淘宝的好地方</h2>
-      <p className='content'>{content}</p>
+      <h2 className='store-taobao-title text-center round-store-title'>众爱商店是淘宝的好地方</h2>
+      <p className='content taobao-statement'>{content}</p>
     </div>);
   }
 }
