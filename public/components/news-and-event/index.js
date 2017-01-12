@@ -4,11 +4,10 @@ import {MaxPicture} from '../common/';
 import MainContent from './MainContent/index';
 
 export default class NewAndEvent extends Component {
-
   render() {
     const pictureSrc = './public/images/newsAndEvent/hero_news&events.png';
     return (
-      <div id="news_event">
+      <div id='news_event'>
         <MaxPicture src={pictureSrc}/>
         <NewsSearchHead />
         <MainContent/>

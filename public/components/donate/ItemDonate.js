@@ -27,7 +27,7 @@ export default class ItemDonate extends Component {
 
   closeApplyForm() {
     this.setState({isShowApplyForm: false});
-    $('.overlay,.donation-apply-form').fadeOut(400, function () {
+    $('.overlay,.donation-apply-form').fadeOut(400, function() {
       $(this).removeAttr('style');
     });
   }

@@ -12,11 +12,11 @@ export default class Events extends Component {
   render() {
     let event = this.props.data;
     return (
-      <div id='events' className="row">
-        <div className="col-md-5 col-sm-4 col-xs-3">
+      <div id='events' className='row'>
+        <div className='col-md-5 col-sm-4 col-xs-3'>
           <img src={event.img}/>
         </div>
-        <div className="col-md-7 col-sm-8 col-xs-9 text">
+        <div className='col-md-7 col-sm-8 col-xs-9 text'>
           <h3>{event.category}<br/>
             @ {event.people}
           </h3>

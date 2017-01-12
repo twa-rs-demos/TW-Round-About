@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import {chunk} from 'lodash/chunk';
+import {Component} from 'react';
 
 export default class Dates extends Component {
 
@@ -11,8 +10,8 @@ export default class Dates extends Component {
   }
 
   render() {
-    let firstDate = this.state.dates.firstDate,
-      secondDate = this.state.dates.secondDate;
+    let firstDate = this.state.dates.firstDate;
+    let secondDate = this.state.dates.secondDate;
     return (
       <div id='date-list' className='row'>
         <div className='col-md-12 col-xs-6 margin-bottom '>
