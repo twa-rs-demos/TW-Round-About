@@ -47,8 +47,10 @@ export default class ShoppingForChildren extends Component {
           <button className='donate-type' onClick={this.showRequestFormModal.bind(this)}>捐物</button>
           <div>... Or if you’re in the giving mood</div>
         </div>
-        {this.state.showDonateWayModal ? <DonateWayModal hideModal={this.hideDonateWayModal.bind(this)}/> : ''}
-        {this.state.showRequestFormModal ? <RequestFormModal/> : ''}
+        {this.state.showDonateWayModal ?
+          <DonateWayModal hideModal={this.hideDonateWayModal.bind(this)}/> : ''}
+        {this.state.showRequestFormModal ?
+          <RequestFormModal closeApplyForm={this.hideRequestFormModal.bind(this)}/> : ''}
       </div>
     </div>);
   }
