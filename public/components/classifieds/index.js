@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import PublicResource from './PublicResource';
-import SearchBox from './SearchBox';
+import SearchBox from '../common/AdvancedSearch';
 import ProvideAndQuestion from './ProvideAndQuestion';
 
 export default class Classifieds extends Component {

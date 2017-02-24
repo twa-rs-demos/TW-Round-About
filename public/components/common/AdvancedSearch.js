@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import Filter from './Filter';
+import Filter from '../classifieds/Filter';
 
 export default class SearchBox extends Component {
   constructor(props) {
