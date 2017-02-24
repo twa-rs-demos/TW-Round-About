@@ -14,7 +14,7 @@ export default class StaticContent extends Component {
         </div>
 
         <div className='involved-volunteer-join'>
-          <h2 className='middle-title'>快来加入我们</h2>
+          <h2 className='middle-title'>快来加入我们吧</h2>
           <button>现在申请成为志愿者</button>
         </div>
 
