@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import Filter from '../classifieds/Filter';
+import Filter from './Filter';
 
 export default class AdvancedSearch extends Component {
   constructor(props) {

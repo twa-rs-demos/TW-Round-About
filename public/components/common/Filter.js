@@ -24,32 +24,32 @@ export default class Filter extends Component {
   }
 
   render() {
-    const locationVaries = ['Beijing', 'Shanghai', 'Hebei', 'Henan', 'Hangzhou', 'Chengdu', 'Gansu', 'Qinghai', 'Guangxi'];
-    const organizationVaries = ['Nonprofit', 'Social Enterprise', 'For Profit'];
-    const benefitVaries = ['Children', 'Eldly', 'Leukemia', 'Cancer', 'Disaster', 'HTV/AIDS', 'General', 'Education', 'Homeless', 'Other'];
+    const locationVaries = ['北京', '上海', '河北', '河南', '杭州', '成都', '甘肃', '青海', '广西'];
+    const organizationVaries = ['非营利', '社会企业', '营利'];
+    const benefitVaries = ['孩子', '老年人', '白血病', '癌症', '灾难', 'HTV/AIDS', '普通的', '教育', '流浪汉', '其他'];
 
     return (
       <div className='static-modal' id='filter'>
         <Modal.Dialog>
           <Modal.Header>
-            <Modal.Title>Filter</Modal.Title>
+            <Modal.Title>筛选</Modal.Title>
           </Modal.Header>
 
           <Modal.Body>
             <div className='location'>
-              <p>Location</p>
+              <p>地点</p>
               <div>
                 {this.mapButtons(locationVaries)}
               </div>
             </div>
             <div className='organization'>
-              <p>Organization</p>
+              <p>机构</p>
               <div>
                 {this.mapButtons(organizationVaries)}
               </div>
             </div>
             <div className='benefit'>
-              <p>Benefit</p>
+              <p>受益</p>
               <div>
                 {this.mapButtons(benefitVaries)}
               </div>
