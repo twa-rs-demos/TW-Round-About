@@ -3,7 +3,7 @@ import {Component} from 'react';
 export default class SameFamily extends Component {
   render() {
     return (
-      <div className="col-sm-offset-2 col-sm-8 no-padding">
+      <div>
         <h2 className="middle-title">众爱与合作伙伴同是一家人</h2>
         <div className="partners-logo">
           <div className="row">

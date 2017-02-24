@@ -1,6 +1,7 @@
 import {Component} from 'react';
 import {MaxPicture} from '../common/index';
 import SameFamily from './SameFamily';
+import BecomePartners from './BecomeParters';
 
 export default class Partners extends Component {
 
@@ -29,10 +30,14 @@ export default class Partners extends Component {
             <a href="#">更多合作伙伴故事 ></a>
           </div>
           <div className="row same-family">
-            <SameFamily/>
+            <div className="col-sm-offset-2 col-sm-8">
+              <SameFamily/>
+            </div>
           </div>
-          <div clasName="row become-partner">
-
+          <div className="row become-partner">
+            <div className="col-sm-offset-2 col-sm-8">
+              <BecomePartners/>
+            </div>
           </div>
         </div>
       </div>
