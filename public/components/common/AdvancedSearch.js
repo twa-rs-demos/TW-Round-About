@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import Filter from '../classifieds/Filter';
 
-export default class SearchBox extends Component {
+export default class AdvancedSearch extends Component {
   constructor(props) {
     super(props);
     this.state = {

@@ -129,6 +129,7 @@ pre {
   font-size: 2rem;
   line-height: 5.2rem;
 }
+
 /*--------------------------Video-------------------------------------*/
 .video {
   text-align: center;
@@ -136,17 +137,18 @@ pre {
   overflow: hidden;
 }
 
-.video-content{
-  height:39rem;
-  width:100%;
+.video-content {
+  height: 39rem;
+  width: 100%;
 }
 
 img {
   max-width: 100%;
 }
+
 /*--------------------------modal-header-------------------------------------*/
 .modal-header {
-  border:none;
+  border: none;
 }
 
 /*-----------------------news-event-content--------------------------*/
@@ -223,3 +225,37 @@ img {
   }
 }
 
+/*---------------------advanced-search---------------------------------*/
+.search-box {
+  margin: 2rem 0 2rem 0;
+  .search-box-container {
+    background-color: #D8D8D8;
+    padding: 0.3rem 0 0.3rem 1.5rem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+    display: block;
+    input {
+      outline: none;
+      width: 83%;
+      border: none;
+      background-color: #D8D8D8;
+    }
+    button {
+      border: none;
+      background-color: #D8D8D8;
+      outline: none;
+      border-radius: 2rem;
+      padding-right: 0;
+    }
+  }
+  .search-type {
+    color: @pink-color;
+    font-size: 2rem;
+    button {
+      border: none;
+      background-color: #FFF;
+      padding: 0;
+      outline: none;
+    }
+  }
+}
