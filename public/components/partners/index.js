@@ -30,12 +30,12 @@ export default class Partners extends Component {
             <a href="#">更多合作伙伴故事 ></a>
           </div>
           <div className="row same-family">
-            <div className="col-sm-offset-2 col-sm-8">
+            <div className="col-sm-offset-3 col-sm-6 no-padding">
               <SameFamily/>
             </div>
           </div>
           <div className="row become-partner">
-            <div className="col-sm-offset-2 col-sm-8">
+            <div className="col-sm-offset-3 col-sm-6 no-padding">
               <BecomePartners/>
             </div>
           </div>

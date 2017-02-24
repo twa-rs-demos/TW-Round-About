@@ -25,42 +25,42 @@ export default class SameFamily extends Component {
           </div>
 
           <div className="row second-row">
-            <div className="col-sm-3 text-center">
+            <div className="col-sm-3 text-center logo">
               <img className="image-border"
                    src="http://localhost/tw-ra/public/images/partners/logo_AGS.png" alt=""/>
               <div className="logo-name">AGS</div>
             </div>
-            <div className="col-sm-3 text-center">
+            <div className="col-sm-3 text-center logo">
               <img className="image-border"
                    src="http://localhost/tw-ra/public/images/partners/logo_AGS.png" alt=""/>
               <div className="logo-name">AGS</div>
             </div>
-            <div className="col-sm-3 text-center">
+            <div className="col-sm-3 text-center logo">
               <img className="image-border"
                    src="http://localhost/tw-ra/public/images/partners/logo_AGS.png" alt=""/>
               <div className="logo-name">AGS</div>
             </div>
-            <div className="col-sm-3 text-center">
+            <div className="col-sm-3 text-center logo">
               <img className="image-border"
                    src="http://localhost/tw-ra/public/images/partners/logo_AGS.png" alt=""/>
               <div className="logo-name">AGS</div>
             </div>
-            <div className="col-sm-3 text-center">
+            <div className="col-sm-3 text-center logo">
               <img className="image-border"
                    src="http://localhost/tw-ra/public/images/partners/logo_AGS.png" alt=""/>
               <div className="logo-name">AGS</div>
             </div>
-            <div className="col-sm-3 text-center">
+            <div className="col-sm-3 text-center logo">
               <img className="image-border"
                    src="http://localhost/tw-ra/public/images/partners/logo_AGS.png" alt=""/>
               <div className="logo-name">AGS</div>
             </div>
-            <div className="col-sm-3 text-center">
+            <div className="col-sm-3 text-center logo">
               <img className="image-border"
                    src="http://localhost/tw-ra/public/images/partners/logo_AGS.png" alt=""/>
               <div className="logo-name">AGS</div>
             </div>
-            <div className="col-sm-3 text-center">
+            <div className="col-sm-3 text-center logo">
               <img className="image-border"
                    src="http://localhost/tw-ra/public/images/partners/logo_AGS.png" alt=""/>
               <div className="logo-name">AGS</div>
