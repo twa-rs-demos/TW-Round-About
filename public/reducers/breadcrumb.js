@@ -12,7 +12,7 @@ export default (state = [], action) => {
           }
         });
       }
-      if(breadcrumb.length>1){
+      if (breadcrumb.length > 1) {
         return breadcrumb;
       }
       else {

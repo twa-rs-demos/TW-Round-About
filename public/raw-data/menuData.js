@@ -78,7 +78,7 @@ export default [
     parent: 4,
     level: 3,
     text: '共享资源',
-    uri: ''
+    uri: '/classifieds'
   }, {
     id: 16,
     parent: 4,
@@ -90,7 +90,7 @@ export default [
     parent: 4,
     level: 3,
     text: '慈善机构名册',
-    uri: ''
+    uri: '/directory'
   }, {
     id: 18,
     parent: 4,
