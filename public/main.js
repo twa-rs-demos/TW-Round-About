@@ -34,7 +34,7 @@ import BookFairs from './components/book-market';
 import Calendar from './components/calendar';
 import People from './components/people';
 import Partners from  './components/partners';
-import Press from './components/press';
+import Press from './components/media-reports/index';
 import ContactUs from './components/contact-us';
 import Gallery from './components/gallery';
 import Article from './components/article';

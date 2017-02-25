@@ -9,9 +9,9 @@ export default class BookFairNews extends Component {
   }
 
   getRow(datas){
-    return datas.map((item)=> {
+    return datas.map((item,index)=> {
       return (
-        <div className='row margin-bottom'>
+        <div className='row margin-bottom' key={index}>
           <div className='col-xs-4'>
             <img src={item.img}/>
           </div>
