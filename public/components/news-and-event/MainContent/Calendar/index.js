@@ -10,7 +10,7 @@ export default class Calendar extends Component {
     this.state = {
       year: newDate.getFullYear(),
       month: parseInt(newDate.getMonth()),
-      eventDays: [5, 7, 16, 30]
+      eventDays: [5, 16, 28, 30]
     };
   }
 

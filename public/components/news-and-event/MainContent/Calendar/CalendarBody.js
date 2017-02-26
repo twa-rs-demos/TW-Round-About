@@ -3,6 +3,13 @@ import {chunk} from "lodash";
 
 export default class CalendarBody extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      showEvent: false
+    }
+  }
+
   getMonthDays() {//根据月份获取当前天数
     const temp = new Date(this.props.year, this.props.month, 0);
     return temp.getDate();
@@ -13,6 +20,11 @@ export default class CalendarBody extends Component {
     return dt.getDay();
   }
 
+  showEvent() {
+    this.setState({
+      showEvent: false
+    })
+  }
 
   isEventDay(day) {
     return this.props.eventDays.find((eventDay)=> {
@@ -22,22 +34,20 @@ export default class CalendarBody extends Component {
 
   render() {
 
-    let arry1 = [], arry2 = [], arry3 = [];
-
-
-    for (let i = 0; i < this.getFirstDayWeek(); i++) {
+    let lastMonthDays = new Array(this.getFirstDayWeek()).fill(0).map((day, index)=> {
       const lastMonth = new Date(this.props.year, this.props.month - 1, 0);
-      arry1[i] = lastMonth.getDate() - i;
-    }
+      return lastMonth.getDate() - index;
+    });
 
-    for (let j = 0; j < this.getMonthDays(); j++) {
-      arry2[j] = (j + 1);
-    }
-    for (let k = 0; k < 35 - arry1.length - arry2.length; k++) {
-      arry3[k] = (k + 1);
-    }
+    let nowMonthDays = new Array(this.getMonthDays()).fill(0).map((day, index)=> {
+      return index + 1;
+    });
 
-    const calendarData = arry1.concat(arry2).concat(arry3);
+    let nextMonthDays = new Array(35 - lastMonthDays.length - nowMonthDays.length).fill(0).map((day, index)=> {
+      return index + 1;
+    });
+
+    const calendarData = lastMonthDays.concat(nowMonthDays).concat(nextMonthDays);
     const calendarArrays = chunk(calendarData, 7);
 
     const calendar = calendarArrays.map((calendarArray, index)=> {
@@ -45,7 +55,9 @@ export default class CalendarBody extends Component {
         {
           calendarArray.map((date, index)=> {
             const days = (this.isEventDay(date)) ? 'eventDay' : 'usualDay';
-            return <div className={`day col-xs-1 col-sm-1 ${days}`} key={index}>{date}</div>
+            return <div className={`day col-xs-1 col-sm-1 ${days}` } key={index}
+                        onClick={(this.isEventDay(date)) ? this.showEvent.bind(this) : ''}>{date}
+            </div>
           })
         }
       </div>;
@@ -64,7 +76,7 @@ export default class CalendarBody extends Component {
               <div className='col-sm-1 col-xs-1 weekdays'>五</div>
               <div className='col-sm-1 col-xs-1 weekdays'>六</div>
             </div>
-            
+
             <div className="CalendarDay">
               {calendar}
             </div>
