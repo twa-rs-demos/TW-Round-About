@@ -5,12 +5,12 @@ import CalendarBody from "./CalendarBody";
 export default class Calendar extends Component {
 
   constructor(props) {
-    var newDate = new Date('2016-3-7');
+    var newDate = new Date('2016-4-7');
     super(props);
     this.state = {
       year: newDate.getFullYear(),
       month: parseInt(newDate.getMonth()),
-      day: newDate.getDay()
+      eventDays: [5, 7, 16, 30]
     };
   }
 
@@ -18,7 +18,7 @@ export default class Calendar extends Component {
     this.setState({
       year: filterYear,
       month: filterMonth,
-      day: this.state.day
+      eventDays: this.state.eventDays
     });
   }
 
@@ -33,7 +33,7 @@ export default class Calendar extends Component {
         <CalendarBody
           year={this.state.year}
           month={this.state.month}
-          day={this.state.day}
+          eventDays={this.state.eventDays}
         />
 
       </div>

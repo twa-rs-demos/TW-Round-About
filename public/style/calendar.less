@@ -19,35 +19,36 @@
 
     .year-style {
       color: @pink-color;
-      font-size: 50px;
+      font-size: 5rem;
     }
 
   }
 
   #calendar-body {
-
+    margin: 20px 0 120px 0;
     .weekday {
-      li {
-        width: 55px;
-        display: inline;
-        padding: 0 22px 0 21px;
-        background: #F0F0F0;
-      }
-      ul {
 
-        padding-left: 0;
-        margin-left: 40px;
-        margin-bottom: 0;
+      .weekdays {
+        background: #F0F0F0;
+        font-size: 1.9rem;
+        text-align: center;
       }
     }
 
     .CalendarDay {
-      li {
-        width: 55px;
-        text-align: center;
+      .day {
         display: inline-block;
-        padding: 20px 20px 20px 20px;
+        height: 55px;
+        line-height: 55px;
+        text-align: center;
         border: 1px solid white;
+        font-size: 2rem;
+      }
+      .usualDay {
+        background-color: #F0F0F0;
+      }
+      .eventDay {
+        background-color: @pink-color;
       }
     }
   }
