@@ -4,8 +4,13 @@ export default class EventDay extends Component {
 
   render() {
     return (
-      <div>
-"哈哈"
+      <div style={{
+        position: 'absolute',
+        backgroundColor: 'white',
+        border: '1px solid #CCC',
+        borderRadius: 3,
+      }}>
+        "哈哈"
       </div>
     );
   }

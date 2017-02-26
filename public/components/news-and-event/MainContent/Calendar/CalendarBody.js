@@ -1,29 +1,36 @@
 import {Component} from "react";
 import {chunk} from "lodash";
+import {Overlay} from "react-bootstrap";
+import EventDays from "./EventDay";
 
 export default class CalendarBody extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      showEvent: false
+      showEvent: false,
+      event: []//只显示一个浮层
     }
   }
 
-  getMonthDays() {//根据月份获取当前天数
+  getMonthDays() {
     const temp = new Date(this.props.year, this.props.month, 0);
     return temp.getDate();
   }
 
-  getFirstDayWeek() {//根据年月返回当月1号是星期几
-    var dt = new Date(this.props.year + '/' + this.props.month + '/1');//new Date(year,month,1);
+  getFirstDayWeek() {
+    var dt = new Date(this.props.year + '/' + this.props.month + '/1');
     return dt.getDay();
   }
 
-  showEvent() {
+  showEvent(index) {
+
+    const selectEvent = [];
+    selectEvent[index] = true;
     this.setState({
-      showEvent: false
-    })
+      showEvent: !this.state.showEvent,
+      event: selectEvent
+    });
   }
 
   isEventDay(day) {
@@ -54,10 +61,22 @@ export default class CalendarBody extends Component {
       return <div key={index} className="row">
         {
           calendarArray.map((date, index)=> {
-            const days = (this.isEventDay(date)) ? 'eventDay' : 'usualDay';
-            return <div className={`day col-xs-1 col-sm-1 ${days}` } key={index}
-                        onClick={(this.isEventDay(date)) ? this.showEvent.bind(this) : ''}>{date}
-            </div>
+
+            if (this.isEventDay(date)) {
+              return (
+                <div key={index} style={{position: 'relative'}}>
+                  <div className={`day col-xs-1 col-sm-1 eventDay`}
+                       onClick={this.showEvent.bind(this, index)}>{date}</div>
+                  <Overlay
+                    show={this.state.showEvent && this.state.event[index]}
+                    placement="bottom"
+                    container={this}>
+                    <EventDays/>
+                  </Overlay>
+                </div>
+              )
+            }
+            return <div className={`day col-xs-1 col-sm-1 usualDay` } key={index}>{date}</div>
           })
         }
       </div>;
@@ -87,3 +106,9 @@ export default class CalendarBody extends Component {
     );
   }
 }
+
+
+// const days = (this.isEventDay(date)) ? 'eventDay' : 'usualDay';
+// return <div className={`day col-xs-1 col-sm-1 ${days}` } key={index}
+//             onClick={(this.isEventDay(date)) ? this.showEvent.bind(this) : ''}>{date}
+// </div>
