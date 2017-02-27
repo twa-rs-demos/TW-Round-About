@@ -6,7 +6,7 @@ import datas from './newsAndEventData';
 
 export default class NewAndEvent extends Component {
   render() {
-    const pictureSrc = './public/images/newsAndEvent/hero_news&events.png';
+    const pictureSrc = 'http://localhost/tw-ra/public/images/newsAndEvent/hero_news&events.png';
     return (
       <div id="news-and-event">
         <MaxPicture src={pictureSrc}/>

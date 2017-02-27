@@ -15,7 +15,7 @@ export default class GetInvolvedVolunteer extends Component {
           <StaticContent/>
         </div>
         <div className='col-sm-offset-1 col-sm-10 no-padding'>
-          <VolunteerStory/>
+          <VolunteerStory title="志愿者故事"/>
         </div>
       </div>
     );

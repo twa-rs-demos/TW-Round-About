@@ -22,7 +22,7 @@ export default class VolunteerStory extends Component {
     });
     return (
       <div className='volunteer-stories'>
-        <h2 className='middle-title'>志愿者故事</h2>
+        <h2 className='middle-title'>{this.props.title}</h2>
         <div className='row text-center'>
           {stories}
         </div>

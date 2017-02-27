@@ -87,11 +87,8 @@ export default class ItemDonate extends Component {
 
               <Modal show={this.state.isShowApplyForm} onHide={this.closeApplyForm.bind(this)}>
                 <Modal.Header closeButton>
-                  <Modal.Title>Modal heading</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                  hehehehehehehehehe
-
                   <DonationApplyForm/>
                 </Modal.Body>
               </Modal>
