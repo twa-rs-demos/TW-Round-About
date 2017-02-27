@@ -33,33 +33,46 @@ body {
     li {
       list-style: none;
     }
-    .btn-group-vertical {
-      position: static;
-      .dropdown {
-        position: static;
-        .dropdown-toggle {
-          border: none;
-          background: none;
-          outline: none;
-          box-shadow: none;
-          text-align: left;
-          padding-left: 20px;
-          position: relative;
-
-          .caret {
-            margin-left: 0;
-            right: 20px;
-            position: absolute;
-          }
-        }
-
-        .dropdown-menu {
+    .nav-item {
+      padding-left: 0;
+      line-height: 60px;
+      .menu-item {
+        .btn-group-vertical {
           position: static;
-          width: 100%;
+          //.sub-menu {
+          //  padding-left: 0;
+          .dropdown {
+            position: static;
+            .dropdown-toggle {
+              border: none;
+              background: none;
+              outline: none;
+              box-shadow: none;
+              text-align: left;
+              padding-left: 20px;
+              position: relative;
+
+              .caret {
+                margin-left: 0;
+                position: absolute;
+                right: 20px;
+                top: 43%;
+              }
+            }
+
+            .dropdown-menu {
+              position: static;
+              width: 100%;
+              border: none;
+              box-shadow: none;
+              line-height: 35px;
+            }
+          }
         }
       }
     }
   }
+  //}
 }
 
 .menu-icon {

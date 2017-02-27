@@ -1,7 +1,8 @@
 import {Component} from 'react';
-import {ButtonGroup, DropdownButton, MenuItem} from 'react-bootstrap';
 import MenuList from './MenuList';
 import SearchBox from './SearchBox';
+import menuList from '../../../raw-data/menu-lilst';
+import SecondMenu from './SecondMenu';
 
 export default class NavMenu extends Component {
   constructor(props) {
@@ -23,6 +24,10 @@ export default class NavMenu extends Component {
 
   render() {
 
+    const secondMenu = menuList.map((menu, index) => {
+      return <SecondMenu menuData={menu} key={index}/>;
+    });
+
     return (
       <div>
         <div className='row no-margin menu-list1'>
@@ -33,48 +38,17 @@ export default class NavMenu extends Component {
             <SearchBox/>
           </div>
         </div>
+
         <button className="menu-icon" onClick={this.changeMenuList.bind(this)}>
           <i className="fa fa-bars"></i>
         </button>
+
         <div className='menu-list2'>
           <div className="sidebar-wrapper"></div>
           <div className="nav-bar">
-            {/*// <ul>*/}
-            {/*//   <li>*/}
-            {/*//     <DropdownButton title="Dropdown" id="bg-nested-dropdown">*/}
-            {/*//       <ul>*/}
-            {/*//         <li><MenuItem eventKey="1">Dropdown link</MenuItem></li>*/}
-            {/*//         <li className="divider"></li>*/}
-            {/*//         <li><MenuItem eventKey="2">Dropdown link</MenuItem></li>*/}
-            {/*//       </ul>*/}
-            {/*//     </DropdownButton>*/}
-            {/*//   </li>*/}
-            {/*//   <li className="divider"></li>*/}
-            {/*//   <li>*/}
-            {/*//     <DropdownButton title="Dropdown2" id="bg-nested-dropdown">*/}
-            {/*<ul>*/}
-            {/*<li><MenuItem eventKey="1">Dropdown link</MenuItem></li>*/}
-            {/*<li className="divider"></li>*/}
-            {/*<li><MenuItem eventKey="2">Dropdown link</MenuItem></li>*/}
-            {/*</ul>*/}
-            {/*</DropdownButton>*/}
-            {/*</li>*/}
-            {/*</ul>*/}
-
-            <ButtonGroup vertical block>
-              <DropdownButton title="Dropdown" id="bg-vertical-dropdown-1">
-                <MenuItem eventKey="1">Dropdown link</MenuItem>
-                <MenuItem eventKey="2">Dropdown link</MenuItem>
-              </DropdownButton>
-              <DropdownButton title="Dropdown" id="bg-vertical-dropdown-2">
-                <MenuItem eventKey="1">Dropdown link</MenuItem>
-                <MenuItem eventKey="2">Dropdown link</MenuItem>
-              </DropdownButton>
-              <DropdownButton title="Dropdown" id="bg-vertical-dropdown-3">
-                <MenuItem eventKey="1">Dropdown link</MenuItem>
-                <MenuItem eventKey="2">Dropdown link</MenuItem>
-              </DropdownButton>
-            </ButtonGroup>
+            <ul className="nav-item">
+              {secondMenu}
+            </ul>
           </div>
         </div>
       </div>
