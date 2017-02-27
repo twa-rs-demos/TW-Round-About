@@ -1,17 +1,10 @@
 import {Component} from "react";
 import {chunk} from "lodash";
-import {Overlay} from "react-bootstrap";
-import EventDays from "./EventDay";
+import {Tooltip, OverlayTrigger} from "react-bootstrap";
+import EventDay from "./EventDay";
+
 
 export default class CalendarBody extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      showEvent: false,
-      event: []//只显示一个浮层
-    }
-  }
 
   getMonthDays() {
     const temp = new Date(this.props.year, this.props.month, 0);
@@ -23,23 +16,20 @@ export default class CalendarBody extends Component {
     return dt.getDay();
   }
 
-  showEvent(index) {
-
-    const selectEvent = [];
-    selectEvent[index] = true;
-    this.setState({
-      showEvent: !this.state.showEvent,
-      event: selectEvent
-    });
-  }
-
   isEventDay(day) {
     return this.props.eventDays.find((eventDay)=> {
       return eventDay === day;
     });
   }
 
+
   render() {
+
+    const tooltip = (
+      <Tooltip id="tooltip">
+        <EventDay/>
+      </Tooltip>
+    );
 
     let lastMonthDays = new Array(this.getFirstDayWeek()).fill(0).map((day, index)=> {
       const lastMonth = new Date(this.props.year, this.props.month - 1, 0);
@@ -64,15 +54,12 @@ export default class CalendarBody extends Component {
 
             if (this.isEventDay(date)) {
               return (
-                <div key={index} style={{position: 'relative'}}>
-                  <div className={`day col-xs-1 col-sm-1 eventDay`}
-                       onClick={this.showEvent.bind(this, index)}>{date}</div>
-                  <Overlay
-                    show={this.state.showEvent && this.state.event[index]}
-                    placement="bottom"
-                    container={this}>
-                    <EventDays/>
-                  </Overlay>
+                <div key={index}>
+                  <OverlayTrigger placement="bottom" overlay={tooltip} defaultOverlayShown={true}>
+                    <div className={`day col-xs-1 col-sm-1 eventDay`}
+                    >{date}
+                    </div>
+                  </OverlayTrigger>
                 </div>
               )
             }
