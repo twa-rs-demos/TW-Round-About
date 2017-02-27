@@ -35,10 +35,7 @@ export default class Calendar extends Component {
           month={this.state.month}
           eventDays={this.state.eventDays}
         />
-
       </div>
     );
   }
 }
-
-
