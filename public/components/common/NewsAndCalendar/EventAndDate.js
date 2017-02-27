@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import Events from './Events';
 import Dates from './Dates';
-import datas from './newsAndEventData';
+import Pagination from '../Pagination';
 
 export default class EventAndDate extends Component {
   getEventDateRow(datas) {
@@ -22,7 +22,8 @@ export default class EventAndDate extends Component {
   render() {
     return (
       <div>
-        {this.getEventDateRow(datas)}
+        {this.getEventDateRow(this.props.datas)}
+        <Pagination totalPage='3'/>
       </div>
     );
   }

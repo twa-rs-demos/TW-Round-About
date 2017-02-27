@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import VolunteerStory from './VolunteerStory';
+import VolunteerStory from '../common/VolunteerStory';
 import StaticContent from './StaticContent';
 import {MaxPicture} from '../common/';
 

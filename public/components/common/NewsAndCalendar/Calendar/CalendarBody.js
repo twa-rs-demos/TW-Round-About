@@ -65,7 +65,7 @@ export default class CalendarBody extends Component {
     });
 
     return (
-      <div id='calendar-body' className='container'>
+      <div id='calendar-body'>
         <div className='row'>
           <div className='col-xs-offset-1 col-xs-11 col-sm-12'>
             <div className='row weekday'>

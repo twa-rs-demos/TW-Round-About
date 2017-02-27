@@ -1,7 +1,8 @@
 import {Component} from 'react';
 import NewsSearchHead from './NewsSearchHead';
 import {MaxPicture} from '../common/';
-import MainContent from './MainContent/index';
+import MainContent from '../common/NewsAndCalendar/index';
+import datas from './newsAndEventData';
 
 export default class NewAndEvent extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class NewAndEvent extends Component {
       <div id="news-and-event">
         <MaxPicture src={pictureSrc}/>
         <NewsSearchHead />
-        <MainContent/>
+        <MainContent datas={datas}/>
       </div>
     );
   }

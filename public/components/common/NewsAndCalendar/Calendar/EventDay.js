@@ -1,5 +1,5 @@
 import {Component} from "react";
-import newsAndEventDate from "../newsAndEventData";
+import newsAndEventDate from "../../../news-and-event/newsAndEventData";
 
 export default class EventDay extends Component {
 
