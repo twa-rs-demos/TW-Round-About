@@ -3,7 +3,6 @@ import {chunk} from "lodash";
 import {Tooltip, OverlayTrigger} from "react-bootstrap";
 import EventDay from "./EventDay";
 
-
 export default class CalendarBody extends Component {
 
   getMonthDays() {
@@ -22,12 +21,12 @@ export default class CalendarBody extends Component {
     });
   }
 
-
   render() {
 
     const tooltip = (
       <Tooltip id="tooltip">
-        <EventDay/>
+        <EventDay year={this.props.year} month={this.props.month}
+                  eventDays={this.props.eventDays}/>
       </Tooltip>
     );
 
@@ -55,10 +54,8 @@ export default class CalendarBody extends Component {
             if (this.isEventDay(date)) {
               return (
                 <div key={index}>
-                  <OverlayTrigger placement="bottom" overlay={tooltip} defaultOverlayShown={true}>
-                    <div className={`day col-xs-1 col-sm-1 eventDay`}
-                    >{date}
-                    </div>
+                  <OverlayTrigger placement="bottom" overlay={tooltip}>
+                    <div className={`day col-xs-1 col-sm-1 eventDay`}>{date}</div>
                   </OverlayTrigger>
                 </div>
               )
@@ -93,9 +90,3 @@ export default class CalendarBody extends Component {
     );
   }
 }
-
-
-// const days = (this.isEventDay(date)) ? 'eventDay' : 'usualDay';
-// return <div className={`day col-xs-1 col-sm-1 ${days}` } key={index}
-//             onClick={(this.isEventDay(date)) ? this.showEvent.bind(this) : ''}>{date}
-// </div>
