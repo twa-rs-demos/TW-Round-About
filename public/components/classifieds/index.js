@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import PublicResource from './PublicResource';
-import SearchBox from './SearchBox';
+import AdvancedSearch from '../common/AdvancedSearch';
 import ProvideAndQuestion from './ProvideAndQuestion';
 
 export default class Classifieds extends Component {
@@ -9,7 +9,7 @@ export default class Classifieds extends Component {
       <div className='row' id='class-fields'>
         <div className='col-sm-offset-2 col-sm-8 no-padding'>
           <PublicResource/>
-          <SearchBox/>
+          <AdvancedSearch/>
           <ProvideAndQuestion/>
         </div>
       </div>

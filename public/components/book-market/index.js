@@ -1,16 +1,16 @@
 import {Component} from 'react';
 import BookTakeChange from './BookTakeChange';
-import BookMarketNotice from './BookMarketNotice';
-import BookMarketReview from './BookMarketReview';
+import BookFairsNotice from './BookFairNotice';
+import BookFairsReview from './BookFairReview';
 
-export default class BookMarket extends Component {
+export default class BookFairs extends Component {
 
   render() {
     return (
       <div id="book-market">
         <BookTakeChange/>
-        <BookMarketNotice/>
-        <BookMarketReview/>
+        <BookFairsNotice/>
+        <BookFairsReview/>
       </div>
     );
   }

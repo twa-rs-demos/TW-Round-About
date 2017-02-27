@@ -29,16 +29,16 @@ export default class SearchBox extends Component {
 
   render() {
     return (
-        <div className='search'>
-          <input type='text' placeholder={this.state.placeholder} onFocus={this.clearPlaceholder.bind(this)}
-                 onBlur={this.setPlaceholder.bind(this)} onKeyDown={this.handleKeyDown.bind(this)}
-                 ref={(ref) => {
-                   this.input = ref;
-                 }}/>
-          <button onClick={this.submitSearch.bind(this)}>
-            <img src='http://localhost/tw-ra/public/images/home/icon_search_small_focused.png' alt='search'/>
-          </button>
-        </div>
+      <div className='search'>
+        <input type='text' placeholder={this.state.placeholder} onFocus={this.clearPlaceholder.bind(this)}
+               onBlur={this.setPlaceholder.bind(this)} onKeyDown={this.handleKeyDown.bind(this)}
+               ref={(ref) => {
+                 this.input = ref;
+               }}/>
+        <button onClick={this.submitSearch.bind(this)}>
+          <img src='http://localhost/tw-ra/public/images/home/icon_search_small_focused.png' alt='search'/>
+        </button>
+      </div>
     );
   }
 }
