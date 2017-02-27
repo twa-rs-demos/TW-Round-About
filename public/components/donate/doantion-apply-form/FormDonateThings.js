@@ -1,9 +1,6 @@
 import {Component} from 'react';
 
 export default class FormDonateThings extends Component {
-  componentDidMount() {
-    this.addCol();
-  }
 
   addRow() {
     let col = (<div className='row'>

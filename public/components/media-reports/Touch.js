@@ -5,8 +5,13 @@ export default class Touch extends Component {
     e.preventDefault();
 
     //此处定义输入，对每个输入进行合法性验证。
-    var firstName = this.refs.firstName.value.trim();
-    var lastName = this.refs.lastName.value.trim();
+    let firstName = this.refs.firstName.value.trim();
+    let lastName = this.refs.lastName.value.trim();
+    let email = this.refs.emial.value.trim();
+    let phoneNum = this.refs.phoneNum.value.trim();
+    let enquiry = this.refs.enquiry.value.trim();
+    let description = this.refs.description.value.trim();
+
     if(!firstName||!lastName){
       return;
     }
