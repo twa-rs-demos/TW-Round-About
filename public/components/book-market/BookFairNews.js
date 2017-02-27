@@ -21,7 +21,7 @@ export default class BookFairNews extends Component {
               <p className="news-time">Published on:{item.time}</p>
             </div>
             <div>
-              <p>{item.content}</p>
+              <p className="news-content css-wrap">{item.content}</p>
             </div>
             <div className="learn-more">
               <p>Learn More > </p>

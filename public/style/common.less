@@ -163,7 +163,6 @@ img {
     img {
       display: block;
       margin: 0 auto;
-      //height: 100%;
     }
     .text {
       color: #575757;
@@ -178,6 +177,17 @@ img {
         font-size: @descibe-font;
         line-height: 2.8rem;
         margin: 0;
+        position:relative;
+        height:5.6em;
+        overflow:hidden;
+      }
+      p::after {
+        content:"...";
+        position:absolute;
+        bottom:0;
+        right:0;
+        padding:0 2rem 1px 3rem;
+        background:url(http://css88.b0.upaiyun.com/css88/2014/09/ellipsis_bg.png) repeat-y;
       }
     }
   }
@@ -258,4 +268,19 @@ img {
       outline: none;
     }
   }
+}
+
+/*---------------------CSS-Wrap---------------------------------*/
+.css-wrap{
+  position:relative;
+  overflow:hidden;
+}
+
+.css-wrap::after {
+  content:"...";
+  position:absolute;
+  bottom:0;
+  right:0;
+  padding:0 2rem 1px 3rem;
+  background:url(http://css88.b0.upaiyun.com/css88/2014/09/ellipsis_bg.png) repeat-y;
 }
