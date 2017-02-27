@@ -1,7 +1,7 @@
-import {Component} from 'react';
-import Switch from './Switch';
-import EventAndDate from './EventAndDate';
-import Calendar from './Calendar';
+import {Component} from "react";
+import Switch from "./Switch";
+import EventAndDate from "./EventAndDate";
+import Calendar from "./Calendar";
 
 export default class MainContent extends Component {
   constructor(props) {
@@ -34,7 +34,7 @@ export default class MainContent extends Component {
                       showCalendarContent={this.showCalendar.bind(this)}
                       state={this.state.showContent}/>
             </div>
-            <div id="news-event" className={this.state.showContent === 'eventAndDate' ? '' : 'hidden'}>
+            <div id='news-event' className={this.state.showContent === 'eventAndDate' ? '' : 'hidden'}>
               <EventAndDate/>
             </div>
 
