@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import VolunteerStory from './VolunteerStory';
+import VolunteerStory from '../common/VolunteerStory';
 import StaticContent from './StaticContent';
 import {MaxPicture} from '../common/';
 
@@ -15,7 +15,7 @@ export default class GetInvolvedVolunteer extends Component {
           <StaticContent/>
         </div>
         <div className='col-sm-offset-1 col-sm-10 no-padding'>
-          <VolunteerStory/>
+          <VolunteerStory title="志愿者故事"/>
         </div>
       </div>
     );

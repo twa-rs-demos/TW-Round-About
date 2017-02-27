@@ -24,7 +24,6 @@ import CommunityCenter from './components/community-center/index';
 import MedicalAssistance from './components/medical-assistance/index';
 import EducationSupport from './components/education-support/index';
 import DisasterRelief from './components/disaster-relief/index'
-import CommunityAssistance from './components/community-assitance/index';
 import Legal from './components/legal';
 import PrivacyPolicy from './components/privacy-policy';
 import Store from './components/store/index';
@@ -68,7 +67,7 @@ class Main extends Component {
           <Route path="medicalassistance" component={MedicalAssistance}/>
           <Route path="educationsupport" component={EducationSupport}/>
           <Route path="disasterrelief" component={DisasterRelief}/>
-          <Route path="communityassistance" component={CommunityAssistance}/>
+          <Route path="communityassistance" component={CommunityCenter}/>
           <Route path="gallery" component={Gallery}/>
         </Route>
 

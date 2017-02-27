@@ -12,7 +12,7 @@ export default class RaInMedia extends Component {
           </div>
           <div className="media-words">
             <h4 className="media-title pink">{item.title}</h4>
-            <p>{item.describe}</p>
+            <p className="css-wrap">{item.describe}</p>
           </div>
         </div>
       )

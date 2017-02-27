@@ -2,6 +2,8 @@ import {Component} from 'react';
 import DonateGuide from './DonateGuide';
 import DonateRules from './DonateRules';
 import DonationApplyForm from './doantion-apply-form/index';
+import {Modal, Button} from 'react-bootstrap';
+
 
 export default class ItemDonate extends Component {
   constructor(props) {
@@ -20,16 +22,13 @@ export default class ItemDonate extends Component {
     this.setState({isShowElasticBox: false});
   }
 
-  showApplyForm() {
-    $('.overlay,.donation-apply-form').fadeIn(400);
-    this.setState({isShowApplyForm: true});
-  }
-
   closeApplyForm() {
     this.setState({isShowApplyForm: false});
-    $('.overlay,.donation-apply-form').fadeOut(400, function() {
-      $(this).removeAttr('style');
-    });
+  }
+
+  openApplyForm() {
+    this.setState({isShowApplyForm: true});
+    console.log('nihaoshijie');
   }
 
   render() {
@@ -83,11 +82,18 @@ export default class ItemDonate extends Component {
               <p>Large items of furniture – monetary donation not necessary</p>
             </div>
             <div className='col-sm-offset-4 col-xs-offset-0 col-sm-4 col-xs-12 apply-collect-items'>
-              <button className='apply-button js-open-box' onClick={this.showApplyForm.bind(this)}>上门收取捐赠物品申请表
+              <button className='apply-button js-open-box' onClick={this.openApplyForm.bind(this)}>上门收取捐赠物品申请表
               </button>
+
+              <Modal show={this.state.isShowApplyForm} onHide={this.closeApplyForm.bind(this)}>
+                <Modal.Header closeButton>
+                </Modal.Header>
+                <Modal.Body>
+                  <DonationApplyForm/>
+                </Modal.Body>
+              </Modal>
             </div>
-            {this.state.isShowApplyForm ? <DonationApplyForm closeApplyForm={this.closeApplyForm.bind(this)}/> : ''}
-            <div className='overlay'></div>
+
           </div>
         </div>
       </div>

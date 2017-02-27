@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import EventAndDate from '../common/eventAndDate/index';
+import NewsAndCalendar from '../common/NewsAndCalendar/index';
+import datas from './newsAndEventData';
 
 export default class BookFairsNotice extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class BookFairsNotice extends Component {
         <div>
           <h2 className="middle-title">书市预告</h2>
         </div>
-        <EventAndDate/>
+        <NewsAndCalendar datas={datas} />
       </div>
     );
   }
