@@ -1,4 +1,5 @@
 import {Component} from 'react';
+import {Link} from 'react-router';
 import menuData from '../../../raw-data/menu-lilst';
 
 class SubMenu extends Component {
@@ -6,12 +7,12 @@ class SubMenu extends Component {
   render() {
     const subMenu = this.props.subMenu.map((item, index) => {
 
-      return <li key={index}>
-        {item.name}
+      return <li key={index} className='sub-item'>
+        <Link to={item.uri} className='menu-link'>{item.name}</Link>
       </li>
     });
 
-    return <ul>
+    return <ul className='sub-menu'>
       {subMenu}
     </ul>
   }
@@ -43,9 +44,11 @@ export default class SecondMenu extends Component {
 
       return <div key={index}>
         <li className='menu-item'>
-          <span>{menu.firstMenu}</span>
-          <i className={'fa fa-chevron-' + (isShowSubMenu ? 'up' : 'down')}
-             onClick={this.showSubMenu.bind(this, index)}></i>
+          <div className='nav-brand'>
+            <a href='#' className='menu-link'>{menu.firstMenu}</a>
+            <i className={'dropdown-icon fa fa-chevron-' + (isShowSubMenu ? 'up' : 'down')}
+               onClick={this.showSubMenu.bind(this, index)}></i>
+          </div>
           {isShowSubMenu ? <SubMenu subMenu={menu.subMenu}/> : ''}
         </li>
       </div>
