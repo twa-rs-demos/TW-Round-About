@@ -2,92 +2,135 @@ body {
   height: 100%;
 }
 
-.menu-list2 {
-  display: none;
-  font-family: arial;
-  width: 100%;
-  height: 2000px;
-  position: absolute;
-  overflow: hidden;
-  z-index: 1;
+#header {
+  .nav-menu {
+    .menu-list2 {
+      display: none;
+      width: 100%;
+      height: 2000px;
+      position: absolute;
+      overflow: hidden;
+      z-index: 1;
 
-  .sidebar-wrapper {
-    position: absolute;
-    background-color: grey;
-    width: 100%;
-    left: 60%;
-    height: 100%;
-    z-index: 1000;
-    opacity: 0.5;
-  }
+      .sidebar-wrapper {
+        position: absolute;
+        background-color: grey;
+        width: 100%;
+        left: 60%;
+        height: 100%;
+        z-index: 1000;
+        opacity: 0.5;
+      }
 
-  .nav-bar {
-    position: absolute;
-    z-index: 1000;
-    background-color: #FFFFFF;
-    width: 60%;
-    height: 100%;
-    opacity: 1;
-    margin-top: 2px;
+      .nav-bar {
+        position: absolute;
+        z-index: 1000;
+        background-color: #f3f5f6;
+        font-weight: 400;
+        width: 60%;
+        height: 500px;
+        opacity: 1;
+        margin-top: 2px;
+        overflow: scroll;
+        padding-bottom: 10px;
 
-    li {
-      list-style: none;
-    }
-    .btn-group-vertical {
-      position: static;
-      .dropdown {
-        position: static;
-        .dropdown-toggle {
-          border: none;
-          background: none;
-          outline: none;
-          box-shadow: none;
-          text-align: left;
-          padding-left: 20px;
-          position: relative;
+        li {
+          list-style: none;
+          border-bottom: solid 1px #eaedef;
+        }
 
-          .caret {
-            margin-left: 0;
-            right: 20px;
-            position: absolute;
+        .nav-item {
+          padding-left: 0;
+          line-height: 50px;
+
+          .menu-item {
+
+            .nav-brand {
+              position: relative;
+              padding-left: 6%;
+              .dropdown-icon {
+                position: absolute;
+                right: 6%;
+                top: 40%;
+                cursor: pointer;
+                &:active {
+                  right: 3%;
+                  top: 20%;
+                  background-color: gainsboro;
+                  border-radius: 15px;
+                  padding: 8px;
+                }
+              }
+            }
+
+            .active {
+              border-left: solid 4px @pink-color;
+            }
+
+            .menu-link {
+              text-decoration: none;
+              color: #000;
+              cursor: pointer;
+
+              &:hover, &:focus {
+                font-size: 2.2rem;
+                color: @pink-color;
+                padding-left: 3%;
+              }
+            }
+
+            .selected-sub-menu {
+              color: @pink-color;
+              font-size: 2.2rem;
+              padding-left: 3%;
+            }
+
+            .sub-menu {
+              background-color: #FFFFFF;
+              padding: 0;
+              .sub-item {
+                padding-left: 10%;
+              }
+            }
+
           }
         }
+      }
 
-        .dropdown-menu {
-          position: static;
-          width: 100%;
-        }
+    }
+
+    .menu-icon {
+      display: none;
+      background: none;
+      border: none;
+      outline: none;
+      margin-left: 16px;
+
+      .fa-bars {
+        font-size: 2rem;
+        color: #414141;
       }
     }
   }
 }
 
-.menu-icon {
-  display: none;
-  background: none;
-  border: none;
-  outline: none;
-  margin-left: 16px;
-
-  .fa-bars {
-    font-size: 2rem;
-    color: #414141;
-  }
-}
-
 @media screen and (max-width: 800px) {
 
-  .menu-list1 {
-    display: none;
-  }
+  #header {
+    .nav-menu {
+      .menu-list1 {
+        display: none;
+      }
 
-  .menu-icon {
-    display: block;
-  }
+      .menu-icon {
+        display: block;
+      }
 
-  .top-info {
-    position: relative;
-    overflow: hidden;
+      .top-info {
+        position: relative;
+        overflow: hidden;
+      }
+    }
   }
 }
 
