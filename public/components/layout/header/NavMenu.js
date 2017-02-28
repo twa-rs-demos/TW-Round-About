@@ -24,9 +24,9 @@ export default class NavMenu extends Component {
 
   render() {
 
-    const secondMenu = menuList.map((menu, index) => {
-      return <SecondMenu menuData={menu} key={index}/>;
-    });
+    // const secondMenu = menuList.map((menu, index) => {
+    //   return <SecondMenu menuData={menu} key={index} id={index}/>;
+    // });
 
     return (
       <div>
@@ -46,9 +46,10 @@ export default class NavMenu extends Component {
         <div className='menu-list2'>
           <div className="sidebar-wrapper"></div>
           <div className="nav-bar">
-            <ul className="nav-item">
-              {secondMenu}
-            </ul>
+            {/*<ul className="nav-item">*/}
+            {/*{secondMenu}*/}
+            {/*</ul>*/}
+            <SecondMenu/>
           </div>
         </div>
       </div>

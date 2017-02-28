@@ -1,29 +1,61 @@
 import {Component} from 'react';
-import {ButtonGroup, DropdownButton, MenuItem} from 'react-bootstrap';
+import menuData from '../../../raw-data/menu-lilst';
 
-export default class SecondMenu extends Component {
+class SubMenu extends Component {
+
   render() {
-    const menuData = this.props.menuData;
-    const subMenu = menuData.subMenu.map((item, index) => {
+    const subMenu = this.props.subMenu.map((item, index) => {
 
-      return <li>
-        <MenuItem eventKey={index.toString()} key={index}>
-          {item.name}
-        </MenuItem>
+      return <li key={index}>
+        {item.name}
       </li>
     });
 
+    return <ul>
+      {subMenu}
+    </ul>
+  }
+}
+
+export default class SecondMenu extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      subMenu: '',
+      isShowSubMenu: false
+    };
+  }
+
+  showSubMenu(index) {
+    if (index === this.state.subMenu) {
+      this.setState({subMenu: ''});
+    } else {
+      this.setState({subMenu: index});
+    }
+  }
+
+  render() {
+
+    const menuList = menuData.map((menu, index) => {
+
+      const isShowSubMenu = this.state.subMenu === index;
+
+      return <div key={index}>
+        <li className='menu-item'>
+          <span>{menu.firstMenu}</span>
+          <i className={'fa fa-chevron-' + (isShowSubMenu ? 'up' : 'down')}
+             onClick={this.showSubMenu.bind(this, index)}></i>
+          {isShowSubMenu ? <SubMenu subMenu={menu.subMenu}/> : ''}
+        </li>
+      </div>
+    });
+
+
     return ( <div>
-      <li className="menu-item">
-        <ButtonGroup vertical block>
-          <DropdownButton title={menuData.firstMenu} id="bg-vertical-dropdown-1">
-            <ul className="sub-menu">
-              {subMenu}
-            </ul>
-          </DropdownButton>
-        </ButtonGroup>
-      </li>
-      <li className="divider"></li>
+      <ul className='nav-item'>
+        {menuList}
+      </ul>
     </div>);
   }
 }
