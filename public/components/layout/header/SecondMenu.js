@@ -5,10 +5,21 @@ import menuData from '../../../raw-data/menu-lilst';
 class SubMenu extends Component {
 
   render() {
-    const subMenu = this.props.subMenu.map((item, index) => {
 
+    const menu = this.props.menu;
+    const subMenu = menu.subMenu.map((item, index) => {
+
+      const path = URI_PREFIX + menu.uri + item.subUri;
       return <li key={index} className='sub-item'>
-        <Link to={item.uri} className='menu-link'>{item.name}</Link>
+        {item.uriType === 'outsidePage' ?
+          <Link to={path} className='menu-link' onClick={this.props.hideMenu}>
+            {item.name}
+          </Link>
+          :
+          <a href={path} className='menu-link' onClick={this.props.hideMenu}>
+            {item.name}
+          </a>
+        }
       </li>
     });
 
@@ -45,11 +56,13 @@ export default class SecondMenu extends Component {
       return <div key={index}>
         <li className='menu-item'>
           <div className='nav-brand'>
-            <a href='#' className='menu-link'>{menu.firstMenu}</a>
+            <Link to={URI_PREFIX + menu.uri} className='menu-link' onClick={this.props.hideMenu}>
+              {menu.firstMenu}
+            </Link>
             <i className={'dropdown-icon fa fa-chevron-' + (isShowSubMenu ? 'up' : 'down')}
                onClick={this.showSubMenu.bind(this, index)}></i>
           </div>
-          {isShowSubMenu ? <SubMenu subMenu={menu.subMenu}/> : ''}
+          {isShowSubMenu ? <SubMenu menu={menu} hideMenu={this.props.hideMenu}/> : ''}
         </li>
       </div>
     });

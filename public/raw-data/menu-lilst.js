@@ -4,99 +4,124 @@ export default [
     uri: '/donate',
     subMenu: [{
       name: '捐款',
-      subUri: '#donatemoney'
+      subUri: '#donatemoney',
+      uriType: 'withinPage'
     }, {
       name: '捐物',
-      subUri: '#donatethings'
+      subUri: '#donatethings',
+      uriType: 'withinPage'
     }, {
       name: '募捐项目',
-      subUri: '#donateitems'
+      subUri: '#donateitems',
+      uriType: 'withinPage'
     }]
   }, {
     firstMenu: '我们的工作',
     uri: '/ourwork',
     subMenu: [{
       name: '白血病救助',
-      subUri: '/leukemiaassistance'
+      subUri: '/leukemiaassistance',
+      uriType: 'outsidePage'
     }, {
       name: '医疗救助',
-      subUri: '/medicalassistance'
+      subUri: '/medicalassistance',
+      uriType: 'outsidePage'
     }, {
       name: '教育资助',
-      subUri: '/educationsupport'
+      subUri: '/educationsupport',
+      uriType: 'outsidePage'
     }, {
       name: '灾区救助',
-      subUri: '/disasterrelief'
+      subUri: '/disasterrelief',
+      uriType: 'outsidePage'
     }, {
       name: '社区帮扶',
-      subUri: '/communityassistance'
+      subUri: '/communityassistance',
+      uriType: 'outsidePage'
     }, {
       name: '图片锦集',
-      subUri: '/gallery'
+      subUri: '/gallery',
+      uriType: 'outsidePage'
     }]
   }, {
     firstMenu: '参与我们',
     uri: '/getinvolved',
     subMenu: [{
       name: '志愿者',
-      subUri: '/volunteer'
+      subUri: '/volunteer',
+      uriType: 'outsidePage'
     }, {
       name: '申请救助',
-      subUri: '#applyrescue'
+      subUri: '#applyrescue',
+      uriType: 'withinPage'
     }, {
       name: '慈善机构名册',
-      subUri: '/directory'
+      subUri: '/directory',
+      uriType: 'outsidePage'
     }, {
       name: '共享资源',
-      subUri: '/classifieds'
+      subUri: '/classifieds',
+      uriType: 'outsidePage'
     }, {
       name: '社区中心',
-      subUri: '#communitycenter'
+      subUri: '#communitycenter',
+      uriType: 'withinPage'
     }, {
       name: '捐赠',
-      subUri: ''
+      subUri: '',
+      uriType: 'outsidePage'
     }]
   }, {
     firstMenu: '众爱商店',
     uri: '/store',
     subMenu: [{
       name: '线上商店',
-      subUri: '#onlinestore'
+      subUri: '#onlinestore',
+      uriType: 'withinPage'
     }, {
       name: '实体店',
-      subUri: '#physicalstore'
+      subUri: '#physicalstore',
+      uriType: 'withinPage'
     }]
   }, {
     firstMenu: '新闻与活动中心',
     uri: '/newsandevent',
     subMenu: [{
       name: '日历',
-      subUri: '/calendar'
+      subUri: '/calendar',
+      uriType: 'outsidePage'
     }, {
       name: '书市',
-      subUri: '/bookfairs'
+      subUri: '/bookfairs',
+      uriType: 'outsidePage'
     }, {
       name: '月报',
-      subUri: '/newslettercenter'
+      subUri: '/newslettercenter',
+      uriType: 'outsidePage'
     }]
   }, {
     firstMenu: '关于我们',
     uri: '/aboutus',
     subMenu: [{
       name: '众爱人',
-      subUri: '/people'
+      subUri: '/people',
+      uriType: 'outsidePage'
     }, {
       name: '合作伙伴',
-      subUri: '/partners'
+      subUri: '/partners',
+      uriType: 'outsidePage'
     }, {
       name: '创始故事',
-      subUri: '/foundingstory'
+      subUri: '/foundingstory',
+      uriType: 'outsidePage'
     }, {
       name: '媒体报道',
-      subUri: '/press'
+      subUri: '/press',
+      uriType: 'outsidePage'
     }, {
       name: '联系我们',
-      subUri: '/contactus'
+      subUri: '/contactus',
+      uriType: 'outsidePage'
     }]
   }
 ];

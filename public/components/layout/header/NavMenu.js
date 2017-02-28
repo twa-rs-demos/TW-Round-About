@@ -43,7 +43,7 @@ export default class NavMenu extends Component {
         <div className='menu-list2'>
           <div className="sidebar-wrapper"></div>
           <div className="nav-bar">
-            <SecondMenu/>
+            <SecondMenu hideMenu={this.changeMenuList.bind(this)}/>
           </div>
         </div>
       </div>
