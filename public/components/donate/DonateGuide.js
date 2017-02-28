@@ -109,7 +109,7 @@ export default class DonateGuide extends Component {
       }
     ];
     return (
-      <div id='donate-guide-collect-hash'>
+      <div>
         <h3 className='donate-items-title'>捐赠物品代收点</h3>
         {this.getCollectRow(donateGuideCollectItems)}
       </div>

@@ -105,6 +105,8 @@ class Main extends Component {
 
         <Route path="store" component={Store}>
           <IndexRoute component={Store}/>
+          <Route path="realstore" component={Store}/>
+          <Route path="onlinestore" component={Store}/>
         </Route>
 
         <Route path="childstory" component={ChildStory}/>
