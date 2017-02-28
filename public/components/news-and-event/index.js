@@ -11,7 +11,7 @@ export default class NewAndEvent extends Component {
       <div id="news-and-event">
         <MaxPicture src={pictureSrc}/>
         <NewsSearchHead />
-        <MainContent datas={datas}/>
+        <MainContent datas={datas} show='eventAndDate'/>
       </div>
     );
   }
