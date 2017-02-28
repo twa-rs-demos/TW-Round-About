@@ -1,11 +1,16 @@
-import {Component} from 'react';
+import {Component} from "react";
+import Picture from "./Picture";
+import ContactAddress from "./ContactAddress";
+import ContactForm from "../common/ContactForm";
 
 export default class ContactUs extends Component {
 
   render() {
     return (
-      <div>
-        <h1>联系我们</h1>
+      <div id="contact-us">
+        <Picture/>
+        <ContactAddress/>
+        <ContactForm title='You may also fill out the form below to contact us.'/>
       </div>
     );
   }
