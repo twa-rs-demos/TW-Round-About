@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, {Component} from "react";
 
-export default class Touch extends Component {
-  submitForm(e){
+export default class ContactForm extends Component {
+  submitForm(e) {
     e.preventDefault();
 
     //此处定义输入，对每个输入进行合法性验证。
@@ -12,7 +12,7 @@ export default class Touch extends Component {
     let enquiry = this.refs.enquiry.value.trim();
     let description = this.refs.description.value.trim();
 
-    if(!firstName||!lastName){
+    if (!firstName || !lastName) {
       return;
     }
 
@@ -42,10 +42,10 @@ export default class Touch extends Component {
           <div className="row">
             <div className="col-sm-offset-2 col-sm-9 col-xs-12">
               <div className="row touch-top-line">
-                <div className="col-sm-8 col-xs-7">Get in Touch</div>
+                <div className="col-sm-8 col-xs-7">{this.props.title}</div>
                 <div className="col-sm-4 col-xs-5 pink">* Required Fields</div>
               </div>
-              <form onSubmit={this.submitForm.bind(this)} >
+              <form onSubmit={this.submitForm.bind(this)}>
                 <div className="row">
                   <div className=" col-sm-6 col-xs-12 touch-item">
                     <div className="col-md-12">First Name<span className="pink">*</span></div>
@@ -70,7 +70,7 @@ export default class Touch extends Component {
                   <div className="col-xs-12 touch-item">
                     <div className="col-xs-12">Description<span className="pink">*</span></div>
                     <div className="col-xs-10">
-                      <textarea rows="4" placeholder="200 Characters Max" maxLength="200" required="required"
+                      <textarea rows="4" maxLength="200" required="required"
                                 className="col-xs-12 touch-textarea" ref='description'/>
                     </div>
                   </div>

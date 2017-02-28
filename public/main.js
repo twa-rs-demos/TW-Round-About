@@ -36,7 +36,7 @@ import Partners from  './components/partners';
 import Press from './components/media-reports/index';
 import ContactUs from './components/contact-us';
 import Gallery from './components/gallery';
-import Article from './components/article';
+import Article from './components/article/index';
 import PartnerStories from './components/partner-stories';
 import FoundingStory from  './components/founding-story';
 import './style/index.less';
@@ -77,6 +77,7 @@ class Main extends Component {
           <Route path="communitycenter" component={CommunityCenter}/>
           <Route path="classifieds" component={Classifieds}/>
           <Route path="directory" component={Directory}/>
+          <Route path="getinvolveddonate" component={Donate}/>
         </Route>
 
         <Route path="newsandevent">
@@ -104,6 +105,8 @@ class Main extends Component {
 
         <Route path="store" component={Store}>
           <IndexRoute component={Store}/>
+          <Route path="realstore" component={Store}/>
+          <Route path="onlinestore" component={Store}/>
         </Route>
 
         <Route path="childstory" component={ChildStory}/>

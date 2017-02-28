@@ -42,7 +42,7 @@ export default class ItemDonate extends Component {
             <img className='item-donation-img' src='http://localhost/tw-ra/public/images/donate/Item donation.png'/>
           </div>
         </div>
-        <div className='row'>
+        <div className='row' id="donate-guide-hash">
           <div className='donate-guide col-sm-offset-2 col-xs-offset-0 col-sm-8 col-xs-12 no-padding'>
             <h3 className='donate-items-title'><a className='donate-guide-title'
                                                   onMouseOver={this.showElasticBox.bind(this)}>捐赠指南</a></h3>
@@ -57,7 +57,7 @@ export default class ItemDonate extends Component {
           </div>
         </div>
         <div className='row'>
-          <div className='col-xs-12 donate-collect-items'>
+          <div className='col-xs-12 donate-collect-items' id="donate-guide-collect-hash">
             <DonateGuide/>
           </div>
         </div>
