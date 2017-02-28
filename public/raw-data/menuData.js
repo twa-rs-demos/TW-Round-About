@@ -116,12 +116,6 @@ export default [
     text: '募捐项目',
     uri: '/donatecurrent'
   }, {
-    id: 24,
-    parent: 7,
-    level: 3,
-    text: '日历',
-    uri: '/calendar'
-  }, {
     id: 25,
     parent: 7,
     level: 3,

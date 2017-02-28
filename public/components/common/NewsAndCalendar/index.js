@@ -7,7 +7,7 @@ export default class NewsAndCalendar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showContent: 'eventAndDate'
+      showContent: this.props.show
     };
   }
 
