@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import MaxPicture from '../common/MaxPicture';
 import RaInMedia from './RaInMedia';
-import Touch from './Touch';
+import ContactForm from '../common/ContactForm';
 
 export default class Press extends Component {
 
@@ -11,7 +11,7 @@ export default class Press extends Component {
       <div id="media-report">
         <MaxPicture src={pictureSrc}/>
         <RaInMedia/>
-        <Touch/>
+        <ContactForm title='Get in Touch'/>
       </div>
     );
   }

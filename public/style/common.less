@@ -1,5 +1,6 @@
 @pink-color: #ec4c9a;
 @black-color: #575757;
+@background-color: #F0F0F0;
 @title-font: 4.2rem;
 @descibe-font: 2rem;
 @screen-xs-min: 380px;
@@ -177,17 +178,17 @@ img {
         font-size: @descibe-font;
         line-height: 2.8rem;
         margin: 0;
-        position:relative;
-        height:5.6em;
-        overflow:hidden;
+        position: relative;
+        height: 5.6em;
+        overflow: hidden;
       }
       p::after {
-        content:"...";
-        position:absolute;
-        bottom:0;
-        right:0;
-        padding:0 2rem 1px 3rem;
-        background:url(http://css88.b0.upaiyun.com/css88/2014/09/ellipsis_bg.png) repeat-y;
+        content: "...";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 0 2rem 1px 3rem;
+        background: url(http://css88.b0.upaiyun.com/css88/2014/09/ellipsis_bg.png) repeat-y;
       }
     }
   }
@@ -271,18 +272,18 @@ img {
 }
 
 /*---------------------CSS-Wrap---------------------------------*/
-.css-wrap{
-  position:relative;
-  overflow:hidden;
+.css-wrap {
+  position: relative;
+  overflow: hidden;
 }
 
 .css-wrap::after {
-  content:"...";
-  position:absolute;
-  bottom:0;
-  right:0;
-  padding:0 2rem 1px 3rem;
-  background:url(http://css88.b0.upaiyun.com/css88/2014/09/ellipsis_bg.png) repeat-y;
+  content: "...";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 2rem 1px 3rem;
+  background: url(http://css88.b0.upaiyun.com/css88/2014/09/ellipsis_bg.png) repeat-y;
 }
 
 /*---------------------volunteer-stories---------------------------------*/
@@ -304,3 +305,46 @@ img {
     }
   }
 }
+
+/*---------------------contactUsTouchForm---------------------------------*/
+.touch {
+  background: #F8F9FB;
+  font-size: 2.2rem;
+  padding: 3rem 0 12rem 0;
+
+  .touch-top-line {
+    margin-bottom: 5rem;
+  }
+  .touch-item {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+    input {
+      border-radius: 10rem;
+      margin-top: 1rem;
+      outline: none;
+      border: 1px solid #cdcdcd;
+      padding-left: 1rem;
+    }
+  }
+  .touch-textarea {
+    outline: none;
+    border-radius: 2rem;
+    margin-top: 1rem;
+  }
+  .touch-button {
+    outline: none;
+    padding: .2rem 3rem;
+    color: #8d8d8d;
+    border: 1px solid #8d8d8d;
+    font-size: 2rem;
+    border-radius: 8rem;
+  }
+  .button-click {
+    color: @pink-color;
+    border-color: @pink-color;
+  }
+}
+
+
+
