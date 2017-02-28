@@ -7,7 +7,7 @@ export default class DonationProjects extends Component {
         <h3>募捐项目</h3>
         <p className='middle-describe donate-projects-tect'>直接通过乐捐捐款</p>
         <div className='wechat-image'>
-          <img src='./public/images/donate/wechat01.png' className='donateProjects-wechat'/>
+          <img src='http://localhost/tw-ra/public/images/donate/wechat01.png' className='donateProjects-wechat'/>
           <div className='span'>腾讯</div>
         </div>
       </div>

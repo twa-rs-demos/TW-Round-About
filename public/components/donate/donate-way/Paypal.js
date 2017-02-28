@@ -7,7 +7,7 @@ export default class Alipay extends Component {
       <div className='donate-way-elastic'>
         <Modal.Dialog>
           <Modal.Header>
-            <Button onClick={this.props.closePaypalModal}><img src='./public/images/home/close.png'/></Button>
+            <Button onClick={this.props.closePaypalModal}><img src='http://localhost/tw-ra/public/images/home/close.png'/></Button>
           </Modal.Header>
 
           <Modal.Body>

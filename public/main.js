@@ -77,6 +77,7 @@ class Main extends Component {
           <Route path="communitycenter" component={CommunityCenter}/>
           <Route path="classifieds" component={Classifieds}/>
           <Route path="directory" component={Directory}/>
+          <Route path="getinvolveddonate" component={Donate}/>
         </Route>
 
         <Route path="newsandevent">
