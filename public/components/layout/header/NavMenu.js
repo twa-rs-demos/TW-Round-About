@@ -24,7 +24,7 @@ export default class NavMenu extends Component {
   }
 
   render() {
-
+    console.log(this.props.layout)
     return (
       <div>
         <div className='row no-margin menu-list1'>

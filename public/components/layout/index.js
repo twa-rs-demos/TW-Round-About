@@ -21,6 +21,8 @@ export default class Test extends Component {
   }
 
   render() {
+    console.log('000')
+    console.log(this.props.layout)
     return (
       <div className='container-fluid no-padding'>
         <Header/>

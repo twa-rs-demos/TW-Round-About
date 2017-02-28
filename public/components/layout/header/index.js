@@ -1,5 +1,6 @@
 import {Component} from 'react';
-import NavMenu from './NavMenu';
+// import NavMenu from './NavMenu';
+import NavMenu from '../../../containers/layout/nav-menu';
 import TopInfo from './TopInfo';
 
 export default class Header extends Component {
