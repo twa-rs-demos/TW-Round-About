@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 
 export default class BookFairNews extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ export default class BookFairNews extends Component {
               <p className="news-content css-wrap">{item.content}</p>
             </div>
             <div className="learn-more">
-              <p>Learn More > </p>
+              <p><Link to="/tw-ra/newsandevent/bookfairs/article">Learn More > </Link></p>
             </div>
           </div>
         </div>
