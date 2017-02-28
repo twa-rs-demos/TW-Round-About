@@ -1,11 +1,12 @@
-import {Component} from 'react';
+import {Component} from "react";
+import Picture from "./Picture";
 
 export default class ContactUs extends Component {
 
   render() {
     return (
-      <div>
-        <h1>联系我们</h1>
+      <div id="contact-us">
+        <Picture/>
       </div>
     );
   }
