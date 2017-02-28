@@ -1,11 +1,14 @@
-import {Component} from 'react';
+import {Component} from "react";
+import Picture from "./Picture";
+import Content from "./Content";
 
 export default class Gallery extends Component {
 
   render() {
     return (
-      <div>
-        <h1>图片集锦</h1>
+      <div id='gallery'>
+        <Picture/>
+        <Content/>
       </div>
     );
   }
