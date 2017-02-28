@@ -6,7 +6,7 @@ class SubMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: '/'
+      selected: this.props.subUri
     };
   }
 
@@ -51,8 +51,8 @@ export default class SecondMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      parentUri: '',
-      selected: ''
+      parentUri: this.props.path.parentUri,
+      selected: this.props.path.parentUri
     };
   }
 
@@ -68,6 +68,11 @@ export default class SecondMenu extends Component {
     this.setState({selected: uri});
     this.props.hideMenu();
   }
+
+  // componentDidUpdate(){
+  //   this.setState({selected: this.props.path.parentUri});
+  //   this.props.hideMenu();
+  // }
 
   hideSubMenu(uri) {
     this.selectMenu(uri);
@@ -91,7 +96,8 @@ export default class SecondMenu extends Component {
               <i className={'dropdown-icon fa fa-chevron-' + (isShowSubMenu ? 'up' : 'down')}
                  onClick={this.showSubMenu.bind(this, menu.uri)}></i>
             </div>
-            {isShowSubMenu ? <SubMenu menu={menu} selectMenu={this.selectMenu.bind(this)}/> : ''}
+            {isShowSubMenu ?
+              <SubMenu menu={menu} subUri={this.props.path.subUri} selectMenu={this.selectMenu.bind(this)}/> : ''}
           </li>
         </div>
       }
