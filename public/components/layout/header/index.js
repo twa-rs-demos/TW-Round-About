@@ -6,8 +6,12 @@ export default class Header extends Component {
   render() {
     return (
       <div id='header'>
-        <TopInfo/>
-        <NavMenu/>
+        <div className="top-info">
+          <TopInfo/>
+        </div>
+        <div className="nav-menu">
+          <NavMenu/>
+        </div>
       </div>
     );
   }
