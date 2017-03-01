@@ -59,8 +59,8 @@ export default class MenuList extends Component {
     super(props);
     this.state = {
       menuList: [],
-      currentMenuId: '',
-      selectedMenuId: ''
+      currentParentMenu: '',
+      selectedPrentMenu: ''
     };
   }
 
@@ -98,33 +98,33 @@ export default class MenuList extends Component {
     });
   }
 
-  showMenu(id) {
-    this.setState({currentMenuId: id});
+  showMenu(uri) {
+    this.setState({currentParentMenu: uri});
   }
 
   hideMenu() {
-    this.setState({currentMenuId: ''});
+    this.setState({currentParentMenu: ''});
   }
 
-  selectMenu(id) {
-    this.setState({selectedMenuId: id, currentMenuId: ''});
+  selectMenu(uri) {
+    this.setState({selectedPrentMenu: uri, currentParentMenu: ''});
   }
 
   render() {
     const menuList = this.state.menuList.map((menu, index) => {
       return <div className='menu-list' key={index}
-                  onMouseEnter={this.showMenu.bind(this, menu.id)}
-                  onMouseLeave={this.hideMenu.bind(this, menu.id)}
-                  onClick={this.selectMenu.bind(this, menu.id)}
+                  onMouseEnter={this.showMenu.bind(this, menu.slug)}
+                  onMouseLeave={this.hideMenu.bind(this)}
+                  onClick={this.selectMenu.bind(this, menu.slug)}
       >
 
-        <div className={'first-menu ' + (this.state.selectedMenuId === menu.id ? 'active' : '')}>
+        <div className={'first-menu ' + (this.state.selectedPrentMenu === menu.slug ? 'active' : '')}>
           <Link to={URI_PREFIX + '/' + menu.slug}>
             {menu.name}
             <span className='triangle'></span>
           </Link>
         </div>
-        {this.state.currentMenuId === menu.id ? <Menu id={menu.id} slug={menu.slug}/> : ''}
+        {this.state.currentParentMenu === menu.slug ? <Menu id={menu.id} slug={menu.slug}/> : ''}
       </div>;
     });
     return (
