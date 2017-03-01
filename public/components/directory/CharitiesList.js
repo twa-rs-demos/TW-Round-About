@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 import Charity from './Charity';
 import Pagination from '../common/Pagination';
 

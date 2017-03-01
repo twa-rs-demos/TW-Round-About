@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import {Component} from 'react';
 
 export default class Charity extends Component {
   render() {
     const charity = this.props.charity;
     const tags = charity.tags.map((tag, index) => {
-      return <span className='tag' key={index}>{tag}</span>
+      return <span className='tag' key={index}>{tag}</span>;
     });
 
     return (
