@@ -124,4 +124,5 @@ render(
   <Provider store={store}>
     <RootApp/>
   </Provider>,
-  document.getElementById('page'));
+  document.getElementById('page')
+);
