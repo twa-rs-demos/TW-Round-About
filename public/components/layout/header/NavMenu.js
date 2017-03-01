@@ -28,7 +28,7 @@ export default class NavMenu extends Component {
       <div>
         <div className='row no-margin menu-list1'>
           <div className='col-md-10 col-xs-7'>
-            <MenuList/>
+            <MenuList path={this.props.layout}/>
           </div>
           <div className='col-md-2 col-xs-5 text-right no-padding header-search-box'>
             <SearchBox/>

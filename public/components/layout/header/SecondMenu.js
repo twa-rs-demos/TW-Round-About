@@ -48,6 +48,13 @@ class SubMenu extends Component {
 
 export default class SecondMenu extends Component {
 
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      parentUri: nextProps.path.parentUri,
+      selected: nextProps.path.parentUri
+    });
+  }
+
   constructor(props) {
     super(props);
     this.state = {
@@ -68,11 +75,6 @@ export default class SecondMenu extends Component {
     this.setState({selected: uri});
     this.props.hideMenu();
   }
-
-  // componentDidUpdate(){
-  //   this.setState({selected: this.props.path.parentUri});
-  //   this.props.hideMenu();
-  // }
 
   hideSubMenu(uri) {
     this.selectMenu(uri);
@@ -97,7 +99,7 @@ export default class SecondMenu extends Component {
                  onClick={this.showSubMenu.bind(this, menu.uri)}></i>
             </div>
             {isShowSubMenu ?
-              <SubMenu menu={menu} subUri={this.props.path.subUri} selectMenu={this.selectMenu.bind(this)}/> : ''}
+              <SubMenu menu={menu} subUri={this.props.path.subUri} selectMenu={this.selectMenu}/> : ''}
           </li>
         </div>
       }
