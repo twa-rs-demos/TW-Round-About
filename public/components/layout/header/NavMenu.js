@@ -41,7 +41,7 @@ export default class NavMenu extends Component {
               <i className="fa fa-bars"></i>
             </button>
           </div>
-          <div className="col-md-2 col-xs-9 text-right no-padding header-search-box">
+          <div className="col-md-10 col-xs-9 text-right no-padding header-search-box">
             <SearchBox/>
           </div>
         </div>
