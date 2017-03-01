@@ -5,7 +5,7 @@ import {MaxPicture} from '../common/';
 
 export default class Home extends Component {
   render() {
-    const pictureSrc = './public/images/home/hero_index.png';
+    const pictureSrc = 'http://localhost/tw-ra/public/images/home/hero_index.png';
     return (
       <div id='home' className='container-fluid no-padding'>
         <MaxPicture src={pictureSrc}>
