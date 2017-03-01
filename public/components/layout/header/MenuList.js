@@ -8,7 +8,8 @@ class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuItemList: []
+      menuItemList: [],
+      selectedSubMenu: this.props.subMenu
     };
   }
 
@@ -29,15 +30,20 @@ class Menu extends Component {
 
   render() {
     const menuItemList = this.state.menuItemList.map((menuItem, index) => {
-      let path = menuItem.description === 'inside-page'
-        ? <a href={URI_PREFIX + '/' + this.props.slug + '#' + menuItem.slug}>{menuItem.name}</a>
-        : <Link to={URI_PREFIX + '/' + this.props.slug + '/' + menuItem.slug}>{menuItem.name}</Link>;
+      const selected = (this.state.selectedSubMenu.indexOf(menuItem.slug) !== -1) ? 'selected-sub' : '';
+      let subMenu = menuItem.description === 'inside-page'
+        ? <a href={URI_PREFIX + '/' + this.props.slug + '#' + menuItem.slug} className={selected}>
+        {menuItem.name}
+      </a>
+        : <Link to={URI_PREFIX + '/' + this.props.slug + '/' + menuItem.slug} className={selected}>
+        {menuItem.name}
+      </Link>;
 
-      path = menuItem.description === 'donate'
-        ? <Link to={URI_PREFIX + '/donate'}>{menuItem.name}</Link> : path;
+      subMenu = menuItem.description === 'donate'
+        ? <Link to={URI_PREFIX + '/donate'}>{menuItem.name}</Link> : subMenu;
       return (
         <li key={index} className='dropdown-item'>
-          {path}
+          {subMenu}
         </li>
       );
     });
@@ -98,6 +104,10 @@ export default class MenuList extends Component {
     });
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.setState({selectedPrentMenu: nextProps.path.parentUri});
+  }
+
   showMenu(uri) {
     this.setState({currentParentMenu: uri});
   }
@@ -124,7 +134,8 @@ export default class MenuList extends Component {
             <span className='triangle'></span>
           </Link>
         </div>
-        {this.state.currentParentMenu === menu.slug ? <Menu id={menu.id} slug={menu.slug}/> : ''}
+        {this.state.currentParentMenu === menu.slug ?
+          <Menu id={menu.id} slug={menu.slug} subMenu={this.props.path.subUri}/> : ''}
       </div>;
     });
     return (
