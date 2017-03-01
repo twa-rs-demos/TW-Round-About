@@ -24,26 +24,32 @@ export default class NavMenu extends Component {
   }
 
   render() {
-
     return (
       <div>
         <div className='row no-margin menu-list1'>
           <div className='col-md-10 col-xs-7'>
-            <MenuList/>
+            <MenuList path={this.props.layout}/>
           </div>
           <div className='col-md-2 col-xs-5 text-right no-padding header-search-box'>
             <SearchBox/>
           </div>
         </div>
 
-        <button className="menu-icon" onClick={this.changeMenuList.bind(this)}>
-          <i className="fa fa-bars"></i>
-        </button>
+        <div className="row no-margin responsive-menu">
+          <div className="col-md-2 col-xs-3">
+            <button className="menu-icon" onClick={this.changeMenuList.bind(this)}>
+              <i className="fa fa-bars"></i>
+            </button>
+          </div>
+          <div className="col-md-10 col-xs-9 text-right no-padding header-search-box">
+            <SearchBox/>
+          </div>
+        </div>
 
         <div className='menu-list2'>
           <div className="sidebar-wrapper" onClick={this.changeMenuList.bind(this)}></div>
           <div className="nav-bar">
-            <SecondMenu hideMenu={this.changeMenuList.bind(this)}/>
+            <SecondMenu hideMenu={this.changeMenuList.bind(this)} path={this.props.layout}/>
           </div>
         </div>
       </div>

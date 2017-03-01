@@ -99,22 +99,24 @@ body {
 
     }
 
-    .menu-icon {
+    .responsive-menu {
       display: none;
-      background: none;
-      border: none;
-      outline: none;
-      margin-left: 16px;
+      .menu-icon {
+        display: block;
+        background: none;
+        border: none;
+        outline: none;
 
-      .fa-bars {
-        font-size: 2rem;
-        color: #414141;
+        .fa-bars {
+          font-size: 2rem;
+          color: #414141;
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
 
   #header {
     .nav-menu {
@@ -122,7 +124,7 @@ body {
         display: none;
       }
 
-      .menu-icon {
+      .responsive-menu {
         display: block;
       }
 
@@ -134,7 +136,7 @@ body {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .menu-list2 {
     display: none !important;
   }

@@ -162,6 +162,10 @@
                   text-decoration: none;
                 }
               }
+
+              .selected-sub {
+                color: @pink-color;
+              }
             }
           }
         }
@@ -169,51 +173,48 @@
     }
   }
   /*-------------------------------------search-box------------------------------------------*/
-  .menu-list1 {
-    .header-search-box {
-      padding-right: 2rem;
-      .search {
-        width: 13.6rem;
+  .header-search-box {
+    padding-right: 2rem;
+    .search {
+      width: 130px;
+      border-radius: 20px;
+      background-color: #D8D8D8;
+      border: none;
+      height: 20px;
+      padding: 2px;
+      display: inline-block;
+      position: relative;
+
+      input {
+        width: 90px;
         border-radius: 10.0rem;
         background-color: #D8D8D8;
         border: none;
-        height: 2.2rem;
-        padding: 0 .8rem 0 .8rem;
-        display: inline-block;
-        position: relative;
-
-        input {
-          width: 10.3rem !important;
-          border-radius: 10.0rem;
-          background-color: #D8D8D8;
-          border: none;
-          height: 2.2rem;
-          font-size: 1.2rem;
-          color: #535353;
-          position: absolute;
-          left: 1.5rem;
-          padding-right: 1.7rem;
-          &:focus {
-            outline: none;
-          }
+        height: 17px;
+        font-size: 1.2rem;
+        color: #535353;
+        position: absolute;
+        left: 13px;
+        &:focus {
+          outline: none;
         }
+      }
 
-        button {
-          border: none;
-          background-color: inherit;
-          position: absolute;
-          left: 11rem;
-          &:focus {
-            outline: none;
-          }
+      button {
+        border: none;
+        background-color: inherit;
+        position: absolute;
+        right: 16px;
+        &:focus {
+          outline: none;
         }
+      }
 
-        img {
-          width: 1.4rem;
-          height: 1.4rem;
-          position: absolute;
-          top: 0.5rem;
-        }
+      img {
+        width: 14px;
+        height: 12px;
+        position: absolute;
+        top: 3px;
       }
     }
   }

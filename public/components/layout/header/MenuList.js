@@ -8,7 +8,8 @@ class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuItemList: []
+      menuItemList: [],
+      selectedSubMenu: this.props.subMenu
     };
   }
 
@@ -29,15 +30,20 @@ class Menu extends Component {
 
   render() {
     const menuItemList = this.state.menuItemList.map((menuItem, index) => {
-      let path = menuItem.description === 'inside-page'
-        ? <a href={URI_PREFIX + '/' + this.props.slug + '#' + menuItem.slug}>{menuItem.name}</a>
-        : <Link to={URI_PREFIX + '/' + this.props.slug + '/' + menuItem.slug}>{menuItem.name}</Link>;
+      const selected = (this.state.selectedSubMenu.indexOf(menuItem.slug) !== -1) ? 'selected-sub' : '';
+      let subMenu = menuItem.description === 'inside-page'
+        ? <a href={URI_PREFIX + '/' + this.props.slug + '#' + menuItem.slug} className={selected}>
+        {menuItem.name}
+      </a>
+        : <Link to={URI_PREFIX + '/' + this.props.slug + '/' + menuItem.slug} className={selected}>
+        {menuItem.name}
+      </Link>;
 
-      path = menuItem.description === 'donate'
-        ? <Link to={URI_PREFIX + '/donate'}>{menuItem.name}</Link> : path;
+      subMenu = menuItem.description === 'donate'
+        ? <Link to={URI_PREFIX + '/donate'}>{menuItem.name}</Link> : subMenu;
       return (
         <li key={index} className='dropdown-item'>
-          {path}
+          {subMenu}
         </li>
       );
     });
@@ -59,8 +65,8 @@ export default class MenuList extends Component {
     super(props);
     this.state = {
       menuList: [],
-      currentMenuId: '',
-      selectedMenuId: ''
+      currentParentMenu: '',
+      selectedPrentMenu: ''
     };
   }
 
@@ -98,33 +104,38 @@ export default class MenuList extends Component {
     });
   }
 
-  showMenu(id) {
-    this.setState({currentMenuId: id});
+  componentWillReceiveProps(nextProps) {
+    this.setState({selectedPrentMenu: nextProps.path.parentUri});
+  }
+
+  showMenu(uri) {
+    this.setState({currentParentMenu: uri});
   }
 
   hideMenu() {
-    this.setState({currentMenuId: ''});
+    this.setState({currentParentMenu: ''});
   }
 
-  selectMenu(id) {
-    this.setState({selectedMenuId: id, currentMenuId: ''});
+  selectMenu(uri) {
+    this.setState({selectedPrentMenu: uri, currentParentMenu: ''});
   }
 
   render() {
     const menuList = this.state.menuList.map((menu, index) => {
       return <div className='menu-list' key={index}
-                  onMouseEnter={this.showMenu.bind(this, menu.id)}
-                  onMouseLeave={this.hideMenu.bind(this, menu.id)}
-                  onClick={this.selectMenu.bind(this, menu.id)}
+                  onMouseEnter={this.showMenu.bind(this, menu.slug)}
+                  onMouseLeave={this.hideMenu.bind(this)}
+                  onClick={this.selectMenu.bind(this, menu.slug)}
       >
 
-        <div className={'first-menu ' + (this.state.selectedMenuId === menu.id ? 'active' : '')}>
+        <div className={'first-menu ' + (this.state.selectedPrentMenu === menu.slug ? 'active' : '')}>
           <Link to={URI_PREFIX + '/' + menu.slug}>
             {menu.name}
             <span className='triangle'></span>
           </Link>
         </div>
-        {this.state.currentMenuId === menu.id ? <Menu id={menu.id} slug={menu.slug}/> : ''}
+        {this.state.currentParentMenu === menu.slug ?
+          <Menu id={menu.id} slug={menu.slug} subMenu={this.props.path.subUri}/> : ''}
       </div>;
     });
     return (
