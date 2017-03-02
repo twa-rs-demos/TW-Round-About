@@ -23,20 +23,26 @@ class SubMenu extends Component {
       const connectCharacter = (item.uriType === 'withinPage') ? '' : '/';
       const path = `${URI_PREFIX}/${menu.uri}${connectCharacter}${item.subUri}`;
       const selected = (this.state.selected === item.subUri) ? 'selected-sub-menu' : '';
+      let subMenuType = item.subUri === 'withinPage' ?
+        <Link to={path} className={'menu-link ' + selected}
+              onClick={this.selectSubMenu.bind(this, menu.uri, item.subUri)}>
+          {item.name}
+        </Link>
+        :
+        <a href={path} className={'menu-link ' + selected}
+           onClick={this.selectSubMenu.bind(this, menu.uri, item.subUri)}>
+          {item.name}
+        </a>;
+
+      subMenuType = (item.subUri === 'donate') ?
+        <Link to={path} className={'menu-link ' + selected}
+              onClick={this.selectSubMenu.bind(this, menu.uri, item.subUri)}>
+          {item.name}
+        </Link>
+        : subMenuType;
 
       return <li key={index} className='sub-item '>
-
-        {item.subUri === '' ?
-          <Link to={URI_PREFIX + '/donate'} className={'menu-link ' + selected}
-                onClick={this.selectSubMenu.bind(this, menu.uri, item.subUri)}>
-            {item.name}
-          </Link>
-          :
-          <Link to={path} className={'menu-link ' + selected}
-                onClick={this.selectSubMenu.bind(this, menu.uri, item.subUri)}>
-            {item.name}
-          </Link>
-        }
+        {subMenuType}
       </li>
     });
 
