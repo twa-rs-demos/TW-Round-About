@@ -60,6 +60,16 @@ class Menu extends Component {
   }
 }
 
+const sortMenu = function (items) {
+  items.map(item => {
+    item.description = JSON.parse(item.description);
+  });
+
+  return items.sort((x, y) => {
+    return x.description.index - y.description.index;
+  })
+};
+
 export default class MenuList extends Component {
   constructor(props) {
     super(props);
@@ -100,7 +110,7 @@ export default class MenuList extends Component {
       if (err) {
         throw err;
       }
-      this.setState({menuList: result});
+      this.setState({menuList: sortMenu(result)});
     });
   }
 
