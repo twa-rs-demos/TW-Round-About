@@ -22,7 +22,7 @@ class Menu extends Component {
           throw (err);
         } else {
           this.setState({
-            menuItemList: res.body
+            menuItemList: sortMenu(res.body)
           });
         }
       });
@@ -31,7 +31,8 @@ class Menu extends Component {
   render() {
     const menuItemList = this.state.menuItemList.map((menuItem, index) => {
       const selected = (this.state.selectedSubMenu.indexOf(menuItem.slug) !== -1) ? 'selected-sub' : '';
-      let subMenu = menuItem.description === 'inside-page'
+      const uriType = menuItem.description.uriType;
+      let subMenu = uriType === 'withinPage'
         ? <a href={URI_PREFIX + '/' + this.props.slug + '#' + menuItem.slug} className={selected}>
         {menuItem.name}
       </a>
@@ -39,8 +40,9 @@ class Menu extends Component {
         {menuItem.name}
       </Link>;
 
-      subMenu = menuItem.description === 'donate'
+      subMenu = uriType === 'donate'
         ? <Link to={URI_PREFIX + '/donate'}>{menuItem.name}</Link> : subMenu;
+
       return (
         <li key={index} className='dropdown-item'>
           {subMenu}
@@ -62,7 +64,7 @@ class Menu extends Component {
 
 const sortMenu = function (items) {
   items.map(item => {
-    item.description = JSON.parse(item.description);
+    item.description = jQuery.parseJSON(item.description);
   });
 
   return items.sort((x, y) => {
