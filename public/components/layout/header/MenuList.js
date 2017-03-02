@@ -64,7 +64,7 @@ class Menu extends Component {
 
 const sortMenu = function (items) {
   items.map(item => {
-    item.description = jQuery.parseJSON(item.description);
+    item.description = JSON.parse(item.description);
   });
 
   return items.sort((x, y) => {
