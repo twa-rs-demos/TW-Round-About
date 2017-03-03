@@ -14,18 +14,18 @@ class Menu extends Component {
   }
 
   componentDidMount() {
-    superagent
-      .get(`/wp-json/wp/v2/categories?parent=${this.props.id}`)
-      .use(noCache)
-      .end((err, res) => {
-        if (err) {
-          throw (err);
-        } else {
-          this.setState({
-            menuItemList: sortMenu(res.body)
-          });
-        }
-      });
+    // superagent
+    //   .get(`/wp-json/wp/v2/categories?parent=${this.props.id}`)
+    //   .use(noCache)
+    //   .end((err, res) => {
+    //     if (err) {
+    //       throw (err);
+    //     } else {
+    //       this.setState({
+    //         menuItemList: sortMenu(res.body)
+    //       });
+    //     }
+    //   });
   }
 
   render() {
@@ -83,37 +83,37 @@ export default class MenuList extends Component {
   }
 
   componentDidMount() {
-    async.waterfall([
-      (done) => {
-        superagent
-          .get('/wp-json/wp/v2/categories?slug=menulist')
-          .use(noCache)
-          .end((err, res) => {
-            if (err) {
-              done(err, null);
-            } else {
-              done(null, res.body[0]);
-            }
-          });
-      },
-      (categoryParent, done) => {
-        superagent
-          .get(`/wp-json/wp/v2/categories?parent=${categoryParent.id}`)
-          .use(noCache)
-          .end((err, res) => {
-            if (err) {
-              done(err, null);
-            } else {
-              done(null, res.body);
-            }
-          });
-      }
-    ], (err, result) => {
-      if (err) {
-        throw err;
-      }
-      this.setState({menuList: sortMenu(result)});
-    });
+    // async.waterfall([
+    //   (done) => {
+    //     superagent
+    //       .get('/wp-json/wp/v2/categories?slug=menulist')
+    //       .use(noCache)
+    //       .end((err, res) => {
+    //         if (err) {
+    //           done(err, null);
+    //         } else {
+    //           done(null, res.body[0]);
+    //         }
+    //       });
+    //   },
+    //   (categoryParent, done) => {
+    //     superagent
+    //       .get(`/wp-json/wp/v2/categories?parent=${categoryParent.id}`)
+    //       .use(noCache)
+    //       .end((err, res) => {
+    //         if (err) {
+    //           done(err, null);
+    //         } else {
+    //           done(null, res.body);
+    //         }
+    //       });
+    //   }
+    // ], (err, result) => {
+    //   if (err) {
+    //     throw err;
+    //   }
+    //   this.setState({menuList: sortMenu(result)});
+    // });
   }
 
   componentWillReceiveProps(nextProps) {
