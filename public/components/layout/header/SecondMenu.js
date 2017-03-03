@@ -99,7 +99,7 @@ export default class SecondMenu extends Component {
                  onClick={this.showSubMenu.bind(this, menu.uri)}></i>
             </div>
             {isShowSubMenu ?
-              <SubMenu menu={menu} subUri={this.props.path.subUri} selectMenu={this.selectMenu}/> : ''}
+              <SubMenu menu={menu} subUri={this.props.path.subUri} selectMenu={this.selectMenu.bind(this)}/> : ''}
           </li>
         </div>
       }
