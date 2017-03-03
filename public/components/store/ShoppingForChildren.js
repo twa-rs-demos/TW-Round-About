@@ -50,6 +50,7 @@ export default class ShoppingForChildren extends Component {
 
           <Modal show={this.state.showRequestFormModal} onHide={this.hideRequestFormModal.bind(this)}>
             <Modal.Header closeButton>
+              <h3>REQUEST FOR PICK UP OF DONATIONS</h3>
             </Modal.Header>
             <Modal.Body>
               <RequestFormModal/>
