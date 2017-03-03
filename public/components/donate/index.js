@@ -17,7 +17,7 @@ export default class Home extends Component {
         <div className='container'>
             <DonateWay/>
             <ItemDonate/>
-            <DonatingProjects title='正在捐款的项目'/>
+            <DonatingProjects title='正在捐款的项目' paginationMoreLink="/tw-ra/donate/donatecurrent"/>
         </div>
       </div>
     );

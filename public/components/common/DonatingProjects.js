@@ -40,6 +40,16 @@ export default class DonatingProjects extends Component {
 
   render() {
     const totalPage = Math.ceil(donatingProjectList.length / this.state.pageCount);
+    let more=null;
+    if(this.props.paginationMoreLink !== undefined){
+      more = (<div className='col-md-7 col-sm-6 col-xs-5'>
+        <div className='text-right'>
+          <Link to={this.props.paginationMoreLink}>
+            <div className='donateProject-more'>更多></div>
+          </Link>
+        </div>
+      </div>);
+    }
 
     return (
       <div className='donating-projects'>
@@ -56,13 +66,7 @@ export default class DonatingProjects extends Component {
             <Pagination totalPage={totalPage} currentPage={this.state.currentPage}
                         onPageChange={this.handlePageChange.bind(this)}/>
           </div>
-          <div className='col-md-7 col-sm-6 col-xs-5'>
-            <div className='text-right'>
-              <Link to='/tw-ra/donateCurrent'>
-                <div className='donateProject-more'>更多></div>
-              </Link>
-            </div>
-          </div>
+          {more}
         </div>
       </div>
     );

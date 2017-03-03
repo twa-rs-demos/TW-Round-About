@@ -12,8 +12,8 @@ export default [
       uriType: 'withinPage'
     }, {
       name: '募捐项目',
-      subUri: '#donateitems',
-      uriType: 'withinPage'
+      subUri: 'donatecurrent',
+      uriType: 'outsidePage'
     }]
   }, {
     firstMenu: '我们的工作',
