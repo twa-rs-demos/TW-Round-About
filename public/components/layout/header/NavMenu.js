@@ -45,16 +45,14 @@ export default class NavMenu extends Component {
       if (err) {
         throw err;
       }
-      // this.setState({menuList: sortMenu(menuList)});
+      menuList = this.sortMenu(menuList);
       menuList.map(item => {
         this.getSubMenuList(item.id, (result) => {
           item.subMenu = result
         })
       });
 
-      this.setState({menuList}, () => {
-        console.log(this.state.menuList)
-      });
+      this.setState({menuList});
     });
   }
 
@@ -66,11 +64,20 @@ export default class NavMenu extends Component {
         if (err) {
           throw (err);
         } else {
-          callback(res.body)
+          callback(this.sortMenu(res.body));
         }
       });
   }
 
+  sortMenu(items) {
+    items.map(item => {
+      item.description = JSON.parse(item.description);
+    });
+
+    return items.sort((x, y) => {
+      return x.description.index - y.description.index;
+    })
+  };
 
   changeMenuList() {
     this.setState({showMenuList2: !this.state.showMenuList2}, () => {
@@ -89,7 +96,7 @@ export default class NavMenu extends Component {
       <div>
         <div className='row no-margin menu-list1'>
           <div className='col-md-10 col-xs-7'>
-            <MenuList path={this.props.layout}/>
+            <MenuList path={this.props.layout} menuList={this.state.menuList}/>
           </div>
           <div className='col-md-2 col-xs-5 text-right no-padding header-search-box'>
             <SearchBox/>
