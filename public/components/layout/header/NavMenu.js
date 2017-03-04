@@ -117,7 +117,8 @@ export default class NavMenu extends Component {
         <div className='menu-list2'>
           <div className='sidebar-wrapper' onClick={this.changeMenuList.bind(this)}></div>
           <div className='nav-bar'>
-            <SecondMenu hideMenu={this.changeMenuList.bind(this)} path={this.props.layout}/>
+            <SecondMenu menuList={this.state.menuList} hideMenu={this.changeMenuList.bind(this)}
+                        path={this.props.layout}/>
           </div>
         </div>
       </div>
