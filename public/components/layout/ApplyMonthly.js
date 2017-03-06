@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import {Modal} from 'react-bootstrap';
+import pictureDate from './pictureDate';
 
 class ModalSuccess extends Component {
   render() {
@@ -37,7 +38,7 @@ export default class ApplyMonthly extends Component {
     return (
       <div>
         <div id='apply-monthly-report'>
-          <img src='http://localhost/tw-ra/public/images/icon_newsletter.png'/>
+          <img src={pictureDate.iconNewsLetter}/>
           <div className='apply-monthly-report-text'>申领月报</div>
           <input type='email' className='input-email' placeholder='请输入你的电子邮箱'/>
           <button className='submit' type='submit' onClick={this.onSubmit.bind(this)}>提交</button>

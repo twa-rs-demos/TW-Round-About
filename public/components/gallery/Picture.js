@@ -1,5 +1,6 @@
 import {Component} from "react";
 import pictureDates from "./pictureData";
+import carouselArrowsmallLeft from '../../../public/images/gallery/carousel_arrowsmall_left.png';
 
 export default class Picture extends Component {
   constructor(props) {
@@ -44,7 +45,7 @@ export default class Picture extends Component {
           <h1 className='title'>ASTOUNDING BOOK FAIR SUCCESS AT THE BRITISH SCHOOL</h1>
           <div className='text-right carousel-arrowsmall col-xs-offset-1 col-xs-10'>
 
-            <img src='http://localhost/tw-ra/public/images/gallery/carousel_arrowsmall_left.png'
+            <img src={carouselArrowsmallLeft}
                  onClick={this.handleLeftPicture.bind(this)}/>
             {this.state.pictureIndex + 1} / {pictureDates.length}
             <img src='http://localhost/tw-ra/public/images/gallery/carousel_arrowsmall_right.png'
