@@ -1,4 +1,5 @@
 import {Component} from 'react';
+import images from '../images';
 
 export default class SearchBox extends Component {
   constructor(props) {
@@ -36,7 +37,7 @@ export default class SearchBox extends Component {
                  this.input = ref;
                }}/>
         <button onClick={this.submitSearch.bind(this)}>
-          <img src='http://localhost/tw-ra/public/images/home/icon_search_small_focused.png' alt='search'/>
+          <img src={images.search} alt='search'/>
         </button>
       </div>
     );

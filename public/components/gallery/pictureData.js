@@ -1,14 +1,15 @@
+import images from './images';
 export default[
   {
-    pictureSrc: 'http://localhost/tw-ra/public/images/gallery/gallery_1.jpg'
+    pictureSrc:images.gallery1
   },
   {
-    pictureSrc: 'http://localhost/tw-ra/public/images/gallery/gallery_2.png'
+    pictureSrc: images.gallery2
   },
   {
-    pictureSrc: 'http://localhost/tw-ra/public/images/gallery/gallery_3.png'
+    pictureSrc: images.gallery3
   },
   {
-    pictureSrc: 'http://localhost/tw-ra/public/images/gallery/gallery_4.jpg'
+    pictureSrc: images.gallery4
   }
 ];
