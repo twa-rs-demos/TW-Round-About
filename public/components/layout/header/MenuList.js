@@ -89,7 +89,7 @@ export default class MenuList extends Component {
         </div>
         {this.state.currentParentMenu === menu.slug ?
           <Menu slug={menu.slug} subMenu={this.props.path.subUri}
-                menuItemList={menu.subMenu}/>
+                menuItemList={menu.meta}/>
           : ''}
       </div>;
     });

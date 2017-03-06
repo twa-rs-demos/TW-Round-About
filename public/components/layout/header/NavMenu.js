@@ -48,7 +48,8 @@ export default class NavMenu extends Component {
       menuList = this.sortMenu(menuList);
       menuList.map(item => {
         this.getSubMenuList(item.id, (result) => {
-          item.subMenu = result
+          item.meta = result;
+          return item;
         })
       });
 

@@ -25,7 +25,7 @@ class SubMenu extends Component {
   render() {
 
     const menu = this.state.menu;
-    const subMenu = menu.subMenu.map((item, index) => {
+    const subMenu = menu.meta.map((item, index) => {
 
       const connectCharacter = (item.description.uriType === 'withinPage') ? '#' : '/';
       const path = `${URI_PREFIX}/${menu.slug}${connectCharacter}${item.slug}`;
