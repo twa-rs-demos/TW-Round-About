@@ -1,6 +1,6 @@
 import {Component} from "react";
-import pictureDates from "./pictureData";
-import carouselArrowsmallLeft from '../../../public/images/gallery/carousel_arrowsmall_left.png';
+import images from "./images";
+import pictureDates from './pictureData';
 
 export default class Picture extends Component {
   constructor(props) {
@@ -45,10 +45,10 @@ export default class Picture extends Component {
           <h1 className='title'>ASTOUNDING BOOK FAIR SUCCESS AT THE BRITISH SCHOOL</h1>
           <div className='text-right carousel-arrowsmall col-xs-offset-1 col-xs-10'>
 
-            <img src={carouselArrowsmallLeft}
+            <img src={images.carouselArrowsmallLeft}
                  onClick={this.handleLeftPicture.bind(this)}/>
             {this.state.pictureIndex + 1} / {pictureDates.length}
-            <img src='http://localhost/tw-ra/public/images/gallery/carousel_arrowsmall_right.png'
+            <img src={images.carouselArrowsmallRight}
                  onClick={this.handleRightPicture.bind(this)}/>
           </div>
         </div>
@@ -63,9 +63,9 @@ export default class Picture extends Component {
 
               <div className='carousel-arrowbg-position'>
                 <img className='carousel-arrowbg-left'
-                     src='http://localhost/tw-ra/public/images/gallery/carousel_arrowbg_left.png'
+                     src={images.carouselArrowbgLeft}
                      onClick={this.handleLeftPicture.bind(this)}/>
-                <img src='http://localhost/tw-ra/public/images/gallery/carousel_arrowbg_right.png'
+                <img src={images.carouselArrowbgRight}
                      onClick={this.handleRightPicture.bind(this)}/>
               </div>
 
