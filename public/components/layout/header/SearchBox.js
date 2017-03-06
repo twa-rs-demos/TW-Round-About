@@ -1,5 +1,5 @@
 import {Component} from 'react';
-import pictureDate from '../pictureDate';
+import images from '../images';
 
 export default class SearchBox extends Component {
   constructor(props) {
@@ -37,7 +37,7 @@ export default class SearchBox extends Component {
                  this.input = ref;
                }}/>
         <button onClick={this.submitSearch.bind(this)}>
-          <img src={pictureDate.search} alt='search'/>
+          <img src={images.search} alt='search'/>
         </button>
       </div>
     );

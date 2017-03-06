@@ -1,12 +1,12 @@
 import {Component} from 'react';
-import pictureDate from '../pictureDate';
+import images from '../images';
 
 export default class FooterTopOne extends Component {
   render() {
     return (
       <div>
         <div className='footer-head-text'>
-          <img src={pictureDate.smallLogo}/>
+          <img src={images.smallLogo}/>
           <span className='information-theme'>Roundabout</span>
         </div>
         <div className='roundabout-info'>
@@ -17,22 +17,22 @@ export default class FooterTopOne extends Component {
           </p>
           <div className='footer-list'>
             <div>
-              <img src={pictureDate.iconAddressWhite}/>
+              <img src={images.iconAddressWhite}/>
               <p className='follow-icon'> Address:Yuyang Road West, Off An Hua Road (Behind<br/> Yosemite Villa
                 Compound),
                 Shunyi District.</p>
             </div>
             <div>
-              <img src={pictureDate.iconTimeWhite}/>
+              <img src={images.iconTimeWhite}/>
               <p className='follow-icon'> Open Time: Mon-Sat 9.30am-5.30pm</p>
             </div>
             <div>
-              <img src={pictureDate.iconPhoneWhite}/>
+              <img src={images.iconPhoneWhite}/>
               <p className='follow-icon'> Mobile Phone:137 1877 7761 (English), 137 1805 3814<br/>
                 (Chinese only)</p>
             </div>
             <div>
-              <img src={pictureDate.iconMailWhite}/>
+              <img src={images.iconMailWhite}/>
               <p className='follow-icon'> Email: <span
                 className='email-text'>roundaboutvolunteer@yahoo.co.uk</span></p>
             </div>

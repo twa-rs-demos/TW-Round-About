@@ -1,7 +1,7 @@
 import {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
 import {Link} from 'react-router';
-import pictureDate from '../pictureDate';
+import images from '../images';
 
 class WechatModal extends Component {
   render() {
@@ -10,11 +10,11 @@ class WechatModal extends Component {
         <Modal.Dialog>
           <Modal.Header>
             <Button onClick={this.props.closeWechatModal}><img
-              src={pictureDate.close}/></Button>
+              src={images.close}/></Button>
           </Modal.Header>
 
           <Modal.Body>
-            <img src={pictureDate.weChatStore}/>
+            <img src={images.weChatStore}/>
           </Modal.Body>
         </Modal.Dialog>
       </div>
@@ -47,17 +47,17 @@ export default class MainMenu extends Component {
         <a href='#' className='no-padding top-right-word'>English</a>
 
         <a className='no-padding top-left-icon ' onClick={this.showWechatModal.bind(this)}>
-          <img className='icon' src={pictureDate.weChat}/>
+          <img className='icon' src={images.weChat}/>
         </a>
 
         <a href='http://weibo.com/Rooundabout666?sudaref=www.so.com&is_all=1'
            className='no-padding top-left-icon' target='_blank'>
-          <img className='icon' src={pictureDate.weibo}/>
+          <img className='icon' src={images.weibo}/>
         </a>
 
         <a href='https://shop125100050.taobao.com/index.htm?spm=2013.1.w5002-12973215066.2.AXTtj4'
            className='no-padding  top-left-icon ' target='_blank'>
-          <img className='icon' src={pictureDate.taobao} alt=''/>
+          <img className='icon' src={images.taobao} alt=''/>
         </a>
 
         {this.state.isShowWechat ? <WechatModal closeWechatModal={this.closeWechatModal.bind(this)}/> : ''}
