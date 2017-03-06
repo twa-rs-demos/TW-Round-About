@@ -50,7 +50,7 @@ export default class NavMenu extends Component {
         this.getSubMenuList(item.id, (result) => {
           item.meta = result;
           return item;
-        })
+        });
       });
 
       this.setState({menuList});
@@ -77,7 +77,7 @@ export default class NavMenu extends Component {
 
     return items.sort((x, y) => {
       return x.description.index - y.description.index;
-    })
+    });
   };
 
   changeMenuList() {
