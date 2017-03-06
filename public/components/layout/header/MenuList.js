@@ -1,31 +1,13 @@
 import {Component} from 'react';
-import superagent from 'superagent';
-import noCache from 'superagent-no-cache';
 import {Link} from 'react-router';
-import async from 'async';
 
 class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuItemList: [],
+      menuItemList: this.props.menuItemList,
       selectedSubMenu: this.props.subMenu
     };
-  }
-
-  componentDidMount() {
-    superagent
-      .get(`/wp-json/wp/v2/categories?parent=${this.props.id}`)
-      .use(noCache)
-      .end((err, res) => {
-        if (err) {
-          throw (err);
-        } else {
-          this.setState({
-            menuItemList: sortMenu(res.body)
-          });
-        }
-      });
   }
 
   render() {
@@ -62,16 +44,6 @@ class Menu extends Component {
   }
 }
 
-const sortMenu = function (items) {
-  items.map(item => {
-    item.description = JSON.parse(item.description);
-  });
-
-  return items.sort((x, y) => {
-    return x.description.index - y.description.index;
-  })
-};
-
 export default class MenuList extends Component {
   constructor(props) {
     super(props);
@@ -82,42 +54,11 @@ export default class MenuList extends Component {
     };
   }
 
-  componentDidMount() {
-    async.waterfall([
-      (done) => {
-        superagent
-          .get('/wp-json/wp/v2/categories?slug=menulist')
-          .use(noCache)
-          .end((err, res) => {
-            if (err) {
-              done(err, null);
-            } else {
-              done(null, res.body[0]);
-            }
-          });
-      },
-      (categoryParent, done) => {
-        superagent
-          .get(`/wp-json/wp/v2/categories?parent=${categoryParent.id}`)
-          .use(noCache)
-          .end((err, res) => {
-            if (err) {
-              done(err, null);
-            } else {
-              done(null, res.body);
-            }
-          });
-      }
-    ], (err, result) => {
-      if (err) {
-        throw err;
-      }
-      this.setState({menuList: sortMenu(result)});
-    });
-  }
-
   componentWillReceiveProps(nextProps) {
-    this.setState({selectedPrentMenu: nextProps.path.parentUri});
+    this.setState({
+      selectedPrentMenu: nextProps.path.parentUri,
+      menuList: nextProps.menuList
+    });
   }
 
   showMenu(uri) {
@@ -147,7 +88,9 @@ export default class MenuList extends Component {
           </Link>
         </div>
         {this.state.currentParentMenu === menu.slug ?
-          <Menu id={menu.id} slug={menu.slug} subMenu={this.props.path.subUri}/> : ''}
+          <Menu slug={menu.slug} subMenu={this.props.path.subUri}
+                menuItemList={menu.meta}/>
+          : ''}
       </div>;
     });
     return (

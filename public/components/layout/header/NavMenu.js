@@ -1,4 +1,7 @@
 import {Component} from 'react';
+import superagent from 'superagent';
+import noCache from 'superagent-no-cache';
+import async from 'async';
 import MenuList from './MenuList';
 import SearchBox from './SearchBox';
 import SecondMenu from './SecondMenu';
@@ -7,9 +10,75 @@ export default class NavMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      menuList: [],
       showMenuList2: false
     };
   }
+
+  componentDidMount() {
+    async.waterfall([
+      (done) => {
+        superagent
+          .get('/wp-json/wp/v2/categories?slug=menulist')
+          .use(noCache)
+          .end((err, res) => {
+            if (err) {
+              done(err, null);
+            } else {
+              done(null, res.body[0]);
+            }
+          });
+      },
+      (categoryParent, done) => {
+        superagent
+          .get(`/wp-json/wp/v2/categories?parent=${categoryParent.id}`)
+          .use(noCache)
+          .end((err, res) => {
+            if (err) {
+              done(err, null);
+            } else {
+              done(null, res.body);
+            }
+          });
+      }
+    ], (err, menuList) => {
+      if (err) {
+        throw err;
+      }
+      menuList = this.sortMenu(menuList);
+      menuList.map(item => {
+        this.getSubMenuList(item.id, (result) => {
+          item.meta = result;
+          return item;
+        })
+      });
+
+      this.setState({menuList});
+    });
+  }
+
+  getSubMenuList(id, callback) {
+    superagent
+      .get(`/wp-json/wp/v2/categories?parent=${id}`)
+      .use(noCache)
+      .end((err, res) => {
+        if (err) {
+          throw (err);
+        } else {
+          callback(this.sortMenu(res.body));
+        }
+      });
+  }
+
+  sortMenu(items) {
+    items.map(item => {
+      item.description = JSON.parse(item.description);
+    });
+
+    return items.sort((x, y) => {
+      return x.description.index - y.description.index;
+    })
+  };
 
   changeMenuList() {
     this.setState({showMenuList2: !this.state.showMenuList2}, () => {
@@ -28,7 +97,7 @@ export default class NavMenu extends Component {
       <div>
         <div className='row no-margin menu-list1'>
           <div className='col-md-10 col-xs-7'>
-            <MenuList path={this.props.layout}/>
+            <MenuList path={this.props.layout} menuList={this.state.menuList}/>
           </div>
           <div className='col-md-2 col-xs-5 text-right no-padding header-search-box'>
             <SearchBox/>
@@ -49,7 +118,8 @@ export default class NavMenu extends Component {
         <div className='menu-list2'>
           <div className='sidebar-wrapper' onClick={this.changeMenuList.bind(this)}></div>
           <div className='nav-bar'>
-            <SecondMenu hideMenu={this.changeMenuList.bind(this)} path={this.props.layout}/>
+            <SecondMenu menuList={this.state.menuList} hideMenu={this.changeMenuList.bind(this)}
+                        path={this.props.layout}/>
           </div>
         </div>
       </div>

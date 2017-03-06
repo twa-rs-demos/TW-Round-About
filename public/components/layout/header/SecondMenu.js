@@ -1,13 +1,20 @@
 import {Component} from 'react';
 import {Link} from 'react-router';
-import menuData from '../../../raw-data/menu-lilst';
 
 class SubMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      menu: this.props.menu,
       selected: this.props.subUri
     };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState({
+      menu: nextProps.menu,
+      selected: nextProps.subUri
+    })
   }
 
   selectSubMenu(parentUri, subUri) {
@@ -17,26 +24,32 @@ class SubMenu extends Component {
 
   render() {
 
-    const menu = this.props.menu;
-    const subMenu = menu.subMenu.map((item, index) => {
+    const menu = this.state.menu;
+    const subMenu = menu.meta.map((item, index) => {
 
-      const connectCharacter = (item.uriType === 'withinPage') ? '' : '/';
-      const path = `${URI_PREFIX}/${menu.uri}${connectCharacter}${item.subUri}`;
-      const selected = (this.state.selected === item.subUri) ? 'selected-sub-menu' : '';
+      const connectCharacter = (item.description.uriType === 'withinPage') ? '#' : '/';
+      const path = `${URI_PREFIX}/${menu.slug}${connectCharacter}${item.slug}`;
+      const selected = (this.state.selected.indexOf(item.slug) !== -1) ? 'selected-sub-menu' : '';
+      let subMenuType = item.description.uriType === 'withinPage' ?
+        <a href={path} className={'menu-link ' + selected}
+           onClick={this.selectSubMenu.bind(this, menu.slug, item.slug)}>
+          {item.name}
+        </a>
+        :
+        <Link to={path} className={'menu-link ' + selected}
+              onClick={this.selectSubMenu.bind(this, menu.slug, item.slug)}>
+          {item.name}
+        </Link>;
+
+      subMenuType = (item.description.uriType === 'donate') ?
+        <Link to={path} className={'menu-link ' + selected}
+              onClick={this.selectSubMenu.bind(this, menu.slug, item.slug)}>
+          {item.name}
+        </Link>
+        : subMenuType;
 
       return <li key={index} className='sub-item '>
-
-        {item.subUri === '' ?
-          <Link to={URI_PREFIX + '/donate'} className={'menu-link ' + selected}
-                onClick={this.selectSubMenu.bind(this, menu.uri, item.subUri)}>
-            {item.name}
-          </Link>
-          :
-          <Link to={path} className={'menu-link ' + selected}
-                onClick={this.selectSubMenu.bind(this, menu.uri, item.subUri)}>
-            {item.name}
-          </Link>
-        }
+        {subMenuType}
       </li>
     });
 
@@ -50,6 +63,7 @@ export default class SecondMenu extends Component {
 
   componentWillReceiveProps(nextProps) {
     this.setState({
+      menuList: nextProps.menuList,
       parentUri: nextProps.path.parentUri,
       selected: nextProps.path.parentUri
     });
@@ -58,6 +72,7 @@ export default class SecondMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      menuList: this.props.menuList,
       parentUri: this.props.path.parentUri,
       selected: this.props.path.parentUri
     };
@@ -83,20 +98,20 @@ export default class SecondMenu extends Component {
 
   render() {
 
-    const menuList = menuData.map((menu, index) => {
+    const menuList = this.state.menuList.map((menu, index) => {
 
-        const isShowSubMenu = this.state.parentUri === menu.uri;
-        const selected = (menu.uri === this.state.selected) ? 'active' : '';
+        const isShowSubMenu = this.state.parentUri === menu.slug;
+        const selected = (menu.slug === this.state.selected) ? 'active' : '';
 
         return <div key={index}>
           <li className='menu-item'>
             <div className={'nav-brand ' + selected}>
-              < Link to={URI_PREFIX + '/' + menu.uri} className='menu-link'
-                     onClick={this.hideSubMenu.bind(this, menu.uri)}>
-                {menu.firstMenu}
+              < Link to={URI_PREFIX + '/' + menu.slug} className='menu-link'
+                     onClick={this.hideSubMenu.bind(this, menu.slug)}>
+                {menu.name}
               </Link>
               <i className={'dropdown-icon fa fa-chevron-' + (isShowSubMenu ? 'up' : 'down')}
-                 onClick={this.showSubMenu.bind(this, menu.uri)}></i>
+                 onClick={this.showSubMenu.bind(this, menu.slug)}></i>
             </div>
             {isShowSubMenu ?
               <SubMenu menu={menu} subUri={this.props.path.subUri} selectMenu={this.selectMenu.bind(this)}/> : ''}
