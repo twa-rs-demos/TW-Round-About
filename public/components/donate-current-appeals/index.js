@@ -1,6 +1,5 @@
 import {Component} from 'react';
 import {DonatingProjects} from '../common/index';
-import '../../style/donate.less';
 
 export default class DonateCurrentAppeal extends Component {
   render() {

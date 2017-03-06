@@ -40,28 +40,33 @@ export default class DonatingProjects extends Component {
 
   render() {
     const totalPage = Math.ceil(donatingProjectList.length / this.state.pageCount);
+    let more=null;
+    if(this.props.paginationMoreLink !== undefined){
+      more = (<div className='col-md-7 col-sm-6 col-xs-5'>
+        <div className='text-right'>
+          <Link to={this.props.paginationMoreLink}>
+            <div className='donateProject-more'>更多></div>
+          </Link>
+        </div>
+      </div>);
+    }
 
     return (
       <div className='donating-projects'>
         <div className='donating-middle-text'>
           <h2 className='middle-title'>{this.props.title}</h2>
         </div>
-        <div>
-          {this.getDonatingProject(donatingProjectList.slice(this.state.currentPage, this.state.currentPage + 9))}
+        <div className="row">
+          <div className="col-md-offset-1 col-md-10">
+            {this.getDonatingProject(donatingProjectList.slice(this.state.currentPage, this.state.currentPage + 9))}
+          </div>
         </div>
-
         <div className='row' id='pagination-project'>
-          <div className='col-md-3 col-sm-5 col-xs-6 '>
+          <div className='col-md-offset-1 col-md-3 col-sm-5 col-xs-6 '>
             <Pagination totalPage={totalPage} currentPage={this.state.currentPage}
                         onPageChange={this.handlePageChange.bind(this)}/>
           </div>
-          <div className='col-md-8 col-sm-6 col-xs-5'>
-            <div className='text-right'>
-              <Link to='/tw-ra/donateCurrent'>
-                <div className='donateProject-more'>更多></div>
-              </Link>
-            </div>
-          </div>
+          {more}
         </div>
       </div>
     );
