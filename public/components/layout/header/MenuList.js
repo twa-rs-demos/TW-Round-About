@@ -25,6 +25,8 @@ class Menu extends Component {
       subMenu = uriType === 'donate'
         ? <Link to={URI_PREFIX + '/donate'}>{menuItem.name}</Link> : subMenu;
 
+      subMenu = uriType === 'outsideLink'
+        ? <a href={menuItem.description.link}>{menuItem.name}</a> : subMenu;
       return (
         <li key={index} className='dropdown-item'>
           {subMenu}

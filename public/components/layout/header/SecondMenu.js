@@ -27,10 +27,11 @@ class SubMenu extends Component {
     const menu = this.state.menu;
     const subMenu = menu.meta.map((item, index) => {
 
-      const connectCharacter = (item.description.uriType === 'withinPage') ? '#' : '/';
+      const uriType = item.description.uriType;
+      const connectCharacter = (uriType === 'withinPage') ? '#' : '/';
       const path = `${URI_PREFIX}/${menu.slug}${connectCharacter}${item.slug}`;
       const selected = (this.state.selected.indexOf(item.slug) !== -1) ? 'selected-sub-menu' : '';
-      let subMenuType = item.description.uriType === 'withinPage' ?
+      let subMenuType = uriType === 'withinPage' ?
         <a href={path} className={'menu-link ' + selected}
            onClick={this.selectSubMenu.bind(this, menu.slug, item.slug)}>
           {item.name}
@@ -41,12 +42,15 @@ class SubMenu extends Component {
           {item.name}
         </Link>;
 
-      subMenuType = (item.description.uriType === 'donate') ?
+      subMenuType = (uriType === 'donate') ?
         <Link to={path} className={'menu-link ' + selected}
               onClick={this.selectSubMenu.bind(this, menu.slug, item.slug)}>
           {item.name}
         </Link>
         : subMenuType;
+
+      subMenuType = (uriType === 'outsideLink') ?
+        <a href={item.description.link} className={'menu-link ' + selected}>{item.name}</a> : subMenuType;
 
       return <li key={index} className='sub-item '>
         {subMenuType}
