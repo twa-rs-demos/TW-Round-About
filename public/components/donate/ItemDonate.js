@@ -62,7 +62,7 @@ export default class ItemDonate extends Component {
           </div>
         </div>
         <div className='donate-guide-apply row'>
-          <div className='container donate-guide-apply col-xs-12 ' id='donate-guide-apply-hash'>
+          <div className='container donate-guide-apply col-xs-12 col-md-offset-1 col-md-10' id='donate-guide-apply-hash'>
             <h3 className='donate-items-title'>申请上门收取捐赠物品</h3>
             <div className='apply-extra-info'>
               <p>Thank you for requesting a pick up of your donations, we will try our best to help.</p>
