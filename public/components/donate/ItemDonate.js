@@ -28,7 +28,6 @@ export default class ItemDonate extends Component {
 
   openApplyForm() {
     this.setState({isShowApplyForm: true});
-    console.log('nihaoshijie');
   }
 
   render() {

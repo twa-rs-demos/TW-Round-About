@@ -6,8 +6,6 @@ export default class MedicalAssitanceTop extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.describe);
-    console.log(this.refs.describe.className);
     if(this.props.describe ===''){
       this.refs.describe.className='';
     }
@@ -15,7 +13,6 @@ export default class MedicalAssitanceTop extends Component {
   }
 
   render() {
-    console.log(this.props.describe);
     return (
       <div className="assistance-top">
         <div>

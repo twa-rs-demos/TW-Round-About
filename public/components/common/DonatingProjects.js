@@ -55,7 +55,6 @@ export default class DonatingProjects extends Component {
   }
 
   handlePageChange(page) {
-    console.log('hahhah');
     //此处发请求
 
   }
