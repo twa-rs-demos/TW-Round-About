@@ -10,7 +10,12 @@ class Menu extends Component {
     };
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.setState({menuItemList: nextProps.menuItemList});
+  }
+
   render() {
+    console.log(this.state.menuItemList);
     const menuItemList = this.state.menuItemList.map((menuItem, index) => {
       const selected = (this.state.selectedSubMenu.indexOf(menuItem.slug) !== -1) ? 'selected-sub' : '';
       const uriType = menuItem.description.uriType;

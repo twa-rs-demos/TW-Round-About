@@ -2,6 +2,8 @@ import {Component} from 'react';
 import {Link} from 'react-router';
 import Pagination from './Pagination';
 import donatingProjectList from './donateingProjectsDates';
+import superagent from 'superagent';
+import noCache from 'superagent-no-cache';
 
 export default class DonatingProjects extends Component {
 
@@ -9,23 +11,43 @@ export default class DonatingProjects extends Component {
     super(props);
     this.state = {
       currentPage: 1,
-      pageCount: 8
+      pageCount: 8,
+      childrenStories: []
     };
   }
 
-  getDonatingProject(lists) {
-    return lists.map((item, index) => {
+  componentDidMount() {
+    superagent
+      .get('/wp-json/wp/v2/posts?filter[tag]=childrenStory')
+      .use(noCache)
+      .end((err, res)=> {
+        if (err) {
+          throw err;
+        }
+        this.setState({
+          childrenStories: res.body
+        });
+
+      })
+
+  }
+
+  getDonatingProject() {
+    return this.state.childrenStories.map((item, index) => {
       return (
         <div className='col-md-3 col-sm-4 col-xs-6 donating-project' key={index}>
-          <img src={item.img}/>
+          <img src={item.acf.img.url}/>
           <div className='child-profile'>
             <p>这里是简介哦-。-！已经测试过长度的问题，不会越界的，放心哦^0^</p>
           </div>
           <div className='child-profile-text'>
-            <h4>{item.name}，{item.age}岁</h4>
-            <p>{item.disease}</p>
-            <p>需要&nbsp;￥{item.money}</p>
-            <Link to='/tw-ra/childStory'>阅读更多 ></Link>
+            <h4>{item.acf.name}，{item.acf.age}岁</h4>
+            <p>{item.acf.name}</p>
+            <p>需要&nbsp;￥{item.acf.age}万</p>
+            <p className="pink">
+              <Link to={{pathname:"/tw-ra/childstories",query:{id:item.id}}}>阅读更多 ></Link>
+            </p>
+
           </div>
         </div>
       );
@@ -40,8 +62,8 @@ export default class DonatingProjects extends Component {
 
   render() {
     const totalPage = Math.ceil(donatingProjectList.length / this.state.pageCount);
-    let more=null;
-    if(this.props.paginationMoreLink !== undefined){
+    let more = null;
+    if (this.props.paginationMoreLink !== undefined) {
       more = (<div className='col-md-7 col-sm-6 col-xs-5'>
         <div className='text-right'>
           <Link to={this.props.paginationMoreLink}>

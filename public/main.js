@@ -107,7 +107,7 @@ class Main extends Component {
           <IndexRoute component={Store}/>
         </Route>
 
-        <Route path="childstory" component={ChildStory}/>
+        <Route path="childstories" component={ChildStory}/>
         <Route path="legal" component={Legal}/>
         <Route path="privacypolicy" component={PrivacyPolicy}/>
         <Route path="searchresult" component={SearchResult}/>
