@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
+import images from '../donate/images';
 
 class DonateWay extends Component {
   render() {
@@ -7,7 +8,7 @@ class DonateWay extends Component {
       <div className="col-xs-offset-1 col-xs-10 no-padding">
         <div className="col-xs-6 donate-way no-padding">
           <div className="text-center">
-            <img src='http://localhost/tw-ra/public/images/donate/wechat01.png'
+            <img src={images.wechat}
                  className='donate-img'/>
             <div className='span'>Wechat</div>
           </div>
@@ -17,7 +18,7 @@ class DonateWay extends Component {
             <a
               href='http://www.ccafc.org.cn/templates/Donation/txxx.aspx?nodeid=5&projectid=3299&strname=&jiner=&notes_email='
               target='_blank'>
-              <img src='http://localhost/tw-ra/public/images/donate/logo_ccafc.png'
+              <img src={images.logoCcafa}
                    className='donate-img border'/>
             </a>
             <div className='span'>CCAFC</div>
@@ -26,7 +27,7 @@ class DonateWay extends Component {
         <div className="col-xs-6 donate-way no-padding">
           <div className="text-center">
             <a href='http://love.alipay.com/donate/itemDetail.htm?name=2015081315541167376' target='_blank'>
-              <img src='http://localhost/tw-ra/public/images/donate/logo_alipay.png'
+              <img src={images.logoAlipay}
                    className='donate-img'/>
             </a>
             <div className='span'>Alipay</div>
@@ -34,7 +35,7 @@ class DonateWay extends Component {
         </div>
         <div className="col-xs-6 donate-way no-padding">
           <div className="text-center">
-            <img src='http://localhost/tw-ra/public/images/donate/logo_paypal.png'
+            <img src={images.logoPaypal}
                  className='donate-img border'/>
             <div className='span'>Paypal</div>
           </div>

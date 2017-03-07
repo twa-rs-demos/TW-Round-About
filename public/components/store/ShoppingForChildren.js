@@ -2,6 +2,7 @@ import {Component} from 'react';
 import DonateWayModal from './DonateWayModal';
 import RequestFormModal from '../donate/doantion-apply-form/index';
 import {Modal, Button} from 'react-bootstrap';
+import images from './images';
 
 export default class ShoppingForChildren extends Component {
   constructor(props) {
@@ -34,11 +35,11 @@ export default class ShoppingForChildren extends Component {
       <p className='text-center shopping-statement'>所得利润用于支持和帮助困境群体。</p>
       <div className='col-xs-6 two-dimension-code no-padding'>
         <div className='col-xs-6 inline text-right no-padding relative-positon'>
-          <img className='store-picture' src='http://localhost/tw-ra/public/images/wechat01.png' alt=''/>
+          <img className='store-picture' src={images.wechat01} alt=''/>
           <span className='store-name'>微信商城</span>
         </div>
         <div className='col-xs-6 inline text-right no-padding relative-positon'>
-          <img className='store-picture' src='http://localhost/tw-ra/public/images/taobao01.png' alt=''/>
+          <img className='store-picture' src={images.taobao01} alt=''/>
           <span className='store-name'>淘宝商城</span>
         </div>
       </div>

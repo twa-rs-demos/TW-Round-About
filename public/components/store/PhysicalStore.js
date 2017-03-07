@@ -1,4 +1,5 @@
 import {Component} from 'react';
+import images from './images';
 
 export default class PhysicalStore extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class PhysicalStore extends Component {
       </div>
       <div>
         <div className='col-sm-7 round-about-place'>
-          <img src='http://localhost/tw-ra/public/images/store/donate2.png' alt=''/>
+          <img src={images.donate2} alt=''/>
         </div>
         <div className='col-sm-5 round-about no-padding'>
           <div className='round-about-store'>
@@ -20,7 +21,7 @@ export default class PhysicalStore extends Component {
             <p className='no-margin'>Use Baidu or Gaode Map with keyword #roundabout# will direct you to the Store.</p>
           </div>
           <div className='store-position'>
-            <img src='http://localhost/tw-ra/public/images/store/position.png' alt=''/>
+            <img src={images.position} alt=''/>
           </div>
         </div>
       </div>

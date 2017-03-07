@@ -2,6 +2,7 @@ import {Component} from 'react';
 import RoundAboutTaoBao from './RoundAboutTaoBao';
 import ShoppingForChildren from './ShoppingForChildren';
 import PhysicalStore from './PhysicalStore';
+import images from './images';
 
 export default class RounaboutStore extends Component {
 
@@ -10,7 +11,7 @@ export default class RounaboutStore extends Component {
       <div id='round-store'>
         <div className='row buy'>
           <div className='col-sm-offset-2 col-sm-8 col-xs-12 buy-image no-padding'>
-            <img src='http://localhost/tw-ra/public/images/store/buy2.png' alt=''/>
+            <img src={images.buy2} alt=''/>
           </div>
         </div>
         <div className='row'>
