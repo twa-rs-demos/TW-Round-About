@@ -1,4 +1,5 @@
 import {Component} from 'react';
+import images from './images';
 
 export default class SameFamily extends Component {
   render() {
@@ -9,17 +10,17 @@ export default class SameFamily extends Component {
           <div className='row'>
             <div className='col-sm-4 text-center'>
               <img className='image-border'
-                   src='http://localhost/tw-ra/public/images/partners/logo_china culiure center.png' alt=''/>
+                   src={images.logoChinaCuliure} alt=''/>
               <div className='logo-name'>China Culiure Center</div>
             </div>
             <div className='col-sm-4 text-center'>
               <img className='image-border'
-                   src="http://localhost/tw-ra/public/images/partners/logo_children's house.png" alt=''/>
+                   src={images.logoChilden} alt=''/>
               <div className='logo-name'>Children's House Montessori Kindergarten</div>
             </div>
             <div className='col-sm-4 text-center'>
               <img className='image-border'
-                   src='http://localhost/tw-ra/public/images/partners/logo_city wise.png' alt=''/>
+                   src={images.logoCity} alt=''/>
               <div className='logo-name'>City Wise</div>
             </div>
           </div>
@@ -27,42 +28,43 @@ export default class SameFamily extends Component {
           <div className='row second-row'>
             <div className='col-sm-3 text-center logo'>
               <img className='image-border'
-                   src='http://localhost/tw-ra/public/images/partners/logo_AGS.png' alt=''/>
+                   src={images.logoAgs} alt=''/>
               <div className='logo-name'>AGS</div>
             </div>
             <div className='col-sm-3 text-center logo'>
               <img className='image-border'
-                   src='http://localhost/tw-ra/public/images/partners/logo_AGS.png' alt=''/>
+                   src={images.logoAgs} alt=''/>
               <div className='logo-name'>AGS</div>
             </div>
             <div className='col-sm-3 text-center logo'>
               <img className='image-border'
-                   src='http://localhost/tw-ra/public/images/partners/logo_AGS.png' alt=''/>
+                   src={images.logoAgs}
+                     alt=''/>
               <div className='logo-name'>AGS</div>
             </div>
             <div className='col-sm-3 text-center logo'>
               <img className='image-border'
-                   src='http://localhost/tw-ra/public/images/partners/logo_AGS.png' alt=''/>
+                   src={images.logoAgs} alt=''/>
               <div className='logo-name'>AGS</div>
             </div>
             <div className='col-sm-3 text-center logo'>
               <img className='image-border'
-                   src='http://localhost/tw-ra/public/images/partners/logo_AGS.png' alt=''/>
+                   src={images.logoAgs} alt=''/>
               <div className='logo-name'>AGS</div>
             </div>
             <div className='col-sm-3 text-center logo'>
               <img className='image-border'
-                   src='http://localhost/tw-ra/public/images/partners/logo_AGS.png' alt=''/>
+                   src={images.logoAgs} alt=''/>
               <div className='logo-name'>AGS</div>
             </div>
             <div className='col-sm-3 text-center logo'>
               <img className='image-border'
-                   src='http://localhost/tw-ra/public/images/partners/logo_AGS.png' alt=''/>
+                   src={images.logoAgs} alt=''/>
               <div className='logo-name'>AGS</div>
             </div>
             <div className='col-sm-3 text-center logo'>
               <img className='image-border'
-                   src='http://localhost/tw-ra/public/images/partners/logo_AGS.png' alt=''/>
+                   src={images.logoAgs} alt=''/>
               <div className='logo-name'>AGS</div>
             </div>
           </div>

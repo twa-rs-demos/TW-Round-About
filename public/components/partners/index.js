@@ -2,15 +2,15 @@ import {Component} from 'react';
 import {MaxPicture} from '../common/index';
 import SameFamily from './SameFamily';
 import BecomePartners from './BecomeParters';
+import images from './images';
 
 export default class Partners extends Component {
 
   render() {
-    const pictureSrc = 'http://localhost/tw-ra/public/images/partners/hero_partner.png';
     return (
       <div id='partners'>
         <div className='max-picture'>
-          <MaxPicture src={pictureSrc}>
+          <MaxPicture src={images.heroPartners}>
             <div className='content-on-picture'>
               <h3 className='title'>
                 SANTA FE SUPPRTS<br/>
