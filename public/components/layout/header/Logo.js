@@ -6,7 +6,7 @@ export default class Logo extends Component {
   render() {
     return (
       <div className='row logo'>
-        <Link to={URI_PREFIX + '/'}> <img src={images.Logo} alt='logo'/></Link>
+        <Link to={URI_PREFIX + '/'}> <img src={images.logo} alt='logo'/></Link>
       </div>
     );
   }
