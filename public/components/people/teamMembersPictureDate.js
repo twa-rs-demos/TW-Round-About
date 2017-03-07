@@ -1,34 +1,35 @@
+import images from './images';
 export default [
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   },
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   },
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   },
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   },
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   },
 
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   },
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   },
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   },
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   },
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteergst
   }
 
 ];

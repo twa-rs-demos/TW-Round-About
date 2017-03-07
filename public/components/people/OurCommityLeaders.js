@@ -1,14 +1,15 @@
 import {Component} from 'react';
+import images from './images';
 
 const volunteerPictures = [
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   },
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   },
   {
-    src: 'http://localhost/tw-ra/public/images/people/volunteerPicture.png'
+    src: images.volunteer
   }
 ];
 

@@ -4,6 +4,7 @@ import PeopleVolunteer from './PeopleVolunteer';
 import OurLeaderShip from './OurLeaderShip';
 import OurCommityLeaders from './OurCommityLeaders';
 import OurTeam from './OurTeam';
+import images from './images';
 
 export default class People extends Component {
 
@@ -27,10 +28,9 @@ export default class People extends Component {
   }
 
   render() {
-    const pictureSrc = 'http://localhost/tw-ra/public/images/people/people.jpg';
     return (
       <div id='people' className='container-fluid no-padding'>
-        <MaxPicture src={pictureSrc}/>
+        <MaxPicture src={images.people}/>
         <PeopleVolunteer showApplicationForm={this.showApplicationForm.bind(this)}
                          closeForm={this.closeForm.bind(this)} state={this.state.showVolunteerForm}
         />
