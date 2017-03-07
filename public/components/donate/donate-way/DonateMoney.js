@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import Paypal from './Paypal';
+import images from '../images';
 
 export default class DonateMoney extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ export default class DonateMoney extends Component {
         <div className='row donate-money-margin'>
 
           <div className='col-xs-offset-1 col-xs-5'>
-            <img src='http://localhost/tw-ra/public/images/donate/wechat01.png'
+            <img src={images.wechat}
                  className='img-center'/>
             <div className='span'>Wechat</div>
           </div>
@@ -33,7 +34,7 @@ export default class DonateMoney extends Component {
               href='http://www.ccafc.org.cn/templates/Donation/txxx.aspx?nodeid=5&projectid=3299&strname=&jiner=&notes_email='
               target='_blank'>
               <div className='image-border'>
-                <img src='http://localhost/tw-ra/public/images/donate/logo_ccafc.png'
+                <img src={images.logoCcafa}
                      className='img-center'/>
               </div>
             </a>
@@ -44,14 +45,15 @@ export default class DonateMoney extends Component {
         <div className='row'>
           <div className='col-xs-offset-1 col-xs-5'>
             <a href='http://love.alipay.com/donate/itemDetail.htm?name=2015081315541167376' target='_blank'>
-              <img src='http://localhost/tw-ra/public/images/donate/logo_alipay.png'
+
+              <img src={images.logoAlipay}
                    className='img-center'/>
             </a>
             <div className='span'>Alipay</div>
           </div>
           <div className='col-xs-5'>
             <div className='image-border'>
-              <img src='http://localhost/tw-ra/public/images/donate/logo_paypal.png'
+              <img src={images.logoPaypal}
                    onClick={this.showPaypalModal.bind(this)}
                    className='img-center'/>
             </div>

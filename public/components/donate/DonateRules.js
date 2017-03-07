@@ -1,6 +1,6 @@
 import {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
-import '../../style/modalForm.less';
+import images from './images';
 
 export default class DonateRules extends Component {
   render() {
@@ -9,7 +9,7 @@ export default class DonateRules extends Component {
         <Modal.Dialog>
           <Modal.Header>
             <Button onClick={this.props.closeElasticBox}><img className='close-btn'
-                                                              src='http://localhost/tw-ra/public/images/home/close.png'/></Button>
+                                                              src={images.close}/></Button>
             <h2>我们不接受的物品</h2>
           </Modal.Header>
 

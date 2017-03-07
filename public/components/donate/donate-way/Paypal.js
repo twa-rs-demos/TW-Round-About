@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
+import images from '../images';
 
 export default class Alipay extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class Alipay extends Component {
       <div className='donate-way-elastic'>
         <Modal.Dialog>
           <Modal.Header>
-            <Button onClick={this.props.closePaypalModal}><img src='http://localhost/tw-ra/public/images/home/close.png'/></Button>
+            <Button onClick={this.props.closePaypalModal}><img src={images.close}/></Button>
           </Modal.Header>
 
           <Modal.Body>

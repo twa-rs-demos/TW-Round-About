@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import {Button} from 'react-bootstrap';
+import images from '../images';
 
 export default class FormHeader extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class FormHeader extends Component {
       <div className='apply-form-header'>
         <Button onClick={this.props.closeApplyForm}>
           <img className='close-btn applyform-btn'
-               src='http://localhost/tw-ra/public/images/home/close.png'/>
+               src={images.close}/>
         </Button>
         <h3>REQUEST FOR PICK UP OF DONATIONS</h3>
         <span className='pink header-right'>*Required Fields</span>

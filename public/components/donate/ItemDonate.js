@@ -3,7 +3,7 @@ import DonateGuide from './DonateGuide';
 import DonateRules from './DonateRules';
 import DonationApplyForm from './doantion-apply-form/index';
 import {Modal, Button} from 'react-bootstrap';
-
+import images from './images';
 
 export default class ItemDonate extends Component {
   constructor(props) {
@@ -38,7 +38,7 @@ export default class ItemDonate extends Component {
         </div>
         <div className='row'>
           <div>
-            <img className='item-donation-img' src='http://localhost/tw-ra/public/images/donate/Item donation.png'/>
+            <img className='item-donation-img' src={images.itemDonate}/>
           </div>
         </div>
         <div className='row' id="donate-guide-hash">

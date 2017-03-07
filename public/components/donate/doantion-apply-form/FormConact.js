@@ -10,12 +10,12 @@ export default class FormConact extends Component {
       {text: 'Mobile Number', star: true}
     ];
 
-    let tab = list.map((item) => {
+    let tab = list.map((item,index) => {
       let name = null;
       if (item.start) {
         name = (<span className='pink'>*</span>);
       }
-      return (<div className='row'>
+      return (<div className='row' key={index}>
           <div className='col-md-2'>
             <p className='input-address-text'>
               {item.text}{name}
