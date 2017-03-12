@@ -19,7 +19,7 @@ export default class ourWorkItems extends Component {
             </div>
             <div className='col-md-4 col-xs-12 icon-container'>
               <div className='job-icons-container'>
-                <img src={images.iconDisaster} alt='医疗救助'/>
+                <img src={images.iconMedical} alt='医疗救助'/>
               </div>
               <Link to={URI_PREFIX + '/ourwork/medicalassistance'}>医疗救助</Link>
             </div>
@@ -30,10 +30,10 @@ export default class ourWorkItems extends Component {
               <Link to={URI_PREFIX + '/ourwork/educationsupport'}>教育资助</Link>
             </div>
           </div>
-          <div className='job-icons row icons-margin-bottom'>
+          <div className='job-icons row icons-margin-bottom icon-bottom '>
             <div className='col-md-6 col-xs-12 col-md-offset-1 icon-container'>
               <div className='job-icons-container'>
-                <img src={images.iconMedical} alt='灾区救助'/>
+                <img src={images.iconDisaster} alt='灾区救助'/>
               </div>
               <Link to={URI_PREFIX + '/ourwork/disasterrelief'}>灾区救助</Link>
             </div>
